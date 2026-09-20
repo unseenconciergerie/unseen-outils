@@ -1,0 +1,27 @@
+/* =================================================================
+   UNSEEN. — COULEUR DE SAISON
+   -----------------------------------------------------------------
+   C'est le SEUL fichier a remplacer pour changer la saison du site.
+   Ni index.html ni legal.html n'ont besoin d'etre touches.
+
+   Comment faire :
+     1. Modifier la valeur de --accent ci-dessous.
+     2. Deposer ce fichier dans le dossier "web" via le Web FTP
+        d'Infomaniak, en ecrasant l'ancien.
+     3. Recharger le site avec Cmd + Maj + R.
+
+   Regle de la charte 3.2 : une seule couleur d'accent a la fois.
+
+     #F09D54   Orange abricot   Sud de la France / ete
+     #C51500   Rouge vif        Grand Prix de Formule 1
+     #0C5A38   Vert sapin       Saison hivernale / Nouvel An
+     #B8923D   Or               Festival de Cannes
+     #1C6E9C   Azur             Riviera / yachting
+     #16C8FF   Bleu glacier     Saison de ski / Alpes
+     #5C2A45   Prune            Fashion Week
+     #D9D1C3   Sable            St Barth / echappee hivernale
+   ================================================================= */
+
+:root{
+  --accent:#F09D54;   /* SAISON ACTIVE : Orange abricot, ete */
+}

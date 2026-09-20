@@ -6,13 +6,20 @@ Détail complet (décisions passées, réglages recommandés, feuille de route
 entière) : voir `contexte/historique-projet.md`, à lire seulement si besoin.
 
 ## Outils
-- **Radar UNSEEN.** (`radar-unseen/`) — veille presse et nominations →
-  Telegram. Étapes 1-2 faites. Étape 3 (calendrier événements) et étape 4
-  (GitHub Actions) à faire.
+- **Radar UNSEEN.** (`radar-unseen/`) — veille presse, nominations et
+  calendrier des événements → Telegram. 4 étapes faites, automatisé sur
+  GitHub Actions (dépôt privé `unseenconciergerie/unseen-outils`), plus
+  besoin de lancer les commandes à la main.
 - **Assistant de prospection** (`assistant-prospection/`) — saisie manuelle
   de prospects Instagram/LinkedIn → tableau Excel iCloud + brouillon Gmail
-  personnalisé (avec signature). Fait et testé le 20/09/2026.
+  personnalisé (avec signature). Fait et testé.
+- **Site web** (`site-unseen/`) — nouvelle version reconstruite sur la base
+  existante (police Montserrat/Spartan, section carte simple). Prête en
+  local, pas encore publiée sur Infomaniak.
 
 ## Prochaine étape
-Étape 3 du Radar UNSEEN. : calendrier des événements sur 12 mois, avec
-rappels J-90 / J-60 / J-30 / J-7 et récapitulatif du lundi.
+Carte interactive du site (Leaflet, zoomable, avec les partenaires par
+destination) — préparer la liste des partenaires avant la prochaine
+session (palaces Paris, hôtels Maurice, etc.). Puis les autres idées
+d'automatisation en attente (relances CRM, tableau de bord hebdo,
+générateur de propositions PDF).

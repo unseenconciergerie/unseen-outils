@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UNSEEN. — Private Luxury Concierge</title>
+<meta name="description" content="UNSEEN. Private luxury concierge. Paris, Europe, Indian Ocean. Access to the places, events and experiences that stay closed to everyone else.">
+<meta property="og:title" content="UNSEEN. — Private Luxury Concierge">
+<meta property="og:description" content="Paris, Europe, Indian Ocean. We make the impossible, effortless.">
+<meta property="og:image" content="https://unseenconciergerie.com/img/hero.jpg">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://unseenconciergerie.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700;800&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+/* =============================================================
+   UNSEEN. — SAISON ACTIVE
+   Pour changer de saison, ne modifiez QUE la ligne --accent.
+   Charte 3.2 : une seule couleur d'accent a la fois.
+
+   #F09D54  Orange abricot   South of France / Summer   [ACTIF]
+   #C51500  Rouge vif        Formula 1 Grand Prix
+   #0C5A38  Vert sapin       Winter season / New Year's Eve
+   #B8923D  Or               Cannes Film Festival
+   #1C6E9C  Azur             French Riviera / Yachting
+   #16C8FF  Bleu glacier     Ski season / Alps
+   #5C2A45  Prune            Fashion Week
+   #D9D1C3  Sable            St Barth / Winter escape
+   ============================================================= */
+:root{
+  --accent:#F09D54;
+  --noir:#000000;
+  --blanc:#FFFFFF;
+  --bleu-clair:#F4F6FC;
+  --gris-doux:#D9D9D9;
+  --texte-2:#4E4E4E;
+  --texte-3:#7A7A7A;
+  --max:1240px;
+  --pad:40px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bleu-clair);
+  color:var(--noir);
+  font-family:'Montserrat',system-ui,-apple-system,sans-serif;
+  font-weight:400;
+  font-size:17px;
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3{font-family:'League Spartan',sans-serif}
+img{display:block;max-width:100%}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
+.num{font-family:'Montserrat',sans-serif;font-variant-numeric:tabular-nums}
+.rule-accent{height:2px;width:44px;background:var(--accent);border:0}
+
+/* ---------- barre haute ---------- */
+.topbar{position:sticky;top:0;z-index:60;background:var(--bleu-clair);border-bottom:1px solid rgba(0,0,0,.09)}
+.topbar-in{max-width:var(--max);margin:0 auto;padding:16px var(--pad);display:flex;align-items:center;justify-content:space-between;gap:20px}
+.mark{font-family:'League Spartan',sans-serif;font-weight:800;font-size:21px;letter-spacing:-.01em;line-height:1;text-decoration:none;color:var(--noir)}
+.nav{display:flex;align-items:center;gap:26px}
+.nav a{font-size:13px;letter-spacing:.11em;text-transform:uppercase;text-decoration:none;color:var(--noir);font-weight:500;padding:5px 0;border-bottom:1px solid transparent}
+.nav a:hover,.nav a:focus-visible{border-bottom-color:var(--accent);color:var(--accent)}
+.langsw{display:flex;align-items:center;gap:7px;font-size:13px;letter-spacing:.08em;font-weight:600}
+.langsw button{background:none;border:0;cursor:pointer;font:inherit;color:var(--texte-3);padding:5px 2px}
+.langsw button[aria-pressed="true"]{color:var(--accent)}
+.langsw .sep{color:var(--gris-doux)}
+
+/* ---------- ancres sous la barre collante ---------- */
+section[id],div[id]{scroll-margin-top:88px}
+
+/* ---------- bouton et panneau de navigation mobile ---------- */
+.navtoggle{display:none;background:none;border:0;cursor:pointer;padding:8px 0 8px 14px;line-height:0}
+.navtoggle span{display:block;width:24px;height:2px;background:var(--noir);margin:5px 0;transition:transform .22s ease,opacity .18s ease}
+.navtoggle[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.navtoggle[aria-expanded="true"] span:nth-child(2){opacity:0}
+.navtoggle[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+.navpanel{
+  position:fixed;inset:0;z-index:55;background:var(--bleu-clair);
+  display:flex;flex-direction:column;justify-content:center;
+  padding:96px var(--pad) 48px;
+  opacity:0;visibility:hidden;transform:translateY(-10px);
+  transition:opacity .24s ease,transform .24s ease,visibility .24s
+}
+.navpanel.on{opacity:1;visibility:visible;transform:none}
+.navpanel nav{display:flex;flex-direction:column;gap:4px}
+.navpanel nav a{
+  font-size:24px;font-weight:800;letter-spacing:-.015em;text-decoration:none;color:var(--noir);
+  padding:12px 0;border-bottom:1px solid rgba(0,0,0,.10)
+}
+.navpanel nav a:active,.navpanel nav a:focus-visible{color:var(--accent)}
+.navpanel .pfoot{margin-top:38px;display:flex;flex-direction:column;gap:12px}
+.navpanel .pfoot a{
+  font-size:13px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;
+  text-decoration:none;color:var(--noir);border-bottom:1px solid var(--accent);
+  padding-bottom:5px;align-self:flex-start
+}
+
+@media(max-width:900px){
+  .topbar-in{padding:14px var(--pad)}
+  .nav{display:none}
+  .navtoggle{display:block;order:3}
+  .langsw{margin-left:auto}
+  section[id],div[id]{scroll-margin-top:68px}
+}
+@media(min-width:901px){
+  .navpanel{display:none}
+}
+
+/* ---------- hero ---------- */
+.hero{position:relative;background:var(--noir);color:var(--blanc);overflow:hidden}
+.hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.45}
+.hero .veil{position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.88) 0%,rgba(0,0,0,.64) 50%,rgba(0,0,0,.26) 100%)}
+.hero-in{position:relative;max-width:var(--max);margin:0 auto;padding:130px var(--pad) 106px;text-align:left}
+.hero-mark{font-family:'League Spartan',sans-serif;font-weight:800;font-size:clamp(58px,10.5vw,132px);line-height:.9;letter-spacing:-.02em}
+.hero-desc{margin-top:16px;font-size:14px;letter-spacing:.26em;text-transform:uppercase;font-weight:500;color:#C9C9C9}
+.hero-body{margin-top:52px;max-width:660px}
+.hero-body h1{font-weight:800;font-size:clamp(30px,4.6vw,52px);line-height:1.04;letter-spacing:-.02em}
+.hero-body p{margin-top:22px;font-weight:300;font-size:20px;line-height:1.55;color:#D5D5D5}
+.places{margin-top:44px;display:flex;flex-wrap:wrap;align-items:center;gap:22px;font-size:13px;letter-spacing:.2em;text-transform:uppercase;font-weight:600}
+.places i{display:inline-block;width:1px;height:13px;background:var(--accent);font-style:normal}
+.cta-row{margin-top:44px;display:flex;gap:16px;flex-wrap:wrap}
+.btn{display:inline-block;padding:17px 34px;font-size:13px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;text-decoration:none;border:1px solid currentColor;color:var(--blanc);transition:background .18s,color .18s,border-color .18s}
+.btn:hover,.btn:focus-visible{background:var(--blanc);color:var(--noir)}
+.btn-accent{background:var(--accent);border-color:var(--accent);color:var(--noir)}
+.btn-accent:hover,.btn-accent:focus-visible{background:var(--blanc);border-color:var(--blanc);color:var(--noir)}
+@media(max-width:600px){.hero-in{padding:82px var(--pad) 74px}.hero .veil{background:linear-gradient(180deg,rgba(0,0,0,.70) 0%,rgba(0,0,0,.86) 100%)}}
+
+/* ---------- sections ---------- */
+section{padding:96px 0}
+.sec-white{background:var(--blanc)}
+.sec-pale{background:var(--bleu-clair)}
+.sec-dark{background:var(--noir);color:var(--blanc)}
+.head{max-width:720px}
+.eyebrow{display:flex;align-items:baseline;gap:16px;margin-bottom:14px}
+.eyebrow .n{font-family:'Montserrat',sans-serif;font-size:14px;color:var(--accent);font-weight:500}
+.eyebrow .t{font-size:13px;letter-spacing:.22em;text-transform:uppercase;font-weight:600}
+h2{font-weight:800;font-size:clamp(30px,4.2vw,46px);line-height:1.05;letter-spacing:-.02em;margin-bottom:20px}
+.lede{font-weight:300;font-size:20px;line-height:1.55;color:var(--texte-2)}
+.sec-dark .lede{color:#C2C2C2}
+
+/* ---------- cartes ---------- */
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(258px,100%),1fr));gap:28px;margin-top:56px}
+.card{background:var(--blanc);display:flex;flex-direction:column}
+.sec-dark .card{background:#0C0C0C}
+.card .ph{aspect-ratio:4/5;overflow:hidden;background:var(--gris-doux)}
+.card .ph img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+.card:hover .ph img{transform:scale(1.04)}
+.card .txt{padding:22px 22px 26px}
+.card .tag{display:block;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:10px}
+.card h3{font-weight:700;font-size:19px;letter-spacing:-.01em;margin-bottom:10px}
+.card p{font-size:16px;line-height:1.62;color:var(--texte-2)}
+.sec-dark .card p{color:#ADADAD}
+
+/* ---------- destinations ---------- */
+.dests{margin-top:56px;display:flex;flex-direction:column;gap:2px}
+.dest{display:grid;grid-template-columns:1.05fr 1fr;background:var(--blanc);min-height:340px}
+.dest.flip .ph{order:2}
+.dest .ph{overflow:hidden;background:var(--gris-doux)}
+.dest .ph img{width:100%;height:100%;object-fit:cover;min-height:340px}
+.dest .txt{padding:46px 48px;display:flex;flex-direction:column;justify-content:center}
+.dest .tag{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:12px}
+.dest h3{font-weight:800;font-size:29px;letter-spacing:-.015em;margin-bottom:14px}
+.dest p{font-size:16.5px;line-height:1.65;color:var(--texte-2)}
+.dest .list{margin-top:20px;font-size:13.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--texte-3);line-height:2;font-weight:500}
+@media(max-width:880px){.dest{grid-template-columns:1fr}.dest.flip .ph{order:0}.dest .ph img{min-height:240px}.dest .txt{padding:34px 28px 40px}}
+
+/* ---------- etapes ---------- */
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(238px,100%),1fr));gap:44px;margin-top:60px}
+.step .k{font-family:'Montserrat',sans-serif;font-size:14px;color:var(--accent);font-weight:500;display:block;margin:16px 0 12px}
+.step h3{font-weight:700;font-size:19px;margin-bottom:10px}
+.step p{font-size:16px;line-height:1.62;color:var(--texte-2)}
+
+/* ---------- partenaires ---------- */
+.pair{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(340px,100%),1fr));gap:2px;margin-top:56px}
+.pane{background:var(--blanc);padding:46px 44px 50px}
+.pane .tag{display:block;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:12px}
+.pane h3{font-weight:800;font-size:26px;letter-spacing:-.015em;margin-bottom:14px}
+.pane p{font-size:16.5px;line-height:1.65;color:var(--texte-2)}
+.pane .go{display:inline-block;margin-top:24px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;text-decoration:none;color:var(--noir);border-bottom:2px solid var(--accent);padding-bottom:4px}
+.pane .go:hover,.pane .go:focus-visible{color:var(--accent)}
+
+/* ---------- contact ---------- */
+.cgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(290px,100%),1fr));gap:36px;margin-top:52px}
+.ci .lbl{display:block;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:9px}
+.ci a{font-size:17px;text-decoration:none;color:inherit;white-space:nowrap;border-bottom:1px solid rgba(255,255,255,.22);padding-bottom:3px}
+.ci a:hover,.ci a:focus-visible{color:var(--accent);border-bottom-color:var(--accent)}
+
+/* ---------- pied de page ---------- */
+footer{background:var(--noir);color:var(--blanc);padding:72px 0 46px;border-top:1px solid rgba(255,255,255,.14)}
+.foot-mark{font-family:'League Spartan',sans-serif;font-weight:800;font-size:38px;line-height:1}
+.curated{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#8A8A8A;margin-top:10px}
+.foot-sep{height:1px;background:#FFFFFF;opacity:.16;border:0;margin-top:34px}
+.foot-legal{margin-top:34px;font-size:13.5px;line-height:2;color:#8A8A8A}
+.foot-legal a{color:#D6D6D6}
+.foot-legal a:hover,.foot-legal a:focus-visible{color:var(--accent)}
+.foot-legal .num,.foot-legal strong{color:#D6D6D6;font-weight:600}
+
+/* ---------- bande editoriale pleine largeur ---------- */
+.band{position:relative;background:var(--noir);overflow:hidden;min-height:clamp(360px,52vh,540px);display:flex;align-items:flex-end}
+.band img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.62}
+.band .veil{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.12) 30%,rgba(0,0,0,.80) 100%)}
+.band .in{position:relative;max-width:var(--max);margin:0 auto;width:100%;padding:0 var(--pad) 58px;color:var(--blanc)}
+.band .wl{height:1px;width:78px;background:var(--accent);border:0;margin-bottom:22px}
+.band p{font-weight:300;font-size:clamp(22px,3.1vw,34px);line-height:1.24;letter-spacing:-.01em;max-width:660px}
+.band .sig{margin-top:20px;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#B4B4B4;font-weight:500}
+
+/* ---------- mosaique ---------- */
+.mosaic{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;background:var(--noir)}
+.mosaic figure{margin:0;aspect-ratio:4/5;overflow:hidden;background:#111}
+.mosaic img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease,opacity .4s ease;opacity:.92}
+.mosaic figure:hover img{transform:scale(1.05);opacity:1}
+@media(max-width:900px){.mosaic{grid-template-columns:repeat(2,1fr)}}
+
+/* ---------- carte interactive ---------- */
+.mapsec{background:var(--noir);color:var(--blanc)}
+.mapgrid{margin-top:56px;display:grid;grid-template-columns:1.25fr 1fr;gap:52px;align-items:center}
+.mapstage{position:relative}
+.mapstage svg{width:100%;height:auto;display:block;overflow:visible}
+.mapline{stroke:rgba(255,255,255,.22);stroke-width:.5;fill:none;transition:stroke .25s}
+.mapline.on{stroke:var(--accent)}
+.mapdot{cursor:pointer}
+.mapdot circle.ring{fill:none;stroke:var(--accent);stroke-width:.4;opacity:0;transition:opacity .2s,r .2s}
+.mapdot circle.pt{fill:var(--gris-doux);transition:fill .2s}
+.mapdot text{fill:#9A9A9A;font-family:'Montserrat',sans-serif;font-weight:500;letter-spacing:.01em;transition:fill .2s}
+.mapdot.on circle.pt{fill:var(--accent)}
+.mapdot.on circle.ring{opacity:1;r:5.6}
+.mapdot.on text{fill:var(--blanc)}
+.mapdot:hover circle.pt{fill:var(--blanc)}
+.mapdot:hover text{fill:var(--blanc)}
+.mapdot.base circle.pt{fill:var(--blanc)}
+.mapdot.base text{fill:var(--blanc);font-weight:600}
+.mapcard{min-height:230px}
+.mapcard .tag{display:block;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:12px}
+.mapcard h3{font-weight:800;font-size:26px;letter-spacing:-.015em;margin-bottom:14px}
+.mapcard p{font-size:16.5px;line-height:1.65;color:#B4B4B4}
+.mapcard .go{display:inline-block;margin-top:22px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;text-decoration:none;color:var(--blanc);border-bottom:2px solid var(--accent);padding-bottom:4px}
+.mapcard .go:hover,.mapcard .go:focus-visible{color:var(--accent)}
+.maphint{margin-top:18px;font-size:12.5px;letter-spacing:.05em;color:#767676}
+@media(max-width:880px){.mapgrid{grid-template-columns:1fr;gap:30px}}
+
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+@media(max-width:760px){
+  /* cartes : visuel large et court plutôt que portrait, pour raccourcir la page */
+  .card .ph{aspect-ratio:16/10}
+  .card .txt{padding:20px 20px 24px}
+  .dest .ph img{min-height:190px}
+  .dest .txt{padding:30px 26px 34px}
+  .band{min-height:clamp(280px,40vh,380px)}
+}
+@media(max-width:560px){
+  :root{--pad:24px}
+  body{font-size:16.5px}
+  section{padding:58px 0}
+  h2{font-size:clamp(27px,7vw,34px)}
+  .hero-in{padding:66px var(--pad) 58px}
+  .hero-body{margin-top:32px}
+  .hero-body p{font-size:17.5px}
+  .lede{font-size:17.5px}
+  .cards{gap:18px;margin-top:34px}
+  .card .ph{aspect-ratio:16/9}
+  .card h3{font-size:18px}
+  .card p{font-size:15.5px}
+  .dests{margin-top:34px}
+  .dest .ph img{min-height:170px}
+  .dest h3{font-size:25px}
+  .dest p{font-size:15.5px}
+  .steps{gap:30px;margin-top:38px}
+  .pane{padding:30px 24px 34px}
+  .cgrid{gap:24px;margin-top:38px;grid-template-columns:1fr}
+  .ci a{font-size:15px}
+  .btn{padding:16px 26px;width:100%;text-align:center}
+  .places{gap:14px;font-size:11.5px}
+  .band .in{padding-bottom:38px}
+  .band p{font-size:clamp(20px,5.6vw,26px)}
+  .mosaic figure{aspect-ratio:1/1}
+  footer{padding:52px 0 38px}
+  .foot-mark{font-size:32px}
+  .enq-head{margin-top:44px;padding-top:34px}
+  .fld{margin-bottom:22px}
+  .enq-actions{gap:18px}
+  .enq-actions .enq-alt{width:100%;text-align:center}
+  .mapcard h3{font-size:23px}
+}
+
+/* ---------- formulaire de demande ---------- */
+.enq-head{margin-top:66px;padding-top:46px;border-top:1px solid rgba(255,255,255,.16)}
+.enq-head .tag{display:block;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:12px}
+.enq-head h3{font-weight:800;font-size:clamp(24px,3.4vw,32px);letter-spacing:-.015em;margin-bottom:14px}
+.enq-head p{font-size:16.5px;line-height:1.65;color:#B4B4B4;max-width:640px}
+form.enq{margin-top:40px;max-width:840px}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+@media(max-width:700px){.frow{grid-template-columns:1fr;gap:0}}
+.fld{margin-bottom:26px}
+.fld label{display:block;font-size:12px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:#D6D6D6;margin-bottom:10px}
+.fld label em{font-style:normal;color:#767676;font-weight:500;letter-spacing:.1em}
+.fld input,.fld select,.fld textarea{
+  width:100%;background:transparent;border:0;border-bottom:1px solid rgba(255,255,255,.26);
+  color:var(--blanc);font-family:'Montserrat',system-ui,sans-serif;font-size:16.5px;
+  padding:13px 0;outline:none;border-radius:0;transition:border-color .18s ease;
+  -webkit-appearance:none;appearance:none
+}
+.fld select{
+  cursor:pointer;padding-right:30px;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8'><path fill='%23B4B4B4' d='M1 1l5 5 5-5'/></svg>");
+  background-repeat:no-repeat;background-position:right 2px center;background-size:11px
+}
+.fld select option,.fld select optgroup{background:#0B0B0B;color:var(--blanc)}
+.fld textarea{min-height:112px;resize:vertical;line-height:1.6}
+.fld input:focus,.fld select:focus,.fld textarea:focus{border-bottom-color:var(--accent)}
+.fld input::placeholder,.fld textarea::placeholder{color:#6A6A6A}
+.fld.bad input,.fld.bad select,.fld.bad textarea{border-bottom-color:#E0705F}
+.fld .msg{display:none;margin-top:8px;font-size:13px;color:#E0705F;letter-spacing:.01em}
+.fld.bad .msg{display:block}
+.agree{display:flex;gap:13px;align-items:flex-start;margin:2px 0 8px}
+.agree input{width:17px;height:17px;flex:0 0 17px;margin-top:4px;accent-color:var(--accent);cursor:pointer;border-radius:0}
+.agree span{font-size:14.5px;line-height:1.62;color:#9A9A9A}
+.agree a{color:#D6D6D6;text-decoration:none;border-bottom:1px solid var(--accent);padding-bottom:2px}
+.agree a:hover{color:var(--accent)}
+.agree-msg{display:none;font-size:13px;color:#E0705F;margin:0 0 20px 30px}
+.agree-msg.on{display:block}
+.enq-actions{display:flex;flex-wrap:wrap;gap:22px;align-items:center;margin-top:26px}
+button.btn{cursor:pointer;font-family:'Montserrat',system-ui,sans-serif}
+.enq-alt{font-size:14.5px;color:#8A8A8A}
+.enq-alt a{color:#D6D6D6;text-decoration:none;border-bottom:1px solid var(--accent);padding-bottom:2px;cursor:pointer}
+.enq-alt a:hover{color:var(--accent)}
+.enq-note{margin-top:30px;font-size:13.5px;line-height:1.8;color:#787878;max-width:640px}
+.enq-done{display:none;margin-top:40px;border:1px solid rgba(255,255,255,.2);padding:40px 36px;max-width:640px}
+.enq-done h3{font-weight:800;font-size:26px;color:var(--accent);margin-bottom:12px;letter-spacing:-.015em}
+.enq-done p{font-size:16.5px;color:#B4B4B4;line-height:1.65}
+@media(max-width:560px){
+  .enq-head{margin-top:52px;padding-top:38px}
+  .enq-actions{gap:16px}
+  .enq-actions .btn{width:100%}
+}
+</style>
+<link rel="stylesheet" href="season.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-in">
+    <a class="mark" href="#top">UNSEEN.</a>
+    <nav class="nav">
+      <a href="#services" data-en="Services" data-fr="Services">Services</a>
+      <a href="#destinations" data-en="Destinations" data-fr="Destinations">Destinations</a>
+      <a href="#map" data-en="Map" data-fr="Carte">Map</a>
+      <a href="#seasons" data-en="Seasons" data-fr="Saisons">Seasons</a>
+      <a href="#method" data-en="Method" data-fr="Méthode">Method</a>
+      <a href="#partners" data-en="Partners" data-fr="Partenaires">Partners</a>
+      <a href="#contact" data-en="Contact" data-fr="Contact">Contact</a>
+    </nav>
+    <div class="langsw">
+      <button type="button" id="btn-en" aria-pressed="true">EN</button>
+      <span class="sep">/</span>
+      <button type="button" id="btn-fr" aria-pressed="false">FR</button>
+    </div>
+    <button class="navtoggle" id="navtoggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="navpanel">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</div>
+
+<div class="navpanel" id="navpanel" aria-hidden="true">
+  <nav>
+    <a href="#services" data-en="Services" data-fr="Services">Services</a>
+    <a href="#destinations" data-en="Destinations" data-fr="Destinations">Destinations</a>
+    <a href="#map" data-en="Map" data-fr="Carte">Map</a>
+    <a href="#seasons" data-en="Seasons" data-fr="Saisons">Seasons</a>
+    <a href="#method" data-en="Method" data-fr="Méthode">Method</a>
+    <a href="#partners" data-en="Partners" data-fr="Partenaires">Partners</a>
+    <a href="#contact" data-en="Contact" data-fr="Contact">Contact</a>
+  </nav>
+  <div class="pfoot">
+    <a href="https://wa.me/33613850733">WhatsApp</a>
+    <a href="mailto:contact@unseenconciergerie.com">contact@unseenconciergerie.com</a>
+  </div>
+</div>
+
+<div id="top" class="hero">
+  <img class="bg" src="img/hero.jpg" alt="">
+  <div class="veil"></div>
+  <div class="hero-in">
+    <div class="hero-mark">UNSEEN.</div>
+    <div class="hero-desc" data-en="Private Luxury Concierge" data-fr="Conciergerie privée de luxe">Private Luxury Concierge</div>
+    <div class="hero-body">
+      <h1 data-en="We make the impossible, effortless." data-fr="Rendre l'impossible, évident.">We make the impossible, effortless.</h1>
+      <p data-en="A suite that was never listed. A table that closed three weeks ago. A seat on the night everyone wanted one. You tell us when, we handle the rest, and you never see how." data-fr="Une suite qui n'a jamais été mise en vente. Une table complète depuis trois semaines. Une place le soir où tout le monde en voulait une. Vous nous dites quand, nous faisons le reste, et vous ne voyez jamais comment.">A suite that was never listed. A table that closed three weeks ago. A seat on the night everyone wanted one. You tell us when, we handle the rest, and you never see how.</p>
+    </div>
+    <div class="places">
+      <span>Paris</span><i></i>
+      <span>Europe</span><i></i>
+      <span data-en="Indian Ocean" data-fr="Océan Indien">Indian Ocean</span>
+    </div>
+    <div class="cta-row">
+      <a class="btn btn-accent" href="https://wa.me/33613850733" data-en="Enquire on WhatsApp" data-fr="Nous écrire sur WhatsApp">Enquire on WhatsApp</a>
+      <a class="btn" href="#services" data-en="What we do" data-fr="Ce que nous faisons">What we do</a>
+    </div>
+  </div>
+</div>
+
+<section id="services" class="sec-pale">
+  <div class="wrap">
+    <div class="head">
+      <div class="eyebrow"><span class="n">01</span><span class="t" data-en="Services" data-fr="Services">Services</span></div>
+      <h2 data-en="One number. Everything behind it." data-fr="Un seul numéro. Tout le reste derrière.">One number. Everything behind it.</h2>
+      <p class="lede" data-en="No switchboard, no ticket, no account manager discovering your file as you speak. You write to one person who already knows it, and who answers." data-fr="Pas de standard, pas de numéro de dossier, pas de gestionnaire qui découvre votre demande pendant que vous parlez. Vous écrivez à une personne qui la connaît déjà, et qui répond.">No switchboard, no ticket, no account manager discovering your file as you speak.</p>
+    </div>
+
+    <div class="cards">
+      <article class="card">
+        <div class="ph"><img src="img/s-stay.jpg" alt="" loading="lazy"></div>
+        <div class="txt">
+          <span class="tag" data-en="Stay" data-fr="Séjour">Stay</span>
+          <h3 data-en="Palaces and suites" data-fr="Palaces et suites">Palaces and suites</h3>
+          <p data-en="Rooms and categories that never reach a booking engine. Upgrades arranged before arrival, late check-out held, and amenities set to your preferences rather than a standard list." data-fr="Des chambres et des catégories qui n'arrivent jamais jusqu'à un moteur de réservation. Le surclassement se règle avant l'arrivée, le départ tardif est retenu, et les attentions suivent vos préférences plutôt qu'une liste type.">Rooms and categories that never reach a booking engine.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="ph"><img src="img/s-table.jpg" alt="" loading="lazy"></div>
+        <div class="txt">
+          <span class="tag" data-en="Table" data-fr="Table">Table</span>
+          <h3 data-en="Dining" data-fr="Tables">Dining</h3>
+          <p data-en="Tables at short notice in rooms that show nothing available. Private dining rooms, chef's counters, and menus adjusted to an allergy, a fast, or a schedule that will not wait." data-fr="Des tables obtenues tard dans des salles qui n'affichent plus rien. Salons privés, comptoirs de chef, et menus ajustés à une allergie, un jeûne ou un emploi du temps qui n'attend pas.">Tables at short notice in rooms that show nothing available.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="ph"><img src="img/s-access.jpg" alt="" loading="lazy"></div>
+        <div class="txt">
+          <span class="tag" data-en="Access" data-fr="Accès">Access</span>
+          <h3 data-en="Events and access" data-fr="Événements et accès">Events and access</h3>
+          <p data-en="Formula 1 Grand Prix weekends, Fashion Weeks, Art Basel, Roland-Garros, sold-out shows and private previews. The paddock, the courtside, the front row, and the rooms that open afterwards." data-fr="Week-ends de Grand Prix de Formule 1, Fashion Weeks, Art Basel, Roland-Garros, spectacles complets et avant-premières privées. Le paddock, le bord de court, le premier rang, et les salles qui ouvrent ensuite.">Formula 1 Grand Prix weekends, Fashion Weeks, Art Basel, Roland-Garros, sold-out shows and private previews.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="ph"><img src="img/s-wardrobe.jpg" alt="" loading="lazy"></div>
+        <div class="txt">
+          <span class="tag" data-en="Wardrobe" data-fr="Garde-robe">Wardrobe</span>
+          <h3 data-en="Shopping and sourcing" data-fr="Shopping et sourcing">Shopping and sourcing</h3>
+          <p data-en="Appointments outside opening hours with the major houses, waiting lists, styling, and the search for pieces that are no longer made: watches, archive bags, rare fragrances, collectors' items." data-fr="Des rendez-vous hors horaires d'ouverture chez les grandes maisons, des listes d'attente, du styling, et la recherche de pièces qui ne se font plus : montres, sacs d'archive, parfums rares, objets de collection.">Appointments outside opening hours with the major houses, waiting lists, styling, and the search for pieces that are no longer made.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="ph"><img src="img/s-transport.jpg" alt="" loading="lazy"></div>
+        <div class="txt">
+          <span class="tag" data-en="Movement" data-fr="Déplacement">Movement</span>
+          <h3 data-en="Private transport" data-fr="Transport privé">Private transport</h3>
+          <p data-en="Chauffeurs who know the city and never talk about it, airport and terminal transfers, long-distance journeys, and a helicopter leg where the road would cost three hours." data-fr="Des chauffeurs qui connaissent la ville et n'en parlent jamais, des transferts aéroport et terminal, des trajets longue distance, et un vol en hélicoptère là où la route coûterait trois heures.">Chauffeurs who know the city and never talk about it.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="ph"><img src="img/s-evening.jpg" alt="" loading="lazy"></div>
+        <div class="txt">
+          <span class="tag" data-en="Evening" data-fr="Soirée">Evening</span>
+          <h3 data-en="Evenings and closed rooms" data-fr="Soirées et lieux fermés">Evenings and closed rooms</h3>
+          <p data-en="Private clubs, booths that are never sold, opera boxes, and evenings built around a guest list rather than a venue. Entry is arranged before you arrive, never negotiated at the door." data-fr="Clubs privés, tables qui ne se vendent jamais, loges d'opéra, et soirées construites autour d'une liste plutôt que d'un lieu. L'entrée se règle avant votre arrivée, jamais devant la porte.">Private clubs, booths that are never sold, opera boxes, and evenings built around a guest list rather than a venue.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="ph"><img src="img/s-charter.jpg" alt="" loading="lazy"></div>
+        <div class="txt">
+          <span class="tag" data-en="Water" data-fr="Mer">Water</span>
+          <h3 data-en="Villas and charters" data-fr="Villas et affrètements">Villas and charters</h3>
+          <p data-en="Staffed villas by the week, yachts by the day or by the season, with crew, tender and chef. Provisioning, berths and shore transfers form one plan rather than four separate bookings." data-fr="Des villas avec personnel à la semaine, des yachts à la journée ou à la saison, avec équipage, annexe et chef. Avitaillement, places de port et transferts à terre forment un seul plan plutôt que quatre réservations séparées.">Staffed villas by the week, yachts by the day or by the season, with crew, tender and chef.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="ph"><img src="img/s-sport.jpg" alt="" loading="lazy"></div>
+        <div class="txt">
+          <span class="tag" data-en="Performance" data-fr="Performance">Performance</span>
+          <h3 data-en="Athletes and entourage" data-fr="Sportifs et entourage">Athletes and entourage</h3>
+          <p data-en="Private gym hours, physiotherapy and recovery on site, meals built around a nutrition plan, arrivals and departures that avoid the lobby. Built for competition calendars, and for people who would rather not be recognised." data-fr="Des créneaux de salle privatisés, kinésithérapie et récupération sur place, des repas construits sur un plan nutritionnel, des arrivées et des départs qui évitent le hall. Pensé pour les calendriers de compétition, et pour ceux qui préfèrent ne pas être reconnus.">Private gym hours, physiotherapy and recovery on site, meals built around a nutrition plan, arrivals and departures that avoid the lobby.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="destinations" class="sec-white">
+  <div class="wrap">
+    <div class="head">
+      <div class="eyebrow"><span class="n">02</span><span class="t" data-en="Destinations" data-fr="Destinations">Destinations</span></div>
+      <h2 data-en="Three territories, one standard." data-fr="Trois territoires, une seule exigence.">Three territories, one standard.</h2>
+      <p class="lede" data-en="We work where our clients actually go, and we stop where our network stops. Anywhere else, we say so rather than improvise." data-fr="Nous travaillons là où nos clients se rendent réellement, et nous nous arrêtons là où s'arrête notre réseau. Ailleurs, nous le disons plutôt que d'improviser.">We work where our clients actually go, and we stop where our network stops.</p>
+    </div>
+
+    <div class="dests">
+      <div class="dest">
+        <div class="ph"><img src="img/d-paris.jpg" alt="" loading="lazy"></div>
+        <div class="txt">
+          <span class="tag" data-en="The base" data-fr="La base">The base</span>
+          <h3>Paris</h3>
+          <p data-en="The city where the address book was built, and where a name still opens a door faster than a payment does. Palaces, starred kitchens, private clubs, ateliers, and the houses of the Faubourg." data-fr="La ville où le carnet d'adresses s'est construit, et où un nom ouvre encore une porte plus vite qu'un paiement. Palaces, cuisines étoilées, clubs privés, ateliers, et les maisons du Faubourg.">The city where the address book was built, and where a name still opens a door faster than a payment does.</p>
+          <div class="list" data-en="Palaces &nbsp; Starred dining &nbsp; Fashion Week &nbsp; Private clubs" data-fr="Palaces &nbsp; Tables étoilées &nbsp; Fashion Week &nbsp; Clubs privés">Palaces &nbsp; Starred dining &nbsp; Fashion Week &nbsp; Private clubs</div>
+        </div>
+      </div>
+
+      <div class="dest flip">
+        <div class="ph"><img src="img/d-europe.jpg" alt="" loading="lazy"></div>
+        <div class="txt">
+          <span class="tag" data-en="The continent" data-fr="Le continent">The continent</span>
+          <h3>Europe</h3>
+          <p data-en="Monaco and the Riviera, Saint-Tropez, the Alps, Milan and the Italian lakes, London and the English countryside. The same people, the same weekends, moving between four countries on a calendar everyone already knows by heart." data-fr="Monaco et la Riviera, Saint-Tropez, les Alpes, Milan et les lacs italiens, Londres et la campagne anglaise. Les mêmes personnes, les mêmes week-ends, un déplacement entre quatre pays sur un calendrier que tout le monde connaît déjà par cœur.">Monaco and the Riviera, Saint-Tropez, the Alps, Milan and the Italian lakes, London and the English countryside.</p>
+          <div class="list" data-en="Monaco &nbsp; Côte d'Azur &nbsp; Courchevel &nbsp; Milan &nbsp; London" data-fr="Monaco &nbsp; Côte d'Azur &nbsp; Courchevel &nbsp; Milan &nbsp; Londres">Monaco &nbsp; Côte d'Azur &nbsp; Courchevel &nbsp; Milan &nbsp; London</div>
+        </div>
+      </div>
+
+      <div class="dest">
+        <div class="ph"><img src="img/d-ocean.jpg" alt="" loading="lazy"></div>
+        <div class="txt">
+          <span class="tag" data-en="The counter-season" data-fr="La contre-saison">The counter-season</span>
+          <h3 data-en="Indian Ocean" data-fr="Océan Indien">Indian Ocean</h3>
+          <p data-en="Mauritius runs on a calendar of its own and stays open when Europe closes. Lagoons, five-star resorts, staffed villas, helicopter legs across the island, and days at sea with a crew. It suits a long stay as easily as a stopover between two continents." data-fr="Maurice suit un calendrier qui lui est propre et reste ouverte quand l'Europe se ferme. Lagons, resorts cinq étoiles, villas avec personnel, liaisons en hélicoptère au-dessus de l'île, et journées en mer avec équipage. Cela convient aussi bien à un long séjour qu'à une escale entre deux continents.">Mauritius runs on a calendar of its own and stays open when Europe closes.</p>
+          <div class="list" data-en="Resorts &nbsp; Staffed villas &nbsp; Helicopter &nbsp; Yacht days" data-fr="Resorts &nbsp; Villas avec personnel &nbsp; Hélicoptère &nbsp; Journées yacht">Resorts &nbsp; Staffed villas &nbsp; Helicopter &nbsp; Yacht days</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="band">
+  <img src="img/band.jpg" alt="" loading="lazy">
+  <div class="veil"></div>
+  <div class="in">
+    <hr class="wl">
+    <p data-en="The most useful part of this work is the part you never see." data-fr="La part la plus utile de ce métier est celle que vous ne voyez jamais.">The most useful part of this work is the part you never see.</p>
+    <div class="sig">Curated by UNSEEN.</div>
+  </div>
+</div>
+
+<section id="map" class="mapsec">
+  <div class="wrap">
+    <div class="head">
+      <div class="eyebrow"><span class="n">03</span><span class="t" data-en="Map" data-fr="Carte">Map</span></div>
+      <h2 data-en="Where we take you." data-fr="Là où nous vous emmenons.">Where we take you.</h2>
+      <p class="lede" data-en="Paris is the base. Everything else is a message away. Choose a point to see what it involves." data-fr="Paris est la base. Tout le reste est à un message près. Choisissez un point pour voir ce que cela implique.">Paris is the base. Everything else is a message away.</p>
+    </div>
+
+    <div class="mapgrid">
+      <div class="mapstage" id="mapstage">
+        <svg viewBox="0 0 100 70" role="img" aria-label="Map of UNSEEN. destinations">
+          <line class="mapline" data-id="london" x1="46" y1="32" x2="32" y2="14"></line>
+          <line class="mapline" data-id="riviera" x1="46" y1="32" x2="52" y2="50"></line>
+          <line class="mapline" data-id="alps" x1="46" y1="32" x2="63" y2="24"></line>
+          <line class="mapline" data-id="mauritius" x1="46" y1="32" x2="88" y2="62" stroke-dasharray="1.6 1.6"></line>
+
+          <g class="mapdot base on" data-id="paris" tabindex="0" role="button" aria-label="Paris" transform="translate(46,32)">
+            <circle class="ring" r="5.6"></circle>
+            <circle class="pt" r="2.4"></circle>
+            <text x="0" y="9.5" text-anchor="middle" font-size="3.4">Paris</text>
+          </g>
+          <g class="mapdot" data-id="london" tabindex="0" role="button" aria-label="London" transform="translate(32,14)">
+            <circle class="ring" r="5.6"></circle>
+            <circle class="pt" r="2.2"></circle>
+            <text x="0" y="-4.5" text-anchor="middle" font-size="3.2" data-en="London" data-fr="Londres">London</text>
+          </g>
+          <g class="mapdot" data-id="riviera" tabindex="0" role="button" aria-label="South of France" transform="translate(52,50)">
+            <circle class="ring" r="5.6"></circle>
+            <circle class="pt" r="2.2"></circle>
+            <text x="0" y="9" text-anchor="middle" font-size="3.2" data-en="South of France" data-fr="Sud de la France">South of France</text>
+          </g>
+          <g class="mapdot" data-id="alps" tabindex="0" role="button" aria-label="The Alps" transform="translate(63,24)">
+            <circle class="ring" r="5.6"></circle>
+            <circle class="pt" r="2.2"></circle>
+            <text x="0" y="-4.5" text-anchor="middle" font-size="3.2" data-en="The Alps" data-fr="Les Alpes">The Alps</text>
+          </g>
+          <g class="mapdot" data-id="mauritius" tabindex="0" role="button" aria-label="Mauritius" transform="translate(88,62)">
+            <circle class="ring" r="5.6"></circle>
+            <circle class="pt" r="2.2"></circle>
+            <text x="0" y="9" text-anchor="middle" font-size="3.2">Mauritius</text>
+          </g>
+        </svg>
+      </div>
+
+      <div class="mapcard" id="mapcard"></div>
+    </div>
+  </div>
+</section>
+
+<section id="seasons" class="sec-dark">
+  <div class="wrap">
+    <div class="head">
+      <div class="eyebrow"><span class="n">04</span><span class="t" data-en="Seasons" data-fr="Saisons">Seasons</span></div>
+      <h2 data-en="The year has its own map." data-fr="L'année a sa propre carte.">The year has its own map.</h2>
+      <p class="lede" data-en="Where our clients go changes every three months, and the good addresses are taken long before the dates arrive. We work a season ahead." data-fr="Là où vont nos clients change tous les trois mois, et les bonnes adresses sont prises bien avant les dates. Nous travaillons une saison à l'avance.">Where our clients go changes every three months, and the good addresses are taken long before the dates arrive.</p>
+    </div>
+
+    <div class="cards">
+      <article class="card">
+        <div class="ph"><img src="img/y-summer.jpg" alt="" loading="lazy"></div>
+        <div class="txt">
+          <span class="tag" data-en="May to September" data-fr="Mai à septembre">May to September</span>
+          <h3 data-en="Summer season" data-fr="Saison estivale">Summer season</h3>
+          <p data-en="Côte d'Azur, Cannes, Saint-Tropez, Portofino, Ibiza. Villas taken before winter ends, beach clubs where a table already carries a name, and yacht days that begin at the berth rather than at the harbour gate." data-fr="Côte d'Azur, Cannes, Saint-Tropez, Portofino, Ibiza. Des villas prises avant la fin de l'hiver, des beach clubs où la table porte déjà un nom, et des journées en mer qui commencent au ponton plutôt qu'à l'entrée du port.">Côte d'Azur, Cannes, Saint-Tropez, Portofino, Ibiza.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="ph"><img src="img/y-winter.jpg" alt="" loading="lazy"></div>
+        <div class="txt">
+          <span class="tag" data-en="December to April" data-fr="Décembre à avril">December to April</span>
+          <h3 data-en="Winter season" data-fr="Saison hivernale">Winter season</h3>
+          <p data-en="Courchevel, Megève, Val d'Isère, Gstaad, St Moritz. Chalets with staff, private instructors, lunches held at altitude, and transfers that do not depend on the weather in Geneva." data-fr="Courchevel, Megève, Val d'Isère, Gstaad, Saint-Moritz. Des chalets avec personnel, des moniteurs privés, des déjeuners tenus en altitude, et des transferts qui ne dépendent pas de la météo à Genève.">Courchevel, Megève, Val d'Isère, Gstaad, St Moritz.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="ph"><img src="img/y-calendar.jpg" alt="" loading="lazy"></div>
+        <div class="txt">
+          <span class="tag" data-en="Fixed dates" data-fr="Dates fixes">Fixed dates</span>
+          <h3 data-en="The calendar" data-fr="Le calendrier">The calendar</h3>
+          <p data-en="Monaco Grand Prix, Roland-Garros, Cannes Film Festival, Paris and Milan Fashion Weeks, Art Basel. Dates that never move, and inventory that disappears eleven months early." data-fr="Grand Prix de Monaco, Roland-Garros, Festival de Cannes, Fashion Weeks de Paris et Milan, Art Basel. Des dates qui ne bougent jamais, et des places qui disparaissent onze mois à l'avance.">Monaco Grand Prix, Roland-Garros, Cannes Film Festival, Paris and Milan Fashion Weeks, Art Basel.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="method" class="sec-white">
+  <div class="wrap">
+    <div class="head">
+      <div class="eyebrow"><span class="n">05</span><span class="t" data-en="Method" data-fr="Méthode">Method</span></div>
+      <h2 data-en="Four steps, no grey areas." data-fr="Quatre étapes, aucune zone grise.">Four steps, no grey areas.</h2>
+      <p class="lede" data-en="You always know where your request stands. If something cannot be done, we say so straight away and come back with an alternative, never at the last minute." data-fr="Vous savez à tout moment où en est votre demande. Si une chose n'est pas réalisable, nous le disons sans attendre et nous revenons avec une alternative, jamais au dernier moment.">You always know where your request stands.</p>
+    </div>
+
+    <div class="steps">
+      <div class="step">
+        <hr class="rule-accent">
+        <span class="k">01</span>
+        <h3 data-en="The request" data-fr="La demande">The request</h3>
+        <p data-en="A message. Dates, city, and roughly what you have in mind. Nothing else is needed to start, and there is no form to fill in." data-fr="Un message. Les dates, la ville, et à peu près ce que vous avez en tête. Rien d'autre n'est nécessaire pour commencer, et il n'y a aucun formulaire à remplir.">A message. Dates, city, and roughly what you have in mind.</p>
+      </div>
+      <div class="step">
+        <hr class="rule-accent">
+        <span class="k">02</span>
+        <h3 data-en="The answer" data-fr="La réponse">The answer</h3>
+        <p data-en="What is available, what it costs, and how long the option holds. In writing. We do not promise anything we cannot deliver." data-fr="Ce qui est disponible, ce que cela coûte, et combien de temps la place tient. Par écrit. Nous ne promettons rien que nous ne puissions tenir.">What is available, what it costs, and how long the option holds.</p>
+      </div>
+      <div class="step">
+        <hr class="rule-accent">
+        <span class="k">03</span>
+        <h3 data-en="On the ground" data-fr="Sur place">On the ground</h3>
+        <p data-en="One contact from start to finish, reachable at any hour and in any time zone. If a table falls through at seven, another one is standing at eight." data-fr="Un seul interlocuteur du début à la fin, joignable à toute heure et dans tous les fuseaux. Si une table tombe à dix-neuf heures, une autre tient à vingt.">One contact from start to finish, reachable at any hour and in any time zone.</p>
+      </div>
+      <div class="step">
+        <hr class="rule-accent">
+        <span class="k">04</span>
+        <h3 data-en="Afterwards" data-fr="Ensuite">Afterwards</h3>
+        <p data-en="Nothing leaves. Your name, your dates and your itinerary are never disclosed or confirmed to anyone, including to other clients and to the press. During, and long after." data-fr="Rien ne sort. Votre nom, vos dates et votre itinéraire ne sont jamais divulgués ni confirmés à quiconque, y compris aux autres clients et à la presse. Pendant, et longtemps après.">Nothing leaves. Your name, your dates and your itinerary are never disclosed or confirmed to anyone.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="partners" class="sec-pale">
+  <div class="wrap">
+    <div class="head">
+      <div class="eyebrow"><span class="n">06</span><span class="t" data-en="Partners" data-fr="Partenaires">Partners</span></div>
+      <h2 data-en="Independent, and staying that way." data-fr="Indépendante, et décidée à le rester.">Independent, and staying that way.</h2>
+      <p class="lede" data-en="UNSEEN. belongs to no group, no booking network and no imposed inventory. That is what allows us to recommend an address because it is the right one, and not because it is under contract." data-fr="UNSEEN. n'appartient à aucun groupe, aucune centrale de réservation, aucun stock imposé. C'est ce qui nous permet de recommander une adresse parce qu'elle convient, et non parce qu'elle est sous contrat.">UNSEEN. belongs to no group, no booking network and no imposed inventory.</p>
+    </div>
+
+    <div class="pair">
+      <div class="pane">
+        <span class="tag" data-en="Hotels and resorts" data-fr="Hôtels et resorts">Hotels and resorts</span>
+        <h3 data-en="A short list, kept short." data-fr="Une liste courte, tenue courte.">A short list, kept short.</h3>
+        <p data-en="We send an international clientele to a limited number of houses in Europe and the Indian Ocean. If you would like your property to be considered, write to us and we will take it from there." data-fr="Nous adressons une clientèle internationale à un nombre limité de maisons, en Europe et dans l'océan Indien. Si vous souhaitez que votre établissement soit étudié, écrivez-nous et nous reprenons contact.">We send an international clientele to a limited number of houses in Europe and the Indian Ocean.</p>
+        <a class="go" href="mailto:partners@unseenconciergerie.com" data-en="Contact partnerships" data-fr="Contacter les partenariats">Contact partnerships</a>
+      </div>
+
+      <div class="pane">
+        <span class="tag" data-en="Agencies and management" data-fr="Agences et management">Agencies and management</span>
+        <h3 data-en="Standing availability." data-fr="Une disponibilité permanente.">Standing availability.</h3>
+        <p data-en="Talent agencies, management companies and family offices can hold UNSEEN. on a retained basis: guaranteed availability during peak weeks, one dedicated contact, and terms agreed in advance for recurring requests." data-fr="Agences de talents, sociétés de management et family offices peuvent retenir UNSEEN. sur une base permanente : disponibilité garantie pendant les semaines chargées, un interlocuteur dédié, et des conditions convenues à l'avance pour les demandes récurrentes.">Talent agencies, management companies and family offices can hold UNSEEN. on a retained basis.</p>
+        <a class="go" href="mailto:partners@unseenconciergerie.com" data-en="Discuss a retainer" data-fr="Discuter d'un retainer">Discuss a retainer</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="mosaic">
+  <figure><img src="img/g1.jpg" alt="" loading="lazy"></figure>
+  <figure><img src="img/g2.jpg" alt="" loading="lazy"></figure>
+  <figure><img src="img/g3.jpg" alt="" loading="lazy"></figure>
+  <figure><img src="img/g4.jpg" alt="" loading="lazy"></figure>
+  <figure><img src="img/g5.jpg" alt="" loading="lazy"></figure>
+  <figure><img src="img/g6.jpg" alt="" loading="lazy"></figure>
+  <figure><img src="img/g7.jpg" alt="" loading="lazy"></figure>
+  <figure><img src="img/g8.jpg" alt="" loading="lazy"></figure>
+</div>
+
+<section id="contact" class="sec-dark">
+  <div class="wrap">
+    <div class="head">
+      <div class="eyebrow"><span class="n">07</span><span class="t" data-en="Contact" data-fr="Contact">Contact</span></div>
+      <h2 data-en="Tell us when." data-fr="Dites-nous quand.">Tell us when.</h2>
+      <p class="lede" data-en="WhatsApp is the fastest way to reach us, at any hour and in any time zone. A first message takes one line." data-fr="WhatsApp est le moyen le plus rapide de nous joindre, à toute heure et dans tous les fuseaux. Un premier message tient en une ligne.">WhatsApp is the fastest way to reach us, at any hour and in any time zone.</p>
+    </div>
+
+    <div class="cgrid">
+      <div class="ci">
+        <span class="lbl">WhatsApp</span>
+        <a class="num" href="https://wa.me/33613850733">+33 (0)6 13 85 07 33</a>
+      </div>
+      <div class="ci">
+        <span class="lbl" data-en="Direct line" data-fr="Ligne directe">Direct line</span>
+        <a class="num" href="tel:+33649668833">+33 (0)6 49 66 88 33</a>
+      </div>
+      <div class="ci">
+        <span class="lbl" data-en="Email" data-fr="E-mail">Email</span>
+        <a href="mailto:contact@unseenconciergerie.com">contact@unseenconciergerie.com</a>
+      </div>
+      <div class="ci">
+        <span class="lbl">Instagram</span>
+        <a href="https://instagram.com/unseen.conciergerie">@unseen.conciergerie</a>
+      </div>
+    </div>
+
+    <div class="cta-row" style="margin-top:52px">
+      <a class="btn btn-accent" href="https://wa.me/33613850733" data-en="Start a conversation" data-fr="Démarrer une conversation">Start a conversation</a>
+    </div>
+
+    <div class="enq-head">
+      <span class="tag" data-en="Or write to us" data-fr="Ou écrivez-nous">Or write to us</span>
+      <h3 data-en="Tell us what you are looking for." data-fr="Dites-nous ce que vous cherchez.">Tell us what you are looking for.</h3>
+      <p data-en="Every request is handled personally. Leave a few details and we come back to you within 24 hours with what is possible, what it involves and what it costs." data-fr="Chaque demande est traitée personnellement. Laissez quelques éléments et nous revenons vers vous sous 24 heures avec ce qui est possible, ce que cela implique et ce que cela coûte.">Every request is handled personally.</p>
+    </div>
+
+    <form class="enq" id="enq" novalidate>
+
+      <div class="frow">
+        <div class="fld" id="f-first">
+          <label for="q-first" data-en="First name" data-fr="Prénom">First name</label>
+          <input type="text" id="q-first" autocomplete="given-name">
+          <div class="msg" data-en="Please enter your first name." data-fr="Merci d'indiquer votre prénom.">Please enter your first name.</div>
+        </div>
+        <div class="fld" id="f-last">
+          <label for="q-last" data-en="Last name" data-fr="Nom">Last name</label>
+          <input type="text" id="q-last" autocomplete="family-name">
+          <div class="msg" data-en="Please enter your last name." data-fr="Merci d'indiquer votre nom.">Please enter your last name.</div>
+        </div>
+      </div>
+
+      <div class="frow">
+        <div class="fld" id="f-email">
+          <label for="q-email" data-en="Email" data-fr="E-mail">Email</label>
+          <input type="email" id="q-email" autocomplete="email">
+          <div class="msg" data-en="Please enter a valid email address." data-fr="Merci d'indiquer une adresse e-mail valide.">Please enter a valid email address.</div>
+        </div>
+        <div class="fld" id="f-phone">
+          <label for="q-phone"><span data-en="Phone or WhatsApp" data-fr="Téléphone ou WhatsApp">Phone or WhatsApp</span> <em data-en="— optional" data-fr="— facultatif">— optional</em></label>
+          <input type="tel" id="q-phone" autocomplete="tel">
+        </div>
+      </div>
+
+      <div class="fld" id="f-interest">
+        <label for="q-interest" data-en="What are you interested in" data-fr="Ce qui vous intéresse">What are you interested in</label>
+        <select id="q-interest">
+          <option value="" data-en="Select a category" data-fr="Choisir une catégorie">Select a category</option>
+          <option value="Palaces And Suites" data-en="Palaces And Suites" data-fr="Palaces Et Suites">Palaces And Suites</option>
+          <option value="Travel And Itineraries" data-en="Travel And Itineraries" data-fr="Voyages Et Itinéraires">Travel And Itineraries</option>
+          <option value="Mauritius And Indian Ocean" data-en="Mauritius And Indian Ocean" data-fr="Île Maurice Et Océan Indien">Mauritius And Indian Ocean</option>
+          <option value="Ski Season And Alps" data-en="Ski Season And Alps" data-fr="Saison De Ski Et Alpes">Ski Season And Alps</option>
+          <option value="South Of France And Riviera" data-en="South Of France And Riviera" data-fr="Sud De La France Et Riviera">South Of France And Riviera</option>
+          <option value="Villas And Yachts" data-en="Villas And Yachts" data-fr="Villas Et Yachts">Villas And Yachts</option>
+          <option value="Events — Concerts, Football, Festivals" data-en="Events — Concerts, Football, Festivals" data-fr="Événements — Concerts, Football, Festivals">Events — Concerts, Football, Festivals</option>
+          <option value="Formula 1 And Motorsport" data-en="Formula 1 And Motorsport" data-fr="Formule 1 Et Sport Automobile">Formula 1 And Motorsport</option>
+          <option value="Fashion Week And Runway Access" data-en="Fashion Week And Runway Access" data-fr="Fashion Week Et Défilés">Fashion Week And Runway Access</option>
+          <option value="Michelin And Restaurant Reservations" data-en="Michelin And Restaurant Reservations" data-fr="Michelin Et Réservations">Michelin And Restaurant Reservations</option>
+          <option value="Nightlife And Private Tables" data-en="Nightlife And Private Tables" data-fr="Nightlife Et Tables Privées">Nightlife And Private Tables</option>
+          <option value="Luxury Maison Appointments" data-en="Luxury Maison Appointments" data-fr="Rendez-Vous En Maison De Luxe">Luxury Maison Appointments</option>
+          <option value="Personal Shopping And Sourcing" data-en="Personal Shopping And Sourcing" data-fr="Personal Shopping Et Sourcing">Personal Shopping And Sourcing</option>
+          <option value="Private Transport And Chauffeur" data-en="Private Transport And Chauffeur" data-fr="Transport Privé Et Chauffeur">Private Transport And Chauffeur</option>
+          <option value="Private Aviation And Helicopter" data-en="Private Aviation And Helicopter" data-fr="Aviation Privée Et Hélicoptère">Private Aviation And Helicopter</option>
+          <option value="Annual Membership" data-en="Annual Membership" data-fr="Abonnement Annuel">Annual Membership</option>
+          <option value="Partnership Or Press" data-en="Partnership Or Press" data-fr="Partenariat Ou Presse">Partnership Or Press</option>
+          <option value="Something Else" data-en="Something Else" data-fr="Autre Demande">Something Else</option>
+        </select>
+        <div class="msg" data-en="Please choose a category." data-fr="Merci de choisir une catégorie.">Please choose a category.</div>
+      </div>
+
+      <div class="frow">
+        <div class="fld" id="f-city">
+          <label for="q-city"><span data-en="Where you are based" data-fr="Où vous résidez">Where you are based</span> <em data-en="— optional" data-fr="— facultatif">— optional</em></label>
+          <input type="text" id="q-city" data-ph-en="City, country" data-ph-fr="Ville, pays" placeholder="City, country">
+        </div>
+        <div class="fld" id="f-dates">
+          <label for="q-dates"><span data-en="Approximate dates" data-fr="Dates approximatives">Approximate dates</span> <em data-en="— optional" data-fr="— facultatif">— optional</em></label>
+          <input type="text" id="q-dates" data-ph-en="e.g. late October" data-ph-fr="ex. fin octobre" placeholder="e.g. late October">
+        </div>
+      </div>
+
+      <div class="fld" id="f-message">
+        <label for="q-message" data-en="Your request" data-fr="Votre demande">Your request</label>
+        <textarea id="q-message" data-ph-en="What would you like arranged?" data-ph-fr="Que souhaitez-vous organiser ?" placeholder="What would you like arranged?"></textarea>
+        <div class="msg" data-en="Please tell us a little about your request." data-fr="Merci de préciser votre demande.">Please tell us a little about your request.</div>
+      </div>
+
+      <div class="fld" id="f-source">
+        <label for="q-source"><span data-en="How you heard about us" data-fr="Comment vous nous avez connus">How you heard about us</span> <em data-en="— optional" data-fr="— facultatif">— optional</em></label>
+        <input type="text" id="q-source" data-ph-en="Referral, Instagram, a partner…" data-ph-fr="Recommandation, Instagram, un partenaire…" placeholder="Referral, Instagram, a partner…">
+      </div>
+
+      <input type="checkbox" name="botcheck" id="botcheck" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+      <div class="agree">
+        <input type="checkbox" id="q-agree">
+        <span data-en='I agree that UNSEEN. may use these details to respond to my request, as set out in the <a href="legal.html">privacy policy</a>. My data is never sold or shared for marketing.' data-fr='J&apos;accepte qu&apos;UNSEEN. utilise ces informations pour répondre à ma demande, dans les conditions prévues par la <a href="legal.html">politique de confidentialité</a>. Mes données ne sont jamais vendues ni transmises à des fins commerciales.'>I agree that UNSEEN. may use these details to respond to my request, as set out in the <a href="legal.html">privacy policy</a>. My data is never sold or shared for marketing.</span>
+      </div>
+      <div class="agree-msg" id="agree-msg" data-en="Please tick the box so we may reply to you." data-fr="Merci de cocher la case pour que nous puissions vous répondre.">Please tick the box so we may reply to you.</div>
+
+      <div class="enq-actions">
+        <button class="btn btn-accent" type="submit" data-en="Send request" data-fr="Envoyer la demande">Send request</button>
+        <span class="enq-alt" data-en='Prefer WhatsApp? <a id="enq-wa" href="#">Send it there instead</a>' data-fr='Vous préférez WhatsApp ? <a id="enq-wa" href="#">Envoyer par ce canal</a>'>Prefer WhatsApp? <a id="enq-wa" href="#">Send it there instead</a></span>
+      </div>
+
+      <p class="enq-note" data-en="Answered within 24 hours. Rates and availability quoted before confirmation are indicative, subject to supplier confirmation, and are not binding until confirmed in writing." data-fr="Réponse sous 24 heures. Les tarifs et disponibilités communiqués avant confirmation sont indicatifs, sous réserve de confirmation du prestataire, et n'engagent qu'après confirmation écrite.">Answered within 24 hours.</p>
+    </form>
+
+    <div class="enq-done" id="enq-done">
+      <h3 data-en="Thank you." data-fr="Merci.">Thank you.</h3>
+      <p data-en="Your request is on its way. We come back to you within 24 hours." data-fr="Votre demande est partie. Nous revenons vers vous sous 24 heures.">Your request is on its way.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-mark">UNSEEN.</div>
+    <div class="curated">Curated by UNSEEN.</div>
+
+    <hr class="foot-sep">
+
+    <div class="foot-legal">
+      <div><strong>UNSEEN.</strong> <span data-en="Conciergerie de luxe. Sole trader registered in France." data-fr="Conciergerie de luxe. Entreprise individuelle immatriculée en France.">Conciergerie de luxe. Sole trader registered in France.</span></div>
+      <div>8 rue du Docteur Graverry, 77100 Meaux, France</div>
+      <div>SIREN <span class="num">999 356 587</span> &nbsp; SIRET <span class="num">999 356 587 00017</span> &nbsp; APE <span class="num">96.09Z</span></div>
+      <div style="margin-top:16px">
+        <a href="legal.html" data-en="Legal notice, terms and privacy" data-fr="Mentions légales, conditions et confidentialité">Legal notice, terms and privacy</a>
+        &nbsp;&nbsp;
+        <a href="mailto:privacy@unseenconciergerie.com">privacy@unseenconciergerie.com</a>
+      </div>
+      <div style="margin-top:16px;color:#666">&copy; <span class="num">2026</span> UNSEEN. <span data-en="All rights reserved." data-fr="Tous droits réservés.">All rights reserved.</span></div>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var nodes = document.querySelectorAll('[data-en]');
+  var bEn = document.getElementById('btn-en');
+  var bFr = document.getElementById('btn-fr');
+  function setLang(lang){
+    for (var i=0;i<nodes.length;i++){
+      var v = nodes[i].getAttribute('data-'+lang);
+      if (v !== null) nodes[i].innerHTML = v;
+    }
+    var phs = document.querySelectorAll('[data-ph-en]');
+    for (var j=0;j<phs.length;j++){
+      var p = phs[j].getAttribute('data-ph-'+lang);
+      if (p !== null) phs[j].setAttribute('placeholder', p);
+    }
+    document.documentElement.lang = lang;
+    bEn.setAttribute('aria-pressed', lang==='en' ? 'true':'false');
+    bFr.setAttribute('aria-pressed', lang==='fr' ? 'true':'false');
+    try { localStorage.setItem('unseen-lang', lang); } catch(e){}
+  }
+  bEn.addEventListener('click', function(){ setLang('en'); });
+  bFr.addEventListener('click', function(){ setLang('fr'); });
+  var saved=null; try { saved = localStorage.getItem('unseen-lang'); } catch(e){}
+  if (saved === 'fr') setLang('fr');
+  else if (!saved && (navigator.language||'').toLowerCase().indexOf('fr') === 0) setLang('fr');
+})();
+</script>
+
+<script>
+/* =============================================================
+   UNSEEN. — CARTE INTERACTIVE
+   -------------------------------------------------------------
+   Carte-constellation (pas une carte géographique réelle) :
+   Paris au centre, relié aux quatre autres destinations.
+   Cliquer un point met à jour le panneau de droite.
+   ============================================================= */
+(function(){
+  var DATA = {
+    paris:{
+      en:{tag:'The base', title:'Paris', text:'The city where the address book was built, and where a name still opens a door faster than a payment does. Palaces, starred kitchens, private clubs, ateliers.'},
+      fr:{tag:'La base', title:'Paris', text:"La ville où le carnet d'adresses s'est construit, et où un nom ouvre encore une porte plus vite qu'un paiement. Palaces, cuisines étoilées, clubs privés, ateliers."}
+    },
+    london:{
+      en:{tag:'Across the Channel', title:'London', text:'Townhouses, members’ clubs and a season that runs on its own calendar — reachable the same afternoon as a request made from Paris.'},
+      fr:{tag:'De l’autre côté de la Manche', title:'Londres', text:"Maisons de ville, clubs privés et une saison qui suit son propre calendrier — accessible l’après-midi même d’une demande faite depuis Paris."}
+    },
+    riviera:{
+      en:{tag:'May to September', title:'South of France', text:'Côte d’Azur, Cannes, Saint-Tropez. Villas taken before winter ends, beach clubs where a table already carries a name, and yacht days that begin at the berth.'},
+      fr:{tag:'Mai à septembre', title:'Sud de la France', text:"Côte d’Azur, Cannes, Saint-Tropez. Des villas prises avant la fin de l’hiver, des beach clubs où la table porte déjà un nom, et des journées en mer qui commencent au ponton."}
+    },
+    alps:{
+      en:{tag:'December to April', title:'The Alps', text:'Courchevel, Megève, Val d’Isère, Gstaad. Chalets with staff, private instructors, and lunches held at altitude.'},
+      fr:{tag:'Décembre à avril', title:'Les Alpes', text:"Courchevel, Megève, Val d’Isère, Gstaad. Des chalets avec personnel, des moniteurs privés, et des déjeuners tenus en altitude."}
+    },
+    mauritius:{
+      en:{tag:'The counter-season', title:'Mauritius', text:'Runs on a calendar of its own and stays open when Europe closes. Lagoons, staffed villas, helicopter legs across the island, and days at sea.'},
+      fr:{tag:'La contre-saison', title:'Maurice', text:"Suit un calendrier qui lui est propre et reste ouverte quand l’Europe se ferme. Lagons, villas avec personnel, liaisons en hélicoptère, et journées en mer."}
+    }
+  };
+
+  var stage = document.getElementById('mapstage');
+  var card  = document.getElementById('mapcard');
+  if (!stage || !card) return;
+  var dots  = stage.querySelectorAll('.mapdot');
+  var lines = stage.querySelectorAll('.mapline');
+  var current = 'paris';
+
+  function lang(){ return document.documentElement.lang === 'fr' ? 'fr' : 'en'; }
+  function waLabel(){ return lang()==='fr' ? 'Nous écrire' : 'Enquire now'; }
+
+  function render(){
+    var d = DATA[current][lang()];
+    card.innerHTML =
+      '<span class="tag">' + d.tag + '</span>' +
+      '<h3>' + d.title + '</h3>' +
+      '<p>' + d.text + '</p>' +
+      '<a class="go" href="https://wa.me/33613850733" target="_blank" rel="noopener">' + waLabel() + '</a>';
+  }
+
+  function select(id){
+    current = id;
+    for (var i=0;i<dots.length;i++){ dots[i].classList.toggle('on', dots[i].getAttribute('data-id')===id); }
+    for (var j=0;j<lines.length;j++){ lines[j].classList.toggle('on', lines[j].getAttribute('data-id')===id); }
+    render();
+  }
+
+  for (var k=0;k<dots.length;k++){
+    (function(el){
+      var id = el.getAttribute('data-id');
+      el.addEventListener('click', function(){ select(id); });
+      el.addEventListener('keydown', function(e){ if (e.key==='Enter' || e.key===' '){ e.preventDefault(); select(id); } });
+    })(dots[k]);
+  }
+
+  render();
+
+  var bEn=document.getElementById('btn-en'), bFr=document.getElementById('btn-fr');
+  if (bEn) bEn.addEventListener('click', render);
+  if (bFr) bFr.addEventListener('click', render);
+})();
+</script>
+
+<script>
+/* =============================================================
+   UNSEEN. — FORMULAIRE DE DEMANDE
+   -------------------------------------------------------------
+   La demande part directement dans la boite contact@ : le
+   visiteur n'a rien d'autre a faire apres avoir clique.
+
+   Service : Web3Forms, plan gratuit, 250 envois par mois.
+   Compte rattache a contact@unseenconciergerie.com.
+   Tableau de bord : app.web3forms.com
+
+   Si le service ne repond pas dans les 12 secondes, le
+   formulaire bascule automatiquement sur le client mail du
+   visiteur : il n'est jamais bloque.
+
+   Pour changer la boite de reception, ne pas modifier ce
+   fichier : le faire depuis le tableau de bord Web3Forms.
+   ============================================================= */
+(function(){
+
+  var ACCESS_KEY = 'b9512ba6-7862-4d98-a59e-c5498be14c49';   /* cle Web3Forms — publique par conception */
+
+  var EMAIL = 'contact@unseenconciergerie.com';
+  var WA    = '33613850733';
+
+  var form = document.getElementById('enq');
+  if(!form) return;
+  var done   = document.getElementById('enq-done');
+  var agreeM = document.getElementById('agree-msg');
+  var submit = form.querySelector('button[type=submit]');
+
+  function txt(node){ var e=document.getElementById(node); return e ? e.value.trim() : ''; }
+  function flag(id,on){ document.getElementById(id).classList.toggle('bad', !!on); }
+  function lang(){ return document.documentElement.lang === 'fr' ? 'fr' : 'en'; }
+
+  var WORD = {
+    send:    {en:'Send request',    fr:'Envoyer la demande'},
+    sending: {en:'Sending…',        fr:'Envoi en cours…'}
+  };
+
+  function valid(){
+    var good = true;
+    var mailOk = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(txt('q-email'));
+    var checks = [
+      ['f-first',    !txt('q-first')],
+      ['f-last',     !txt('q-last')],
+      ['f-email',    !mailOk],
+      ['f-interest', !txt('q-interest')],
+      ['f-message',  txt('q-message').length < 5]
+    ];
+    for (var i=0;i<checks.length;i++){
+      if (checks[i][1]) good = false;
+      flag(checks[i][0], checks[i][1]);
+    }
+    var agreed = document.getElementById('q-agree').checked;
+    agreeM.classList.toggle('on', !agreed);
+    if (!agreed) good = false;
+    if (!good){
+      var f = form.querySelector('.fld.bad') || agreeM;
+      if (f && f.scrollIntoView) f.scrollIntoView({behavior:'smooth', block:'center'});
+    }
+    return good;
+  }
+
+  function subject(){
+    return 'Nouvelle demande — ' + txt('q-first') + ' ' + txt('q-last') + ' — ' + txt('q-interest');
+  }
+
+  function plain(){
+    var L = [];
+    L.push('Nom : ' + txt('q-first') + ' ' + txt('q-last'));
+    L.push('E-mail : ' + txt('q-email'));
+    if (txt('q-phone'))  L.push('Téléphone / WhatsApp : ' + txt('q-phone'));
+    L.push('Demande : ' + txt('q-interest'));
+    if (txt('q-city'))   L.push('Réside à : ' + txt('q-city'));
+    if (txt('q-dates'))  L.push('Dates : ' + txt('q-dates'));
+    L.push('');
+    L.push('Message :');
+    L.push(txt('q-message'));
+    if (txt('q-source')){ L.push(''); L.push('Nous a connus par : ' + txt('q-source')); }
+    return L.join('\n');
+  }
+
+  function finish(){
+    form.style.display = 'none';
+    done.style.display = 'block';
+    if (done.scrollIntoView) done.scrollIntoView({behavior:'smooth', block:'center'});
+  }
+
+  function busy(on){
+    submit.disabled = on;
+    submit.style.opacity = on ? '.6' : '';
+    submit.textContent = on ? WORD.sending[lang()] : WORD.send[lang()];
+  }
+
+  /* repli : ouvre le client mail du visiteur si l'envoi direct echoue */
+  function fallback(){
+    window.location.href = 'mailto:' + EMAIL +
+      '?subject=' + encodeURIComponent(subject()) +
+      '&body=' + encodeURIComponent(plain());
+    finish();
+  }
+
+  function post(){
+    busy(true);
+    var payload = {
+      access_key: ACCESS_KEY,
+      subject: subject(),
+      from_name: 'UNSEEN. — formulaire du site',
+      replyto: txt('q-email'),
+      botcheck: document.getElementById('botcheck').checked,
+      'Nom': txt('q-first') + ' ' + txt('q-last'),
+      'E-mail': txt('q-email'),
+      'Téléphone / WhatsApp': txt('q-phone') || '—',
+      'Demande': txt('q-interest'),
+      'Réside à': txt('q-city') || '—',
+      'Dates': txt('q-dates') || '—',
+      'Message': txt('q-message'),
+      'Nous a connus par': txt('q-source') || '—'
+    };
+    var timeout = setTimeout(function(){ busy(false); fallback(); }, 12000);
+
+    fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: {'Content-Type':'application/json', 'Accept':'application/json'},
+      body: JSON.stringify(payload)
+    })
+    .then(function(r){ return r.json(); })
+    .then(function(j){
+      clearTimeout(timeout);
+      busy(false);
+      if (j && j.success) finish();
+      else fallback();
+    })
+    .catch(function(){
+      clearTimeout(timeout);
+      busy(false);
+      fallback();
+    });
+  }
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    if (!valid()) return;
+    if (ACCESS_KEY) post();
+    else fallback();
+  });
+
+  form.addEventListener('click', function(e){
+    var a = e.target.closest ? e.target.closest('#enq-wa') : null;
+    if (!a) return;
+    e.preventDefault();
+    if (!valid()) return;
+    window.open('https://wa.me/' + WA + '?text=' + encodeURIComponent(plain()), '_blank', 'noopener');
+    finish();
+  });
+
+})();
+</script>
+
+<script>
+/* ---------- navigation mobile ---------- */
+(function(){
+  var t = document.getElementById('navtoggle');
+  var p = document.getElementById('navpanel');
+  if (!t || !p) return;
+
+  function open(){
+    p.classList.add('on');
+    t.setAttribute('aria-expanded','true');
+    p.setAttribute('aria-hidden','false');
+    document.body.style.overflow = 'hidden';
+  }
+  function shut(){
+    p.classList.remove('on');
+    t.setAttribute('aria-expanded','false');
+    p.setAttribute('aria-hidden','true');
+    document.body.style.overflow = '';
+  }
+
+  t.addEventListener('click', function(){
+    p.classList.contains('on') ? shut() : open();
+  });
+  p.addEventListener('click', function(e){
+    if (e.target.tagName === 'A') shut();
+  });
+  document.addEventListener('keydown', function(e){
+    if (e.key === 'Escape') shut();
+  });
+  window.addEventListener('resize', function(){
+    if (window.innerWidth > 900) shut();
+  });
+})();
+</script>
+
+</body>
+</html>
