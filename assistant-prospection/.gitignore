@@ -1,0 +1,13 @@
+# Ne jamais envoyer le fichier .env (mot de passe d'application Gmail)
+.env
+
+# L'environnement Python : il se reconstruit tout seul, inutile de l'envoyer
+venv/
+
+# Fichiers Python courants
+__pycache__/
+*.pyc
+
+# Fichiers temporaires d'Excel (créés quand un classeur est ouvert)
+~$*.xlsx
+.DS_Store

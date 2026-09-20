@@ -1,0 +1,13 @@
+# Ne jamais envoyer le fichier .env (token et chat_id) sur Git
+.env
+
+# L'environnement Python : il se reconstruit tout seul, inutile de l'envoyer
+venv/
+
+# Fichiers Python courants
+__pycache__/
+*.pyc
+
+# Fichiers temporaires d'Excel (crees quand un classeur est ouvert)
+~$*.xlsx
+.DS_Store

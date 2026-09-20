@@ -1,0 +1,32 @@
+name: Radar événements - récapitulatif du lundi
+
+# Lance radar_evenements.py --resume chaque lundi matin.
+# 6h30 UTC = 8h30 à Paris en été, 7h30 en hiver.
+on:
+  schedule:
+    - cron: "30 6 * * 1"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  resume:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Installer les bibliothèques
+        run: pip install -r radar-unseen/requirements.txt
+
+      - name: Préparer le fichier .env (à partir des secrets GitHub)
+        run: |
+          echo "TELEGRAM_TOKEN=${{ secrets.TELEGRAM_TOKEN }}" > radar-unseen/.env
+          echo "TELEGRAM_CHAT_ID=${{ secrets.TELEGRAM_CHAT_ID }}" >> radar-unseen/.env
+
+      - name: Envoyer le récapitulatif du lundi
+        run: python radar-unseen/radar_evenements.py --resume

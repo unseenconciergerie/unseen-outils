@@ -1,0 +1,43 @@
+name: Veille presse - passages
+
+# Lance veille_presse.py (envoi immédiat des 🔴) plusieurs fois par jour.
+# Horaires en UTC : GitHub ne connaît pas l'heure de Paris. 9h/12h/15h/18h
+# UTC correspondent à 11h/14h/17h/20h à Paris en été, 10h/13h/16h/19h en
+# hiver (décalage d'1h selon la saison, sans conséquence ici).
+on:
+  schedule:
+    - cron: "0 9,12,15,18 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  veille:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Installer les bibliothèques
+        run: pip install -r radar-unseen/requirements.txt
+
+      - name: Préparer le fichier .env (à partir des secrets GitHub)
+        run: |
+          echo "TELEGRAM_TOKEN=${{ secrets.TELEGRAM_TOKEN }}" > radar-unseen/.env
+          echo "TELEGRAM_CHAT_ID=${{ secrets.TELEGRAM_CHAT_ID }}" >> radar-unseen/.env
+
+      - name: Lancer la veille presse
+        run: python radar-unseen/veille_presse.py
+
+      - name: Enregistrer la mémoire mise à jour
+        run: |
+          cd radar-unseen
+          git config user.name "Radar UNSEEN."
+          git config user.email "actions@github.com"
+          git add memoire.json
+          git diff --cached --quiet || git commit -m "Mémoire veille presse mise à jour"
+          git push

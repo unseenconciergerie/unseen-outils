@@ -1,0 +1,41 @@
+name: Radar événements - rappels du jour
+
+# Lance radar_evenements.py une fois par jour, pour envoyer les rappels
+# J-90/J-60/J-30/J-7 s'il y en a. 7h UTC = 9h à Paris en été, 8h en hiver.
+on:
+  schedule:
+    - cron: "0 7 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  rappels:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Installer les bibliothèques
+        run: pip install -r radar-unseen/requirements.txt
+
+      - name: Préparer le fichier .env (à partir des secrets GitHub)
+        run: |
+          echo "TELEGRAM_TOKEN=${{ secrets.TELEGRAM_TOKEN }}" > radar-unseen/.env
+          echo "TELEGRAM_CHAT_ID=${{ secrets.TELEGRAM_CHAT_ID }}" >> radar-unseen/.env
+
+      - name: Envoyer les rappels du jour
+        run: python radar-unseen/radar_evenements.py
+
+      - name: Enregistrer la mémoire mise à jour
+        run: |
+          cd radar-unseen
+          git config user.name "Radar UNSEEN."
+          git config user.email "actions@github.com"
+          git add memoire_evenements.json
+          git diff --cached --quiet || git commit -m "Mémoire événements mise à jour"
+          git push
