@@ -64,7 +64,63 @@
   "https://altselection.ouest-france.fr/nous-nacceptons-pas-les-clients-chinois-un-cafe-de-seongsu-provoque-la-polemique": "2026-09-20",
   "http://defimedia.info/inde-apres-avoir-depasse-visa-upi-devient-partiellement-payant-lopposition-denonce-des-pressions": "2026-09-20",
   "http://defimedia.info/explainer-paiements-transfrontaliers-lafrique-ouvre-la-voie-pour-contourner-le-dollar-et-swift": "2026-09-20",
-  "http://defimedia.info/petrole-russe-linde-avertit-que-les-nouveaux-droits-de-douane-americains-pourraient-affecter-les": "2026-09-20"
+  "http://defimedia.info/petrole-russe-linde-avertit-que-les-nouveaux-droits-de-douane-americains-pourraient-affecter-les": "2026-09-20",
+  "https://www.leparisien.fr/faits-divers/passeports-usurpes-bordereaux-fantomes-et-luxe-parisien-comment-le-reseau-chinois-a-piege-le-fisc-de-52-millions-deuros-20-09-2026-JE34P56F7FDHPECZFMZRSVLHKI.php": "2026-09-20",
+  "https://www.jevoyageenautocar.fr/LesVoyages/Detail/D27HS001": "2026-09-20",
+  "https://www.setlist.fm/setlist/celine-dion/2026/plenitude-arena-nanterre-france-6376a603.html": "2026-09-20",
+  "https://wwd.com/pop-culture/celebrity-news/tracee-ellis-ross-bottega-veneta-lucas-museum-opening-gala-1239248570": "2026-09-20",
+  "https://wwd.com/footwear-news/shoe-trends/doja-cat-clear-platform-heels-lucas-museum-opening-night-1239248969": "2026-09-20"
  },
- "en_attente": []
+ "en_attente": [
+  {
+   "titre": "Passeports usurpés, bordereaux fantômes et luxe parisien : comment le réseau chinois a ...",
+   "lien": "https://www.leparisien.fr/faits-divers/passeports-usurpes-bordereaux-fantomes-et-luxe-parisien-comment-le-reseau-chinois-a-piege-le-fisc-de-52-millions-deuros-20-09-2026-JE34P56F7FDHPECZFMZRSVLHKI.php",
+   "source": "Alerte Google - Clientele cible",
+   "date": "2026-09-20T04:40:13+00:00",
+   "categorie": "Tendance clientèle",
+   "priorite": "🟠",
+   "zone": "Paris",
+   "action": "Lire et archiver : argument utile pour les propositions clients"
+  },
+  {
+   "titre": "CONCERT HARRY STYLES A LA PLENITUDE ARENA | Delgrange",
+   "lien": "https://www.jevoyageenautocar.fr/LesVoyages/Detail/D27HS001",
+   "source": "Alerte Google - Plenitude Arena",
+   "date": "2026-09-20T00:38:56+00:00",
+   "categorie": "Événement",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "Céline Dion Concert Setlist at Plenitude Arena, Nanterre on September 19, 2026 | setlist.fm",
+   "lien": "https://www.setlist.fm/setlist/celine-dion/2026/plenitude-arena-nanterre-france-6376a603.html",
+   "source": "Alerte Google - Plenitude Arena",
+   "date": "2026-09-20T00:49:18+00:00",
+   "categorie": "Événement",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "Tracee Ellis Ross Cozies Up in Faux-Fur Bottega Veneta Look Pulled Straight Off the Runway at Lucas Museum of Narrative Art Opening Night Gala",
+   "lien": "https://wwd.com/pop-culture/celebrity-news/tracee-ellis-ross-bottega-veneta-lucas-museum-opening-gala-1239248570",
+   "source": "WWD",
+   "date": "2026-09-20T16:12:02+00:00",
+   "categorie": "Ouverture",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Demander un contact commercial ou une visite des lieux"
+  },
+  {
+   "titre": "Doja Cat Walks on Air in Clear Lofty Platform Heels at Lucas Museum of Narrative Art Opening Night Gala",
+   "lien": "https://wwd.com/footwear-news/shoe-trends/doja-cat-clear-platform-heels-lucas-museum-opening-night-1239248969",
+   "source": "WWD",
+   "date": "2026-09-20T17:06:29+00:00",
+   "categorie": "Ouverture",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Demander un contact commercial ou une visite des lieux"
+  }
+ ]
 }
