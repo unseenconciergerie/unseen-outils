@@ -91,7 +91,9 @@
   "https://www.breakingtravelnews.com/news/article/goeun-lee-named-resort-manager-at-four-seasons-resort-bali-at-jimbaran-bay": "2026-09-21",
   "https://www.globalcosmeticsnews.com/loreal-canada-appoints-amelie-fortier-cyr-chief-digital-marketing-officer": "2026-09-21",
   "https://fr.news.yahoo.com/au-s%C3%A9n%C3%A9gal-nomination-patrick-vieira-080900840.html": "2026-09-21",
-  "https://www.wavy.com/sports/ap-longtime-nfl-executive-ernie-accorsi-dies-at-84": "2026-09-21"
+  "https://www.wavy.com/sports/ap-longtime-nfl-executive-ernie-accorsi-dies-at-84": "2026-09-21",
+  "https://origin.journalduluxe.fr/fr/mode/steven-kolb-demissionne-cfda-apres-polemique-peta": "2026-09-21",
+  "https://hospitality-on.com/fr/fusionacquisition/airelles-reprend-le-guanahani-plus-grand-hotel-de-saint-barthelemy": "2026-09-21"
  },
  "en_attente": [
   {
@@ -293,6 +295,26 @@
    "priorite": "⚪",
    "zone": "",
    "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "Steven Kolb démissionne de la CFDA après la polémique PETA",
+   "lien": "https://origin.journalduluxe.fr/fr/mode/steven-kolb-demissionne-cfda-apres-polemique-peta",
+   "source": "Journal du Luxe",
+   "date": "2026-09-21T10:53:43+00:00",
+   "categorie": "Événement",
+   "priorite": "⚪",
+   "zone": "New York",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "Airelles reprend Le Guanahani, plus grand hôtel de Saint-Barthélemy",
+   "lien": "https://hospitality-on.com/fr/fusionacquisition/airelles-reprend-le-guanahani-plus-grand-hotel-de-saint-barthelemy",
+   "source": "Hospitality ON",
+   "date": "2026-09-21T13:04:53+00:00",
+   "categorie": "Ouverture",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Demander un contact commercial ou une visite des lieux"
   }
  ]
 }
