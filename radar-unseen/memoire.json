@@ -85,7 +85,13 @@
   "https://origin.journalduluxe.fr/fr/lifestyle/dior-nouveau-restaurant-italie-milan-enrico-bartolini": "2026-09-21",
   "https://wwd.com/fashion-news/fashion-scoops/louis-vuitton-keith-haring-artycapucines-handbag-collection-1239244425": "2026-09-21",
   "https://wwd.com/fashion-news/fashion-scoops/malo-george-cortina-cashmere-capsule-collection-1239244887": "2026-09-21",
-  "http://defimedia.info/prochain-sommet-trump-xi-americains-et-chinois-discutent-ia-et-commerce": "2026-09-21"
+  "http://defimedia.info/prochain-sommet-trump-xi-americains-et-chinois-discutent-ia-et-commerce": "2026-09-21",
+  "https://hotelierbuzz.com/london-marriott-hotel-grosvenor-square-appoints-martijn-zengerink-as-general-manager": "2026-09-21",
+  "https://eturbonews.com/hotel-news-openings-investments-appointments": "2026-09-21",
+  "https://www.breakingtravelnews.com/news/article/goeun-lee-named-resort-manager-at-four-seasons-resort-bali-at-jimbaran-bay": "2026-09-21",
+  "https://www.globalcosmeticsnews.com/loreal-canada-appoints-amelie-fortier-cyr-chief-digital-marketing-officer": "2026-09-21",
+  "https://fr.news.yahoo.com/au-s%C3%A9n%C3%A9gal-nomination-patrick-vieira-080900840.html": "2026-09-21",
+  "https://www.wavy.com/sports/ap-longtime-nfl-executive-ernie-accorsi-dies-at-84": "2026-09-21"
  },
  "en_attente": [
   {
@@ -237,6 +243,56 @@
    "priorite": "⚪",
    "zone": "",
    "action": "Lire et archiver : argument utile pour les propositions clients"
+  },
+  {
+   "titre": "Hotels Are Opening, Money Is Moving, and Africa Just Got More Interesting",
+   "lien": "https://eturbonews.com/hotel-news-openings-investments-appointments",
+   "source": "Alerte Google - Nominations internationales",
+   "date": "2026-09-20T14:04:05+00:00",
+   "categorie": "Ouverture",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Demander un contact commercial ou une visite des lieux"
+  },
+  {
+   "titre": "Goeun Lee Named Resort Manager at Four Seasons Resort Bali at Jimbaran Bay",
+   "lien": "https://www.breakingtravelnews.com/news/article/goeun-lee-named-resort-manager-at-four-seasons-resort-bali-at-jimbaran-bay",
+   "source": "Alerte Google - Nominations internationales",
+   "date": "2026-09-20T18:20:11+00:00",
+   "categorie": "Nomination",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "L'Oréal Canada Appoints Amélie Fortier-Cyr Chief Digital & Marketing Officer",
+   "lien": "https://www.globalcosmeticsnews.com/loreal-canada-appoints-amelie-fortier-cyr-chief-digital-marketing-officer",
+   "source": "Alerte Google - Nominations internationales",
+   "date": "2026-09-21T05:01:19+00:00",
+   "categorie": "Nomination",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "Au Sénégal, la nomination de Patrick Vieira bien accueillie",
+   "lien": "https://fr.news.yahoo.com/au-s%C3%A9n%C3%A9gal-nomination-patrick-vieira-080900840.html",
+   "source": "Alerte Google - Nominations hotellerie FR",
+   "date": "2026-09-21T08:25:08+00:00",
+   "categorie": "Nomination",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "Longtime NFL executive Ernie Accorsi dies at 84",
+   "lien": "https://www.wavy.com/sports/ap-longtime-nfl-executive-ernie-accorsi-dies-at-84",
+   "source": "Alerte Google - Nominations internationales",
+   "date": "2026-09-21T09:16:46+00:00",
+   "categorie": "Nomination",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
   }
  ]
 }
