@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UNSEEN. — Page not found</title>
+<!-- Cette page ne doit pas apparaitre dans Google -->
+<meta name="robots" content="noindex, follow">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700;800&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --noir:#0B0B0B;
+  --blanc:#FFFFFF;
+  --accent:#0C5A38;
+  --pad:26px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{
+  font-family:'Montserrat',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  background:var(--noir);
+  color:var(--blanc);
+  min-height:100vh;
+  min-height:100svh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:var(--pad);
+  position:relative;
+  overflow-x:hidden;
+}
+
+/* la photo d'ouverture du site, très assombrie */
+.bg{position:absolute;inset:0;overflow:hidden}
+.bg img{width:100%;height:100%;object-fit:cover;opacity:.22}
+.bg::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(90deg,rgba(0,0,0,.9) 0%,rgba(0,0,0,.6) 100%);
+}
+/* le même grain que sur le reste du site */
+.bg::before{
+  content:"";position:absolute;inset:0;z-index:2;pointer-events:none;opacity:.055;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.86' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E");
+}
+
+.in{position:relative;z-index:3;max-width:620px;width:100%}
+
+.mark{
+  font-family:'League Spartan',sans-serif;
+  font-weight:800;
+  font-size:clamp(46px,9vw,84px);
+  line-height:.9;
+  letter-spacing:-.02em;
+}
+.code{
+  margin-top:18px;
+  font-size:13px;
+  letter-spacing:.26em;
+  text-transform:uppercase;
+  font-weight:500;
+  color:#9A9A9A;
+}
+h1{
+  font-family:'League Spartan',sans-serif;
+  font-weight:800;
+  font-size:clamp(26px,4.4vw,40px);
+  line-height:1.08;
+  letter-spacing:-.02em;
+  margin-top:34px;
+}
+p{
+  margin-top:20px;
+  font-weight:300;
+  font-size:18px;
+  line-height:1.6;
+  color:#D5D5D5;
+  max-width:480px;
+}
+.wl{height:1px;width:78px;background:var(--accent);border:0;margin-top:34px}
+
+.row{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
+.btn{
+  display:inline-block;
+  padding:15px 28px;
+  border:1px solid rgba(255,255,255,.34);
+  color:var(--blanc);
+  text-decoration:none;
+  font-size:13px;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  font-weight:600;
+  transition:background .3s ease,color .3s ease,border-color .3s ease;
+}
+.btn:hover,.btn:focus-visible{background:var(--blanc);color:var(--noir)}
+.btn-accent{background:var(--accent);border-color:var(--accent)}
+.btn-accent:hover,.btn-accent:focus-visible{background:var(--blanc);border-color:var(--blanc);color:var(--noir)}
+
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+<link rel="stylesheet" href="season.css">
+</head>
+<body>
+
+<div class="bg" aria-hidden="true">
+  <picture>
+    <source type="image/avif" srcset="img/hero.avif">
+    <img src="img/hero.webp" alt="">
+  </picture>
+</div>
+
+<div class="in">
+  <div class="mark">UNSEEN.</div>
+  <div class="code" data-en="Error 404" data-fr="Erreur 404">Error 404</div>
+
+  <h1 data-en="This page stayed unseen." data-fr="Cette page est restée invisible.">This page stayed unseen.</h1>
+  <p data-en="The address you followed does not lead anywhere. It may have moved, or never existed at all." data-fr="L'adresse que vous avez suivie ne mène nulle part. Elle a peut-être changé, ou n'a jamais existé.">The address you followed does not lead anywhere. It may have moved, or never existed at all.</p>
+
+  <hr class="wl">
+
+  <div class="row">
+    <a class="btn btn-accent" href="/" data-en="Back to the site" data-fr="Retour au site">Back to the site</a>
+    <a class="btn" href="https://wa.me/33613850733" data-en="Write to us" data-fr="Nous écrire">Write to us</a>
+  </div>
+</div>
+
+<script>
+/* Même bascule de langue que sur le reste du site : on reprend le
+   choix déjà enregistré par le visiteur, sinon la langue du navigateur. */
+(function(){
+  var choix = null;
+  try { choix = localStorage.getItem('unseen-lang'); } catch(e){}
+  var fr = choix === 'fr' ||
+           (!choix && (navigator.language || '').toLowerCase().indexOf('fr') === 0);
+  if (!fr) return;
+  document.documentElement.lang = 'fr';
+  var noeuds = document.querySelectorAll('[data-fr]');
+  for (var i = 0; i < noeuds.length; i++){
+    noeuds[i].textContent = noeuds[i].getAttribute('data-fr');
+  }
+})();
+</script>
+
+</body>
+</html>

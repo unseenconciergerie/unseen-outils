@@ -1,0 +1,93 @@
+# =============================================================
+# UNSEEN. — réglages du serveur (Infomaniak)
+# -------------------------------------------------------------
+# Ce fichier n'est pas une page : c'est une liste de consignes
+# pour le serveur qui héberge le site. Il doit être déposé à la
+# racine du dossier "web", à côté de index.html.
+#
+# Son nom commence par un point : le Finder le cache. Pour le
+# voir, appuie sur Cmd + Maj + point dans la fenêtre du Finder.
+# =============================================================
+
+
+# -------------------------------------------------------------
+# 1. Les formats d'image modernes
+# -------------------------------------------------------------
+# Sans ces deux lignes, un serveur qui ne connaît pas l'AVIF
+# envoie les fichiers comme s'il s'agissait de documents à
+# télécharger, et AUCUNE image du site ne s'affiche.
+# C'est la ligne la plus importante du fichier.
+
+AddType image/avif .avif
+AddType image/webp .webp
+
+
+# -------------------------------------------------------------
+# 2. La page d'erreur
+# -------------------------------------------------------------
+# Une adresse fausse affiche notre page plutôt que celle,
+# toute grise, de l'hébergeur.
+
+ErrorDocument 404 /404.html
+
+
+# -------------------------------------------------------------
+# 3. L'adresse de référence du site
+# -------------------------------------------------------------
+# Les quatre adresses (.com, .fr, avec ou sans www) continuent
+# de fonctionner : celles qui ne sont pas l'adresse principale
+# amènent simplement le visiteur sur celle-ci.
+#
+# Cela ne touche EN RIEN les boîtes mail. Le courrier et le site
+# web empruntent deux chemins séparés : contact@unseenconciergerie.fr
+# continue de fonctionner exactement comme avant.
+#
+# Pour annuler : mets un # devant les quatre lignes qui suivent.
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTP_HOST} !^unseenconciergerie\.com$ [NC]
+  RewriteRule ^(.*)$ https://unseenconciergerie.com/$1 [R=301,L]
+</IfModule>
+
+
+# -------------------------------------------------------------
+# 4. Garder les images en mémoire chez le visiteur
+# -------------------------------------------------------------
+# Un visiteur qui revient ne retélécharge pas les photos : le
+# site s'ouvre alors presque instantanément. Les pages, elles,
+# ne sont gardées qu'une heure, pour que tes modifications
+# apparaissent vite.
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/avif      "access plus 1 year"
+  ExpiresByType image/webp      "access plus 1 year"
+  ExpiresByType image/jpeg      "access plus 1 year"
+  ExpiresByType image/png       "access plus 1 year"
+  ExpiresByType image/svg+xml   "access plus 1 year"
+  ExpiresByType text/css        "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType text/html       "access plus 1 hour"
+</IfModule>
+
+
+# -------------------------------------------------------------
+# 5. Compression des textes
+# -------------------------------------------------------------
+# Les pages et les feuilles de style voyagent compressées.
+# Les images, elles, le sont déjà : on n'y touche pas.
+
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css text/plain
+  AddOutputFilterByType DEFLATE application/javascript application/json
+  AddOutputFilterByType DEFLATE image/svg+xml
+</IfModule>
+
+
+# -------------------------------------------------------------
+# 6. Ne pas laisser lire la liste des fichiers
+# -------------------------------------------------------------
+# Sans cela, ouvrir /img/ affiche l'inventaire complet du dossier.
+
+Options -Indexes
