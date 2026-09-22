@@ -106,7 +106,15 @@
   "https://origin.journalduluxe.fr/fr/mode/givenchy-renforce-sa-presence-digitale-avec-farfetch": "2026-09-22",
   "https://origin.journalduluxe.fr/fr/business/lvmh-inside-certificat-luxe-cours-online": "2026-09-22",
   "https://www.hospitalitynet.org/report/4134475/the-evolution-of-hotel-management-agreements-adapting-to-a-value-focused-market-in-the-middle-east-and-africa": "2026-09-22",
-  "https://www.hospitalitynet.org/news/4134477/frasers-hospitality-unveils-fraser-suites-reserve-a-new-luxury-serviced-living-brand": "2026-09-22"
+  "https://www.hospitalitynet.org/news/4134477/frasers-hospitality-unveils-fraser-suites-reserve-a-new-luxury-serviced-living-brand": "2026-09-22",
+  "https://www.tradingview.com/news/reuters.com,2026-09-21:newsml_Zaw9FL6y6:0-zawya-first-gran-melia-in-uae-to-open-as-j1-hotel-in-dubai-q4-2027": "2026-09-22",
+  "https://www.hotelnewsresource.com/article142965.html": "2026-09-22",
+  "https://www.golfindustry.asia/pxg-appoints-maki-shinoda-as-general-manager-of-pxg-japan": "2026-09-22",
+  "https://www.newsnationnow.com/us-news/sports/sports-headlines/ap-longtime-nfl-executive-ernie-accorsi-dies-at-84": "2026-09-22",
+  "https://www.hospitalitynet.org/appointment/79032798/tristan-delmas": "2026-09-22",
+  "https://www.hospitalitynet.org/appointment/79032801/emmy-stoel": "2026-09-22",
+  "https://www.hospitalitynet.org/news/4134490/simple-booking-opens-the-hotel-back-office-to-ai-agents": "2026-09-22",
+  "https://wwd.com/sourcing-journal/sj-denim/archroma-inonego-dyeing-technology-cellulosic-wovens-1239243348": "2026-09-22"
  },
  "en_attente": [
   {
@@ -224,6 +232,76 @@
    "lien": "https://www.hospitalitynet.org/news/4134477/frasers-hospitality-unveils-fraser-suites-reserve-a-new-luxury-serviced-living-brand",
    "source": "Hospitality Net",
    "date": "2026-09-22T07:34:33+00:00",
+   "categorie": "Ouverture",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Demander un contact commercial ou une visite des lieux"
+  },
+  {
+   "titre": "Mary Ann Gamboa Named Commercial Director at Beverly Wilshire",
+   "lien": "https://www.hotelnewsresource.com/article142965.html",
+   "source": "Alerte Google - Nominations internationales",
+   "date": "2026-09-21T22:12:45+00:00",
+   "categorie": "Nomination",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "PXG Appoints Maki Shinoda as General Manager of PXG Japan | Golf Industry Asia",
+   "lien": "https://www.golfindustry.asia/pxg-appoints-maki-shinoda-as-general-manager-of-pxg-japan",
+   "source": "Alerte Google - Nominations internationales",
+   "date": "2026-09-21T23:19:55+00:00",
+   "categorie": "Nomination",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "Longtime NFL executive Ernie Accorsi dies at 84",
+   "lien": "https://www.newsnationnow.com/us-news/sports/sports-headlines/ap-longtime-nfl-executive-ernie-accorsi-dies-at-84",
+   "source": "Alerte Google - Nominations internationales",
+   "date": "2026-09-22T03:57:32+00:00",
+   "categorie": "Nomination",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "Tristan Delmas has been appointed as General Manager at Chedi Wadi Safar",
+   "lien": "https://www.hospitalitynet.org/appointment/79032798/tristan-delmas",
+   "source": "Alerte Google - Nominations internationales",
+   "date": "2026-09-22T08:21:43+00:00",
+   "categorie": "Nomination",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "Emmy Stoel has been appointed as General Manager at Mandarin Oriental Conservatorium ...",
+   "lien": "https://www.hospitalitynet.org/appointment/79032801/emmy-stoel",
+   "source": "Alerte Google - Nominations internationales",
+   "date": "2026-09-22T09:47:08+00:00",
+   "categorie": "Nomination",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "Simple Booking Opens the Hotel Back Office to AI Agents",
+   "lien": "https://www.hospitalitynet.org/news/4134490/simple-booking-opens-the-hotel-back-office-to-ai-agents",
+   "source": "Hospitality Net",
+   "date": "2026-09-22T10:58:18+00:00",
+   "categorie": "Ouverture",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Demander un contact commercial ou une visite des lieux"
+  },
+  {
+   "titre": "Archroma Debuts New All-In-One Dye Process for Cellulosic Wovens",
+   "lien": "https://wwd.com/sourcing-journal/sj-denim/archroma-inonego-dyeing-technology-cellulosic-wovens-1239243348",
+   "source": "WWD",
+   "date": "2026-09-22T12:00:00+00:00",
    "categorie": "Ouverture",
    "priorite": "⚪",
    "zone": "",
