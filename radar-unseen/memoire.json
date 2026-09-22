@@ -94,7 +94,140 @@
   "https://www.wavy.com/sports/ap-longtime-nfl-executive-ernie-accorsi-dies-at-84": "2026-09-21",
   "https://origin.journalduluxe.fr/fr/mode/steven-kolb-demissionne-cfda-apres-polemique-peta": "2026-09-21",
   "https://hospitality-on.com/fr/fusionacquisition/airelles-reprend-le-guanahani-plus-grand-hotel-de-saint-barthelemy": "2026-09-21",
-  "https://wwd.com/footwear-news/shoe-industry-news/jd-sports-mexico-stores-axo-partnership-details-1239250531": "2026-09-21"
+  "https://wwd.com/footwear-news/shoe-industry-news/jd-sports-mexico-stores-axo-partnership-details-1239250531": "2026-09-21",
+  "https://www.sortiraparis.com/arts-culture/exposition/articles/352501-ritz-paris-une-exposition-gratuite-de-18-jeunes-photographes-pour-paris-photo-2026": "2026-09-22",
+  "https://www.vietnam.vn/fr/qr-xuyen-bien-gioi-mo-loi-cho-hanh-trinh-so-cua-khach-du-lich": "2026-09-22",
+  "https://larevuedeshotels.com/grand-hotel-valloire-galibier-cinq-etoiles-43-chambres-espace-bien-etre-300-m2-hiver-2028-2029": "2026-09-22",
+  "https://larevuedeshotels.com/chateau-saint-martin-spa-vence-fin-de-saison-11-octobre-2026-chef-romain-antoine-spa-la-prairie": "2026-09-22",
+  "https://hospitality-on.com/fr/developpement/castellet-hospitality-prepare-la-sortie-de-son-actionnaire-minoritaire-le-fonds-three": "2026-09-22",
+  "https://wwd.com/fashion-news/fashion-features/the-frankie-shop-milan-flagship-global-expansion-1239241243": "2026-09-22",
+  "https://wwd.com/accessories-news/jewelry/mattioli-milan-flagship-global-expansion-1239244199": "2026-09-22",
+  "https://origin.journalduluxe.fr/fr/beaute/nuxe-nouvelle-ceo-christine-delfaut-sara": "2026-09-22",
+  "https://origin.journalduluxe.fr/fr/mode/givenchy-renforce-sa-presence-digitale-avec-farfetch": "2026-09-22",
+  "https://origin.journalduluxe.fr/fr/business/lvmh-inside-certificat-luxe-cours-online": "2026-09-22",
+  "https://www.hospitalitynet.org/report/4134475/the-evolution-of-hotel-management-agreements-adapting-to-a-value-focused-market-in-the-middle-east-and-africa": "2026-09-22",
+  "https://www.hospitalitynet.org/news/4134477/frasers-hospitality-unveils-fraser-suites-reserve-a-new-luxury-serviced-living-brand": "2026-09-22"
  },
- "en_attente": []
+ "en_attente": [
+  {
+   "titre": "Ritz Paris : une exposition gratuite de 18 jeunes photographes pour Paris Photo 2026",
+   "lien": "https://www.sortiraparis.com/arts-culture/exposition/articles/352501-ritz-paris-une-exposition-gratuite-de-18-jeunes-photographes-pour-paris-photo-2026",
+   "source": "Alerte Google - Ouvertures",
+   "date": "2026-09-22T01:49:48+00:00",
+   "categorie": "Ouverture",
+   "priorite": "🟠",
+   "zone": "Paris",
+   "action": "Demander un contact commercial ou une visite des lieux"
+  },
+  {
+   "titre": "Les codes QR transfrontaliers ouvrent la voie à des voyages numériques pour les touristes.",
+   "lien": "https://www.vietnam.vn/fr/qr-xuyen-bien-gioi-mo-loi-cho-hanh-trinh-so-cua-khach-du-lich",
+   "source": "Alerte Google - Clientele cible",
+   "date": "2026-09-21T12:50:31+00:00",
+   "categorie": "Tendance clientèle",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Lire et archiver : argument utile pour les propositions clients"
+  },
+  {
+   "titre": "Le Grand Hôtel de Valloire vise cinq étoiles en 2028-2029 | La Revue des Hôtels",
+   "lien": "https://larevuedeshotels.com/grand-hotel-valloire-galibier-cinq-etoiles-43-chambres-espace-bien-etre-300-m2-hiver-2028-2029",
+   "source": "Alerte Google - Ouvertures",
+   "date": "2026-09-21T15:20:57+00:00",
+   "categorie": "Ouverture",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Demander un contact commercial ou une visite des lieux"
+  },
+  {
+   "titre": "Château Saint-Martin & Spa : saison jusqu'au 11 octobre",
+   "lien": "https://larevuedeshotels.com/chateau-saint-martin-spa-vence-fin-de-saison-11-octobre-2026-chef-romain-antoine-spa-la-prairie",
+   "source": "Alerte Google - Ouvertures",
+   "date": "2026-09-21T15:21:08+00:00",
+   "categorie": "Ouverture",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Demander un contact commercial ou une visite des lieux"
+  },
+  {
+   "titre": "Castellet Hospitality prépare la sortie de son actionnaire minoritaire, le fonds Three Hills Capital Partners",
+   "lien": "https://hospitality-on.com/fr/developpement/castellet-hospitality-prepare-la-sortie-de-son-actionnaire-minoritaire-le-fonds-three",
+   "source": "Hospitality ON",
+   "date": "2026-09-21T16:15:11+00:00",
+   "categorie": "Tendance clientèle",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Lire et archiver : argument utile pour les propositions clients"
+  },
+  {
+   "titre": "The Frankie Shop Opens First Milan Flagship as It Eyes Global Growth",
+   "lien": "https://wwd.com/fashion-news/fashion-features/the-frankie-shop-milan-flagship-global-expansion-1239241243",
+   "source": "WWD",
+   "date": "2026-09-22T04:01:00+00:00",
+   "categorie": "Ouverture",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Demander un contact commercial ou une visite des lieux"
+  },
+  {
+   "titre": "Storied Jeweler Mattioli Eyes Global Expansion With Milan Flagship Opening",
+   "lien": "https://wwd.com/accessories-news/jewelry/mattioli-milan-flagship-global-expansion-1239244199",
+   "source": "WWD",
+   "date": "2026-09-22T04:01:00+00:00",
+   "categorie": "Ouverture",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Demander un contact commercial ou une visite des lieux"
+  },
+  {
+   "titre": "Nuxe : Christine Delfaut-Sara succède à Muriel Koch à la tête du groupe",
+   "lien": "https://origin.journalduluxe.fr/fr/beaute/nuxe-nouvelle-ceo-christine-delfaut-sara",
+   "source": "Journal du Luxe",
+   "date": "2026-09-22T04:08:21+00:00",
+   "categorie": "Nomination",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "Givenchy renforce sa présence digitale avec Farfetch",
+   "lien": "https://origin.journalduluxe.fr/fr/mode/givenchy-renforce-sa-presence-digitale-avec-farfetch",
+   "source": "Journal du Luxe",
+   "date": "2026-09-22T04:21:06+00:00",
+   "categorie": "Ouverture",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Demander un contact commercial ou une visite des lieux"
+  },
+  {
+   "titre": "LVMH ouvre les inscriptions pour son Certificat dédié au luxe",
+   "lien": "https://origin.journalduluxe.fr/fr/business/lvmh-inside-certificat-luxe-cours-online",
+   "source": "Journal du Luxe",
+   "date": "2026-09-22T04:22:08+00:00",
+   "categorie": "Ouverture",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Demander un contact commercial ou une visite des lieux"
+  },
+  {
+   "titre": "The Evolution of Hotel Management Agreements: Adapting to a Value-Focused Market in the Middle East and Africa",
+   "lien": "https://www.hospitalitynet.org/report/4134475/the-evolution-of-hotel-management-agreements-adapting-to-a-value-focused-market-in-the-middle-east-and-africa",
+   "source": "Hospitality Net",
+   "date": "2026-09-22T07:23:00+00:00",
+   "categorie": "Tendance clientèle",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Lire et archiver : argument utile pour les propositions clients"
+  },
+  {
+   "titre": "Frasers Hospitality unveils Fraser Suites Reserve, a new luxury serviced living brand",
+   "lien": "https://www.hospitalitynet.org/news/4134477/frasers-hospitality-unveils-fraser-suites-reserve-a-new-luxury-serviced-living-brand",
+   "source": "Hospitality Net",
+   "date": "2026-09-22T07:34:33+00:00",
+   "categorie": "Ouverture",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Demander un contact commercial ou une visite des lieux"
+  }
+ ]
 }
