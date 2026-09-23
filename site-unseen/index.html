@@ -44,6 +44,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700;800&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<!-- Police pour les caracteres chinois (aucune des deux polices ci-dessus n'en dessine).
+     Chargee separement : le navigateur ne prend que les poids utilises. -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 <style>
 /* Leaflet 1.9.4 — feuille de style officielle, integree ici (et non chargee
    via <link>) pour que la carte reste stylee meme quand les feuilles de
@@ -199,13 +202,31 @@ html{scroll-behavior:smooth}
 body{
   background:var(--bleu-clair);
   color:var(--noir);
-  font-family:'Montserrat',system-ui,-apple-system,sans-serif;
+  font-family:'Montserrat','Noto Sans SC',system-ui,-apple-system,sans-serif;
   font-weight:400;
   font-size:17px;
   line-height:1.65;
   -webkit-font-smoothing:antialiased;
 }
-h1,h2,h3{font-family:'League Spartan',sans-serif}
+h1,h2,h3{font-family:'League Spartan','Noto Sans SC',sans-serif;font-weight:700}
+/* Poids plus fort pour les caracteres chinois : 'Noto Sans SC' en 700 parait
+   plus fin que League Spartan au meme poids, on compense avec 900 (Black)
+   la ou le titre est en gras 800 en latin. */
+:lang(zh) h1,:lang(zh) h2,:lang(zh) h3,:lang(zh) .hero-mark{font-weight:900}
+/* Le resserrement des lettres (letter-spacing negatif) sert a compacter du
+   texte latin : applique a des sinogrammes, qui sont des blocs pleins, il
+   les fait se toucher. On annule ce resserrement uniquement quand la page
+   est en chinois. Le mot de marque "UNSEEN." reste en lettres latines
+   meme en version chinoise, donc .hero-mark et .mark n'ont pas besoin
+   d'etre corriges : ils ne contiennent jamais de sinogramme. */
+:lang(zh) h1,:lang(zh) h2,:lang(zh) h3,
+:lang(zh) .lede,:lang(zh) .hero-body p,:lang(zh) .card p,:lang(zh) .dest p,
+:lang(zh) .sitem p,:lang(zh) .tl-step p{letter-spacing:0}
+/* Les blocs de texte courant respirent davantage en chinois : les
+   caracteres pleins ont besoin de plus de place entre les lignes que
+   des lettres latines pour rester confortables a lire. */
+:lang(zh) .lede,:lang(zh) .hero-body p,:lang(zh) .card p,:lang(zh) .dest p,
+:lang(zh) .sitem p,:lang(zh) .tl-step p,:lang(zh) .mc-item p{line-height:1.9}
 img{display:block;max-width:100%}
 .wrap{max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
 .num{font-family:'Montserrat',sans-serif;font-variant-numeric:tabular-nums}
@@ -538,17 +559,19 @@ button.btn{cursor:pointer;font-family:'Montserrat',system-ui,sans-serif}
   <div class="topbar-in">
     <a class="mark" href="#top">UNSEEN.</a>
     <nav class="nav">
-      <a href="#method" data-en="Method" data-fr="Méthode">Method</a>
-      <a href="#services" data-en="Services" data-fr="Services">Services</a>
-      <a href="#destinations" data-en="Destinations" data-fr="Destinations">Destinations</a>
-      <a href="#map" data-en="Map" data-fr="Carte">Map</a>
-      <a href="#seasons" data-en="Seasons" data-fr="Saisons">Seasons</a>
-      <a href="#contact" data-en="Contact" data-fr="Contact">Contact</a>
+      <a href="#method" data-en="Method" data-fr="Méthode" data-zh="服务流程">Method</a>
+      <a href="#services" data-en="Services" data-fr="Services" data-zh="服务">Services</a>
+      <a href="#destinations" data-en="Destinations" data-fr="Destinations" data-zh="目的地">Destinations</a>
+      <a href="#map" data-en="Map" data-fr="Carte" data-zh="地图">Map</a>
+      <a href="#seasons" data-en="Seasons" data-fr="Saisons" data-zh="季节">Seasons</a>
+      <a href="#contact" data-en="Contact" data-fr="Contact" data-zh="联系我们">Contact</a>
     </nav>
     <div class="langsw">
       <button type="button" id="btn-en" aria-pressed="true">EN</button>
       <span class="sep">/</span>
       <button type="button" id="btn-fr" aria-pressed="false">FR</button>
+      <span class="sep">/</span>
+      <button type="button" id="btn-zh" aria-pressed="false" lang="zh">中文</button>
     </div>
     <button class="navtoggle" id="navtoggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="navpanel">
       <span></span><span></span><span></span>
@@ -558,12 +581,12 @@ button.btn{cursor:pointer;font-family:'Montserrat',system-ui,sans-serif}
 
 <div class="navpanel" id="navpanel" aria-hidden="true">
   <nav>
-    <a href="#method" data-en="Method" data-fr="Méthode">Method</a>
-    <a href="#services" data-en="Services" data-fr="Services">Services</a>
-    <a href="#destinations" data-en="Destinations" data-fr="Destinations">Destinations</a>
-    <a href="#map" data-en="Map" data-fr="Carte">Map</a>
-    <a href="#seasons" data-en="Seasons" data-fr="Saisons">Seasons</a>
-    <a href="#contact" data-en="Contact" data-fr="Contact">Contact</a>
+    <a href="#method" data-en="Method" data-fr="Méthode" data-zh="服务流程">Method</a>
+    <a href="#services" data-en="Services" data-fr="Services" data-zh="服务">Services</a>
+    <a href="#destinations" data-en="Destinations" data-fr="Destinations" data-zh="目的地">Destinations</a>
+    <a href="#map" data-en="Map" data-fr="Carte" data-zh="地图">Map</a>
+    <a href="#seasons" data-en="Seasons" data-fr="Saisons" data-zh="季节">Seasons</a>
+    <a href="#contact" data-en="Contact" data-fr="Contact" data-zh="联系我们">Contact</a>
   </nav>
   <div class="pfoot">
     <a href="https://wa.me/33613850733">WhatsApp</a>
@@ -575,24 +598,24 @@ button.btn{cursor:pointer;font-family:'Montserrat',system-ui,sans-serif}
   <!-- Le cadre de l'image de fond est ecrit ici, et non cree par anim.js :
        si le script n'arrive pas, la photo doit rester DERRIERE le texte. -->
   <div class="hero-bg" aria-hidden="true">
-    <picture class="hslide is-on"><source type="image/avif" srcset="img/hero.avif"><img class="bg" src="img/hero.webp" alt="The illuminated top of the Eiffel Tower at night above Paris" data-alt-en="The illuminated top of the Eiffel Tower at night above Paris" data-alt-fr="Le sommet illuminé de la tour Eiffel la nuit au-dessus de Paris"></picture>
+    <picture class="hslide is-on"><source type="image/avif" srcset="img/hero.avif"><img class="bg" src="img/hero.webp" alt="The illuminated top of the Eiffel Tower at night above Paris" data-alt-en="The illuminated top of the Eiffel Tower at night above Paris" data-alt-fr="Le sommet illuminé de la tour Eiffel la nuit au-dessus de Paris" data-alt-zh="巴黎埃菲尔铁塔顶部夜间灯光效果"></picture>
   </div>
   <div class="veil"></div>
   <div class="hero-in">
     <div class="hero-mark">UNSEEN.</div>
-    <div class="hero-desc" data-en="Private Luxury Concierge" data-fr="Conciergerie privée de luxe">Private Luxury Concierge</div>
+    <div class="hero-desc" data-en="Private Luxury Concierge" data-fr="Conciergerie privée de luxe" data-zh="私人尊享礼宾服务">Private Luxury Concierge</div>
     <div class="hero-body">
-      <h1 data-en="We make the impossible, effortless." data-fr="Rendre l'impossible, évident.">We make the impossible, effortless.</h1>
-      <p data-en="A suite that was never listed. A table that closed three weeks ago. A seat on the night everyone wanted one. You tell us when, we handle the rest, and you never see how." data-fr="Une suite qui n'a jamais été mise en vente. Une table complète depuis trois semaines. Une place le soir où tout le monde en voulait une. Vous nous dites quand, nous faisons le reste, et vous ne voyez jamais comment.">A suite that was never listed. A table that closed three weeks ago. A seat on the night everyone wanted one. You tell us when, we handle the rest, and you never see how.</p>
+      <h1 data-en="We make the impossible, effortless." data-fr="Rendre l'impossible, évident." data-zh="化不可能，为理所当然。">We make the impossible, effortless.</h1>
+      <p data-en="A suite that was never listed. A table that closed three weeks ago. A seat on the night everyone wanted one. You tell us when, we handle the rest, and you never see how." data-fr="Une suite qui n'a jamais été mise en vente. Une table complète depuis trois semaines. Une place le soir où tout le monde en voulait une. Vous nous dites quand, nous faisons le reste, et vous ne voyez jamais comment." data-zh="一间从未公开预订的套房。一张三周前已经订满的餐桌。一个人人争抢的夜晚里的一席之地。您只需告知时间，其余的交给我们——您无需知道，我们是如何做到的。">A suite that was never listed. A table that closed three weeks ago. A seat on the night everyone wanted one. You tell us when, we handle the rest, and you never see how.</p>
     </div>
     <div class="places">
       <span>Paris</span><i></i>
       <span>Europe</span><i></i>
-      <span data-en="Indian Ocean" data-fr="Océan Indien">Indian Ocean</span>
+      <span data-en="Indian Ocean" data-fr="Océan Indien" data-zh="印度洋">Indian Ocean</span>
     </div>
     <div class="cta-row">
-      <a class="btn btn-accent" href="https://wa.me/33613850733" data-en="Enquire on WhatsApp" data-fr="Nous écrire sur WhatsApp">Enquire on WhatsApp</a>
-      <a class="btn" href="#services" data-en="What we do" data-fr="Ce que nous faisons">What we do</a>
+      <a class="btn btn-accent" href="https://wa.me/33613850733" data-en="Enquire on WhatsApp" data-fr="Nous écrire sur WhatsApp" data-zh="WhatsApp咨询">Enquire on WhatsApp</a>
+      <a class="btn" href="#services" data-en="What we do" data-fr="Ce que nous faisons" data-zh="我们的服务">What we do</a>
     </div>
   </div>
 </div>
@@ -600,31 +623,31 @@ button.btn{cursor:pointer;font-family:'Montserrat',system-ui,sans-serif}
 <section id="method" class="sec-white">
   <div class="wrap">
     <div class="head reveal">
-      <div class="eyebrow"><span class="n">01</span><span class="t" data-en="Method" data-fr="Méthode">Method</span></div>
-      <h2 data-en="Four steps, no grey areas." data-fr="Quatre étapes, aucune zone grise.">Four steps, no grey areas.</h2>
-      <p class="lede" data-en="You always know where your request stands. If something cannot be done, we say so straight away and come back with an alternative, never at the last minute." data-fr="Vous savez à tout moment où en est votre demande. Si une chose n'est pas réalisable, nous le disons sans attendre et nous revenons avec une alternative, jamais au dernier moment.">You always know where your request stands.</p>
+      <div class="eyebrow"><span class="n">01</span><span class="t" data-en="Method" data-fr="Méthode" data-zh="服务流程">Method</span></div>
+      <h2 data-en="Four steps, no grey areas." data-fr="Quatre étapes, aucune zone grise." data-zh="四个步骤，清晰透明，绝无含糊。">Four steps, no grey areas.</h2>
+      <p class="lede" data-en="You always know where your request stands. If something cannot be done, we say so straight away and come back with an alternative, never at the last minute." data-fr="Vous savez à tout moment où en est votre demande. Si une chose n'est pas réalisable, nous le disons sans attendre et nous revenons avec une alternative, jamais au dernier moment." data-zh="您的每一项需求进展，我们都会让您随时掌握。如果某件事无法实现，我们会第一时间坦诚相告，并立即提供替代方案，绝不会拖到最后一刻。">You always know where your request stands.</p>
     </div>
 
     <ol class="timeline reveal">
       <li class="tl-step">
         <span class="tl-k">01</span>
-        <h3 data-en="The request" data-fr="La demande">The request</h3>
-        <p data-en="A message. Dates, city, and roughly what you have in mind. Nothing else is needed to start, and there is no form to fill in." data-fr="Un message. Les dates, la ville, et à peu près ce que vous avez en tête. Rien d'autre n'est nécessaire pour commencer, et il n'y a aucun formulaire à remplir.">A message. Dates, city, and roughly what you have in mind.</p>
+        <h3 data-en="The request" data-fr="La demande" data-zh="需求提出">The request</h3>
+        <p data-en="A message. Dates, city, and roughly what you have in mind. Nothing else is needed to start, and there is no form to fill in." data-fr="Un message. Les dates, la ville, et à peu près ce que vous avez en tête. Rien d'autre n'est nécessaire pour commencer, et il n'y a aucun formulaire à remplir." data-zh="一条消息即可开始。日期、城市，以及您大致的想法。无需填写任何表格，仅此而已。">A message. Dates, city, and roughly what you have in mind.</p>
       </li>
       <li class="tl-step">
         <span class="tl-k">02</span>
-        <h3 data-en="The answer" data-fr="La réponse">The answer</h3>
-        <p data-en="What is available, what it costs, and how long the option holds. In writing. We do not promise anything we cannot deliver." data-fr="Ce qui est disponible, ce que cela coûte, et combien de temps la place tient. Par écrit. Nous ne promettons rien que nous ne puissions tenir.">What is available, what it costs, and how long the option holds.</p>
+        <h3 data-en="The answer" data-fr="La réponse" data-zh="我们的回复">The answer</h3>
+        <p data-en="What is available, what it costs, and how long the option holds. In writing. We do not promise anything we cannot deliver." data-fr="Ce qui est disponible, ce que cela coûte, et combien de temps la place tient. Par écrit. Nous ne promettons rien que nous ne puissions tenir." data-zh="可安排的方案、费用，以及保留期限，皆以书面形式确认。我们从不承诺无法兑现之事。">What is available, what it costs, and how long the option holds.</p>
       </li>
       <li class="tl-step">
         <span class="tl-k">03</span>
-        <h3 data-en="On the ground" data-fr="Sur place">On the ground</h3>
-        <p data-en="One contact from start to finish, reachable at any hour and in any time zone. If a table falls through at seven, another one is standing at eight." data-fr="Un seul interlocuteur du début à la fin, joignable à toute heure et dans tous les fuseaux. Si une table tombe à dix-neuf heures, une autre tient à vingt.">One contact from start to finish, reachable at any hour and in any time zone.</p>
+        <h3 data-en="On the ground" data-fr="Sur place" data-zh="行程之中">On the ground</h3>
+        <p data-en="One contact from start to finish, reachable at any hour and in any time zone. If a table falls through at seven, another one is standing at eight." data-fr="Un seul interlocuteur du début à la fin, joignable à toute heure et dans tous les fuseaux. Si une table tombe à dix-neuf heures, une autre tient à vingt." data-zh="从始至终，只有一位专属联络人，随时随地为您服务，跨越所有时区。若七点的餐桌意外落空，八点已备好另一席。">One contact from start to finish, reachable at any hour and in any time zone.</p>
       </li>
       <li class="tl-step">
         <span class="tl-k">04</span>
-        <h3 data-en="Afterwards" data-fr="Ensuite">Afterwards</h3>
-        <p data-en="Nothing leaves. Your name, your dates and your itinerary are never disclosed or confirmed to anyone, including to other clients and to the press. During, and long after." data-fr="Rien ne sort. Votre nom, vos dates et votre itinéraire ne sont jamais divulgués ni confirmés à quiconque, y compris aux autres clients et à la presse. Pendant, et longtemps après.">Nothing leaves. Your name, your dates and your itinerary are never disclosed or confirmed to anyone.</p>
+        <h3 data-en="Afterwards" data-fr="Ensuite" data-zh="此后">Afterwards</h3>
+        <p data-en="Nothing leaves. Your name, your dates and your itinerary are never disclosed or confirmed to anyone, including to other clients and to the press. During, and long after." data-fr="Rien ne sort. Votre nom, vos dates et votre itinéraire ne sont jamais divulgués ni confirmés à quiconque, y compris aux autres clients et à la presse. Pendant, et longtemps après." data-zh="一切不外泄。您的姓名、行程与出行安排，我们从不向任何人透露或确认，包括其他客户与媒体。无论当下，还是很久以后。">Nothing leaves. Your name, your dates and your itinerary are never disclosed or confirmed to anyone.</p>
       </li>
     </ol>
   </div>
@@ -633,81 +656,81 @@ button.btn{cursor:pointer;font-family:'Montserrat',system-ui,sans-serif}
 <section id="services" class="sec-pale">
   <div class="wrap">
     <div class="head reveal">
-      <div class="eyebrow"><span class="n">02</span><span class="t" data-en="Services" data-fr="Services">Services</span></div>
-      <h2 data-en="One number. Everything behind it." data-fr="Un seul numéro. Tout le reste derrière.">One number. Everything behind it.</h2>
-      <p class="lede" data-en="No switchboard, no ticket, no account manager discovering your file as you speak. One person already knows it, and answers." data-fr="Pas de standard, pas de numéro de dossier, pas de gestionnaire qui découvre votre dossier en vous parlant. Une seule personne le connaît déjà, et répond.">No switchboard, no ticket, no account manager discovering your file as you speak.</p>
+      <div class="eyebrow"><span class="n">02</span><span class="t" data-en="Services" data-fr="Services" data-zh="服务">Services</span></div>
+      <h2 data-en="One number. Everything behind it." data-fr="Un seul numéro. Tout le reste derrière." data-zh="一个号码，背后是一切。">One number. Everything behind it.</h2>
+      <p class="lede" data-en="No switchboard, no ticket, no account manager discovering your file as you speak. One person already knows it, and answers." data-fr="Pas de standard, pas de numéro de dossier, pas de gestionnaire qui découvre votre dossier en vous parlant. Une seule personne le connaît déjà, et répond." data-zh="没有总机转接，没有工单排队，没有客户经理一边听您说明一边翻查资料。只有一个人，早已了解您的一切，随时应答。">No switchboard, no ticket, no account manager discovering your file as you speak.</p>
     </div>
 
     <div class="cards reveal">
       <article class="card">
-        <div class="ph"><picture><source type="image/avif" srcset="img/s-stay.avif"><img src="img/s-stay.webp" alt="The domes of a Monte-Carlo palace hotel against a clear sky" data-alt-en="The domes of a Monte-Carlo palace hotel against a clear sky" data-alt-fr="Les coupoles d'un palace de Monte-Carlo sur un ciel dégagé" loading="lazy"></picture></div>
+        <div class="ph"><picture><source type="image/avif" srcset="img/s-stay.avif"><img src="img/s-stay.webp" alt="The domes of a Monte-Carlo palace hotel against a clear sky" data-alt-en="The domes of a Monte-Carlo palace hotel against a clear sky" data-alt-fr="Les coupoles d'un palace de Monte-Carlo sur un ciel dégagé" data-alt-zh="蒙特卡洛宫殿级酒店的穹顶与晴空" loading="lazy"></picture></div>
         <div class="txt">
-          <span class="tag" data-en="Stay" data-fr="Séjour">Stay</span>
-          <h3 data-en="Palaces and suites" data-fr="Palaces et suites">Palaces and suites</h3>
-          <p data-en="Rooms and categories that never reach a booking engine. Upgrades arranged before arrival, late check-out held, and amenities set to your preferences rather than a standard list." data-fr="Des chambres et des catégories qui n'arrivent jamais jusqu'à un moteur de réservation. Le surclassement se règle avant l'arrivée, le départ tardif est retenu, et les attentions suivent vos préférences plutôt qu'une liste type.">Rooms and categories that never reach a booking engine.</p>
+          <span class="tag" data-en="Stay" data-fr="Séjour" data-zh="下榻">Stay</span>
+          <h3 data-en="Palaces and suites" data-fr="Palaces et suites" data-zh="宫殿级酒店与套房">Palaces and suites</h3>
+          <p data-en="Rooms and categories that never reach a booking engine. Upgrades arranged before arrival, late check-out held, and amenities set to your preferences rather than a standard list." data-fr="Des chambres et des catégories qui n'arrivent jamais jusqu'à un moteur de réservation. Le surclassement se règle avant l'arrivée, le départ tardif est retenu, et les attentions suivent vos préférences plutôt qu'une liste type." data-zh="从不出现在预订系统中的房型与房源。升房提前安排妥当，延迟退房予以保留，各项礼遇皆按您的喜好定制，而非千篇一律的标准清单。">Rooms and categories that never reach a booking engine.</p>
         </div>
       </article>
 
       <article class="card">
-        <div class="ph"><picture><source type="image/avif" srcset="img/s-table.avif"><img src="img/s-table.webp" alt="A sushi chef preparing a piece at the counter" data-alt-en="A sushi chef preparing a piece at the counter" data-alt-fr="Un chef sushi préparant une pièce au comptoir" loading="lazy"></picture></div>
+        <div class="ph"><picture><source type="image/avif" srcset="img/s-table.avif"><img src="img/s-table.webp" alt="A sushi chef preparing a piece at the counter" data-alt-en="A sushi chef preparing a piece at the counter" data-alt-fr="Un chef sushi préparant une pièce au comptoir" data-alt-zh="寿司主厨在吧台制作料理" loading="lazy"></picture></div>
         <div class="txt">
-          <span class="tag" data-en="Table" data-fr="Table">Table</span>
-          <h3 data-en="Dining" data-fr="Tables">Dining</h3>
-          <p data-en="Tables at short notice in rooms that show nothing available. Private dining rooms, chef's counters, and menus adjusted to an allergy, a fast, or a schedule that will not wait." data-fr="Des tables obtenues tard dans des salles qui n'affichent plus rien. Salons privés, comptoirs de chef, et menus ajustés à une allergie, un jeûne ou un emploi du temps qui n'attend pas.">Tables at short notice in rooms that show nothing available.</p>
+          <span class="tag" data-en="Table" data-fr="Table" data-zh="餐桌">Table</span>
+          <h3 data-en="Dining" data-fr="Tables" data-zh="餐饮">Dining</h3>
+          <p data-en="Tables at short notice in rooms that show nothing available. Private dining rooms, chef's counters, and menus adjusted to an allergy, a fast, or a schedule that will not wait." data-fr="Des tables obtenues tard dans des salles qui n'affichent plus rien. Salons privés, comptoirs de chef, et menus ajustés à une allergie, un jeûne ou un emploi du temps qui n'attend pas." data-zh="在显示“满座”的餐厅里，我们仍能为您觅得一席。私人包厢、主厨吧台，菜单可依据过敏、斋戒或紧凑行程灵活调整。">Tables at short notice in rooms that show nothing available.</p>
         </div>
       </article>
 
       <article class="card">
-        <div class="ph"><picture><source type="image/avif" srcset="img/s-access.avif"><img src="img/s-access.webp" alt="Formula 1 cars lined up in the pit lane before the start" data-alt-en="Formula 1 cars lined up in the pit lane before the start" data-alt-fr="Les Formule 1 alignées dans la voie des stands avant le départ" loading="lazy"></picture></div>
+        <div class="ph"><picture><source type="image/avif" srcset="img/s-access.avif"><img src="img/s-access.webp" alt="Formula 1 cars lined up in the pit lane before the start" data-alt-en="Formula 1 cars lined up in the pit lane before the start" data-alt-fr="Les Formule 1 alignées dans la voie des stands avant le départ" data-alt-zh="F1赛车在起跑前排列于维修区通道" loading="lazy"></picture></div>
         <div class="txt">
-          <span class="tag" data-en="Access" data-fr="Accès">Access</span>
-          <h3 data-en="Events and access" data-fr="Événements et accès">Events and access</h3>
-          <p data-en="Formula 1 weekends, Fashion Weeks, Art Basel, Roland-Garros, sold-out shows. The paddock, the courtside, the front row, and the rooms that open afterwards." data-fr="Week-ends de Formule 1, Fashion Weeks, Art Basel, Roland-Garros, spectacles complets. Le paddock, le bord de court, le premier rang, et les salles qui ouvrent ensuite.">Formula 1 Grand Prix weekends, Fashion Weeks, Art Basel, Roland-Garros, sold-out shows and private previews.</p>
+          <span class="tag" data-en="Access" data-fr="Accès" data-zh="通行">Access</span>
+          <h3 data-en="Events and access" data-fr="Événements et accès" data-zh="活动与通行">Events and access</h3>
+          <p data-en="Formula 1 weekends, Fashion Weeks, Art Basel, Roland-Garros, sold-out shows. The paddock, the courtside, the front row, and the rooms that open afterwards." data-fr="Week-ends de Formule 1, Fashion Weeks, Art Basel, Roland-Garros, spectacles complets. Le paddock, le bord de court, le premier rang, et les salles qui ouvrent ensuite." data-zh="F1大奖赛周末、时装周、巴塞尔艺术展、法网公开赛、一票难求的演出——维修区通道、场边席位、前排座席，以及赛后开放的私密场所，皆可安排。">Formula 1 Grand Prix weekends, Fashion Weeks, Art Basel, Roland-Garros, sold-out shows and private previews.</p>
         </div>
       </article>
 
       <article class="card">
-        <div class="ph"><picture><source type="image/avif" srcset="img/s-wardrobe.avif"><img src="img/s-wardrobe.webp" alt="Handbags displayed on the shelves of a luxury boutique" data-alt-en="Handbags displayed on the shelves of a luxury boutique" data-alt-fr="Des sacs exposés sur les étagères d'une boutique de luxe" loading="lazy"></picture></div>
+        <div class="ph"><picture><source type="image/avif" srcset="img/s-wardrobe.avif"><img src="img/s-wardrobe.webp" alt="Handbags displayed on the shelves of a luxury boutique" data-alt-en="Handbags displayed on the shelves of a luxury boutique" data-alt-fr="Des sacs exposés sur les étagères d'une boutique de luxe" data-alt-zh="奢侈品精品店货架上陈列的手袋" loading="lazy"></picture></div>
         <div class="txt">
-          <span class="tag" data-en="Wardrobe" data-fr="Garde-robe">Wardrobe</span>
-          <h3 data-en="Shopping and sourcing" data-fr="Shopping et sourcing">Shopping and sourcing</h3>
-          <p data-en="Appointments outside opening hours with the major houses, waiting lists, styling, and sourcing pieces that are no longer made." data-fr="Des rendez-vous hors horaires chez les grandes maisons, des listes d'attente, du styling, et la recherche de pièces qui ne se font plus.">Appointments outside opening hours with the major houses, waiting lists, styling, and the search for pieces that are no longer made.</p>
+          <span class="tag" data-en="Wardrobe" data-fr="Garde-robe" data-zh="衣橱">Wardrobe</span>
+          <h3 data-en="Shopping and sourcing" data-fr="Shopping et sourcing" data-zh="私人采购与寻源">Shopping and sourcing</h3>
+          <p data-en="Appointments outside opening hours with the major houses, waiting lists, styling, and sourcing pieces that are no longer made." data-fr="Des rendez-vous hors horaires chez les grandes maisons, des listes d'attente, du styling, et la recherche de pièces qui ne se font plus." data-zh="非营业时段与各大品牌的专属预约、排队名单、造型顾问，以及已停产单品的搜寻。">Appointments outside opening hours with the major houses, waiting lists, styling, and the search for pieces that are no longer made.</p>
         </div>
       </article>
 
       <article class="card">
-        <div class="ph"><picture><source type="image/avif" srcset="img/s-transport.avif"><img src="img/s-transport.webp" alt="A black chauffeur-driven car waiting at night" data-alt-en="A black chauffeur-driven car waiting at night" data-alt-fr="Une berline noire avec chauffeur attendant de nuit" loading="lazy"></picture></div>
+        <div class="ph"><picture><source type="image/avif" srcset="img/s-transport.avif"><img src="img/s-transport.webp" alt="A black chauffeur-driven car waiting at night" data-alt-en="A black chauffeur-driven car waiting at night" data-alt-fr="Une berline noire avec chauffeur attendant de nuit" data-alt-zh="夜间等候的黑色专属座驾" loading="lazy"></picture></div>
         <div class="txt">
-          <span class="tag" data-en="Movement" data-fr="Déplacement">Movement</span>
-          <h3 data-en="Private transport" data-fr="Transport privé">Private transport</h3>
-          <p data-en="Chauffeurs who know the city and never talk about it, airport and terminal transfers, long-distance journeys, and a helicopter leg where the road would cost three hours." data-fr="Des chauffeurs qui connaissent la ville et n'en parlent jamais, des transferts aéroport et terminal, des trajets longue distance, et un vol en hélicoptère là où la route coûterait trois heures.">Chauffeurs who know the city and never talk about it.</p>
+          <span class="tag" data-en="Movement" data-fr="Déplacement" data-zh="出行">Movement</span>
+          <h3 data-en="Private transport" data-fr="Transport privé" data-zh="私人用车">Private transport</h3>
+          <p data-en="Chauffeurs who know the city and never talk about it, airport and terminal transfers, long-distance journeys, and a helicopter leg where the road would cost three hours." data-fr="Des chauffeurs qui connaissent la ville et n'en parlent jamais, des transferts aéroport et terminal, des trajets longue distance, et un vol en hélicoptère là où la route coûterait trois heures." data-zh="熟悉城市却绝口不提的专属司机，机场与航站楼接送，长途行程，以及能省去三小时车程的直升机接驳。">Chauffeurs who know the city and never talk about it.</p>
         </div>
       </article>
 
       <article class="card">
-        <div class="ph"><picture><source type="image/avif" srcset="img/s-evening.avif"><img src="img/s-evening.webp" alt="The gilded boxes and chandeliers of an opera house" data-alt-en="The gilded boxes and chandeliers of an opera house" data-alt-fr="Les loges dorées et les lustres d'un opéra" loading="lazy"></picture></div>
+        <div class="ph"><picture><source type="image/avif" srcset="img/s-evening.avif"><img src="img/s-evening.webp" alt="The gilded boxes and chandeliers of an opera house" data-alt-en="The gilded boxes and chandeliers of an opera house" data-alt-fr="Les loges dorées et les lustres d'un opéra" data-alt-zh="歌剧院的镀金包厢与水晶吊灯" loading="lazy"></picture></div>
         <div class="txt">
-          <span class="tag" data-en="Evening" data-fr="Soirée">Evening</span>
-          <h3 data-en="Evenings and closed rooms" data-fr="Soirées et lieux fermés">Evenings and closed rooms</h3>
-          <p data-en="Private clubs, booths that are never sold, opera boxes, and evenings built around a guest list rather than a venue. Entry is arranged before you arrive, never negotiated at the door." data-fr="Clubs privés, tables qui ne se vendent jamais, loges d'opéra, et soirées construites autour d'une liste plutôt que d'un lieu. L'entrée se règle avant votre arrivée, jamais devant la porte.">Private clubs, booths that are never sold, opera boxes, and evenings built around a guest list rather than a venue.</p>
+          <span class="tag" data-en="Evening" data-fr="Soirée" data-zh="夜晚">Evening</span>
+          <h3 data-en="Evenings and closed rooms" data-fr="Soirées et lieux fermés" data-zh="夜生活与私密场所">Evenings and closed rooms</h3>
+          <p data-en="Private clubs, booths that are never sold, opera boxes, and evenings built around a guest list rather than a venue. Entry is arranged before you arrive, never negotiated at the door." data-fr="Clubs privés, tables qui ne se vendent jamais, loges d'opéra, et soirées construites autour d'une liste plutôt que d'un lieu. L'entrée se règle avant votre arrivée, jamais devant la porte." data-zh="私人会所、从不对外出售的卡座、歌剧院包厢，以及以宾客名单而非场地为核心安排的夜晚。入场事先安排妥当，从不在门口交涉。">Private clubs, booths that are never sold, opera boxes, and evenings built around a guest list rather than a venue.</p>
         </div>
       </article>
 
       <article class="card">
-        <div class="ph"><picture><source type="image/avif" srcset="img/s-charter.avif"><img src="img/s-charter.webp" alt="Yachts moored in a Mediterranean marina" data-alt-en="Yachts moored in a Mediterranean marina" data-alt-fr="Des yachts amarrés dans un port de Méditerranée" loading="lazy"></picture></div>
+        <div class="ph"><picture><source type="image/avif" srcset="img/s-charter.avif"><img src="img/s-charter.webp" alt="Yachts moored in a Mediterranean marina" data-alt-en="Yachts moored in a Mediterranean marina" data-alt-fr="Des yachts amarrés dans un port de Méditerranée" data-alt-zh="地中海游艇码头停泊的游艇" loading="lazy"></picture></div>
         <div class="txt">
-          <span class="tag" data-en="Water" data-fr="Mer">Water</span>
-          <h3 data-en="Villas and charters" data-fr="Villas et affrètements">Villas and charters</h3>
-          <p data-en="Staffed villas by the week, yachts by the day or by the season, with crew, tender and chef. Provisioning, berths and shore transfers form one plan rather than four separate bookings." data-fr="Des villas avec personnel à la semaine, des yachts à la journée ou à la saison, avec équipage, annexe et chef. Avitaillement, places de port et transferts à terre forment un seul plan plutôt que quatre réservations séparées.">Staffed villas by the week, yachts by the day or by the season, with crew, tender and chef.</p>
+          <span class="tag" data-en="Water" data-fr="Mer" data-zh="海上">Water</span>
+          <h3 data-en="Villas and charters" data-fr="Villas et affrètements" data-zh="别墅与游艇包船">Villas and charters</h3>
+          <p data-en="Staffed villas by the week, yachts by the day or by the season, with crew, tender and chef. Provisioning, berths and shore transfers form one plan rather than four separate bookings." data-fr="Des villas avec personnel à la semaine, des yachts à la journée ou à la saison, avec équipage, annexe et chef. Avitaillement, places de port et transferts à terre forment un seul plan plutôt que quatre réservations séparées." data-zh="配备管家团队的别墅可按周入住，游艇可按日或按季包船，配有船员、接驳艇与私厨。补给、泊位与岸上接送统一规划，而非四份独立预订。">Staffed villas by the week, yachts by the day or by the season, with crew, tender and chef.</p>
         </div>
       </article>
 
       <article class="card">
-        <div class="ph"><picture><source type="image/avif" srcset="img/s-sport.avif"><img src="img/s-sport.webp" alt="The front wing and tyre of a Formula 1 car" data-alt-en="The front wing and tyre of a Formula 1 car" data-alt-fr="L'aileron avant et le pneu d'une Formule 1" loading="lazy"></picture></div>
+        <div class="ph"><picture><source type="image/avif" srcset="img/s-sport.avif"><img src="img/s-sport.webp" alt="The front wing and tyre of a Formula 1 car" data-alt-en="The front wing and tyre of a Formula 1 car" data-alt-fr="L'aileron avant et le pneu d'une Formule 1" data-alt-zh="F1赛车的前翼与轮胎" loading="lazy"></picture></div>
         <div class="txt">
-          <span class="tag" data-en="Performance" data-fr="Performance">Performance</span>
-          <h3 data-en="Athletes and entourage" data-fr="Sportifs et entourage">Athletes and entourage</h3>
-          <p data-en="Private gym hours, physiotherapy and recovery on site, meals built around a nutrition plan, arrivals and departures that avoid the lobby. Built for competition calendars, and for people who would rather not be recognised." data-fr="Des créneaux de salle privatisés, kinésithérapie et récupération sur place, des repas construits sur un plan nutritionnel, des arrivées et des départs qui évitent le hall. Pensé pour les calendriers de compétition, et pour ceux qui préfèrent ne pas être reconnus.">Private gym hours, physiotherapy and recovery on site, meals built around a nutrition plan, arrivals and departures that avoid the lobby.</p>
+          <span class="tag" data-en="Performance" data-fr="Performance" data-zh="竞技">Performance</span>
+          <h3 data-en="Athletes and entourage" data-fr="Sportifs et entourage" data-zh="运动员与随行团队">Athletes and entourage</h3>
+          <p data-en="Private gym hours, physiotherapy and recovery on site, meals built around a nutrition plan, arrivals and departures that avoid the lobby. Built for competition calendars, and for people who would rather not be recognised." data-fr="Des créneaux de salle privatisés, kinésithérapie et récupération sur place, des repas construits sur un plan nutritionnel, des arrivées et des départs qui évitent le hall. Pensé pour les calendriers de compétition, et pour ceux qui préfèrent ne pas être reconnus." data-zh="私人健身时段、现场理疗与恢复训练、按营养方案定制的餐食，以及避开大堂的进出安排。专为紧凑赛程而设，也为不愿被认出的人而设。">Private gym hours, physiotherapy and recovery on site, meals built around a nutrition plan, arrivals and departures that avoid the lobby.</p>
         </div>
       </article>
     </div>
@@ -717,39 +740,39 @@ button.btn{cursor:pointer;font-family:'Montserrat',system-ui,sans-serif}
 <section id="destinations" class="sec-white">
   <div class="wrap">
     <div class="head reveal">
-      <div class="eyebrow"><span class="n">03</span><span class="t" data-en="Destinations" data-fr="Destinations">Destinations</span></div>
-      <h2 data-en="Three territories, one standard." data-fr="Trois territoires, une seule exigence.">Three territories, one standard.</h2>
-      <p class="lede" data-en="We work where our clients actually go. Elsewhere, we say so rather than improvise." data-fr="Nous travaillons là où nos clients se rendent réellement. Ailleurs, nous le disons plutôt que d'improviser.">We work where our clients actually go, and we stop where our network stops.</p>
+      <div class="eyebrow"><span class="n">03</span><span class="t" data-en="Destinations" data-fr="Destinations" data-zh="目的地">Destinations</span></div>
+      <h2 data-en="Three territories, one standard." data-fr="Trois territoires, une seule exigence." data-zh="三大版图，同一标准。">Three territories, one standard.</h2>
+      <p class="lede" data-en="We work where our clients actually go. Elsewhere, we say so rather than improvise." data-fr="Nous travaillons là où nos clients se rendent réellement. Ailleurs, nous le disons plutôt que d'improviser." data-zh="我们只在客户真正前往之地提供服务；其余之处，我们坦言不及，而非临场应付。">We work where our clients actually go, and we stop where our network stops.</p>
     </div>
 
     <div class="dests reveal">
       <div class="dest">
-        <div class="ph"><picture><source type="image/avif" srcset="img/d-paris.avif"><img src="img/d-paris.webp" alt="The rooftops of Paris at dusk, seen from above" data-alt-en="The rooftops of Paris at dusk, seen from above" data-alt-fr="Les toits de Paris au crépuscule, vus d'en haut" loading="lazy"></picture></div>
+        <div class="ph"><picture><source type="image/avif" srcset="img/d-paris.avif"><img src="img/d-paris.webp" alt="The rooftops of Paris at dusk, seen from above" data-alt-en="The rooftops of Paris at dusk, seen from above" data-alt-fr="Les toits de Paris au crépuscule, vus d'en haut" data-alt-zh="黄昏时分俯瞰巴黎屋顶" loading="lazy"></picture></div>
         <div class="txt">
-          <span class="tag" data-en="The base" data-fr="La base">The base</span>
+          <span class="tag" data-en="The base" data-fr="La base" data-zh="根基所在">The base</span>
           <h3>Paris</h3>
-          <p data-en="The city where the address book was built, and where a name still opens a door faster than a payment does. Palaces, starred kitchens, private clubs, ateliers, and the houses of the Faubourg." data-fr="La ville où le carnet d'adresses s'est construit, et où un nom ouvre encore une porte plus vite qu'un paiement. Palaces, cuisines étoilées, clubs privés, ateliers, et les maisons du Faubourg.">The city where the address book was built, and where a name still opens a door faster than a payment does.</p>
-          <div class="list" data-en="Palaces &nbsp; Starred dining &nbsp; Fashion Week &nbsp; Private clubs" data-fr="Palaces &nbsp; Tables étoilées &nbsp; Fashion Week &nbsp; Clubs privés">Palaces &nbsp; Starred dining &nbsp; Fashion Week &nbsp; Private clubs</div>
+          <p data-en="The city where the address book was built, and where a name still opens a door faster than a payment does. Palaces, starred kitchens, private clubs, ateliers, and the houses of the Faubourg." data-fr="La ville où le carnet d'adresses s'est construit, et où un nom ouvre encore une porte plus vite qu'un paiement. Palaces, cuisines étoilées, clubs privés, ateliers, et les maisons du Faubourg." data-zh="我们的人脉网络，正是从这座城市建立起来的。在这里，一个名字仍比一笔付款更快为您打开一扇门。宫殿级酒店、米其林星厨厨房、私人会所、时装工坊，以及圣奥诺雷街区的各大品牌之家。">The city where the address book was built, and where a name still opens a door faster than a payment does.</p>
+          <div class="list" data-en="Palaces &nbsp; Starred dining &nbsp; Fashion Week &nbsp; Private clubs" data-fr="Palaces &nbsp; Tables étoilées &nbsp; Fashion Week &nbsp; Clubs privés" data-zh="宫殿级酒店　米其林星级餐厅　时装周　私人会所">Palaces &nbsp; Starred dining &nbsp; Fashion Week &nbsp; Private clubs</div>
         </div>
       </div>
 
       <div class="dest flip">
-        <div class="ph"><picture><source type="image/avif" srcset="img/d-europe.avif"><img src="img/d-europe.webp" alt="A seafront palace hotel lit up at night on the French Riviera" data-alt-en="A seafront palace hotel lit up at night on the French Riviera" data-alt-fr="Un palace en bord de mer illuminé la nuit sur la Côte d'Azur" loading="lazy"></picture></div>
+        <div class="ph"><picture><source type="image/avif" srcset="img/d-europe.avif"><img src="img/d-europe.webp" alt="A seafront palace hotel lit up at night on the French Riviera" data-alt-en="A seafront palace hotel lit up at night on the French Riviera" data-alt-fr="Un palace en bord de mer illuminé la nuit sur la Côte d'Azur" data-alt-zh="蔚蓝海岸海滨宫殿级酒店的夜间灯光" loading="lazy"></picture></div>
         <div class="txt">
-          <span class="tag" data-en="The continent" data-fr="Le continent">The continent</span>
+          <span class="tag" data-en="The continent" data-fr="Le continent" data-zh="欧洲大陆">The continent</span>
           <h3>Europe</h3>
-          <p data-en="Monaco and the Riviera, Saint-Tropez, the Alps, Milan and the Italian lakes, London and the English countryside. The same people, the same weekends, moving between four countries on one calendar." data-fr="Monaco et la Riviera, Saint-Tropez, les Alpes, Milan et les lacs italiens, Londres et la campagne anglaise. Les mêmes personnes, les mêmes week-ends, un déplacement entre quatre pays sur un seul calendrier.">Monaco and the Riviera, Saint-Tropez, the Alps, Milan and the Italian lakes, London and the English countryside.</p>
-          <div class="list" data-en="Monaco &nbsp; Côte d'Azur &nbsp; Courchevel &nbsp; Milan &nbsp; London" data-fr="Monaco &nbsp; Côte d'Azur &nbsp; Courchevel &nbsp; Milan &nbsp; Londres">Monaco &nbsp; Côte d'Azur &nbsp; Courchevel &nbsp; Milan &nbsp; London</div>
+          <p data-en="Monaco and the Riviera, Saint-Tropez, the Alps, Milan and the Italian lakes, London and the English countryside. The same people, the same weekends, moving between four countries on one calendar." data-fr="Monaco et la Riviera, Saint-Tropez, les Alpes, Milan et les lacs italiens, Londres et la campagne anglaise. Les mêmes personnes, les mêmes week-ends, un déplacement entre quatre pays sur un seul calendrier." data-zh="摩纳哥与蔚蓝海岸、圣特罗佩、阿尔卑斯山、米兰与意大利湖区、伦敦与英格兰乡间——同样的人群，同样的周末，在同一张日程表上穿梭于四个国家。">Monaco and the Riviera, Saint-Tropez, the Alps, Milan and the Italian lakes, London and the English countryside.</p>
+          <div class="list" data-en="Monaco &nbsp; Côte d'Azur &nbsp; Courchevel &nbsp; Milan &nbsp; London" data-fr="Monaco &nbsp; Côte d'Azur &nbsp; Courchevel &nbsp; Milan &nbsp; Londres" data-zh="摩纳哥　蔚蓝海岸　库雪维尔　米兰　伦敦">Monaco &nbsp; Côte d'Azur &nbsp; Courchevel &nbsp; Milan &nbsp; London</div>
         </div>
       </div>
 
       <div class="dest">
-        <div class="ph"><picture><source type="image/avif" srcset="img/d-ocean.avif"><img src="img/d-ocean.webp" alt="Overwater villas on a turquoise lagoon in the Indian Ocean" data-alt-en="Overwater villas on a turquoise lagoon in the Indian Ocean" data-alt-fr="Des villas sur pilotis au-dessus d'un lagon turquoise de l'océan Indien" loading="lazy"></picture></div>
+        <div class="ph"><picture><source type="image/avif" srcset="img/d-ocean.avif"><img src="img/d-ocean.webp" alt="Overwater villas on a turquoise lagoon in the Indian Ocean" data-alt-en="Overwater villas on a turquoise lagoon in the Indian Ocean" data-alt-fr="Des villas sur pilotis au-dessus d'un lagon turquoise de l'océan Indien" data-alt-zh="印度洋绿松石色潟湖上的水上别墅" loading="lazy"></picture></div>
         <div class="txt">
-          <span class="tag" data-en="The counter-season" data-fr="La contre-saison">The counter-season</span>
-          <h3 data-en="Indian Ocean" data-fr="Océan Indien">Indian Ocean</h3>
-          <p data-en="Mauritius runs on a calendar of its own and stays open when Europe closes: lagoons, five-star resorts, staffed villas, helicopter legs across the island, and days at sea with a crew." data-fr="Maurice suit un calendrier qui lui est propre et reste ouverte quand l'Europe se ferme : lagons, resorts cinq étoiles, villas avec personnel, liaisons en hélicoptère au-dessus de l'île, et journées en mer avec équipage.">Mauritius runs on a calendar of its own and stays open when Europe closes.</p>
-          <div class="list" data-en="Resorts &nbsp; Staffed villas &nbsp; Helicopter &nbsp; Yacht days" data-fr="Resorts &nbsp; Villas avec personnel &nbsp; Hélicoptère &nbsp; Journées yacht">Resorts &nbsp; Staffed villas &nbsp; Helicopter &nbsp; Yacht days</div>
+          <span class="tag" data-en="The counter-season" data-fr="La contre-saison" data-zh="反季胜地">The counter-season</span>
+          <h3 data-en="Indian Ocean" data-fr="Océan Indien" data-zh="印度洋">Indian Ocean</h3>
+          <p data-en="Mauritius runs on a calendar of its own and stays open when Europe closes: lagoons, five-star resorts, staffed villas, helicopter legs across the island, and days at sea with a crew." data-fr="Maurice suit un calendrier qui lui est propre et reste ouverte quand l'Europe se ferme : lagons, resorts cinq étoiles, villas avec personnel, liaisons en hélicoptère au-dessus de l'île, et journées en mer avec équipage." data-zh="毛里求斯自有其运转节奏，在欧洲进入淡季时依然全年开放：潟湖、五星度假村、管家别墅、飞跃全岛的直升机接驳，以及有船员随行的出海时光。">Mauritius runs on a calendar of its own and stays open when Europe closes.</p>
+          <div class="list" data-en="Resorts &nbsp; Staffed villas &nbsp; Helicopter &nbsp; Yacht days" data-fr="Resorts &nbsp; Villas avec personnel &nbsp; Hélicoptère &nbsp; Journées yacht" data-zh="度假村　管家别墅　直升机　游艇出海">Resorts &nbsp; Staffed villas &nbsp; Helicopter &nbsp; Yacht days</div>
         </div>
       </div>
     </div>
@@ -757,11 +780,11 @@ button.btn{cursor:pointer;font-family:'Montserrat',system-ui,sans-serif}
 </section>
 
 <div class="band">
-  <picture><source type="image/avif" srcset="img/band.avif"><img src="img/band.webp" alt="An empty theatre auditorium, prepared before the audience arrives" data-alt-en="An empty theatre auditorium, prepared before the audience arrives" data-alt-fr="Une salle de spectacle vide, préparée avant l'arrivée du public" loading="lazy"></picture>
+  <picture><source type="image/avif" srcset="img/band.avif"><img src="img/band.webp" alt="An empty theatre auditorium, prepared before the audience arrives" data-alt-en="An empty theatre auditorium, prepared before the audience arrives" data-alt-fr="Une salle de spectacle vide, préparée avant l'arrivée du public" data-alt-zh="观众到场前，已准备就绪的空场剧院" loading="lazy"></picture>
   <div class="veil"></div>
   <div class="in reveal">
     <hr class="wl">
-    <p data-en="The most useful part of this work is the part you never see." data-fr="La part la plus utile de ce métier est celle que vous ne voyez jamais.">The most useful part of this work is the part you never see.</p>
+    <p data-en="The most useful part of this work is the part you never see." data-fr="La part la plus utile de ce métier est celle que vous ne voyez jamais." data-zh="这份工作最有价值的部分，是您永远看不见的那部分。">The most useful part of this work is the part you never see.</p>
     <div class="sig">Curated by UNSEEN.</div>
   </div>
 </div>
@@ -769,34 +792,34 @@ button.btn{cursor:pointer;font-family:'Montserrat',system-ui,sans-serif}
 <section id="map" class="mapsec">
   <div class="wrap">
     <div class="head reveal">
-      <div class="eyebrow"><span class="n">04</span><span class="t" data-en="Map" data-fr="Carte">Map</span></div>
-      <h2 data-en="Where we take you." data-fr="Là où nous vous emmenons.">Where we take you.</h2>
-      <p class="lede" data-en="Paris is the base. Choose a point to see the addresses and events we work with there." data-fr="Paris est la base. Choisissez un point pour voir les adresses et événements que nous proposons.">Paris is the base. Choose a point to see the addresses and events we work with there.</p>
+      <div class="eyebrow"><span class="n">04</span><span class="t" data-en="Map" data-fr="Carte" data-zh="地图">Map</span></div>
+      <h2 data-en="Where we take you." data-fr="Là où nous vous emmenons." data-zh="我们带您去的地方。">Where we take you.</h2>
+      <p class="lede" data-en="Paris is the base. Choose a point to see the addresses and events we work with there." data-fr="Paris est la base. Choisissez un point pour voir les adresses et événements que nous proposons." data-zh="巴黎是我们的根基所在。点击地图上的位置，查看我们在当地提供的地址与活动。">Paris is the base. Choose a point to see the addresses and events we work with there.</p>
     </div>
 
     <div class="mapgrid reveal">
       <div class="mapstage" id="mapstage">
         <div id="leafletmap" role="img" aria-label="Carte des destinations et partenaires UNSEEN."></div>
-        <p class="partner-note" data-en="Ctrl (or Cmd) + scroll or pinch to zoom. Two fingers to move around." data-fr="Ctrl (ou Cmd) + molette, ou pincement, pour zoomer. Deux doigts pour déplacer la carte.">Ctrl (or Cmd) + scroll or pinch to zoom. Two fingers to move around.</p>
+        <p class="partner-note" data-en="Ctrl (or Cmd) + scroll or pinch to zoom. Two fingers to move around." data-fr="Ctrl (ou Cmd) + molette, ou pincement, pour zoomer. Deux doigts pour déplacer la carte." data-zh="按住Ctrl（或Cmd）键滚动，或双指捏合缩放；双指滑动可移动地图。">Ctrl (or Cmd) + scroll or pinch to zoom. Two fingers to move around.</p>
         <div class="maptabs" id="maptabs"></div>
-        <button type="button" class="map-overview" id="map-overview" data-en="↺ Overview" data-fr="↺ Vue d'ensemble">↺ Overview</button>
+        <button type="button" class="map-overview" id="map-overview" data-en="↺ Overview" data-fr="↺ Vue d'ensemble" data-zh="↺ 总览">↺ Overview</button>
       </div>
 
       <div class="mapcard" id="mapcard"></div>
     </div>
 
     <div class="map-cta reveal">
-      <p class="mc-intro" data-en="UNSEEN. belongs to no group, no booking network and no imposed inventory. That is what allows us to recommend an address because it is the right one, and not because it is under contract." data-fr="UNSEEN. n'appartient à aucun groupe, aucune centrale de réservation, aucun stock imposé. C'est ce qui nous permet de recommander une adresse parce qu'elle convient, et non parce qu'elle est sous contrat.">UNSEEN. belongs to no group, no booking network and no imposed inventory.</p>
+      <p class="mc-intro" data-en="UNSEEN. belongs to no group, no booking network and no imposed inventory. That is what allows us to recommend an address because it is the right one, and not because it is under contract." data-fr="UNSEEN. n'appartient à aucun groupe, aucune centrale de réservation, aucun stock imposé. C'est ce qui nous permet de recommander une adresse parce qu'elle convient, et non parce qu'elle est sous contrat." data-zh="UNSEEN. 不隶属于任何集团、预订网络，也没有必须推荐的合作名单。正因如此，我们推荐一个地址，只因它恰如其分，而非因为合约在身。">UNSEEN. belongs to no group, no booking network and no imposed inventory.</p>
       <div class="mc-grid">
         <div class="mc-item">
-          <span class="tag" data-en="Hotels and resorts" data-fr="Hôtels et resorts">Hotels and resorts</span>
-        <p data-en="We send an international clientele to a limited number of houses in Europe and the Indian Ocean. If you would like your property to be considered, write to us and we will take it from there." data-fr="Nous adressons une clientèle internationale à un nombre limité de maisons, en Europe et dans l'océan Indien. Si vous souhaitez que votre établissement soit étudié, écrivez-nous et nous reprenons contact.">We send an international clientele to a limited number of houses in Europe and the Indian Ocean.</p>
-        <a class="go" href="mailto:partners@unseenconciergerie.com" data-en="Contact partnerships" data-fr="Contacter les partenariats">Contact partnerships</a>
+          <span class="tag" data-en="Hotels and resorts" data-fr="Hôtels et resorts" data-zh="酒店与度假村">Hotels and resorts</span>
+        <p data-en="We send an international clientele to a limited number of houses in Europe and the Indian Ocean. If you would like your property to be considered, write to us and we will take it from there." data-fr="Nous adressons une clientèle internationale à un nombre limité de maisons, en Europe et dans l'océan Indien. Si vous souhaitez que votre établissement soit étudié, écrivez-nous et nous reprenons contact." data-zh="我们为数量有限的欧洲与印度洋合作酒店引荐国际客源。如您希望旗下物业获得考虑，欢迎与我们联系，后续事宜由我们跟进。">We send an international clientele to a limited number of houses in Europe and the Indian Ocean.</p>
+        <a class="go" href="mailto:partners@unseenconciergerie.com" data-en="Contact partnerships" data-fr="Contacter les partenariats" data-zh="联系合作部门">Contact partnerships</a>
         </div>
         <div class="mc-item">
-          <span class="tag" data-en="Agencies and management" data-fr="Agences et management">Agencies and management</span>
-        <p data-en="Talent agencies, management companies and family offices can hold UNSEEN. on a retained basis: guaranteed availability during peak weeks, one dedicated contact, and terms agreed in advance for recurring requests." data-fr="Agences de talents, sociétés de management et family offices peuvent retenir UNSEEN. sur une base permanente : disponibilité garantie pendant les semaines chargées, un interlocuteur dédié, et des conditions convenues à l'avance pour les demandes récurrentes.">Talent agencies, management companies and family offices can hold UNSEEN. on a retained basis.</p>
-        <a class="go" href="mailto:partners@unseenconciergerie.com" data-en="Discuss a retainer" data-fr="Discuter d'un retainer">Discuss a retainer</a>
+          <span class="tag" data-en="Agencies and management" data-fr="Agences et management" data-zh="经纪与管理机构">Agencies and management</span>
+        <p data-en="Talent agencies, management companies and family offices can hold UNSEEN. on a retained basis: guaranteed availability during peak weeks, one dedicated contact, and terms agreed in advance for recurring requests." data-fr="Agences de talents, sociétés de management et family offices peuvent retenir UNSEEN. sur une base permanente : disponibilité garantie pendant les semaines chargées, un interlocuteur dédié, et des conditions convenues à l'avance pour les demandes récurrentes." data-zh="经纪公司、管理机构与家族办公室可与UNSEEN. 建立长期合作：旺季档期优先保障，配备专属联络人，常规需求条款可提前商定。">Talent agencies, management companies and family offices can hold UNSEEN. on a retained basis.</p>
+        <a class="go" href="mailto:partners@unseenconciergerie.com" data-en="Discuss a retainer" data-fr="Discuter d'un retainer" data-zh="洽谈长期合作">Discuss a retainer</a>
         </div>
       </div>
     </div>
@@ -806,56 +829,56 @@ button.btn{cursor:pointer;font-family:'Montserrat',system-ui,sans-serif}
 <section id="seasons" class="sec-pale">
   <div class="wrap">
     <div class="head reveal">
-      <div class="eyebrow"><span class="n">05</span><span class="t" data-en="Seasons" data-fr="Saisons">Seasons</span></div>
-      <h2 data-en="The year has its own map." data-fr="L'année a sa propre carte.">The year has its own map.</h2>
-      <p class="lede" data-en="Where our clients go changes every three months, and the good addresses are taken long before the dates arrive. We work a season ahead." data-fr="Là où vont nos clients change tous les trois mois, et les bonnes adresses sont prises bien avant les dates. Nous travaillons une saison à l'avance.">Where our clients go changes every three months, and the good addresses are taken long before the dates arrive.</p>
+      <div class="eyebrow"><span class="n">05</span><span class="t" data-en="Seasons" data-fr="Saisons" data-zh="季节">Seasons</span></div>
+      <h2 data-en="The year has its own map." data-fr="L'année a sa propre carte." data-zh="一年之中，自有节奏。">The year has its own map.</h2>
+      <p class="lede" data-en="Where our clients go changes every three months, and the good addresses are taken long before the dates arrive. We work a season ahead." data-fr="Là où vont nos clients change tous les trois mois, et les bonnes adresses sont prises bien avant les dates. Nous travaillons une saison à l'avance." data-zh="客户的目的地每三个月更迭一次，而优质的地址往往在日期到来前早已被订满。我们始终提前一季筹备。">Where our clients go changes every three months, and the good addresses are taken long before the dates arrive.</p>
     </div>
 
     <div class="srow reveal">
       <article class="sitem">
-        <div class="sph"><picture><source type="image/avif" srcset="img/y-summer.avif"><img src="img/y-summer.webp" alt="The coastline of Monaco at sunset" data-alt-en="The coastline of Monaco at sunset" data-alt-fr="La côte de Monaco au coucher du soleil" loading="lazy"></picture></div>
+        <div class="sph"><picture><source type="image/avif" srcset="img/y-summer.avif"><img src="img/y-summer.webp" alt="The coastline of Monaco at sunset" data-alt-en="The coastline of Monaco at sunset" data-alt-fr="La côte de Monaco au coucher du soleil" data-alt-zh="日落时分的摩纳哥海岸线" loading="lazy"></picture></div>
         <hr class="rule-accent">
-          <span class="tag" data-en="May to September" data-fr="Mai à septembre">May to September</span>
-          <h3 data-en="Summer season" data-fr="Saison estivale">Summer season</h3>
-          <p data-en="Côte d'Azur, Cannes, Saint-Tropez, Portofino, Ibiza. Villas taken before winter ends, beach clubs where a table already carries a name, and yacht days that begin at the berth rather than at the harbour gate." data-fr="Côte d'Azur, Cannes, Saint-Tropez, Portofino, Ibiza. Des villas prises avant la fin de l'hiver, des beach clubs où la table porte déjà un nom, et des journées en mer qui commencent au ponton plutôt qu'à l'entrée du port.">Côte d'Azur, Cannes, Saint-Tropez, Portofino, Ibiza.</p>
+          <span class="tag" data-en="May to September" data-fr="Mai à septembre" data-zh="五月至九月">May to September</span>
+          <h3 data-en="Summer season" data-fr="Saison estivale" data-zh="夏季">Summer season</h3>
+          <p data-en="Côte d'Azur, Cannes, Saint-Tropez, Portofino, Ibiza. Villas taken before winter ends, beach clubs where a table already carries a name, and yacht days that begin at the berth rather than at the harbour gate." data-fr="Côte d'Azur, Cannes, Saint-Tropez, Portofino, Ibiza. Des villas prises avant la fin de l'hiver, des beach clubs où la table porte déjà un nom, et des journées en mer qui commencent au ponton plutôt qu'à l'entrée du port." data-zh="蔚蓝海岸、戛纳、圣特罗佩、波托菲诺、伊维萨岛。别墅往往在冬季结束前便已订出，沙滩俱乐部的餐桌早已名花有主，出海时光从私人泊位启程，无需在港口排队。">Côte d'Azur, Cannes, Saint-Tropez, Portofino, Ibiza.</p>
       </article>
 
       <article class="sitem">
-        <div class="sph"><picture><source type="image/avif" srcset="img/y-winter.avif"><img src="img/y-winter.webp" alt="A wooden chalet under snow beside a cable car in the Alps" data-alt-en="A wooden chalet under snow beside a cable car in the Alps" data-alt-fr="Un chalet de bois sous la neige près d'une télécabine dans les Alpes" loading="lazy"></picture></div>
+        <div class="sph"><picture><source type="image/avif" srcset="img/y-winter.avif"><img src="img/y-winter.webp" alt="A wooden chalet under snow beside a cable car in the Alps" data-alt-en="A wooden chalet under snow beside a cable car in the Alps" data-alt-fr="Un chalet de bois sous la neige près d'une télécabine dans les Alpes" data-alt-zh="阿尔卑斯山缆车旁，白雪覆盖的木屋别墅" loading="lazy"></picture></div>
         <hr class="rule-accent">
-          <span class="tag" data-en="December to April" data-fr="Décembre à avril">December to April</span>
-          <h3 data-en="Winter season" data-fr="Saison hivernale">Winter season</h3>
-          <p data-en="Courchevel, Megève, Val d'Isère, Gstaad, St Moritz. Chalets with staff, private instructors, lunches held at altitude, and transfers that do not depend on the weather in Geneva." data-fr="Courchevel, Megève, Val d'Isère, Gstaad, Saint-Moritz. Des chalets avec personnel, des moniteurs privés, des déjeuners tenus en altitude, et des transferts qui ne dépendent pas de la météo à Genève.">Courchevel, Megève, Val d'Isère, Gstaad, St Moritz.</p>
+          <span class="tag" data-en="December to April" data-fr="Décembre à avril" data-zh="十二月至四月">December to April</span>
+          <h3 data-en="Winter season" data-fr="Saison hivernale" data-zh="冬季">Winter season</h3>
+          <p data-en="Courchevel, Megève, Val d'Isère, Gstaad, St Moritz. Chalets with staff, private instructors, lunches held at altitude, and transfers that do not depend on the weather in Geneva." data-fr="Courchevel, Megève, Val d'Isère, Gstaad, Saint-Moritz. Des chalets avec personnel, des moniteurs privés, des déjeuners tenus en altitude, et des transferts qui ne dépendent pas de la météo à Genève." data-zh="库雪维尔、梅杰夫、伊瑟尔河谷、格斯塔德、圣莫里茨。配备管家的木屋别墅、私人教练、保留席位的高山午餐，以及不受日内瓦天气左右的接送安排。">Courchevel, Megève, Val d'Isère, Gstaad, St Moritz.</p>
       </article>
 
       <article class="sitem">
-        <div class="sph"><picture><source type="image/avif" srcset="img/y-calendar.avif"><img src="img/y-calendar.webp" alt="Formula 1 cars through a corner during a Grand Prix" data-alt-en="Formula 1 cars through a corner during a Grand Prix" data-alt-fr="Des Formule 1 dans un virage pendant un Grand Prix" loading="lazy"></picture></div>
+        <div class="sph"><picture><source type="image/avif" srcset="img/y-calendar.avif"><img src="img/y-calendar.webp" alt="Formula 1 cars through a corner during a Grand Prix" data-alt-en="Formula 1 cars through a corner during a Grand Prix" data-alt-fr="Des Formule 1 dans un virage pendant un Grand Prix" data-alt-zh="大奖赛期间F1赛车过弯" loading="lazy"></picture></div>
         <hr class="rule-accent">
-          <span class="tag" data-en="Fixed dates" data-fr="Dates fixes">Fixed dates</span>
-          <h3 data-en="The calendar" data-fr="Le calendrier">The calendar</h3>
-          <p data-en="Monaco Grand Prix, Roland-Garros, Cannes Film Festival, Paris and Milan Fashion Weeks, Art Basel. Dates that never move, and inventory that disappears eleven months early." data-fr="Grand Prix de Monaco, Roland-Garros, Festival de Cannes, Fashion Weeks de Paris et Milan, Art Basel. Des dates qui ne bougent jamais, et des places qui disparaissent onze mois à l'avance.">Monaco Grand Prix, Roland-Garros, Cannes Film Festival, Paris and Milan Fashion Weeks, Art Basel.</p>
+          <span class="tag" data-en="Fixed dates" data-fr="Dates fixes" data-zh="固定档期">Fixed dates</span>
+          <h3 data-en="The calendar" data-fr="Le calendrier" data-zh="年度日历">The calendar</h3>
+          <p data-en="Monaco Grand Prix, Roland-Garros, Cannes Film Festival, Paris and Milan Fashion Weeks, Art Basel. Dates that never move, and inventory that disappears eleven months early." data-fr="Grand Prix de Monaco, Roland-Garros, Festival de Cannes, Fashion Weeks de Paris et Milan, Art Basel. Des dates qui ne bougent jamais, et des places qui disparaissent onze mois à l'avance." data-zh="摩纳哥大奖赛、法网公开赛、戛纳电影节、巴黎与米兰时装周、巴塞尔艺术展。档期从不更改，而房源与席位往往提前十一个月便已售罄。">Monaco Grand Prix, Roland-Garros, Cannes Film Festival, Paris and Milan Fashion Weeks, Art Basel.</p>
       </article>
     </div>
   </div>
 </section>
 
 <div class="mosaic reveal">
-  <figure><picture><source type="image/avif" srcset="img/g1.avif"><img src="img/g1.webp" alt="The clay court at Roland-Garros during a match" data-alt-en="The clay court at Roland-Garros during a match" data-alt-fr="Le court en terre battue de Roland-Garros pendant un match" loading="lazy"></picture></figure>
-  <figure><picture><source type="image/avif" srcset="img/g2.avif"><img src="img/g2.webp" alt="A waterfall in the tropical forest of Mauritius" data-alt-en="A waterfall in the tropical forest of Mauritius" data-alt-fr="Une cascade dans la forêt tropicale de Maurice" loading="lazy"></picture></figure>
-  <figure><picture><source type="image/avif" srcset="img/g3.avif"><img src="img/g3.webp" alt="Palm trees below Le Morne mountain in Mauritius" data-alt-en="Palm trees below Le Morne mountain in Mauritius" data-alt-fr="Des palmiers au pied de la montagne du Morne à Maurice" loading="lazy"></picture></figure>
-  <figure><picture><source type="image/avif" srcset="img/g4.avif"><img src="img/g4.webp" alt="A turquoise lagoon and its reef seen from the air" data-alt-en="A turquoise lagoon and its reef seen from the air" data-alt-fr="Un lagon turquoise et son récif vus du ciel" loading="lazy"></picture></figure>
-  <figure><picture><source type="image/avif" srcset="img/g5.avif"><img src="img/g5.webp" alt="A white sand beach and turquoise water seen from above" data-alt-en="A white sand beach and turquoise water seen from above" data-alt-fr="Une plage de sable blanc et une eau turquoise vues d'en haut" loading="lazy"></picture></figure>
-  <figure><picture><source type="image/avif" srcset="img/g6.avif"><img src="img/g6.webp" alt="A lit garden and its reflecting pool at nightfall" data-alt-en="A lit garden and its reflecting pool at nightfall" data-alt-fr="Un jardin éclairé et son bassin à la tombée de la nuit" loading="lazy"></picture></figure>
-  <figure><picture><source type="image/avif" srcset="img/g7.avif"><img src="img/g7.webp" alt="The Eiffel Tower against a clear blue sky" data-alt-en="The Eiffel Tower against a clear blue sky" data-alt-fr="La tour Eiffel sur un ciel bleu dégagé" loading="lazy"></picture></figure>
-  <figure><picture><source type="image/avif" srcset="img/g8.avif"><img src="img/g8.webp" alt="Tower Bridge lit up at night in London" data-alt-en="Tower Bridge lit up at night in London" data-alt-fr="Le Tower Bridge illuminé la nuit à Londres" loading="lazy"></picture></figure>
+  <figure><picture><source type="image/avif" srcset="img/g1.avif"><img src="img/g1.webp" alt="The clay court at Roland-Garros during a match" data-alt-en="The clay court at Roland-Garros during a match" data-alt-fr="Le court en terre battue de Roland-Garros pendant un match" data-alt-zh="法网公开赛比赛中的红土球场" loading="lazy"></picture></figure>
+  <figure><picture><source type="image/avif" srcset="img/g2.avif"><img src="img/g2.webp" alt="A waterfall in the tropical forest of Mauritius" data-alt-en="A waterfall in the tropical forest of Mauritius" data-alt-fr="Une cascade dans la forêt tropicale de Maurice" data-alt-zh="毛里求斯热带雨林中的瀑布" loading="lazy"></picture></figure>
+  <figure><picture><source type="image/avif" srcset="img/g3.avif"><img src="img/g3.webp" alt="Palm trees below Le Morne mountain in Mauritius" data-alt-en="Palm trees below Le Morne mountain in Mauritius" data-alt-fr="Des palmiers au pied de la montagne du Morne à Maurice" data-alt-zh="毛里求斯勒莫恩山下的棕榈树" loading="lazy"></picture></figure>
+  <figure><picture><source type="image/avif" srcset="img/g4.avif"><img src="img/g4.webp" alt="A turquoise lagoon and its reef seen from the air" data-alt-en="A turquoise lagoon and its reef seen from the air" data-alt-fr="Un lagon turquoise et son récif vus du ciel" data-alt-zh="空中俯瞰绿松石色潟湖与珊瑚礁" loading="lazy"></picture></figure>
+  <figure><picture><source type="image/avif" srcset="img/g5.avif"><img src="img/g5.webp" alt="A white sand beach and turquoise water seen from above" data-alt-en="A white sand beach and turquoise water seen from above" data-alt-fr="Une plage de sable blanc et une eau turquoise vues d'en haut" data-alt-zh="俯瞰白沙滩与绿松石色海水" loading="lazy"></picture></figure>
+  <figure><picture><source type="image/avif" srcset="img/g6.avif"><img src="img/g6.webp" alt="A lit garden and its reflecting pool at nightfall" data-alt-en="A lit garden and its reflecting pool at nightfall" data-alt-fr="Un jardin éclairé et son bassin à la tombée de la nuit" data-alt-zh="夜幕降临时，灯光映照的花园与倒影池" loading="lazy"></picture></figure>
+  <figure><picture><source type="image/avif" srcset="img/g7.avif"><img src="img/g7.webp" alt="The Eiffel Tower against a clear blue sky" data-alt-en="The Eiffel Tower against a clear blue sky" data-alt-fr="La tour Eiffel sur un ciel bleu dégagé" data-alt-zh="晴朗蓝天下的埃菲尔铁塔" loading="lazy"></picture></figure>
+  <figure><picture><source type="image/avif" srcset="img/g8.avif"><img src="img/g8.webp" alt="Tower Bridge lit up at night in London" data-alt-en="Tower Bridge lit up at night in London" data-alt-fr="Le Tower Bridge illuminé la nuit à Londres" data-alt-zh="伦敦塔桥夜间灯光" loading="lazy"></picture></figure>
 </div>
 
 <section id="contact" class="sec-dark">
   <div class="wrap">
     <div class="head reveal">
-      <div class="eyebrow"><span class="n">06</span><span class="t" data-en="Contact" data-fr="Contact">Contact</span></div>
-      <h2 data-en="Tell us when." data-fr="Dites-nous quand.">Tell us when.</h2>
-      <p class="lede" data-en="WhatsApp is the fastest way to reach us, at any hour and in any time zone. A first message takes one line." data-fr="WhatsApp est le moyen le plus rapide de nous joindre, à toute heure et dans tous les fuseaux. Un premier message tient en une ligne.">WhatsApp is the fastest way to reach us, at any hour and in any time zone.</p>
+      <div class="eyebrow"><span class="n">06</span><span class="t" data-en="Contact" data-fr="Contact" data-zh="联系我们">Contact</span></div>
+      <h2 data-en="Tell us when." data-fr="Dites-nous quand." data-zh="告诉我们，何时启程。">Tell us when.</h2>
+      <p class="lede" data-en="WhatsApp is the fastest way to reach us, at any hour and in any time zone. A first message takes one line." data-fr="WhatsApp est le moyen le plus rapide de nous joindre, à toute heure et dans tous les fuseaux. Un premier message tient en une ligne." data-zh="WhatsApp是联系我们最快捷的方式，全天候、跨时区响应。第一条消息，一行字即可。">WhatsApp is the fastest way to reach us, at any hour and in any time zone.</p>
     </div>
 
     <div class="cgrid reveal">
@@ -864,11 +887,11 @@ button.btn{cursor:pointer;font-family:'Montserrat',system-ui,sans-serif}
         <a class="num" href="https://wa.me/33613850733">+33 (0)6 13 85 07 33</a>
       </div>
       <div class="ci">
-        <span class="lbl" data-en="Direct line" data-fr="Ligne directe">Direct line</span>
+        <span class="lbl" data-en="Direct line" data-fr="Ligne directe" data-zh="直线电话">Direct line</span>
         <a class="num" href="tel:+33649668833">+33 (0)6 49 66 88 33</a>
       </div>
       <div class="ci">
-        <span class="lbl" data-en="Email" data-fr="E-mail">Email</span>
+        <span class="lbl" data-en="Email" data-fr="E-mail" data-zh="邮箱">Email</span>
         <a href="mailto:contact@unseenconciergerie.com">contact@unseenconciergerie.com</a>
       </div>
       <div class="ci">
@@ -878,113 +901,113 @@ button.btn{cursor:pointer;font-family:'Montserrat',system-ui,sans-serif}
     </div>
 
     <div class="cta-row" style="margin-top:52px">
-      <a class="btn btn-accent" href="https://wa.me/33613850733" data-en="Start a conversation" data-fr="Démarrer une conversation">Start a conversation</a>
+      <a class="btn btn-accent" href="https://wa.me/33613850733" data-en="Start a conversation" data-fr="Démarrer une conversation" data-zh="开始对话">Start a conversation</a>
     </div>
 
     <div class="enq-head reveal">
-      <span class="tag" data-en="Or write to us" data-fr="Ou écrivez-nous">Or write to us</span>
-      <h3 data-en="Tell us what you are looking for." data-fr="Dites-nous ce que vous cherchez.">Tell us what you are looking for.</h3>
-      <p data-en="Every request is handled personally. Leave a few details and we come back to you within 24 hours with what is possible, what it involves and what it costs." data-fr="Chaque demande est traitée personnellement. Laissez quelques éléments et nous revenons vers vous sous 24 heures avec ce qui est possible, ce que cela implique et ce que cela coûte.">Every request is handled personally.</p>
+      <span class="tag" data-en="Or write to us" data-fr="Ou écrivez-nous" data-zh="或直接给我们留言">Or write to us</span>
+      <h3 data-en="Tell us what you are looking for." data-fr="Dites-nous ce que vous cherchez." data-zh="告诉我们，您在寻找什么。">Tell us what you are looking for.</h3>
+      <p data-en="Every request is handled personally. Leave a few details and we come back to you within 24 hours with what is possible, what it involves and what it costs." data-fr="Chaque demande est traitée personnellement. Laissez quelques éléments et nous revenons vers vous sous 24 heures avec ce qui est possible, ce que cela implique et ce que cela coûte." data-zh="每一项需求都由专人亲自处理。留下几点信息，我们将在24小时内回复您可行方案、具体安排及相关费用。">Every request is handled personally.</p>
     </div>
 
     <form class="enq" id="enq" novalidate>
 
       <div class="frow">
         <div class="fld" id="f-first">
-          <label for="q-first" data-en="First name" data-fr="Prénom">First name</label>
+          <label for="q-first" data-en="First name" data-fr="Prénom" data-zh="名">First name</label>
           <input type="text" id="q-first" autocomplete="given-name">
-          <div class="msg" data-en="Please enter your first name." data-fr="Merci d'indiquer votre prénom.">Please enter your first name.</div>
+          <div class="msg" data-en="Please enter your first name." data-fr="Merci d'indiquer votre prénom." data-zh="请填写您的名。">Please enter your first name.</div>
         </div>
         <div class="fld" id="f-last">
-          <label for="q-last" data-en="Last name" data-fr="Nom">Last name</label>
+          <label for="q-last" data-en="Last name" data-fr="Nom" data-zh="姓">Last name</label>
           <input type="text" id="q-last" autocomplete="family-name">
-          <div class="msg" data-en="Please enter your last name." data-fr="Merci d'indiquer votre nom.">Please enter your last name.</div>
+          <div class="msg" data-en="Please enter your last name." data-fr="Merci d'indiquer votre nom." data-zh="请填写您的姓。">Please enter your last name.</div>
         </div>
       </div>
 
       <div class="frow">
         <div class="fld" id="f-email">
-          <label for="q-email" data-en="Email" data-fr="E-mail">Email</label>
+          <label for="q-email" data-en="Email" data-fr="E-mail" data-zh="邮箱">Email</label>
           <input type="email" id="q-email" autocomplete="email">
-          <div class="msg" data-en="Please enter a valid email address." data-fr="Merci d'indiquer une adresse e-mail valide.">Please enter a valid email address.</div>
+          <div class="msg" data-en="Please enter a valid email address." data-fr="Merci d'indiquer une adresse e-mail valide." data-zh="请填写有效的邮箱地址。">Please enter a valid email address.</div>
         </div>
         <div class="fld" id="f-phone">
-          <label for="q-phone"><span data-en="Phone or WhatsApp" data-fr="Téléphone ou WhatsApp">Phone or WhatsApp</span> <em data-en="— optional" data-fr="— facultatif">— optional</em></label>
+          <label for="q-phone"><span data-en="Phone or WhatsApp" data-fr="Téléphone ou WhatsApp" data-zh="电话或WhatsApp">Phone or WhatsApp</span> <em data-en="— optional" data-fr="— facultatif" data-zh="— 选填">— optional</em></label>
           <input type="tel" id="q-phone" autocomplete="tel">
         </div>
       </div>
 
       <div class="fld" id="f-interest">
-        <label for="q-interest" data-en="What are you interested in" data-fr="Ce qui vous intéresse">What are you interested in</label>
+        <label for="q-interest" data-en="What are you interested in" data-fr="Ce qui vous intéresse" data-zh="您感兴趣的服务">What are you interested in</label>
         <select id="q-interest">
-          <option value="" data-en="Select a category" data-fr="Choisir une catégorie">Select a category</option>
-          <optgroup label="What you're looking for" data-en-label="What you're looking for" data-fr-label="Ce que vous recherchez">
-            <option value="Palaces and suites" data-en="Palaces and suites" data-fr="Palaces et suites">Palaces and suites</option>
-            <option value="Dining and private tables" data-en="Dining and private tables" data-fr="Tables et adresses privées">Dining and private tables</option>
-            <option value="Events and exclusive access" data-en="Events and exclusive access" data-fr="Événements et accès exclusifs">Events and exclusive access</option>
-            <option value="Personal shopping and maisons" data-en="Personal shopping and maisons" data-fr="Shopping et maisons de luxe">Personal shopping and maisons</option>
-            <option value="Private transport and aviation" data-en="Private transport and aviation" data-fr="Transport privé et aviation">Private transport and aviation</option>
-            <option value="Evenings and private clubs" data-en="Evenings and private clubs" data-fr="Soirées et clubs privés">Evenings and private clubs</option>
-            <option value="Villas and yachts" data-en="Villas and yachts" data-fr="Villas et yachts">Villas and yachts</option>
-            <option value="Athletes and entourage" data-en="Athletes and entourage" data-fr="Sportifs et entourage">Athletes and entourage</option>
+          <option value="" data-en="Select a category" data-fr="Choisir une catégorie" data-zh="请选择类别">Select a category</option>
+          <optgroup label="What you're looking for" data-en-label="What you're looking for" data-fr-label="Ce que vous recherchez" data-zh-label="您在寻找什么">
+            <option value="Palaces and suites" data-en="Palaces and suites" data-fr="Palaces et suites" data-zh="宫殿级酒店与套房">Palaces and suites</option>
+            <option value="Dining and private tables" data-en="Dining and private tables" data-fr="Tables et adresses privées" data-zh="餐饮与私人餐桌">Dining and private tables</option>
+            <option value="Events and exclusive access" data-en="Events and exclusive access" data-fr="Événements et accès exclusifs" data-zh="活动与专属通行">Events and exclusive access</option>
+            <option value="Personal shopping and maisons" data-en="Personal shopping and maisons" data-fr="Shopping et maisons de luxe" data-zh="私人采购与品牌之家">Personal shopping and maisons</option>
+            <option value="Private transport and aviation" data-en="Private transport and aviation" data-fr="Transport privé et aviation" data-zh="私人用车与航空">Private transport and aviation</option>
+            <option value="Evenings and private clubs" data-en="Evenings and private clubs" data-fr="Soirées et clubs privés" data-zh="夜晚与私人会所">Evenings and private clubs</option>
+            <option value="Villas and yachts" data-en="Villas and yachts" data-fr="Villas et yachts" data-zh="别墅与游艇">Villas and yachts</option>
+            <option value="Athletes and entourage" data-en="Athletes and entourage" data-fr="Sportifs et entourage" data-zh="运动员与随行团队">Athletes and entourage</option>
           </optgroup>
-          <optgroup label="Season or destination" data-en-label="Season or destination" data-fr-label="Saison ou destination">
-            <option value="Ski season in the Alps" data-en="Ski season in the Alps" data-fr="Saison de ski dans les Alpes">Ski season in the Alps</option>
-            <option value="The Riviera and Saint-Tropez" data-en="The Riviera and Saint-Tropez" data-fr="La Riviera et Saint-Tropez">The Riviera and Saint-Tropez</option>
-            <option value="Mauritius and the Indian Ocean" data-en="Mauritius and the Indian Ocean" data-fr="Maurice et océan Indien">Mauritius and the Indian Ocean</option>
-            <option value="Formula 1 Grand Prix" data-en="Formula 1 Grand Prix" data-fr="Grand Prix de Formule 1">Formula 1 Grand Prix</option>
-            <option value="Fashion Week" data-en="Fashion Week" data-fr="Fashion Week">Fashion Week</option>
+          <optgroup label="Season or destination" data-en-label="Season or destination" data-fr-label="Saison ou destination" data-zh-label="季节或目的地">
+            <option value="Ski season in the Alps" data-en="Ski season in the Alps" data-fr="Saison de ski dans les Alpes" data-zh="阿尔卑斯滑雪季">Ski season in the Alps</option>
+            <option value="The Riviera and Saint-Tropez" data-en="The Riviera and Saint-Tropez" data-fr="La Riviera et Saint-Tropez" data-zh="蔚蓝海岸与圣特罗佩">The Riviera and Saint-Tropez</option>
+            <option value="Mauritius and the Indian Ocean" data-en="Mauritius and the Indian Ocean" data-fr="Maurice et océan Indien" data-zh="毛里求斯与印度洋">Mauritius and the Indian Ocean</option>
+            <option value="Formula 1 Grand Prix" data-en="Formula 1 Grand Prix" data-fr="Grand Prix de Formule 1" data-zh="F1大奖赛">Formula 1 Grand Prix</option>
+            <option value="Fashion Week" data-en="Fashion Week" data-fr="Fashion Week" data-zh="时装周">Fashion Week</option>
           </optgroup>
-          <optgroup label="Other" data-en-label="Other" data-fr-label="Autre">
-            <option value="Annual membership" data-en="Annual membership" data-fr="Abonnement annuel">Annual membership</option>
-            <option value="Partnership or press" data-en="Partnership or press" data-fr="Partenariat ou presse">Partnership or press</option>
-            <option value="Something else" data-en="Something else" data-fr="Autre demande">Something else</option>
+          <optgroup label="Other" data-en-label="Other" data-fr-label="Autre" data-zh-label="其他">
+            <option value="Annual membership" data-en="Annual membership" data-fr="Abonnement annuel" data-zh="年度会员">Annual membership</option>
+            <option value="Partnership or press" data-en="Partnership or press" data-fr="Partenariat ou presse" data-zh="合作或媒体咨询">Partnership or press</option>
+            <option value="Something else" data-en="Something else" data-fr="Autre demande" data-zh="其他需求">Something else</option>
           </optgroup>
         </select>
-        <div class="msg" data-en="Please choose a category." data-fr="Merci de choisir une catégorie.">Please choose a category.</div>
+        <div class="msg" data-en="Please choose a category." data-fr="Merci de choisir une catégorie." data-zh="请选择一个类别。">Please choose a category.</div>
       </div>
 
       <div class="frow">
         <div class="fld" id="f-city">
-          <label for="q-city"><span data-en="Where you are based" data-fr="Où vous résidez">Where you are based</span> <em data-en="— optional" data-fr="— facultatif">— optional</em></label>
-          <input type="text" id="q-city" data-ph-en="City, country" data-ph-fr="Ville, pays" placeholder="City, country">
+          <label for="q-city"><span data-en="Where you are based" data-fr="Où vous résidez" data-zh="所在城市">Where you are based</span> <em data-en="— optional" data-fr="— facultatif" data-zh="— 选填">— optional</em></label>
+          <input type="text" id="q-city" data-ph-en="City, country" data-ph-fr="Ville, pays" data-ph-zh="城市、国家" placeholder="City, country">
         </div>
         <div class="fld" id="f-dates">
-          <label for="q-dates"><span data-en="Approximate dates" data-fr="Dates approximatives">Approximate dates</span> <em data-en="— optional" data-fr="— facultatif">— optional</em></label>
-          <input type="text" id="q-dates" data-ph-en="e.g. late October" data-ph-fr="ex. fin octobre" placeholder="e.g. late October">
+          <label for="q-dates"><span data-en="Approximate dates" data-fr="Dates approximatives" data-zh="大致日期">Approximate dates</span> <em data-en="— optional" data-fr="— facultatif" data-zh="— 选填">— optional</em></label>
+          <input type="text" id="q-dates" data-ph-en="e.g. late October" data-ph-fr="ex. fin octobre" data-ph-zh="例如：十月下旬" placeholder="e.g. late October">
         </div>
       </div>
 
       <div class="fld" id="f-message">
-        <label for="q-message" data-en="Your request" data-fr="Votre demande">Your request</label>
-        <textarea id="q-message" data-ph-en="What would you like arranged?" data-ph-fr="Que souhaitez-vous organiser ?" placeholder="What would you like arranged?"></textarea>
-        <div class="msg" data-en="Please tell us a little about your request." data-fr="Merci de préciser votre demande.">Please tell us a little about your request.</div>
+        <label for="q-message" data-en="Your request" data-fr="Votre demande" data-zh="您的需求">Your request</label>
+        <textarea id="q-message" data-ph-en="What would you like arranged?" data-ph-fr="Que souhaitez-vous organiser ?" data-ph-zh="您希望我们为您安排什么？" placeholder="What would you like arranged?"></textarea>
+        <div class="msg" data-en="Please tell us a little about your request." data-fr="Merci de préciser votre demande." data-zh="请简要说明您的需求。">Please tell us a little about your request.</div>
       </div>
 
       <div class="fld" id="f-source">
-        <label for="q-source"><span data-en="How you heard about us" data-fr="Comment vous nous avez connus">How you heard about us</span> <em data-en="— optional" data-fr="— facultatif">— optional</em></label>
-        <input type="text" id="q-source" data-ph-en="Referral, Instagram, a partner…" data-ph-fr="Recommandation, Instagram, un partenaire…" placeholder="Referral, Instagram, a partner…">
+        <label for="q-source"><span data-en="How you heard about us" data-fr="Comment vous nous avez connus" data-zh="您是如何得知我们的">How you heard about us</span> <em data-en="— optional" data-fr="— facultatif" data-zh="— 选填">— optional</em></label>
+        <input type="text" id="q-source" data-ph-en="Referral, Instagram, a partner…" data-ph-fr="Recommandation, Instagram, un partenaire…" data-ph-zh="朋友推荐、Instagram、合作伙伴……" placeholder="Referral, Instagram, a partner…">
       </div>
 
       <input type="checkbox" name="botcheck" id="botcheck" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
 
       <div class="agree">
         <input type="checkbox" id="q-agree">
-        <span data-en='I agree that UNSEEN. may use these details to respond to my request, as set out in the <a href="legal.html">privacy policy</a>. My data is never sold or shared for marketing.' data-fr='J&apos;accepte qu&apos;UNSEEN. utilise ces informations pour répondre à ma demande, dans les conditions prévues par la <a href="legal.html">politique de confidentialité</a>. Mes données ne sont jamais vendues ni transmises à des fins commerciales.'>I agree that UNSEEN. may use these details to respond to my request, as set out in the <a href="legal.html">privacy policy</a>. My data is never sold or shared for marketing.</span>
+        <span data-en='I agree that UNSEEN. may use these details to respond to my request, as set out in the <a href="legal.html">privacy policy</a>. My data is never sold or shared for marketing.' data-fr='J&apos;accepte qu&apos;UNSEEN. utilise ces informations pour répondre à ma demande, dans les conditions prévues par la <a href="legal.html">politique de confidentialité</a>. Mes données ne sont jamais vendues ni transmises à des fins commerciales.' data-zh='本人同意UNSEEN.按照<a href="legal.html">隐私政策</a>使用以上信息以回复本人的需求，本人的信息绝不会被出售或用于市场营销。'>I agree that UNSEEN. may use these details to respond to my request, as set out in the <a href="legal.html">privacy policy</a>. My data is never sold or shared for marketing.</span>
       </div>
-      <div class="agree-msg" id="agree-msg" data-en="Please tick the box so we may reply to you." data-fr="Merci de cocher la case pour que nous puissions vous répondre.">Please tick the box so we may reply to you.</div>
+      <div class="agree-msg" id="agree-msg" data-en="Please tick the box so we may reply to you." data-fr="Merci de cocher la case pour que nous puissions vous répondre." data-zh="请勾选此项，以便我们回复您。">Please tick the box so we may reply to you.</div>
 
       <div class="enq-actions">
-        <button class="btn btn-accent" type="submit" data-en="Send request" data-fr="Envoyer la demande">Send request</button>
-        <span class="enq-alt" data-en='Prefer WhatsApp? <a id="enq-wa" href="#">Send it there instead</a>' data-fr='Vous préférez WhatsApp ? <a id="enq-wa" href="#">Envoyer par ce canal</a>'>Prefer WhatsApp? <a id="enq-wa" href="#">Send it there instead</a></span>
+        <button class="btn btn-accent" type="submit" data-en="Send request" data-fr="Envoyer la demande" data-zh="提交需求">Send request</button>
+        <span class="enq-alt" data-en='Prefer WhatsApp? <a id="enq-wa" href="#">Send it there instead</a>' data-fr='Vous préférez WhatsApp ? <a id="enq-wa" href="#">Envoyer par ce canal</a>' data-zh='更习惯用WhatsApp？<a id="enq-wa" href="#">点击这里发送</a>'>Prefer WhatsApp? <a id="enq-wa" href="#">Send it there instead</a></span>
       </div>
 
-      <p class="enq-note" data-en="Answered within 24 hours. Rates and availability quoted before confirmation are indicative, subject to supplier confirmation, and are not binding until confirmed in writing." data-fr="Réponse sous 24 heures. Les tarifs et disponibilités communiqués avant confirmation sont indicatifs, sous réserve de confirmation du prestataire, et n'engagent qu'après confirmation écrite.">Answered within 24 hours.</p>
+      <p class="enq-note" data-en="Answered within 24 hours. Rates and availability quoted before confirmation are indicative, subject to supplier confirmation, and are not binding until confirmed in writing." data-fr="Réponse sous 24 heures. Les tarifs et disponibilités communiqués avant confirmation sont indicatifs, sous réserve de confirmation du prestataire, et n'engagent qu'après confirmation écrite." data-zh="我们将在24小时内回复。确认前提供的价格与可订情况仅供参考，须经供应商最终确认，在书面确认前不构成任何承诺。">Answered within 24 hours.</p>
     </form>
 
     <div class="enq-done" id="enq-done">
-      <h3 data-en="Thank you." data-fr="Merci.">Thank you.</h3>
-      <p data-en="Your request is on its way. We come back to you within 24 hours." data-fr="Votre demande est partie. Nous revenons vers vous sous 24 heures.">Your request is on its way.</p>
+      <h3 data-en="Thank you." data-fr="Merci." data-zh="感谢您的联系。">Thank you.</h3>
+      <p data-en="Your request is on its way. We come back to you within 24 hours." data-fr="Votre demande est partie. Nous revenons vers vous sous 24 heures." data-zh="您的需求已发送，我们将在24小时内与您联系。">Your request is on its way.</p>
     </div>
   </div>
 </section>
@@ -997,15 +1020,15 @@ button.btn{cursor:pointer;font-family:'Montserrat',system-ui,sans-serif}
     <hr class="foot-sep">
 
     <div class="foot-legal">
-      <div><strong>UNSEEN.</strong> <span data-en="Conciergerie de luxe. Sole trader registered in France." data-fr="Conciergerie de luxe. Entreprise individuelle immatriculée en France.">Conciergerie de luxe. Sole trader registered in France.</span></div>
+      <div><strong>UNSEEN.</strong> <span data-en="Conciergerie de luxe. Sole trader registered in France." data-fr="Conciergerie de luxe. Entreprise individuelle immatriculée en France." data-zh="私人奢华礼宾服务。法国注册个体企业。">Conciergerie de luxe. Sole trader registered in France.</span></div>
       <div>8 rue du Docteur Graverry, 77100 Meaux, France</div>
       <div>SIREN <span class="num">999 356 587</span> &nbsp; SIRET <span class="num">999 356 587 00017</span> &nbsp; APE <span class="num">96.09Z</span></div>
       <div style="margin-top:16px">
-        <a href="legal.html" data-en="Legal notice, terms and privacy" data-fr="Mentions légales, conditions et confidentialité">Legal notice, terms and privacy</a>
+        <a href="legal.html" data-en="Legal notice, terms and privacy" data-fr="Mentions légales, conditions et confidentialité" data-zh="法律声明、条款与隐私政策">Legal notice, terms and privacy</a>
         &nbsp;&nbsp;
         <a href="mailto:privacy@unseenconciergerie.com">privacy@unseenconciergerie.com</a>
       </div>
-      <div style="margin-top:16px;color:#666">&copy; <span class="num">2026</span> UNSEEN. <span data-en="All rights reserved." data-fr="Tous droits réservés.">All rights reserved.</span></div>
+      <div style="margin-top:16px;color:#666">&copy; <span class="num">2026</span> UNSEEN. <span data-en="All rights reserved." data-fr="Tous droits réservés." data-zh="版权所有。">All rights reserved.</span></div>
     </div>
   </div>
 </footer>
@@ -1013,8 +1036,21 @@ button.btn{cursor:pointer;font-family:'Montserrat',system-ui,sans-serif}
 <script>
 (function(){
   var nodes = document.querySelectorAll('[data-en]');
-  var bEn = document.getElementById('btn-en');
-  var bFr = document.getElementById('btn-fr');
+  var boutons = {
+    en: document.getElementById('btn-en'),
+    fr: document.getElementById('btn-fr'),
+    zh: document.getElementById('btn-zh')
+  };
+  /* Le titre de l'onglet du navigateur suit aussi la langue choisie.
+     Cela n'affecte que ce que le visiteur voit une fois la page ouverte :
+     un moteur de recherche ou un aperçu de partage continue de lire le
+     titre anglais par défaut, un site statique ne peut pas faire mieux. */
+  var TITRES = {
+    en: 'UNSEEN. — Private Luxury Concierge',
+    fr: 'UNSEEN. — Conciergerie privée de luxe',
+    zh: 'UNSEEN. — 私人尊享礼宾服务'
+  };
+
   function setLang(lang){
     for (var i=0;i<nodes.length;i++){
       var v = nodes[i].getAttribute('data-'+lang);
@@ -1037,15 +1073,24 @@ button.btn{cursor:pointer;font-family:'Montserrat',system-ui,sans-serif}
       if (gv !== null) grp[g].setAttribute('label', gv);
     }
     document.documentElement.lang = lang;
-    bEn.setAttribute('aria-pressed', lang==='en' ? 'true':'false');
-    bFr.setAttribute('aria-pressed', lang==='fr' ? 'true':'false');
+    if (TITRES[lang]) document.title = TITRES[lang];
+    for (var code in boutons){
+      if (boutons[code]) boutons[code].setAttribute('aria-pressed', code===lang ? 'true':'false');
+    }
     try { localStorage.setItem('unseen-lang', lang); } catch(e){}
   }
-  bEn.addEventListener('click', function(){ setLang('en'); });
-  bFr.addEventListener('click', function(){ setLang('fr'); });
+
+  for (var code in boutons){
+    (function(code){
+      if (boutons[code]) boutons[code].addEventListener('click', function(){ setLang(code); });
+    })(code);
+  }
+
   var saved=null; try { saved = localStorage.getItem('unseen-lang'); } catch(e){}
-  if (saved === 'fr') setLang('fr');
-  else if (!saved && (navigator.language||'').toLowerCase().indexOf('fr') === 0) setLang('fr');
+  var naviguateurLangue = (navigator.language || '').toLowerCase();
+  if (saved === 'fr' || saved === 'zh') setLang(saved);
+  else if (!saved && naviguateurLangue.indexOf('zh') === 0) setLang('zh');
+  else if (!saved && naviguateurLangue.indexOf('fr') === 0) setLang('fr');
 })();
 </script>
 
@@ -1070,23 +1115,24 @@ button.btn{cursor:pointer;font-family:'Montserrat',system-ui,sans-serif}
   var GREY = '#D9D9D9';
 
   var TYPES = {
-    palace:{en:'Palace hotel', fr:'Palace'},
-    hotel:{en:'Hotel', fr:'Hôtel'},
-    restaurant:{en:'Restaurant', fr:'Restaurant'},
-    maison:{en:'Luxury maison', fr:'Maison de luxe'},
-    club:{en:'Private club', fr:'Club privé'},
-    beach:{en:'Beach club', fr:'Beach club'},
-    venue:{en:'Venue', fr:'Lieu'},
-    event:{en:'Event', fr:'Événement'},
-    sport:{en:'Motorsport', fr:'Sport automobile'},
-    soon:{en:'Coming soon', fr:'À venir'}
+    palace:{en:'Palace hotel', fr:'Palace', zh:'宫殿级酒店'},
+    hotel:{en:'Hotel', fr:'Hôtel', zh:'酒店'},
+    restaurant:{en:'Restaurant', fr:'Restaurant', zh:'餐厅'},
+    maison:{en:'Luxury maison', fr:'Maison de luxe', zh:'品牌之家'},
+    club:{en:'Private club', fr:'Club privé', zh:'私人会所'},
+    beach:{en:'Beach club', fr:'Beach club', zh:'沙滩俱乐部'},
+    venue:{en:'Venue', fr:'Lieu', zh:'场地'},
+    event:{en:'Event', fr:'Événement', zh:'活动'},
+    sport:{en:'Motorsport', fr:'Sport automobile', zh:'赛车运动'},
+    soon:{en:'Coming soon', fr:'À venir', zh:'即将推出'}
   };
 
   var DEST = {
     paris:{
-      lat:48.8566, lng:2.3522, zoom:13, short:'Paris', photo:'m-paris',
+      lat:48.8566, lng:2.3522, zoom:13, short:'Paris', shortZh:'巴黎', photo:'m-paris',
       en:{tag:'The base', title:'Paris', text:'Palaces, tables, maisons and the venues behind the big Paris dates.'},
       fr:{tag:'La base', title:'Paris', text:'Palaces, tables, maisons et les lieux des grands rendez-vous parisiens.'},
+      zh:{tag:'根基所在', title:'巴黎', text:'宫殿级酒店、餐厅、品牌之家，以及巴黎各大盛事的举办地。'},
       partners:[
         {name:'Le Meurice', type:'palace', lat:48.8651, lng:2.3283},
         {name:'Hôtel Plaza Athénée', type:'palace', lat:48.8664, lng:2.3039},
@@ -1111,15 +1157,17 @@ button.btn{cursor:pointer;font-family:'Montserrat',system-ui,sans-serif}
       ]
     },
     london:{
-      lat:51.5072, lng:-0.1276, zoom:12, short:'Londres', photo:'m-london',
+      lat:51.5072, lng:-0.1276, zoom:12, short:'Londres', shortZh:'伦敦', photo:'m-london',
       en:{tag:'Across the Channel', title:'London', text:'One name on the calendar for now, reachable the same afternoon as a request from Paris.'},
       fr:{tag:"De l'autre côté de la Manche", title:'Londres', text:"Un rendez-vous sur le calendrier pour l'instant, joignable l'après-midi même d'une demande faite depuis Paris."},
+      zh:{tag:'海峡对岸', title:'伦敦', text:'目前仅一处合作地址，从巴黎发出请求，当天下午即可抵达。'},
       partners:[{name:'Wimbledon', type:'event', lat:51.4340, lng:-0.2145}]
     },
     sainttropez:{
-      lat:43.2677, lng:6.6407, zoom:13, short:'Saint-Tropez', photo:'m-sainttropez',
+      lat:43.2677, lng:6.6407, zoom:13, short:'Saint-Tropez', shortZh:'圣特罗佩', photo:'m-sainttropez',
       en:{tag:'Summer', title:'Saint-Tropez & Ramatuelle', text:'Beach clubs, tables and the private rooms that open after dinner.'},
       fr:{tag:'Été', title:'Saint-Tropez & Ramatuelle', text:'Beach clubs, tables et les salons privés qui ouvrent après le dîner.'},
+      zh:{tag:'夏季', title:'圣特罗佩与拉马图埃勒', text:'沙滩俱乐部、餐厅，以及晚餐后开放的私人包间。'},
       partners:[
         {name:'La Réserve Ramatuelle', type:'hotel', lat:43.2214, lng:6.6620},
         {name:'Club 55', type:'beach', lat:43.2279, lng:6.6622},
@@ -1130,9 +1178,10 @@ button.btn{cursor:pointer;font-family:'Montserrat',system-ui,sans-serif}
       ]
     },
     cannes:{
-      lat:43.5528, lng:7.0174, zoom:13, short:'Cannes', photo:'m-cannes',
+      lat:43.5528, lng:7.0174, zoom:13, short:'Cannes', shortZh:'戛纳', photo:'m-cannes',
       en:{tag:'Festival season', title:'Cannes & Antibes', text:'Beach clubs, private rooms and the venue behind the Film Festival.'},
       fr:{tag:'Saison des festivals', title:'Cannes & Antibes', text:'Beach clubs, salons privés et le lieu du Festival de Cannes.'},
+      zh:{tag:'电影节季', title:'戛纳与安提布', text:'沙滩俱乐部、私人包间，以及戛纳电影节举办地。'},
       partners:[
         {name:'La Guérite', type:'beach', lat:43.5239, lng:7.0468},
         {name:'Gotha Club', type:'club', lat:43.5472, lng:7.0313},
@@ -1140,9 +1189,10 @@ button.btn{cursor:pointer;font-family:'Montserrat',system-ui,sans-serif}
       ]
     },
     monaco:{
-      lat:43.7384, lng:7.4246, zoom:13, short:'Monaco', photo:'m-monaco',
+      lat:43.7384, lng:7.4246, zoom:13, short:'Monaco', shortZh:'摩纳哥', photo:'m-monaco',
       en:{tag:'Grand Prix', title:'Monaco', text:'Private clubs, the Yacht Club, and F1 Experiences for the Grands Prix on the world calendar.'},
       fr:{tag:'Grand Prix', title:'Monaco', text:'Clubs privés, le Yacht Club, et F1 Experiences pour les Grands Prix du calendrier mondial.'},
+      zh:{tag:'大奖赛', title:'摩纳哥', text:'私人会所、游艇俱乐部，以及全球F1大奖赛的观赛体验安排。'},
       partners:[
         {name:"Jimmy'z", type:'club', lat:43.7470, lng:7.4386},
         {name:'Nikki Beach Monte-Carlo', type:'beach', lat:43.7399, lng:7.4295},
@@ -1151,9 +1201,10 @@ button.btn{cursor:pointer;font-family:'Montserrat',system-ui,sans-serif}
       ]
     },
     alps:{
-      lat:45.4149, lng:6.6353, zoom:12, short:'Alpes', photo:'m-alps',
+      lat:45.4149, lng:6.6353, zoom:12, short:'Alpes', shortZh:'阿尔卑斯', photo:'m-alps',
       en:{tag:'December to April', title:'The Alps', text:'Courchevel today. Megève and Gstaad will join the list shortly.'},
       fr:{tag:'Décembre à avril', title:'Les Alpes', text:'Courchevel pour commencer. Megève et Gstaad rejoindront la liste prochainement.'},
+      zh:{tag:'十二月至四月', title:'阿尔卑斯山', text:'目前以库雪维尔为主，梅杰夫与格斯塔德即将加入。'},
       partners:[
         {name:'Cheval Blanc Courchevel', type:'hotel', lat:45.4095, lng:6.6336},
         {name:'Les Airelles Courchevel', type:'hotel', lat:45.4100, lng:6.6341},
@@ -1166,9 +1217,10 @@ button.btn{cursor:pointer;font-family:'Montserrat',system-ui,sans-serif}
       ]
     },
     mauritius:{
-      lat:-20.3484, lng:57.5522, zoom:12, short:'Maurice', photo:'m-mauritius',
+      lat:-20.3484, lng:57.5522, zoom:12, short:'Maurice', shortZh:'毛里求斯', photo:'m-mauritius',
       en:{tag:'The counter-season', title:'Mauritius', text:'A dozen resorts across the island, open when Europe closes.'},
       fr:{tag:'La contre-saison', title:'Maurice', text:"Une douzaine de resorts sur l'île, ouverts quand l'Europe se ferme."},
+      zh:{tag:'反季胜地', title:'毛里求斯', text:'岛上十余家度假村，在欧洲进入淡季时依然全年开放。'},
       partners:[
         {name:'Heritage Awali', type:'hotel', lat:-20.5085, lng:57.4130},
         {name:'Heritage Telfair', type:'hotel', lat:-20.5058, lng:57.4105},
@@ -1279,7 +1331,10 @@ button.btn{cursor:pointer;font-family:'Montserrat',system-ui,sans-serif}
     moveMap(function(){ map.fitBounds(bounds, {padding:[34,34], animate:false}); });
   });
 
-  function lang(){ return document.documentElement.lang === 'fr' ? 'fr' : 'en'; }
+  function lang(){
+    var l = document.documentElement.lang;
+    return (l === 'fr' || l === 'zh') ? l : 'en';
+  }
   function typeLabel(t){ var o = TYPES[t]; return o ? o[lang()] : t; }
 
   function paintMarkers(){
@@ -1297,7 +1352,11 @@ button.btn{cursor:pointer;font-family:'Montserrat',system-ui,sans-serif}
       var b = document.createElement('button');
       b.type = 'button';
       b.className = 'on'===id ? '' : '';
-      b.textContent = DEST[id].short;
+      /* le libelle court du bouton reste identique en EN et en FR (choix
+         d'origine du site), mais devient illisible pour un lecteur qui
+         ne connait que le chinois : on lui donne un vrai libelle chinois
+         quand il existe. */
+      b.textContent = (lang()==='zh' && DEST[id].shortZh) ? DEST[id].shortZh : DEST[id].short;
       if (id === current) b.classList.add('on');
       b.addEventListener('click', function(){ select(id); });
       tabs.appendChild(b);
@@ -1311,7 +1370,8 @@ button.btn{cursor:pointer;font-family:'Montserrat',system-ui,sans-serif}
     var html = '';
     if (d.photo){
       /* la description suit la langue affichee, comme le reste de la fiche */
-      var desc = (lang()==='fr' ? 'UNSEEN. à ' : 'UNSEEN. in ') + t.title;
+      var PREFIXE_LIEU = {en:'UNSEEN. in ', fr:'UNSEEN. à ', zh:'UNSEEN. 在'};
+      var desc = PREFIXE_LIEU[lang()] + t.title;
       html += '<div class="mapphoto"><picture>' +
               '<source type="image/avif" srcset="img/' + d.photo + '.avif">' +
               '<img src="img/' + d.photo + '.webp" alt="' + desc + '" loading="lazy" decoding="async">' +
@@ -1373,9 +1433,10 @@ button.btn{cursor:pointer;font-family:'Montserrat',system-ui,sans-serif}
   paintTabs();
   render();
 
-  var bEn = document.getElementById('btn-en'), bFr = document.getElementById('btn-fr');
-  if (bEn) bEn.addEventListener('click', function(){ render(); paintTabs(); });
-  if (bFr) bFr.addEventListener('click', function(){ render(); paintTabs(); });
+  ['btn-en','btn-fr','btn-zh'].forEach(function(id){
+    var b = document.getElementById(id);
+    if (b) b.addEventListener('click', function(){ render(); paintTabs(); });
+  });
 
   setTimeout(function(){ map.invalidateSize(); }, 300);
 })();
@@ -1414,11 +1475,14 @@ button.btn{cursor:pointer;font-family:'Montserrat',system-ui,sans-serif}
 
   function txt(node){ var e=document.getElementById(node); return e ? e.value.trim() : ''; }
   function flag(id,on){ document.getElementById(id).classList.toggle('bad', !!on); }
-  function lang(){ return document.documentElement.lang === 'fr' ? 'fr' : 'en'; }
+  function lang(){
+    var l = document.documentElement.lang;
+    return (l === 'fr' || l === 'zh') ? l : 'en';
+  }
 
   var WORD = {
-    send:    {en:'Send request',    fr:'Envoyer la demande'},
-    sending: {en:'Sending…',        fr:'Envoi en cours…'}
+    send:    {en:'Send request',    fr:'Envoyer la demande',   zh:'提交需求'},
+    sending: {en:'Sending…',        fr:'Envoi en cours…',      zh:'提交中…'}
   };
 
   function valid(){
