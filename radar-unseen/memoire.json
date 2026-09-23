@@ -114,7 +114,96 @@
   "https://www.hospitalitynet.org/appointment/79032798/tristan-delmas": "2026-09-22",
   "https://www.hospitalitynet.org/appointment/79032801/emmy-stoel": "2026-09-22",
   "https://www.hospitalitynet.org/news/4134490/simple-booking-opens-the-hotel-back-office-to-ai-agents": "2026-09-22",
-  "https://wwd.com/sourcing-journal/sj-denim/archroma-inonego-dyeing-technology-cellulosic-wovens-1239243348": "2026-09-22"
+  "https://wwd.com/sourcing-journal/sj-denim/archroma-inonego-dyeing-technology-cellulosic-wovens-1239243348": "2026-09-22",
+  "https://thegoodlife.fr/hotel-masse-paris-pigalle": "2026-09-23",
+  "https://larevuedeshotels.com/buche-noel-2026-peninsula-paris-chaumet-epi-de-ble-anne-coruble": "2026-09-23",
+  "https://www.tiktok.com/discover/harry-styles-concert-plenitude-arena": "2026-09-23",
+  "https://www.jeu-concours.biz/2026/09/22/concours-instagram-views-gagner-2-places-vip-celine-dion-plenitude-arena.html": "2026-09-23",
+  "https://robbreport.com/motors/marine/isa-yachts-essence-superyacht-1238665761": "2026-09-23",
+  "https://www.parisselectbook.com/2026/09/22/trois-mois-apres-sa-reouverture-mandarin-oriental-decroche-deux-cles-michelin": "2026-09-23",
+  "https://origin.journalduluxe.fr/fr/mode/dior-shanghai-defile-croisiere-2028": "2026-09-23",
+  "https://www.hospitalitynet.org/news/4134516/rome-future-week-opens-with-simone-puortos-humans-as-luxury-a-debate-on-human-connection-in-the-age-of-ai": "2026-09-23"
  },
- "en_attente": []
+ "en_attente": [
+  {
+   "titre": "L'hôtel Massé à Pigalle redéfinit l'hôtel parisien",
+   "lien": "https://thegoodlife.fr/hotel-masse-paris-pigalle",
+   "source": "Alerte Google - Ouvertures",
+   "date": "2026-09-22T17:13:49+00:00",
+   "categorie": "Ouverture",
+   "priorite": "🟠",
+   "zone": "Paris",
+   "action": "Demander un contact commercial ou une visite des lieux"
+  },
+  {
+   "titre": "Bûche de Noël 2026 du Peninsula Paris : L'Épi de Blé, avec Chaumet",
+   "lien": "https://larevuedeshotels.com/buche-noel-2026-peninsula-paris-chaumet-epi-de-ble-anne-coruble",
+   "source": "Alerte Google - Ouvertures",
+   "date": "2026-09-23T02:06:16+00:00",
+   "categorie": "Ouverture",
+   "priorite": "🟠",
+   "zone": "Paris",
+   "action": "Demander un contact commercial ou une visite des lieux"
+  },
+  {
+   "titre": "Harry Styles Concert Plenitude Arena | TikTok",
+   "lien": "https://www.tiktok.com/discover/harry-styles-concert-plenitude-arena",
+   "source": "Alerte Google - Plenitude Arena",
+   "date": "2026-09-22T06:17:22+00:00",
+   "categorie": "Événement",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "Gagnez 2 places VIP pour Céline Dion à la Plénitude Arena - Views",
+   "lien": "https://www.jeu-concours.biz/2026/09/22/concours-instagram-views-gagner-2-places-vip-celine-dion-plenitude-arena.html",
+   "source": "Alerte Google - Plenitude Arena",
+   "date": "2026-09-22T09:06:21+00:00",
+   "categorie": "Événement",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "ISA’s Epic New 269-Foot Superyacht Has a Touch-and-Go Helipad and a Glass-Bottomed Pool",
+   "lien": "https://robbreport.com/motors/marine/isa-yachts-essence-superyacht-1238665761",
+   "source": "Robb Report",
+   "date": "2026-09-22T23:00:00+00:00",
+   "categorie": "Tendance clientèle",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Lire et archiver : argument utile pour les propositions clients"
+  },
+  {
+   "titre": "Trois mois après sa réouverture, Mandarin Oriental décroche deux Clés MICHELIN",
+   "lien": "https://www.parisselectbook.com/2026/09/22/trois-mois-apres-sa-reouverture-mandarin-oriental-decroche-deux-cles-michelin",
+   "source": "Alerte Google - Ouvertures",
+   "date": "2026-09-22T23:56:30+00:00",
+   "categorie": "Ouverture",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Demander un contact commercial ou une visite des lieux"
+  },
+  {
+   "titre": "Dior choisit Shanghai pour son défilé Croisière 2028",
+   "lien": "https://origin.journalduluxe.fr/fr/mode/dior-shanghai-defile-croisiere-2028",
+   "source": "Journal du Luxe",
+   "date": "2026-09-23T04:26:38+00:00",
+   "categorie": "Événement",
+   "priorite": "⚪",
+   "zone": "Paris",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "Rome Future Week Opens with Simone Puorto’s “Humans-As-Luxury”: A Debate on Human Connection in the Age of AI",
+   "lien": "https://www.hospitalitynet.org/news/4134516/rome-future-week-opens-with-simone-puortos-humans-as-luxury-a-debate-on-human-connection-in-the-age-of-ai",
+   "source": "Hospitality Net",
+   "date": "2026-09-23T07:57:42+00:00",
+   "categorie": "Ouverture",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Demander un contact commercial ou une visite des lieux"
+  }
+ ]
 }
