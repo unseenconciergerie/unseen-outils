@@ -27,11 +27,16 @@ CHEMIN_ENV = os.path.join(DOSSIER_SCRIPT, ".env")
 CHEMIN_SIGNATURE = os.path.join(DOSSIER_SCRIPT, "signature.html")
 CHEMIN_LOGO = os.path.join(DOSSIER_SCRIPT, "logo_signature.png")
 
-OBJET_MAIL = "Europe by UNSEEN."
+OBJETS_MAIL = {
+    "client": "Europe by UNSEEN.",
+    "partenaire": "Partenariat UNSEEN. — Paris",
+    "agence": "Paris, by UNSEEN.",
+}
 
 EXPEDITEURS = {
     "EN": "contact@unseenconciergerie.com",
     "FR": "contact@unseenconciergerie.fr",
+    "ZH": "contact@unseenconciergerie.com",
 }
 
 DOSSIER_BROUILLONS_GMAIL = "[Gmail]/Brouillons"
@@ -40,10 +45,17 @@ DOSSIER_BROUILLONS_GMAIL = "[Gmail]/Brouillons"
 def mettre_en_forme_html(texte):
     """Transforme le texte brut du modèle en HTML avec paragraphes espacés,
     pour que Gmail affiche l'email normalement (comme un email rédigé à la
-    main) plutôt que comme un bloc de texte brut."""
+    main) plutôt que comme un bloc de texte brut.
+
+    Les fichiers modele_*.txt contiennent des retours à la ligne internes
+    juste pour rester lisibles dans un éditeur de texte : on les remplace
+    par un espace pour que le paragraphe s'étale naturellement en HTML,
+    au lieu de forcer une colonne étroite avec un <br> au milieu d'une
+    phrase."""
     paragraphes = texte.strip().split("\n\n")
     paragraphes_html = [
-        "<p>" + paragraphe.replace("\n", "<br>") + "</p>" for paragraphe in paragraphes
+        "<p>" + " ".join(ligne.strip() for ligne in paragraphe.splitlines()) + "</p>"
+        for paragraphe in paragraphes
     ]
 
     with open(CHEMIN_SIGNATURE, "r", encoding="utf-8") as fichier:
@@ -66,7 +78,7 @@ def lire_identifiants():
     return adresse, mot_de_passe
 
 
-def creer_brouillon(destinataire, corps_message, langue):
+def creer_brouillon(destinataire, corps_message, langue, type_contact="client"):
     """Se connecte à Gmail et dépose un brouillon dans le dossier Brouillons."""
     adresse, mot_de_passe = lire_identifiants()
     expediteur = EXPEDITEURS[langue]
@@ -76,7 +88,7 @@ def creer_brouillon(destinataire, corps_message, langue):
     message = MIMEMultipart("related")
     message["From"] = expediteur
     message["To"] = destinataire
-    message["Subject"] = OBJET_MAIL
+    message["Subject"] = OBJETS_MAIL[type_contact]
     message.attach(MIMEText(corps_html, "html"))
 
     with open(CHEMIN_LOGO, "rb") as fichier_logo:

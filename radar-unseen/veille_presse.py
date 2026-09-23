@@ -41,17 +41,18 @@ NAVIGATEUR = {
     "Accept": "application/rss+xml, application/xml, text/xml, */*",
 }
 
-# Les cinq catégories, avec leur écriture officielle (accents compris).
+# Les six catégories, avec leur écriture officielle (accents compris).
 CATEGORIES = {
     "nomination": "Nomination",
     "ouverture": "Ouverture",
     "evenement": "Événement",
     "tendance clientele": "Tendance clientèle",
     "concurrent": "Concurrent",
+    "tour-operateur": "Tour-opérateur",
 }
 
 # Quand plusieurs thèmes correspondent, on garde le plus parlant.
-ORDRE_CATEGORIES = ["Ouverture", "Événement", "Concurrent", "Tendance clientèle"]
+ORDRE_CATEGORIES = ["Ouverture", "Événement", "Concurrent", "Tour-opérateur", "Tendance clientèle"]
 
 MOIS_FR = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet",
            "août", "septembre", "octobre", "novembre", "décembre"]
@@ -428,7 +429,7 @@ def analyser(titre, resume, mots, categorie_imposee):
     #    imposée par la source), confirmée par le titre, en zone prioritaire.
     confirme_par_le_titre = deduire_categorie(signaux_titre) == categorie
     merite_le_rouge = (
-        categorie in ("Nomination", "Ouverture")
+        categorie in ("Nomination", "Ouverture", "Tour-opérateur")
         and categorie_deduite
         and confirme_par_le_titre
         and signaux_titre["zone_prioritaire"]
@@ -443,7 +444,7 @@ def analyser(titre, resume, mots, categorie_imposee):
     # et les ouvertures : là, le titre nomme souvent l'établissement sans
     # préciser la ville (« Le Bristol nomme un nouveau directeur général »),
     # et ce sont les articles qu'on veut surtout ne pas rater.
-    categorie_forte = categorie in ("Nomination", "Ouverture") and categorie_deduite
+    categorie_forte = categorie in ("Nomination", "Ouverture", "Tour-opérateur") and categorie_deduite
 
     if merite_le_rouge:
         priorite = "🔴"

@@ -11,3 +11,7 @@ __pycache__/
 # Fichiers temporaires d'Excel (créés quand un classeur est ouvert)
 ~$*.xlsx
 .DS_Store
+
+# Le lot de contacts à traiter contient des emails de prospects : données
+# confidentielles, jamais sur Git
+a_traiter.xlsx

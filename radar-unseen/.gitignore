@@ -11,3 +11,6 @@ __pycache__/
 # Fichiers temporaires d'Excel (crees quand un classeur est ouvert)
 ~$*.xlsx
 .DS_Store
+
+# Mémoire du carnet de groupes : liée à des données clients, jamais sur Git
+memoire_groupes.json

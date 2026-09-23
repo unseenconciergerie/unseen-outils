@@ -186,6 +186,56 @@ l'adresse du flux.
 
 ---
 
+### Repérer des tour-opérateurs/agences Chine-Asie (catégorie Tour-opérateur)
+
+Six lignes sont déjà préparées dans `sources.xlsx` (`Actif = non` en
+attendant), avec une colonne Note qui donne la recherche à coller dans
+Google Alertes :
+
+**1. Tour-opérateurs Chine-Asie vers Paris**
+```
+(tour operator OR agence de voyage OR DMC OR voyagiste) (Paris OR France) (partenariat OR "nouveau programme" OR bureau)
+```
+
+**2. Tourisme chinois France, tendance**
+```
+tourisme chinois (Paris OR France) (croissance OR reprise OR vols OR visa)
+```
+
+**3. Agences Moyen-Orient vers Paris**
+```
+(tour operator OR agence de voyage OR DMC) (Dubai OR "Abu Dhabi" OR Riyadh OR Qatar OR Golfe) (Paris OR France) (partenariat OR programme)
+```
+
+**4. Guides shopping Paris**
+```
+(guide OR "personal shopping" OR "shopping tour") Paris ("Galeries Lafayette" OR luxe OR "duty free" OR detaxe)
+```
+
+**5. Vols et visas Chine-Golfe vers France**
+```
+("vol direct" OR "direct flight" OR visa) (Chine OR China OR Golfe OR Gulf) France (Paris OR touristes OR voyageurs)
+```
+
+**6. Tour-opérateurs Inde vers Paris**
+```
+(tour operator OR agence de voyage OR DMC) India (Paris OR France) (partenariat OR "nouveau programme" OR bureau)
+```
+
+Même procédure que les autres alertes : crée l'alerte sur
+[google.com/alerts](https://www.google.com/alerts), « Diffuser vers » →
+**Flux RSS**, colle l'adresse dans la colonne « URL du flux », puis passe
+`Actif` à `oui`.
+
+**Limite à garder en tête** : cette veille repère des *entreprises*
+(tour-opérateurs, agences) qui annoncent un développement sur Paris — pas
+des clients individuels. Aucune veille presse ne peut détecter qu'une
+famille précise arrive à Paris, ce n'est jamais public. Pour ça, voir
+l'Étape 5 ci-dessous : une fois qu'un de ces tour-opérateurs devient un
+partenaire (via `assistant-prospection/`), c'est lui qui te préviendra.
+
+---
+
 ## Étape 3 — Radar des événements ✅
 
 ### Les trois commandes
@@ -236,3 +286,87 @@ même jour. Ne le modifie pas à la main.
 À venir. **Point d'attention** : `sources.xlsx` contient les adresses de
 tes flux Google Alertes, qui donnent accès à tes alertes sans mot de passe.
 Le dépôt GitHub doit impérativement rester privé.
+
+---
+
+## Étape 5 — Carnet de groupes annoncés
+
+### À quoi ça sert
+
+Quand un partenaire (guide, chauffeur, DMC, hôtel) te prévient qu'un
+groupe ou une famille arrive à Paris, tu envoies un message Telegram au
+bot avec ce qu'on t'a dit, en texte libre — pas de formulaire à remplir.
+Le script range l'info dans une base Notion, et t'envoie un rappel groupé
+avant l'arrivée du groupe (J-30, J-14, J-3) pour que tu le contactes avant
+qu'il soit sur place.
+
+**Important à comprendre** : cet outil ne trouve pas de clients tout seul.
+Il range et te rappelle ce qu'un partenaire t'a déjà signalé. La vraie
+source, ce sont tes partenariats (voir Étape « Repérer des
+tour-opérateurs » ci-dessus, et `assistant-prospection/` pour les
+approcher avec une proposition de commission).
+
+### Les commandes
+
+Toujours depuis le dossier `radar-unseen` :
+
+```
+./venv/bin/python radar_groupes.py --recevoir --test
+```
+Affiche les nouveaux messages Telegram trouvés, sans rien créer dans
+Notion.
+
+```
+./venv/bin/python radar_groupes.py --recevoir
+```
+Crée une fiche Notion « À compléter » pour chaque nouveau message
+Telegram envoyé au bot depuis le dernier passage.
+
+```
+./venv/bin/python radar_groupes.py --rappels
+```
+Envoie **un seul message Telegram groupé** avec tous les groupes qui
+tombent pile à J-30, J-14 ou J-3 aujourd'hui. À lancer une fois par jour.
+
+```
+./venv/bin/python radar_groupes.py --nouveaux
+```
+Récapitulatif hebdomadaire des groupes ajoutés dans les 7 derniers jours
+et pas encore contactés — pour ne rien perdre entre le signalement et
+l'action.
+
+Ajoute `--test` à n'importe laquelle de ces commandes pour voir le
+résultat dans le terminal sans rien envoyer ni enregistrer.
+
+⚠️ **Ce fichier de suivi contient des données clients.** Contrairement à
+la veille presse et au calendrier événements, il n'y a **pas
+d'automatisation GitHub Actions** pour cet outil : tu lances ces
+commandes toi-même depuis ton Mac.
+
+### La base Notion « Groupes UNSEEN. »
+
+Ouvre-la ici : https://app.notion.com/p/d208b64f9aac494a80a96f25f4600f4d
+
+| Colonne | Qui la remplit | Contenu |
+|---|---|---|
+| Nom du groupe / client | Le script (1re ligne du message) | Libre |
+| Notes | Le script | Le texte brut du message Telegram |
+| Date d'arrivée | Toi | JJ/MM/AAAA — déclenche les rappels |
+| Date de départ | Toi | Optionnel |
+| Nationalité / zone | Toi | Libre |
+| Taille du groupe | Toi | Libre |
+| Signalé par | Toi | Qui t'a prévenu |
+| Contact partenaire | Toi | Téléphone/email du partenaire |
+| Contact direct client | Toi | Si le partenaire l'a partagé |
+| Statut | Toi | À compléter → À contacter → Contacté → Rendez-vous pris / Sans suite |
+
+Le script ne touche jamais au Statut après la création de la fiche —
+c'est toi qui le mets à jour dans Notion au fur et à mesure.
+
+**Bon réflexe** : dès qu'un partenaire te signale un groupe, même une
+info incomplète (juste une date et une nationalité), envoie-la tout de
+suite au bot Telegram. Tu complèteras dans Notion plus tard. Mieux vaut
+un rappel imparfait qu'aucun rappel.
+
+`memoire_groupes.json` retient le dernier message Telegram lu et les
+rappels déjà envoyés aujourd'hui. Ne le modifie pas à la main.
