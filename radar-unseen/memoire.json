@@ -127,7 +127,10 @@
   "https://wwd.com/sourcing-journal/sj-denim/spring-summer-2027-denim-nyfw-7-for-all-mankind-luar-area-1239253329": "2026-09-23",
   "https://www.hospitalitynet.org/news/4134535/us90-billion-hotel-pipeline-set-to-expand-gcc-and-north-africa-room-supply-by-27-percent": "2026-09-23",
   "https://hospitality-on.com/fr/hotellerie/lux-collective-devoile-son-plan-dexpansion-qui-setend-de-lasie-au-moyen-orient": "2026-09-23",
-  "https://www.hospitalitynet.org/editorial/4134538/the-only-person-who-knows-what-ai-got-wrong-is-at-the-front-desk-humans-as-luxury-opens-rome-future-week-30-years-at-the-wickaninnish-inn": "2026-09-23"
+  "https://www.hospitalitynet.org/editorial/4134538/the-only-person-who-knows-what-ai-got-wrong-is-at-the-front-desk-humans-as-luxury-opens-rome-future-week-30-years-at-the-wickaninnish-inn": "2026-09-23",
+  "https://wwd.com/accessories-news/jewelry/jewelry-highlights-london-fashion-week-spring-2027-chaumet-de-beers-1239255306": "2026-09-23",
+  "https://wwd.com/fashion-news/designer-luxury/shanghai-fashion-week-spring-27-preview-1239256463": "2026-09-23",
+  "https://wwd.com/footwear-news/shoe-trends/jennifer-lopez-dolce-gabbana-leopard-slingback-heels-milan-1239255614": "2026-09-23"
  },
  "en_attente": [
   {
@@ -259,6 +262,36 @@
    "priorite": "⚪",
    "zone": "",
    "action": "Demander un contact commercial ou une visite des lieux"
+  },
+  {
+   "titre": "Texture, Archives, Alchemy: Jewelry Highlights From London Fashion Week",
+   "lien": "https://wwd.com/accessories-news/jewelry/jewelry-highlights-london-fashion-week-spring-2027-chaumet-de-beers-1239255306",
+   "source": "WWD",
+   "date": "2026-09-23T17:40:41+00:00",
+   "categorie": "Événement",
+   "priorite": "🟠",
+   "zone": "Londres",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "Pronounce, Qiu Shuting, Shushu/Tong to Headline Shanghai Fashion Week",
+   "lien": "https://wwd.com/fashion-news/designer-luxury/shanghai-fashion-week-spring-27-preview-1239256463",
+   "source": "WWD",
+   "date": "2026-09-23T17:17:43+00:00",
+   "categorie": "Événement",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "Jennifer Lopez Goes for a Full-on, Feline-inspired Look With Leopard Slingbacks During Milan Fashion Week",
+   "lien": "https://wwd.com/footwear-news/shoe-trends/jennifer-lopez-dolce-gabbana-leopard-slingback-heels-milan-1239255614",
+   "source": "WWD",
+   "date": "2026-09-23T17:36:15+00:00",
+   "categorie": "Événement",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
   }
  ]
 }
