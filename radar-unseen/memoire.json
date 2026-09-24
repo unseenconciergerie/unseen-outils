@@ -178,7 +178,9 @@
   "https://www.hospitalitynet.org/appointment/79032809/natalie-gonzalez": "2026-09-24",
   "https://www.seneweb.com/fr/news/Societe/presidence-le-general-souleymane-kande-prend-les-commandes-du-renseignement-exterieur_n_505061.html": "2026-09-24",
   "https://hospitality-on.com/fr/ouverture/club-med-ouvre-son-premier-resort-en-afrique-du-sud-au-terme-dun-projet-engage-il-y-dix": "2026-09-24",
-  "https://robbreport.com/motors/marine/oyster-36m-flagship-sailing-superyacht-1238665642": "2026-09-24"
+  "https://robbreport.com/motors/marine/oyster-36m-flagship-sailing-superyacht-1238665642": "2026-09-24",
+  "https://www.hospitalitynet.org/opinion/4134560/two-audiences-one-pool": "2026-09-24",
+  "https://wwd.com/fashion-news/fashion-scoops/milan-fashion-week-prime-minister-giorgia-meloni-gala-1239258778": "2026-09-24"
  },
  "en_attente": [
   {
@@ -650,6 +652,26 @@
    "priorite": "⚪",
    "zone": "",
    "action": "Lire et archiver : argument utile pour les propositions clients"
+  },
+  {
+   "titre": "Two Audiences, One Pool",
+   "lien": "https://www.hospitalitynet.org/opinion/4134560/two-audiences-one-pool",
+   "source": "Hospitality Net",
+   "date": "2026-09-24T13:59:20+00:00",
+   "categorie": "Ouverture",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Demander un contact commercial ou une visite des lieux"
+  },
+  {
+   "titre": "Prime Minister Giorgia Meloni Makes First Appearance at Camera della Moda Gala",
+   "lien": "https://wwd.com/fashion-news/fashion-scoops/milan-fashion-week-prime-minister-giorgia-meloni-gala-1239258778",
+   "source": "WWD",
+   "date": "2026-09-24T15:01:26+00:00",
+   "categorie": "Événement",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
   }
  ]
 }
