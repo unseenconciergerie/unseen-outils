@@ -222,7 +222,12 @@
   "https://meetandmatch.fr/chanel-lucia-pieroni-direction-artistique-maquillage": "2026-09-25",
   "https://latribunedelhotellerie.com/bt-tower-londres-hotel-mcr-400-chambres": "2026-09-25",
   "https://skift.com/2026/09/25/chinas-golden-week-travelers-are-going-farther-and-spending-less-on-hotels": "2026-09-25",
-  "http://defimedia.info/inde-lacteur-mushtaq-khan-decede-56-ans-apres-un-combat-contre-le-cancer": "2026-09-25"
+  "http://defimedia.info/inde-lacteur-mushtaq-khan-decede-56-ans-apres-un-combat-contre-le-cancer": "2026-09-25",
+  "https://hospitality-on.com/fr/developpement/ihg-ouvre-un-crowne-plaza-marne-la-vallee-aux-portes-de-disneyland-paris": "2026-09-25",
+  "https://wwd.com/sourcing-journal/sj-denim/spring-summer-2027-denim-trends-from-london-fashion-week-1239258336": "2026-09-25",
+  "https://origin.journalduluxe.fr/fr/mode/augustin-de-buffevent-chantier-maison-saint-honore-faure-le-page": "2026-09-25",
+  "https://www.tom.travel/2026/09/25/les-robots-se-mettent-au-service-des-touristes-au-chimelong-spaceship-park-en-chine": "2026-09-25",
+  "https://wwd.com/fashion-news/fashion-features/viktor-rolf-10-corso-como-exhibition-milan-fashion-week-show-1239262171": "2026-09-25"
  },
  "en_attente": [
   {
@@ -644,6 +649,46 @@
    "priorite": "⚪",
    "zone": "",
    "action": "Lire et archiver : argument utile pour les propositions clients"
+  },
+  {
+   "titre": "Denim Trends From London Fashion Week",
+   "lien": "https://wwd.com/sourcing-journal/sj-denim/spring-summer-2027-denim-trends-from-london-fashion-week-1239258336",
+   "source": "WWD",
+   "date": "2026-09-25T14:00:00+00:00",
+   "categorie": "Événement",
+   "priorite": "🟠",
+   "zone": "Londres",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "Augustin de Buffévent nous ouvre le chantier de la Maison Saint-Honoré",
+   "lien": "https://origin.journalduluxe.fr/fr/mode/augustin-de-buffevent-chantier-maison-saint-honore-faure-le-page",
+   "source": "Journal du Luxe",
+   "date": "2026-09-25T08:43:38+00:00",
+   "categorie": "Ouverture",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Demander un contact commercial ou une visite des lieux"
+  },
+  {
+   "titre": "Les robots se mettent au service des touristes au Chimelong Spaceship Park en Chine",
+   "lien": "https://www.tom.travel/2026/09/25/les-robots-se-mettent-au-service-des-touristes-au-chimelong-spaceship-park-en-chine",
+   "source": "TOM.travel",
+   "date": "2026-09-25T12:23:01+00:00",
+   "categorie": "Tendance clientèle",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Lire et archiver : argument utile pour les propositions clients"
+  },
+  {
+   "titre": "Viktor & Rolf’s Favorite Piece in Their Milan Retrospective Is Not a Look",
+   "lien": "https://wwd.com/fashion-news/fashion-features/viktor-rolf-10-corso-como-exhibition-milan-fashion-week-show-1239262171",
+   "source": "WWD",
+   "date": "2026-09-25T14:15:10+00:00",
+   "categorie": "Événement",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
   }
  ]
 }
