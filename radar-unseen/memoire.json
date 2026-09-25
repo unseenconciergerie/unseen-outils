@@ -227,7 +227,8 @@
   "https://wwd.com/sourcing-journal/sj-denim/spring-summer-2027-denim-trends-from-london-fashion-week-1239258336": "2026-09-25",
   "https://origin.journalduluxe.fr/fr/mode/augustin-de-buffevent-chantier-maison-saint-honore-faure-le-page": "2026-09-25",
   "https://www.tom.travel/2026/09/25/les-robots-se-mettent-au-service-des-touristes-au-chimelong-spaceship-park-en-chine": "2026-09-25",
-  "https://wwd.com/fashion-news/fashion-features/viktor-rolf-10-corso-como-exhibition-milan-fashion-week-show-1239262171": "2026-09-25"
+  "https://wwd.com/fashion-news/fashion-features/viktor-rolf-10-corso-como-exhibition-milan-fashion-week-show-1239262171": "2026-09-25",
+  "https://wwd.com/fashion-news/fashion-scoops/off-white-milan-fashion-week-10-x-10-icons-reimagined-1239264280": "2026-09-25"
  },
  "en_attente": [
   {
@@ -685,6 +686,16 @@
    "lien": "https://wwd.com/fashion-news/fashion-features/viktor-rolf-10-corso-como-exhibition-milan-fashion-week-show-1239262171",
    "source": "WWD",
    "date": "2026-09-25T14:15:10+00:00",
+   "categorie": "Événement",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "Off-White Unveils ‘Imaginary Palace’ at Milan Fashion Week for 10×10 Icons Reimagined",
+   "lien": "https://wwd.com/fashion-news/fashion-scoops/off-white-milan-fashion-week-10-x-10-icons-reimagined-1239264280",
+   "source": "WWD",
+   "date": "2026-09-25T17:49:50+00:00",
    "categorie": "Événement",
    "priorite": "⚪",
    "zone": "",
