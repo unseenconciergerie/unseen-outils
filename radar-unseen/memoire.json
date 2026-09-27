@@ -279,7 +279,12 @@
   "https://www.steelers.com/history/bios/colbert_kevin": "2026-09-27",
   "https://www.aip.ci/electionpresidentielle2025/article.php?id=419344": "2026-09-27",
   "https://robbreport.com/motors/aviation/luxury-turboprops-new-generation-1238644407": "2026-09-27",
-  "https://safariindia.com/lotte-hotel-seattle-appoints-new-dosme": "2026-09-27"
+  "https://safariindia.com/lotte-hotel-seattle-appoints-new-dosme": "2026-09-27",
+  "https://www.purepeople.com/media/images-du-concert-de-celine-dion-instagram-plenitude-arena_m8291001": "2026-09-27",
+  "https://news.abidjan.net/photos/983763-cafe-cacao-face-aux-tensions-des-producteurs-disent-non-a-la-greve-et-misent-sur-le-dialogue": "2026-09-27",
+  "https://wwd.com/runway/spring-2027/milan/alanui/review": "2026-09-27",
+  "https://news.abidjan.net/articles/749395/cafe-cacao-face-aux-tensions-des-producteurs-disent-non-a-la-greve-et-misent-sur-le-dialogue": "2026-09-27",
+  "http://defimedia.info/pont-naturel-un-touriste-indien-chute-de-la-falaise-en-prenant-des-selfies": "2026-09-27"
  },
  "en_attente": [
   {
@@ -491,6 +496,56 @@
    "priorite": "⚪",
    "zone": "",
    "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "Images du concert de Céline Dion Instagram @Plenitude Arena - Vidéo",
+   "lien": "https://www.purepeople.com/media/images-du-concert-de-celine-dion-instagram-plenitude-arena_m8291001",
+   "source": "Alerte Google - Plenitude Arena",
+   "date": "2026-09-27T13:47:11+00:00",
+   "categorie": "Événement",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "Café-cacao : face aux tensions, des producteurs disent non à la grève et misent sur le dialogue",
+   "lien": "https://news.abidjan.net/photos/983763-cafe-cacao-face-aux-tensions-des-producteurs-disent-non-a-la-greve-et-misent-sur-le-dialogue",
+   "source": "Alerte Google - Nominations hotellerie FR",
+   "date": "2026-09-27T14:29:58+00:00",
+   "categorie": "Nomination",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "Alanui Spring 2027: A New Journey",
+   "lien": "https://wwd.com/runway/spring-2027/milan/alanui/review",
+   "source": "WWD",
+   "date": "2026-09-27T15:22:23+00:00",
+   "categorie": "Événement",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "Café-cacao : face aux tensions, des producteurs disent non à la grève et misent sur le dialogue",
+   "lien": "https://news.abidjan.net/articles/749395/cafe-cacao-face-aux-tensions-des-producteurs-disent-non-a-la-greve-et-misent-sur-le-dialogue",
+   "source": "Alerte Google - Nominations hotellerie FR",
+   "date": "2026-09-27T16:13:47+00:00",
+   "categorie": "Nomination",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "Pont Naturel : un touriste indien chute de la falaise en prenant des selfies",
+   "lien": "http://defimedia.info/pont-naturel-un-touriste-indien-chute-de-la-falaise-en-prenant-des-selfies",
+   "source": "Defimedia",
+   "date": "2026-09-27T18:01:33.154804+00:00",
+   "categorie": "Tendance clientèle",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Lire et archiver : argument utile pour les propositions clients"
   }
  ]
 }
