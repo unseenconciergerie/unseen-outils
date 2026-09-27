@@ -277,7 +277,9 @@
   "https://www.parismatch.com/culture/musique/celine-dion-se-lache-lors-de-son-sixieme-concert-a-la-plenitude-arena-276412": "2026-09-27",
   "https://us.fashionnetwork.com/news/Christian-dior-holding-company-jumps-17-on-paris-stock-exchange-in-wake-of-lvmh-reorganisation-news,1870280.html": "2026-09-27",
   "https://www.steelers.com/history/bios/colbert_kevin": "2026-09-27",
-  "https://www.aip.ci/electionpresidentielle2025/article.php?id=419344": "2026-09-27"
+  "https://www.aip.ci/electionpresidentielle2025/article.php?id=419344": "2026-09-27",
+  "https://robbreport.com/motors/aviation/luxury-turboprops-new-generation-1238644407": "2026-09-27",
+  "https://safariindia.com/lotte-hotel-seattle-appoints-new-dosme": "2026-09-27"
  },
  "en_attente": [
   {
@@ -465,6 +467,26 @@
    "lien": "https://www.aip.ci/electionpresidentielle2025/article.php?id=419344",
    "source": "Alerte Google - Nominations hotellerie FR",
    "date": "2026-09-27T02:27:56+00:00",
+   "categorie": "Nomination",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "A New Generation of Luxury Turboprops Could Rival Your Private Jet",
+   "lien": "https://robbreport.com/motors/aviation/luxury-turboprops-new-generation-1238644407",
+   "source": "Robb Report",
+   "date": "2026-09-27T13:00:00+00:00",
+   "categorie": "Tendance clientèle",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Lire et archiver : argument utile pour les propositions clients"
+  },
+  {
+   "titre": "Lotte Hotel Seattle Appoints New DOSME",
+   "lien": "https://safariindia.com/lotte-hotel-seattle-appoints-new-dosme",
+   "source": "Alerte Google - Nominations internationales",
+   "date": "2026-09-27T13:49:34+00:00",
    "categorie": "Nomination",
    "priorite": "⚪",
    "zone": "",
