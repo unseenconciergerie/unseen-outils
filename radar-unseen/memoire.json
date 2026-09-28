@@ -302,7 +302,17 @@
   "https://www.facebook.com/bestielemedia/posts/apr%C3%A8s-six-concerts-%C3%A0-la-plenitude-arena-c%C3%A9line-dion-retire-une-chanson-et-remani/1505662221594417": "2026-09-28",
   "https://www.hospitalitynet.org/news/4134586/ihg-hotels-resorts-introduces-newest-brand-noted-collection-to-tokyo": "2026-09-28",
   "https://www.infoconcert.com/actualites/kaaris-a-choisi-le-stade-de-france-pour-son-retour-sur-scene-ce-sera-son-premier-concert-dans-lenceinte-de-saint-denis-23065": "2026-09-28",
-  "https://www.hospitalitynet.org/opinion/4134588/without-the-right-tech-backbone-ai-wont-deliver-for-hotel-chains": "2026-09-28"
+  "https://www.hospitalitynet.org/opinion/4134588/without-the-right-tech-backbone-ai-wont-deliver-for-hotel-chains": "2026-09-28",
+  "https://wwd.com/sourcing-journal/sj-denim/denim-street-style-london-fashion-week-laser-prints-1239260188": "2026-09-28",
+  "https://hospitality-on.com/fr/hotellerie/accor-promeut-vipin-khattar-directeur-commercial-pour-lasie-du-sud": "2026-09-28",
+  "https://fr.hotel.report/career/hotel-metropole-laurent-herschbach-nomme-directeur-general": "2026-09-28",
+  "https://www.plenitudearena.com/ils-font-les-mtv-video-music-awards-et-sont-passes-par-la-plenitude-arena": "2026-09-28",
+  "https://www.hospitalitynet.org/news/4134598/demand-for-european-travel-increased-this-summer-despite-pricing-pressure-and-geopolitical-disruption": "2026-09-28",
+  "https://wwd.com/accessories-news/handbags/furla-lynette-bag-milan-fashion-week-centenary-1239281899": "2026-09-28",
+  "https://www.hospitalitynet.org/news/4134599/emerging-travel-group-partners-with-rippla-to-bring-influencer-marketing-to-travel-brands": "2026-09-28",
+  "https://wwd.com/fashion-news/designer-luxury/milan-fashion-week-tailoring-strong-offer-1239281615": "2026-09-28",
+  "https://wwd.com/accessories-news/accessory-trends/milan-fashion-week-spring-2027-accessories-highlights-1239280760": "2026-09-28",
+  "https://wwd.com/footwear-news/shoe-industry-news/milan-fashion-week-spring-27-top-shoe-presentations-1239281969": "2026-09-28"
  },
  "en_attente": [
   {
@@ -474,6 +484,106 @@
    "priorite": "⚪",
    "zone": "",
    "action": "Lire et archiver : argument utile pour les propositions clients"
+  },
+  {
+   "titre": "Denim Street Style at London Fashion Week",
+   "lien": "https://wwd.com/sourcing-journal/sj-denim/denim-street-style-london-fashion-week-laser-prints-1239260188",
+   "source": "WWD",
+   "date": "2026-09-28T14:00:00+00:00",
+   "categorie": "Événement",
+   "priorite": "🟠",
+   "zone": "Londres",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "Accor promeut Vipin Khattar directeur commercial pour l'Asie du Sud",
+   "lien": "https://hospitality-on.com/fr/hotellerie/accor-promeut-vipin-khattar-directeur-commercial-pour-lasie-du-sud",
+   "source": "Hospitality ON",
+   "date": "2026-09-28T09:44:45+00:00",
+   "categorie": "Nomination",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "Hôtel Métropole : Laurent Herschbach nommé directeur général",
+   "lien": "https://fr.hotel.report/career/hotel-metropole-laurent-herschbach-nomme-directeur-general",
+   "source": "Alerte Google - Nominations hotellerie FR",
+   "date": "2026-09-28T09:49:14+00:00",
+   "categorie": "Nomination",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "MTV VMAs 2026 : les lauréats passés par la Plenitude Arena",
+   "lien": "https://www.plenitudearena.com/ils-font-les-mtv-video-music-awards-et-sont-passes-par-la-plenitude-arena",
+   "source": "Alerte Google - Plenitude Arena",
+   "date": "2026-09-28T10:39:29+00:00",
+   "categorie": "Événement",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "Demand for European travel increased this summer, despite pricing pressure and geopolitical disruption",
+   "lien": "https://www.hospitalitynet.org/news/4134598/demand-for-european-travel-increased-this-summer-despite-pricing-pressure-and-geopolitical-disruption",
+   "source": "Hospitality Net",
+   "date": "2026-09-28T12:40:35+00:00",
+   "categorie": "Tendance clientèle",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Lire et archiver : argument utile pour les propositions clients"
+  },
+  {
+   "titre": "Furla Unveils Lynette Bag at Milan Fashion Week",
+   "lien": "https://wwd.com/accessories-news/handbags/furla-lynette-bag-milan-fashion-week-centenary-1239281899",
+   "source": "WWD",
+   "date": "2026-09-28T13:00:00+00:00",
+   "categorie": "Événement",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "Emerging Travel Group Partners with Rippla to Bring Influencer Marketing to Travel Brands",
+   "lien": "https://www.hospitalitynet.org/news/4134599/emerging-travel-group-partners-with-rippla-to-bring-influencer-marketing-to-travel-brands",
+   "source": "Hospitality Net",
+   "date": "2026-09-28T13:34:22+00:00",
+   "categorie": "Tendance clientèle",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Lire et archiver : argument utile pour les propositions clients"
+  },
+  {
+   "titre": "Tailoring Remains Convincing in Milan",
+   "lien": "https://wwd.com/fashion-news/designer-luxury/milan-fashion-week-tailoring-strong-offer-1239281615",
+   "source": "WWD",
+   "date": "2026-09-28T13:54:20+00:00",
+   "categorie": "Événement",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "The Best Bags, Hats and Jewelry From Milan Fashion Week Spring 2027",
+   "lien": "https://wwd.com/accessories-news/accessory-trends/milan-fashion-week-spring-2027-accessories-highlights-1239280760",
+   "source": "WWD",
+   "date": "2026-09-28T14:13:17+00:00",
+   "categorie": "Événement",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "Inside 21 Milan Fashion Week Shoe Presentations: Color, Creativity and New Optimism",
+   "lien": "https://wwd.com/footwear-news/shoe-industry-news/milan-fashion-week-spring-27-top-shoe-presentations-1239281969",
+   "source": "WWD",
+   "date": "2026-09-28T14:51:34+00:00",
+   "categorie": "Événement",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
   }
  ]
 }
