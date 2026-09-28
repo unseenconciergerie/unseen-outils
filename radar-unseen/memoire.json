@@ -312,7 +312,15 @@
   "https://www.hospitalitynet.org/news/4134599/emerging-travel-group-partners-with-rippla-to-bring-influencer-marketing-to-travel-brands": "2026-09-28",
   "https://wwd.com/fashion-news/designer-luxury/milan-fashion-week-tailoring-strong-offer-1239281615": "2026-09-28",
   "https://wwd.com/accessories-news/accessory-trends/milan-fashion-week-spring-2027-accessories-highlights-1239280760": "2026-09-28",
-  "https://wwd.com/footwear-news/shoe-industry-news/milan-fashion-week-spring-27-top-shoe-presentations-1239281969": "2026-09-28"
+  "https://wwd.com/footwear-news/shoe-industry-news/milan-fashion-week-spring-27-top-shoe-presentations-1239281969": "2026-09-28",
+  "https://www.places-concert.com/concert-322777/billets-star-academy-plenitude-arena-paris": "2026-09-28",
+  "https://www.financemagnates.com/thought-leadership/market-access-is-only-the-starting-point-ic-at-forex-expo-dubai-2026": "2026-09-28",
+  "https://www.tiktok.com/discover/porte-y-rang-3-plenitude-arena": "2026-09-28",
+  "https://www.uow.edu.au/media/2026/nyssa-murray-appointed-as-vice-president-indigenous-strategy-and-engagement.php": "2026-09-28",
+  "https://www.americasrugbynews.com/2026/09/28/at-a-glance-americas-rugby-news-round-up-9": "2026-09-28",
+  "https://www.medianews4u.com/accor-names-vipin-khattar-as-chief-commercial-officer-south-asia": "2026-09-28",
+  "https://traveltradejournal.com/ruby-garcia-returns-to-phulay-bay-a-ritz-carlton-reserve-as-general-manager": "2026-09-28",
+  "http://defimedia.info/ebene-une-reception-pour-celebrer-le-77e-anniversaire-de-la-republique-populaire-de-chine": "2026-09-28"
  },
  "en_attente": [
   {
@@ -584,6 +592,86 @@
    "priorite": "⚪",
    "zone": "",
    "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "Billets Star Academy à Paris (Plenitude Arena) du 03 avril 2027",
+   "lien": "https://www.places-concert.com/concert-322777/billets-star-academy-plenitude-arena-paris",
+   "source": "Alerte Google - Plenitude Arena",
+   "date": "2026-09-28T09:01:39+00:00",
+   "categorie": "Événement",
+   "priorite": "🟠",
+   "zone": "Paris",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "Market access is only the starting point: IC at Forex Expo Dubai 2026",
+   "lien": "https://www.financemagnates.com/thought-leadership/market-access-is-only-the-starting-point-ic-at-forex-expo-dubai-2026",
+   "source": "Alerte Google - Nominations internationales",
+   "date": "2026-09-28T13:42:15+00:00",
+   "categorie": "Nomination",
+   "priorite": "🟠",
+   "zone": "Dubaï",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "Porte Y Rang 3 Plenitude Arena",
+   "lien": "https://www.tiktok.com/discover/porte-y-rang-3-plenitude-arena",
+   "source": "Alerte Google - Plenitude Arena",
+   "date": "2026-09-28T13:10:09+00:00",
+   "categorie": "Événement",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "Nyssa Murray appointed as Vice-President, Indigenous Strategy and Engagement",
+   "lien": "https://www.uow.edu.au/media/2026/nyssa-murray-appointed-as-vice-president-indigenous-strategy-and-engagement.php",
+   "source": "Alerte Google - Nominations internationales",
+   "date": "2026-09-28T13:11:13+00:00",
+   "categorie": "Nomination",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "At a Glance",
+   "lien": "https://www.americasrugbynews.com/2026/09/28/at-a-glance-americas-rugby-news-round-up-9",
+   "source": "Alerte Google - Nominations internationales",
+   "date": "2026-09-28T13:44:33+00:00",
+   "categorie": "Nomination",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "Accor names Vipin Khattar as Chief Commercial Officer, South Asia",
+   "lien": "https://www.medianews4u.com/accor-names-vipin-khattar-as-chief-commercial-officer-south-asia",
+   "source": "Alerte Google - Nominations internationales",
+   "date": "2026-09-28T13:49:39+00:00",
+   "categorie": "Nomination",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "Ruby Garcia returns to Phulay Bay, a Ritz-Carlton Reserve, as General Manager",
+   "lien": "https://traveltradejournal.com/ruby-garcia-returns-to-phulay-bay-a-ritz-carlton-reserve-as-general-manager",
+   "source": "Alerte Google - Nominations internationales",
+   "date": "2026-09-28T16:52:27+00:00",
+   "categorie": "Nomination",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "Ébène : une réception pour célébrer le 77e anniversaire de la République populaire de Chine",
+   "lien": "http://defimedia.info/ebene-une-reception-pour-celebrer-le-77e-anniversaire-de-la-republique-populaire-de-chine",
+   "source": "Defimedia",
+   "date": "2026-09-28T18:01:54.796005+00:00",
+   "categorie": "Tendance clientèle",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Lire et archiver : argument utile pour les propositions clients"
   }
  ]
 }
