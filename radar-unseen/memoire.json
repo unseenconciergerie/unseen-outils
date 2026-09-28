@@ -300,7 +300,9 @@
   "https://www.nextplz.fr/people/591131-patrick-bruel-jai-pris-la-decision-de-quitter-mes-fonctions-troisieme-depart-en-quelques-mois-dans-son-hotel-5-etoiles-lisle-de-leos": "2026-09-28",
   "https://www.webdo.tn/fr/actualite/national/tourisme-chinois-la-tunisie-veut-seduire-pekin-alerte-sur-de-nouveaux-refoulements/404611": "2026-09-28",
   "https://www.facebook.com/bestielemedia/posts/apr%C3%A8s-six-concerts-%C3%A0-la-plenitude-arena-c%C3%A9line-dion-retire-une-chanson-et-remani/1505662221594417": "2026-09-28",
-  "https://www.hospitalitynet.org/news/4134586/ihg-hotels-resorts-introduces-newest-brand-noted-collection-to-tokyo": "2026-09-28"
+  "https://www.hospitalitynet.org/news/4134586/ihg-hotels-resorts-introduces-newest-brand-noted-collection-to-tokyo": "2026-09-28",
+  "https://www.infoconcert.com/actualites/kaaris-a-choisi-le-stade-de-france-pour-son-retour-sur-scene-ce-sera-son-premier-concert-dans-lenceinte-de-saint-denis-23065": "2026-09-28",
+  "https://www.hospitalitynet.org/opinion/4134588/without-the-right-tech-backbone-ai-wont-deliver-for-hotel-chains": "2026-09-28"
  },
  "en_attente": [
   {
@@ -452,6 +454,26 @@
    "priorite": "⚪",
    "zone": "",
    "action": "Demander un contact commercial ou une visite des lieux"
+  },
+  {
+   "titre": "Kaaris a choisi le Stade de France pour son retour sur scène ! Ce sera son premier concert ...",
+   "lien": "https://www.infoconcert.com/actualites/kaaris-a-choisi-le-stade-de-france-pour-son-retour-sur-scene-ce-sera-son-premier-concert-dans-lenceinte-de-saint-denis-23065",
+   "source": "Alerte Google - Plenitude Arena",
+   "date": "2026-09-28T07:55:37+00:00",
+   "categorie": "Événement",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "Without the right tech backbone, AI won’t deliver for hotel chains",
+   "lien": "https://www.hospitalitynet.org/opinion/4134588/without-the-right-tech-backbone-ai-wont-deliver-for-hotel-chains",
+   "source": "Hospitality Net",
+   "date": "2026-09-28T09:14:45+00:00",
+   "categorie": "Tendance clientèle",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Lire et archiver : argument utile pour les propositions clients"
   }
  ]
 }
