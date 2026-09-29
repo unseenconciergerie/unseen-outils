@@ -385,7 +385,19 @@
   "https://www.lejournaldesentreprises.com/article/ramsay-sante-cede-en-juin-le-baya-hotel-de-capbreton-parallel-hospitality-2147743": "2026-09-29",
   "https://www.facebook.com/TicketmasterFR/posts/preventela-star-academy-f%C3%AAte-ses-25-ans-%C3%A0-la-pl%C3%A9nitude-arena-le-3-avril-2027-un-/1542102227948784": "2026-09-29",
   "https://robbreport.com/motors/aviation/flywith-private-jet-app-share-flights-1238648349": "2026-09-29",
-  "http://defimedia.info/lonu-les-etats-unis-la-russie-et-la-chine-exposent-leurs-priorites": "2026-09-29"
+  "http://defimedia.info/lonu-les-etats-unis-la-russie-et-la-chine-exposent-leurs-priorites": "2026-09-29",
+  "https://www.hospitalitynet.org/news/4134634/fhs-world-2026-officially-opens-in-dubai": "2026-09-29",
+  "https://presseagence.fr/megeve-hotellerie-le-four-seasons-se-prepare-pour-son-premier-hiver-sous-la-distinction-palace": "2026-09-29",
+  "https://www.yonder.fr/les-top/restaurant/ou-dejeuner-fashion-week-paris": "2026-09-29",
+  "https://latribunedelhotellerie.com/hyatt-regency-jiaxing-nanhu-ouverture-chine": "2026-09-29",
+  "https://www.sortiraparis.com/hotel-restaurant/hotel/articles/352928-blanca-l-hotel-bucolique-aux-inspirations-mediterraneennes-aux-batignolles": "2026-09-29",
+  "https://www.visa-algerie.com/air-france-en-algerie-un-franco-algerien-prend-les-commandes": "2026-09-29",
+  "https://latribunedelhotellerie.com/aimbridge-hospitality-10-hotels-prospect-ridge-fulcrum": "2026-09-29",
+  "https://africafoot.com/vers-une-destination-surprise-pour-arnaud-kalimuendo-cet-hiver": "2026-09-29",
+  "https://skift.com/2026/09/29/kayak-co-founders-launch-lola-booking-holdings-new-ai-assistant-exclusive": "2026-09-29",
+  "https://www.union.sonapresse.com/fr/hopital-specialise-de-nkembo-bertin-wilfried-meba-prend-ses-fonctions-de-directeur-general-adjoint": "2026-09-29",
+  "https://www.hospitalitynet.org/news/4134637/gcc-set-to-deliver-nearly-126000-new-hotel-rooms-by-2030-taking-total-supply-to-616000-keys": "2026-09-29",
+  "https://www.hospitalitynet.org/news/4134638/radisson-hotel-group-strengthens-middle-east-and-northeast-africa-growth-with-landmark-signings-openings-and-branded-residences": "2026-09-29"
  },
  "en_attente": [
   {
@@ -993,6 +1005,116 @@
    "lien": "http://defimedia.info/lonu-les-etats-unis-la-russie-et-la-chine-exposent-leurs-priorites",
    "source": "Defimedia",
    "date": "2026-09-29T12:02:37.841551+00:00",
+   "categorie": "Tendance clientèle",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Lire et archiver : argument utile pour les propositions clients"
+  },
+  {
+   "titre": "MEGÈVE : Hôtellerie - Le Four Seasons se prépare pour son premier hiver sous la distinction Palace",
+   "lien": "https://presseagence.fr/megeve-hotellerie-le-four-seasons-se-prepare-pour-son-premier-hiver-sous-la-distinction-palace",
+   "source": "Alerte Google - Ouvertures",
+   "date": "2026-09-29T06:33:43+00:00",
+   "categorie": "Ouverture",
+   "priorite": "🟠",
+   "zone": "Megève",
+   "action": "Demander un contact commercial ou une visite des lieux"
+  },
+  {
+   "titre": "Où déjeuner à Paris pendant la Fashion Week",
+   "lien": "https://www.yonder.fr/les-top/restaurant/ou-dejeuner-fashion-week-paris",
+   "source": "Alerte Google - Ouvertures",
+   "date": "2026-09-29T09:40:22+00:00",
+   "categorie": "Événement",
+   "priorite": "🟠",
+   "zone": "Paris",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "Hyatt Regency Jiaxing Nanhu ouvre 201 chambres en Chine",
+   "lien": "https://latribunedelhotellerie.com/hyatt-regency-jiaxing-nanhu-ouverture-chine",
+   "source": "Alerte Google - Nominations hotellerie FR",
+   "date": "2026-09-29T07:32:12+00:00",
+   "categorie": "Ouverture",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Demander un contact commercial ou une visite des lieux"
+  },
+  {
+   "titre": "Blanca, l'hôtel bucolique aux inspirations méditerranéennes aux Batignolles",
+   "lien": "https://www.sortiraparis.com/hotel-restaurant/hotel/articles/352928-blanca-l-hotel-bucolique-aux-inspirations-mediterraneennes-aux-batignolles",
+   "source": "Alerte Google - Ouvertures",
+   "date": "2026-09-29T11:00:36+00:00",
+   "categorie": "Ouverture",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Demander un contact commercial ou une visite des lieux"
+  },
+  {
+   "titre": "Air France en Algérie : un Franco-Algérien prend les commandes",
+   "lien": "https://www.visa-algerie.com/air-france-en-algerie-un-franco-algerien-prend-les-commandes",
+   "source": "Alerte Google - Nominations hotellerie FR",
+   "date": "2026-09-29T12:20:47+00:00",
+   "categorie": "Nomination",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "Aimbridge reprend 10 hôtels de Prospect Ridge et Fulcrum",
+   "lien": "https://latribunedelhotellerie.com/aimbridge-hospitality-10-hotels-prospect-ridge-fulcrum",
+   "source": "Alerte Google - Nominations hotellerie FR",
+   "date": "2026-09-29T12:24:22+00:00",
+   "categorie": "Nomination",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "Vers une destination surprise pour Arnaud Kalimuendo cet hiver",
+   "lien": "https://africafoot.com/vers-une-destination-surprise-pour-arnaud-kalimuendo-cet-hiver",
+   "source": "Alerte Google - Ouvertures",
+   "date": "2026-09-29T12:40:08+00:00",
+   "categorie": "Ouverture",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Demander un contact commercial ou une visite des lieux"
+  },
+  {
+   "titre": "Kayak Co-Founders Launch Lola — Booking Holdings’ New AI Assistant: Exclusive",
+   "lien": "https://skift.com/2026/09/29/kayak-co-founders-launch-lola-booking-holdings-new-ai-assistant-exclusive",
+   "source": "Skift",
+   "date": "2026-09-29T13:01:20+00:00",
+   "categorie": "Concurrent",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Observer le positionnement et l'offre. Ne pas contacter"
+  },
+  {
+   "titre": "Hôpital Spécialisé de Nkembo : Bertin Wilfried MEBA prend ses fonctions de Directeur ...",
+   "lien": "https://www.union.sonapresse.com/fr/hopital-specialise-de-nkembo-bertin-wilfried-meba-prend-ses-fonctions-de-directeur-general-adjoint",
+   "source": "Alerte Google - Nominations hotellerie FR",
+   "date": "2026-09-29T13:38:49+00:00",
+   "categorie": "Nomination",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "GCC set to deliver nearly 126,000 new hotel rooms by 2030, taking total supply to 616,000 keys",
+   "lien": "https://www.hospitalitynet.org/news/4134637/gcc-set-to-deliver-nearly-126000-new-hotel-rooms-by-2030-taking-total-supply-to-616000-keys",
+   "source": "Hospitality Net",
+   "date": "2026-09-29T14:02:02+00:00",
+   "categorie": "Tendance clientèle",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Lire et archiver : argument utile pour les propositions clients"
+  },
+  {
+   "titre": "Radisson Hotel Group strengthens Middle East and Northeast Africa growth with landmark signings, openings, and branded residences",
+   "lien": "https://www.hospitalitynet.org/news/4134638/radisson-hotel-group-strengthens-middle-east-and-northeast-africa-growth-with-landmark-signings-openings-and-branded-residences",
+   "source": "Hospitality Net",
+   "date": "2026-09-29T14:12:10+00:00",
    "categorie": "Tendance clientèle",
    "priorite": "⚪",
    "zone": "",
