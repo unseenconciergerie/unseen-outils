@@ -445,7 +445,11 @@
   "https://www.leparisien.fr/etudiant/sortir/paris/eve-star-academy-tour-27-plenitude-arena-nanterre": "2026-09-30",
   "https://www.autoritedelaconcurrence.fr/fr/communiques-de-presse/acquisition-de-plenitude-arena-par-live-nation-lautorite-ne-controlera-pas": "2026-09-30",
   "https://www.autoritedelaconcurrence.fr/fr/article/acquisition-de-plenitude-arena-par-live-nation-lautorite-ne-controlera-pas-loperation-au": "2026-09-30",
-  "https://www.hospitalitynet.org/news/4134647/preferred-hotels-resorts-expands-prestigious-legend-collection-as-demand-grows-for-destination-led-luxury-travel": "2026-09-30"
+  "https://www.hospitalitynet.org/news/4134647/preferred-hotels-resorts-expands-prestigious-legend-collection-as-demand-grows-for-destination-led-luxury-travel": "2026-09-30",
+  "https://buzzyourpr.com/me-by-melia-dubai-appoints-arlette-richter-picardo-as-general-manager": "2026-09-30",
+  "https://www.fnacspectacles.com/event/star-academy-tour-2027-plenitude-arena-plenitude-arena-22206906": "2026-09-30",
+  "https://www.hospitalitynet.org/news/4134656/choice-hotels-international-continues-upscale-momentum-with-new-openings-across-cambria-hotels-and-ascend-collection": "2026-09-30",
+  "http://defimedia.info/apple-pay-fait-son-entree-en-inde": "2026-09-30"
  },
  "en_attente": [
   {
@@ -723,6 +727,36 @@
    "lien": "https://www.hospitalitynet.org/news/4134647/preferred-hotels-resorts-expands-prestigious-legend-collection-as-demand-grows-for-destination-led-luxury-travel",
    "source": "Hospitality Net",
    "date": "2026-09-30T07:58:31+00:00",
+   "categorie": "Tendance clientèle",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Lire et archiver : argument utile pour les propositions clients"
+  },
+  {
+   "titre": "Star Academy le 03/04/2027 20:00 - Plenitude Arena | Billets",
+   "lien": "https://www.fnacspectacles.com/event/star-academy-tour-2027-plenitude-arena-plenitude-arena-22206906",
+   "source": "Alerte Google - Plenitude Arena",
+   "date": "2026-09-29T17:42:12+00:00",
+   "categorie": "Événement",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "Choice Hotels International Continues Upscale Momentum with New Openings Across Cambria Hotels and Ascend Collection",
+   "lien": "https://www.hospitalitynet.org/news/4134656/choice-hotels-international-continues-upscale-momentum-with-new-openings-across-cambria-hotels-and-ascend-collection",
+   "source": "Hospitality Net",
+   "date": "2026-09-30T10:56:09+00:00",
+   "categorie": "Ouverture",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Demander un contact commercial ou une visite des lieux"
+  },
+  {
+   "titre": "Apple Pay fait son entrée en Inde",
+   "lien": "http://defimedia.info/apple-pay-fait-son-entree-en-inde",
+   "source": "Defimedia",
+   "date": "2026-09-30T12:02:59.283654+00:00",
    "categorie": "Tendance clientèle",
    "priorite": "⚪",
    "zone": "",
