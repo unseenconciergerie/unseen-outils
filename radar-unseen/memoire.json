@@ -519,7 +519,11 @@
   "https://www.hospitalitynet.org/news/4134681/california-boutique-hotel-conference-debuts-in-2027-with-appellation-president-courtland-palmer-as-keynote-speaker": "2026-10-01",
   "https://skift.com/2026/10/01/ras-al-khaimah-hotels-renovate-to-capture-the-wynn-effect": "2026-10-01",
   "https://www.tiktok.com/@fulmino/video/7691448607450385697": "2026-10-01",
-  "https://hotelierbuzz.com/accor-appoints-vipin-khattar-as-chief-commercial-officer-south-asia": "2026-10-01"
+  "https://hotelierbuzz.com/accor-appoints-vipin-khattar-as-chief-commercial-officer-south-asia": "2026-10-01",
+  "https://larevuedeshotels.com/hotel-the-ski-lodge-verbier-ouverture-decembre-2026": "2026-10-01",
+  "https://wwd.com/business-news/retail/korean-fashion-w-concept-paris-fashion-week-pop-up-1239298030": "2026-10-01",
+  "https://www.parisselectbook.com/2026/10/01/la-brosse-a-cheveux-sakkal-a-799-euros-sur-amazon-nourrit-vos-meches-a-la-keratine-et-reduit-les-frisottis": "2026-10-01",
+  "https://wwd.com/footwear-news/shoe-industry-news/blue-ox-hands-free-work-boot-brand-details-kizik-1239299256": "2026-10-01"
  },
  "en_attente": [
   {
@@ -961,6 +965,46 @@
    "priorite": "⚪",
    "zone": "",
    "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "L'hôtel The Ski Lodge ouvrira en décembre 2026 à Verbier",
+   "lien": "https://larevuedeshotels.com/hotel-the-ski-lodge-verbier-ouverture-decembre-2026",
+   "source": "Alerte Google - Maurice",
+   "date": "2026-10-01T08:51:10+00:00",
+   "categorie": "Ouverture",
+   "priorite": "🟠",
+   "zone": "Verbier",
+   "action": "Demander un contact commercial ou une visite des lieux"
+  },
+  {
+   "titre": "Korea’s W Concept Lands in Paris for Fashion Week Pop-up",
+   "lien": "https://wwd.com/business-news/retail/korean-fashion-w-concept-paris-fashion-week-pop-up-1239298030",
+   "source": "WWD",
+   "date": "2026-10-01T14:24:36+00:00",
+   "categorie": "Événement",
+   "priorite": "🟠",
+   "zone": "Paris",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "La brosse à cheveux Sakkal à 7,99 euros sur Amazon nourrit vos mèches à la kératine et ...",
+   "lien": "https://www.parisselectbook.com/2026/10/01/la-brosse-a-cheveux-sakkal-a-799-euros-sur-amazon-nourrit-vos-meches-a-la-keratine-et-reduit-les-frisottis",
+   "source": "Alerte Google - Guides shopping Paris (a creer)",
+   "date": "2026-10-01T12:26:30+00:00",
+   "categorie": "Tour-opérateur",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Identifier un contact chez cette agence, proposer un partenariat commission/co-package"
+  },
+  {
+   "titre": "EXCLUSIVE: Kizik Parent Aims to Offer Tradespeople More Shoe Options by Launching New Hands-free Work Boot Brand",
+   "lien": "https://wwd.com/footwear-news/shoe-industry-news/blue-ox-hands-free-work-boot-brand-details-kizik-1239299256",
+   "source": "WWD",
+   "date": "2026-10-01T13:10:00+00:00",
+   "categorie": "Ouverture",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Demander un contact commercial ou une visite des lieux"
   }
  ]
 }
