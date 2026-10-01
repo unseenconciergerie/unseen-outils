@@ -523,7 +523,16 @@
   "https://larevuedeshotels.com/hotel-the-ski-lodge-verbier-ouverture-decembre-2026": "2026-10-01",
   "https://wwd.com/business-news/retail/korean-fashion-w-concept-paris-fashion-week-pop-up-1239298030": "2026-10-01",
   "https://www.parisselectbook.com/2026/10/01/la-brosse-a-cheveux-sakkal-a-799-euros-sur-amazon-nourrit-vos-meches-a-la-keratine-et-reduit-les-frisottis": "2026-10-01",
-  "https://wwd.com/footwear-news/shoe-industry-news/blue-ox-hands-free-work-boot-brand-details-kizik-1239299256": "2026-10-01"
+  "https://wwd.com/footwear-news/shoe-industry-news/blue-ox-hands-free-work-boot-brand-details-kizik-1239299256": "2026-10-01",
+  "https://www.lejournaltoulousain.fr/en-regions/paris-la-defense-arena-pourquoi-rachat-echappe-control-concurrence-399947": "2026-10-01",
+  "https://www.traveldailynews.com/people/new-appointments/lisa-mercer-general-manager-ritz-carlton-cleveland": "2026-10-01",
+  "https://www.parisselectbook.com/2026/10/01/gems-pop-la-bague-piaget-qui-joue-la-couleur-sans-regles": "2026-10-01",
+  "https://boutiquehotelnews.com/news/movers-and-shakers/nomad-hotels-general-managers": "2026-10-01",
+  "https://ww.fashionnetwork.com/news/Dr-martens-finds-new-s-korea-gm-at-nespresso,1872106.html": "2026-10-01",
+  "https://www.guettapen.com/2026/10/01/anyma-annonce-une-tournee-et-une-date-a-paris-la-defense-arena": "2026-10-01",
+  "https://robbreport.com/shelter/art-collectibles/louis-vuitton-keith-haring-foundation-handbags-1238708493": "2026-10-01",
+  "https://www.lesechos.fr/weekend/mode-beaute/olivier-bron-bloomingdales-est-un-grand-magasin-de-proximite-2254625": "2026-10-01",
+  "https://wwd.com/home-design/interior-design/high-end-yacht-design-global-nautical-industry-growth-1239299659": "2026-10-01"
  },
  "en_attente": [
   {
@@ -1005,6 +1014,96 @@
    "priorite": "⚪",
    "zone": "",
    "action": "Demander un contact commercial ou une visite des lieux"
+  },
+  {
+   "titre": "Paris La Défense Arena : pourquoi le rachat échappe au contrôle sur la concurrence",
+   "lien": "https://www.lejournaltoulousain.fr/en-regions/paris-la-defense-arena-pourquoi-rachat-echappe-control-concurrence-399947",
+   "source": "Alerte Google - Plenitude Arena",
+   "date": "2026-10-01T15:13:25+00:00",
+   "categorie": "Événement",
+   "priorite": "🟠",
+   "zone": "Paris",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "Lisa Mercer Named General Manager of The Ritz-Carlton, Cleveland",
+   "lien": "https://www.traveldailynews.com/people/new-appointments/lisa-mercer-general-manager-ritz-carlton-cleveland",
+   "source": "Alerte Google - Nominations internationales",
+   "date": "2026-10-01T11:21:59+00:00",
+   "categorie": "Nomination",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "Gems Pop, la bague Piaget qui joue la couleur sans règles",
+   "lien": "https://www.parisselectbook.com/2026/10/01/gems-pop-la-bague-piaget-qui-joue-la-couleur-sans-regles",
+   "source": "Alerte Google - Guides shopping Paris (a creer)",
+   "date": "2026-10-01T14:16:13+00:00",
+   "categorie": "Tour-opérateur",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Identifier un contact chez cette agence, proposer un partenariat commission/co-package"
+  },
+  {
+   "titre": "NoMad Hotels appoints three global general managers",
+   "lien": "https://boutiquehotelnews.com/news/movers-and-shakers/nomad-hotels-general-managers",
+   "source": "Alerte Google - Nominations internationales",
+   "date": "2026-10-01T14:26:10+00:00",
+   "categorie": "Nomination",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "Dr Martens finds new S Korea GM at Nespresso",
+   "lien": "https://ww.fashionnetwork.com/news/Dr-martens-finds-new-s-korea-gm-at-nespresso,1872106.html",
+   "source": "Alerte Google - Nominations internationales",
+   "date": "2026-10-01T14:50:46+00:00",
+   "categorie": "Nomination",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "Anyma dévoile les guests de son show à la Plenitude Arena",
+   "lien": "https://www.guettapen.com/2026/10/01/anyma-annonce-une-tournee-et-une-date-a-paris-la-defense-arena",
+   "source": "Alerte Google - Plenitude Arena",
+   "date": "2026-10-01T15:14:46+00:00",
+   "categorie": "Événement",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "Louis Vuitton Unveils a New Bag Collection Inspired by Keith Haring’s Art",
+   "lien": "https://robbreport.com/shelter/art-collectibles/louis-vuitton-keith-haring-foundation-handbags-1238708493",
+   "source": "Robb Report",
+   "date": "2026-10-01T16:00:00+00:00",
+   "categorie": "Événement",
+   "priorite": "⚪",
+   "zone": "Paris",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "Olivier Bron : « Bloomingdale's est un grand magasin de proximité »",
+   "lien": "https://www.lesechos.fr/weekend/mode-beaute/olivier-bron-bloomingdales-est-un-grand-magasin-de-proximite-2254625",
+   "source": "Alerte Google - Guides shopping Paris (a creer)",
+   "date": "2026-10-01T16:07:24+00:00",
+   "categorie": "Tour-opérateur",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Identifier un contact chez cette agence, proposer un partenariat commission/co-package"
+  },
+  {
+   "titre": "High-end, Quiet Design Steers Worldwide Yacht Industry to New Heights",
+   "lien": "https://wwd.com/home-design/interior-design/high-end-yacht-design-global-nautical-industry-growth-1239299659",
+   "source": "WWD",
+   "date": "2026-10-01T17:00:42+00:00",
+   "categorie": "Tendance clientèle",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Lire et archiver : argument utile pour les propositions clients"
   }
  ]
 }
