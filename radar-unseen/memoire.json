@@ -577,7 +577,16 @@
   "https://www.facebook.com/newscelinedionfr/posts/-c%C3%A9line-dion-quitte-son-h%C3%B4tel-en-ce-vendredi-direction-la-plenitude-arena-pour-l/1537863978374748": "2026-10-02",
   "https://www.instagram.com/reel/Dd_ecdEgiz6": "2026-10-02",
   "https://www.facebook.com/61582330414486/posts/-c%C3%A9line-dion-en-route-pour-la-pl%C3%A9nitude-arena-c%C3%A9line-dion-quitte-son-h%C3%B4tel-et-pr/122146308621077680": "2026-10-02",
-  "https://wwd.com/footwear-news/shoe-trends/cardi-b-italy-shoe-moments-milan-fashion-week-1239302992": "2026-10-02"
+  "https://wwd.com/footwear-news/shoe-trends/cardi-b-italy-shoe-moments-milan-fashion-week-1239302992": "2026-10-02",
+  "https://www.sortiraparis.com/actualites/a-paris/guides/197762-que-faire-ce-mardi-a-paris-sorties-et-bons-plans-du-6-octobre-2026": "2026-10-02",
+  "https://fr.linkedin.com/posts/les-deviations_ce-soir-c%C3%A9line-dion-monte-sur-la-sc%C3%A8ne-de-activity-7511782623103340546-pXm4": "2026-10-02",
+  "https://www.mid-day.com/entertainment/bollywood-news/article/khushi-kapoor-burgundy-leather-look-brings-a-luxe-edge-to-power-dressing-at-paris-fashion-week-23653029": "2026-10-02",
+  "https://www.sortiraparis.com/en/news/in-paris/guides/197762-what-to-do-this-tuesday-in-paris-outings-and-great-deals-for-october-6-2026": "2026-10-02",
+  "https://www.hotel-online.com/news/hotel-indigo-raleigh-opens-following-36-million-transformation-of-downtown-landmark": "2026-10-02",
+  "https://www.parisselectbook.com/2026/10/02/5-hotels-et-campings-en-vallee-de-la-loire-pour-des-vacances-en-famille-inoubliables": "2026-10-02",
+  "https://safariindia.com/wildhive-eshott-hall-appoints-new-general-manager": "2026-10-02",
+  "https://latribunedelhotellerie.com/shannon-craig-general-manager-atura-oran-park-evt": "2026-10-02",
+  "https://www.facebook.com/newscelinedionfr/videos/-c%C3%A9line-dion-quitte-son-h%C3%B4tel-en-ce-vendredi-direction-la-plenitude-arena-pour-l/1798565071453831": "2026-10-02"
  },
  "en_attente": [
   {
@@ -1025,6 +1034,96 @@
    "lien": "https://wwd.com/footwear-news/shoe-trends/cardi-b-italy-shoe-moments-milan-fashion-week-1239302992",
    "source": "WWD",
    "date": "2026-10-02T14:01:43+00:00",
+   "categorie": "Événement",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "Que faire ce mardi à Paris ? Sorties et bons plans du 6 octobre 2026",
+   "lien": "https://www.sortiraparis.com/actualites/a-paris/guides/197762-que-faire-ce-mardi-a-paris-sorties-et-bons-plans-du-6-octobre-2026",
+   "source": "Alerte Google - Guides shopping Paris (a creer)",
+   "date": "2026-10-02T13:09:28+00:00",
+   "categorie": "Tour-opérateur",
+   "priorite": "🟠",
+   "zone": "Paris",
+   "action": "Identifier un contact chez cette agence, proposer un partenariat commission/co-package"
+  },
+  {
+   "titre": "Ce soir, Céline Dion monte sur la scène de La Plenitude Arena pour son 9e concert parisien ...",
+   "lien": "https://fr.linkedin.com/posts/les-deviations_ce-soir-c%C3%A9line-dion-monte-sur-la-sc%C3%A8ne-de-activity-7511782623103340546-pXm4",
+   "source": "Alerte Google - Plenitude Arena",
+   "date": "2026-10-02T14:11:26+00:00",
+   "categorie": "Événement",
+   "priorite": "🟠",
+   "zone": "Paris",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "Paris Fashion Week: Khushi Kapoor exudes boss-lady energy in burgundy trench coat",
+   "lien": "https://www.mid-day.com/entertainment/bollywood-news/article/khushi-kapoor-burgundy-leather-look-brings-a-luxe-edge-to-power-dressing-at-paris-fashion-week-23653029",
+   "source": "Alerte Google - Guides shopping Paris (a creer)",
+   "date": "2026-10-02T14:36:11+00:00",
+   "categorie": "Événement",
+   "priorite": "🟠",
+   "zone": "Paris",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "What to do this Tuesday in Paris? Outings and great deals for October 6, 2026",
+   "lien": "https://www.sortiraparis.com/en/news/in-paris/guides/197762-what-to-do-this-tuesday-in-paris-outings-and-great-deals-for-october-6-2026",
+   "source": "Alerte Google - Guides shopping Paris (a creer)",
+   "date": "2026-10-02T16:05:00+00:00",
+   "categorie": "Tour-opérateur",
+   "priorite": "🟠",
+   "zone": "Paris",
+   "action": "Identifier un contact chez cette agence, proposer un partenariat commission/co-package"
+  },
+  {
+   "titre": "Hotel Indigo Raleigh Opens Following $36 Million Transformation of Downtown Landmark",
+   "lien": "https://www.hotel-online.com/news/hotel-indigo-raleigh-opens-following-36-million-transformation-of-downtown-landmark",
+   "source": "Alerte Google - Nominations internationales",
+   "date": "2026-10-01T20:03:08+00:00",
+   "categorie": "Ouverture",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Demander un contact commercial ou une visite des lieux"
+  },
+  {
+   "titre": "5 hôtels et campings en vallée de la Loire pour des vacances en famille inoubliables",
+   "lien": "https://www.parisselectbook.com/2026/10/02/5-hotels-et-campings-en-vallee-de-la-loire-pour-des-vacances-en-famille-inoubliables",
+   "source": "Alerte Google - Guides shopping Paris (a creer)",
+   "date": "2026-10-02T11:07:56+00:00",
+   "categorie": "Tour-opérateur",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Identifier un contact chez cette agence, proposer un partenariat commission/co-package"
+  },
+  {
+   "titre": "Wildhive Eshott Hall Appoints New General Manager",
+   "lien": "https://safariindia.com/wildhive-eshott-hall-appoints-new-general-manager",
+   "source": "Alerte Google - Nominations internationales",
+   "date": "2026-10-02T11:59:00+00:00",
+   "categorie": "Nomination",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "Sydney, Australie | Shannon Craig promue General Manager de l'Atura Oran Park",
+   "lien": "https://latribunedelhotellerie.com/shannon-craig-general-manager-atura-oran-park-evt",
+   "source": "Alerte Google - Nominations internationales",
+   "date": "2026-10-02T12:18:06+00:00",
+   "categorie": "Nomination",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "Céline Dion quitte son hôtel en ce vendredi, direction la Plenitude Arena pour le show Nº 9 ...",
+   "lien": "https://www.facebook.com/newscelinedionfr/videos/-c%C3%A9line-dion-quitte-son-h%C3%B4tel-en-ce-vendredi-direction-la-plenitude-arena-pour-l/1798565071453831",
+   "source": "Alerte Google - Plenitude Arena",
+   "date": "2026-10-02T13:18:40+00:00",
    "categorie": "Événement",
    "priorite": "⚪",
    "zone": "",
