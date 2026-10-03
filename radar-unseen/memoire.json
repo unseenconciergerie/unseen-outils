@@ -600,7 +600,14 @@
   "https://www.instagram.com/reel/DeAURYIRrrN": "2026-10-03",
   "https://www.parisselectbook.com/2026/10/02/armani-joue-la-legerete-contre-la-rigueur-du-tailleur-pour-le-soir": "2026-10-03",
   "https://laclepublique.fr/hauts-de-seine/articles/2026/2026-10-02-live-nation-plenitude-arena": "2026-10-03",
-  "https://www.tiktok.com/@plenitudearena/video/7692193551039352096": "2026-10-03"
+  "https://www.tiktok.com/@plenitudearena/video/7692193551039352096": "2026-10-03",
+  "https://wwd.com/fashion-news/fashion-scoops/matilda-djerf-avenue-retail-store-new-york-city-fashion-1239301428": "2026-10-03",
+  "https://www.parisselectbook.com/2026/10/02/chez-dries-van-noten-trois-details-suffisent-a-tout-changer": "2026-10-03",
+  "https://www.lechotouristique.com/production/club-med-nomme-l-ancien-patron-de-la-banque-postale-philippe-heim-directeur-general-delegue": "2026-10-03",
+  "https://luxe.net/chateau-margaux-aurelien-valance-directeur-general": "2026-10-03",
+  "https://www.tiktok.com/@france.inter/video/7692386094356172065": "2026-10-03",
+  "https://www.facebook.com/franceinter/posts/lors-de-son-neuvi%C3%A8me-concert-%C3%A0-la-plenitude-arena-vendredi-soir-c%C3%A9line-dion-a-%C3%A9t/1600356708786339": "2026-10-03",
+  "https://latribunedelhotellerie.com/karim-von-alvensleben-resorts-world-sentosa": "2026-10-03"
  },
  "en_attente": [
   {
@@ -742,6 +749,76 @@
    "priorite": "⚪",
    "zone": "",
    "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "Djerf Avenue Opens First Store in New York City",
+   "lien": "https://wwd.com/fashion-news/fashion-scoops/matilda-djerf-avenue-retail-store-new-york-city-fashion-1239301428",
+   "source": "WWD",
+   "date": "2026-10-03T13:00:00+00:00",
+   "categorie": "Ouverture",
+   "priorite": "🟠",
+   "zone": "New York",
+   "action": "Demander un contact commercial ou une visite des lieux"
+  },
+  {
+   "titre": "Chez Dries Van Noten, trois détails suffisent à tout changer",
+   "lien": "https://www.parisselectbook.com/2026/10/02/chez-dries-van-noten-trois-details-suffisent-a-tout-changer",
+   "source": "Alerte Google - Guides shopping Paris (a creer)",
+   "date": "2026-10-03T02:42:59+00:00",
+   "categorie": "Tour-opérateur",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Identifier un contact chez cette agence, proposer un partenariat commission/co-package"
+  },
+  {
+   "titre": "Club Med nomme l'ancien patron de la Banque Postale Philippe Heim directeur général délégué",
+   "lien": "https://www.lechotouristique.com/production/club-med-nomme-l-ancien-patron-de-la-banque-postale-philippe-heim-directeur-general-delegue",
+   "source": "Alerte Google - Nominations hotellerie FR",
+   "date": "2026-10-03T04:04:18+00:00",
+   "categorie": "Nomination",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "Château Margaux Aurélien Valance nommé directeur général",
+   "lien": "https://luxe.net/chateau-margaux-aurelien-valance-directeur-general",
+   "source": "Alerte Google - Nominations hotellerie FR",
+   "date": "2026-10-03T09:37:25+00:00",
+   "categorie": "Nomination",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "Lors de son neuvième concert à la Plenitude Arena, vendredi soir, Céli...",
+   "lien": "https://www.tiktok.com/@france.inter/video/7692386094356172065",
+   "source": "Alerte Google - Plenitude Arena",
+   "date": "2026-10-03T10:27:43+00:00",
+   "categorie": "Événement",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "Lors de son neuvième concert à la Plenitude Arena, vendredi soir, Céline Dion a été ...",
+   "lien": "https://www.facebook.com/franceinter/posts/lors-de-son-neuvi%C3%A8me-concert-%C3%A0-la-plenitude-arena-vendredi-soir-c%C3%A9line-dion-a-%C3%A9t/1600356708786339",
+   "source": "Alerte Google - Plenitude Arena",
+   "date": "2026-10-03T11:03:10+00:00",
+   "categorie": "Événement",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "Karim von Alvensleben nommé VP à Resorts World Sentosa",
+   "lien": "https://latribunedelhotellerie.com/karim-von-alvensleben-resorts-world-sentosa",
+   "source": "Alerte Google - Nominations hotellerie FR",
+   "date": "2026-10-03T11:38:08+00:00",
+   "categorie": "Nomination",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
   }
  ]
 }
