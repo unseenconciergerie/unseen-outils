@@ -1,0 +1,35 @@
+name: Publier le site
+
+# Se déclenche à chaque envoi sur main qui touche au dossier du site,
+# ou manuellement depuis l'onglet Actions ("Run workflow").
+on:
+  push:
+    branches: [main]
+    paths: ["site-unseen/**"]
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupérer le code
+        uses: actions/checkout@v4
+      - name: Préparer la publication (uniquement le dossier du site)
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site-unseen
+      - name: Publier sur GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
