@@ -634,7 +634,12 @@
   "https://www.hospitalityandcateringnews.com/2026/10/carmel-valley-ranch-appoints-tom-wolf-as-managing-director": "2026-10-04",
   "https://www.parisselectbook.com/2026/10/04/valentino-defile-ce-dimanche-a-15h30-avec-miu-miu-et-mugler": "2026-10-04",
   "https://www.parisselectbook.com/2026/10/04/laetitia-casta-wang-yibo-un-front-row-loewe-mondial": "2026-10-04",
-  "http://defimedia.info/de-la-question-du-terrorisme-aux-droits-de-douane-linde-affiche-plus-ouvertement-ses-desaccords": "2026-10-04"
+  "http://defimedia.info/de-la-question-du-terrorisme-aux-droits-de-douane-linde-affiche-plus-ouvertement-ses-desaccords": "2026-10-04",
+  "https://wwd.com/footwear-news/shoe-trends/new-balance-miu-miu-spring-2027-rc150-sneaker-collaboration-1239310337": "2026-10-04",
+  "https://www.parisselectbook.com/2026/10/04/polo-ralph-lauren-mele-madras-indien-et-bijoux-dine-a-paris": "2026-10-04",
+  "https://www.travelandtourworld.com/news/article/q5rywnnn9gye": "2026-10-04",
+  "https://www.travelandtourworld.com/news/article/7v2z84068wvg": "2026-10-04",
+  "https://www.parisselectbook.com/2026/10/04/meet-your-seoul-5-createurs-coreens-sinvitent-dans-votre-galeries-lafayette": "2026-10-04"
  },
  "en_attente": [
   {
@@ -786,6 +791,46 @@
    "priorite": "⚪",
    "zone": "",
    "action": "Lire et archiver : argument utile pour les propositions clients"
+  },
+  {
+   "titre": "Polo Ralph Lauren mêle madras indien et bijoux Diné à Paris",
+   "lien": "https://www.parisselectbook.com/2026/10/04/polo-ralph-lauren-mele-madras-indien-et-bijoux-dine-a-paris",
+   "source": "Alerte Google - Guides shopping Paris (a creer)",
+   "date": "2026-10-04T16:33:40+00:00",
+   "categorie": "Tendance clientèle",
+   "priorite": "🟠",
+   "zone": "Paris",
+   "action": "Lire et archiver : argument utile pour les propositions clients"
+  },
+  {
+   "titre": "Wildhive Eshott Hall Appoints Luxury Hospitality Veteran Ewan Taylor as General Manager",
+   "lien": "https://www.travelandtourworld.com/news/article/q5rywnnn9gye",
+   "source": "Alerte Google - Nominations internationales",
+   "date": "2026-10-04T14:36:02+00:00",
+   "categorie": "Nomination",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "Four Seasons Appoints Hospitality Veteran Hervé Fucho to Lead Tropicalia Resort in ...",
+   "lien": "https://www.travelandtourworld.com/news/article/7v2z84068wvg",
+   "source": "Alerte Google - Nominations internationales",
+   "date": "2026-10-04T14:36:02+00:00",
+   "categorie": "Nomination",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "Meet Your Seoul : 5 créateurs coréens s'invitent dans votre Galeries Lafayette",
+   "lien": "https://www.parisselectbook.com/2026/10/04/meet-your-seoul-5-createurs-coreens-sinvitent-dans-votre-galeries-lafayette",
+   "source": "Alerte Google - Guides shopping Paris (a creer)",
+   "date": "2026-10-04T17:06:16+00:00",
+   "categorie": "Tour-opérateur",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Identifier un contact chez cette agence, proposer un partenariat commission/co-package"
   }
  ]
 }
