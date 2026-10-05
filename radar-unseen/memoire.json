@@ -674,7 +674,11 @@
   "https://origin.journalduluxe.fr/fr/business/nicolas-ghesquiere-legion-honneur-2026": "2026-10-05",
   "https://www.cosmeticsbusiness.com/coty-appoints-kara-langan-general-manager-consumer-beauty-us": "2026-10-05",
   "https://www.globalcosmeticsnews.com/hm-beauty-names-sharvari-first-brand-ambassador-in-india": "2026-10-05",
-  "https://www.globalcosmeticsnews.com/coty-appoints-kara-langan-general-manager-of-us-consumer-beauty": "2026-10-05"
+  "https://www.globalcosmeticsnews.com/coty-appoints-kara-langan-general-manager-of-us-consumer-beauty": "2026-10-05",
+  "https://luxe.outlookindia.com/amp/story/fashion-beauty/couture/janhvi-kapoor-turns-heads-at-miu-mius-paris-fashion-week-show-in-chic-brown-look": "2026-10-05",
+  "https://www.hospitalitynet.org/news/4134734/choice-hotels-international-opens-600th-extended-stay-property-reinforcing-its-segment-leadership": "2026-10-05",
+  "https://www.hospitalitynet.org/news/4134737/minor-hotels-launches-life-longevity-one-wellness-brand-for-every-season-of-life": "2026-10-05",
+  "https://www.public.fr/star-academy-tour-2027-une-tournee-tres-ambitieuse-la-plenitude-arena-comme-nouveau-terrain-de-jeu": "2026-10-05"
  },
  "en_attente": [
   {
@@ -1026,6 +1030,46 @@
    "priorite": "⚪",
    "zone": "",
    "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "Janhvi Kapoor Turns Heads at Miu Miu's Paris Fashion Week Show in Chic Brown Look",
+   "lien": "https://luxe.outlookindia.com/amp/story/fashion-beauty/couture/janhvi-kapoor-turns-heads-at-miu-mius-paris-fashion-week-show-in-chic-brown-look",
+   "source": "Alerte Google - Guides shopping Paris (a creer)",
+   "date": "2026-10-05T10:51:19+00:00",
+   "categorie": "Événement",
+   "priorite": "🟠",
+   "zone": "Paris",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "Choice Hotels International Opens 600th Extended Stay Property, Reinforcing Its Segment Leadership",
+   "lien": "https://www.hospitalitynet.org/news/4134734/choice-hotels-international-opens-600th-extended-stay-property-reinforcing-its-segment-leadership",
+   "source": "Hospitality Net",
+   "date": "2026-10-05T13:29:09+00:00",
+   "categorie": "Ouverture",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Demander un contact commercial ou une visite des lieux"
+  },
+  {
+   "titre": "Minor Hotels Launches Life Longevity, One Wellness Brand for Every Season of Life",
+   "lien": "https://www.hospitalitynet.org/news/4134737/minor-hotels-launches-life-longevity-one-wellness-brand-for-every-season-of-life",
+   "source": "Hospitality Net",
+   "date": "2026-10-05T13:49:51+00:00",
+   "categorie": "Ouverture",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Demander un contact commercial ou une visite des lieux"
+  },
+  {
+   "titre": "Star Academy Tour 2027 : une tournée très ambitieuse, La Plenitude Arena comme ...",
+   "lien": "https://www.public.fr/star-academy-tour-2027-une-tournee-tres-ambitieuse-la-plenitude-arena-comme-nouveau-terrain-de-jeu",
+   "source": "Alerte Google - Plenitude Arena",
+   "date": "2026-10-05T14:19:01+00:00",
+   "categorie": "Événement",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
   }
  ]
 }
