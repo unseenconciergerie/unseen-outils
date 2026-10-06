@@ -727,7 +727,12 @@
   "https://vernonreporter.com/board-names-joe-riemann-as-new-general-manager-of-viroqua-food-co-op": "2026-10-06",
   "https://www.marketscreener.com/news/xometry-names-marc-teulieres-as-general-manager-for-europe-to-accelerate-regional-adoption-ce785dd8df8df52d": "2026-10-06",
   "https://www.ecofinagency.com/appointments/0610-59487-innocent-konan-appointed-new-managing-director-of-bayer-in-west-and-central-africa": "2026-10-06",
-  "https://celebrityaccess.com/2026/10/06/warner-music-mena-expands-regional-leadership": "2026-10-06"
+  "https://celebrityaccess.com/2026/10/06/warner-music-mena-expands-regional-leadership": "2026-10-06",
+  "https://www.places-concert.com/concert-323594/billets-hot-wheels-monster-trucks-plenitude-arena-paris": "2026-10-06",
+  "https://www.travolution.com/2026/10/01/accor-choisit-mews-pour-harmoniser-sa-technologie-fb-mondiale": "2026-10-06",
+  "https://www.facebook.com/PlenitudeArena/posts/le-hot-wheels-monster-trucks-live-revient-%C3%A0-la-plenitude-arena-le-20-mars-procha/1648586167315244": "2026-10-06",
+  "https://wwd.com/pop-culture/celebrity-news/nicole-kidman-daughter-faith-urban-chanel-spring-2027-show-1239315217": "2026-10-06",
+  "https://wwd.com/sourcing-journal/sj-denim/arvind-limited-opens-denim-lab-amsterdam-1239313206": "2026-10-06"
  },
  "en_attente": [
   {
@@ -1029,6 +1034,56 @@
    "priorite": "⚪",
    "zone": "",
    "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "Billets Hot Wheels Monster Trucks à Paris Plenitude Arena Samedi 20 mars 2027",
+   "lien": "https://www.places-concert.com/concert-323594/billets-hot-wheels-monster-trucks-plenitude-arena-paris",
+   "source": "Alerte Google - Plenitude Arena",
+   "date": "2026-10-06T10:34:34+00:00",
+   "categorie": "Événement",
+   "priorite": "🟠",
+   "zone": "Paris",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "Accor choisit Mews pour harmoniser sa technologie F&B mondiale",
+   "lien": "https://www.travolution.com/2026/10/01/accor-choisit-mews-pour-harmoniser-sa-technologie-fb-mondiale",
+   "source": "TOM.travel",
+   "date": "2026-10-01T09:17:24+00:00",
+   "categorie": "Tour-opérateur",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Identifier un contact chez cette agence, proposer un partenariat commission/co-package"
+  },
+  {
+   "titre": "Le Hot Wheels Monster Trucks Live revient à la Plenitude Arena le 20 mars prochain avec ...",
+   "lien": "https://www.facebook.com/PlenitudeArena/posts/le-hot-wheels-monster-trucks-live-revient-%C3%A0-la-plenitude-arena-le-20-mars-procha/1648586167315244",
+   "source": "Alerte Google - Plenitude Arena",
+   "date": "2026-10-06T11:12:16+00:00",
+   "categorie": "Événement",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "Nicole Kidman Turned the Chanel Show Into a Stylish Mother-Daughter Moment",
+   "lien": "https://wwd.com/pop-culture/celebrity-news/nicole-kidman-daughter-faith-urban-chanel-spring-2027-show-1239315217",
+   "source": "WWD",
+   "date": "2026-10-06T14:13:48+00:00",
+   "categorie": "Événement",
+   "priorite": "⚪",
+   "zone": "Paris",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "Arvind Limited Opens Denim Lab in Amsterdam",
+   "lien": "https://wwd.com/sourcing-journal/sj-denim/arvind-limited-opens-denim-lab-amsterdam-1239313206",
+   "source": "WWD",
+   "date": "2026-10-06T15:00:00+00:00",
+   "categorie": "Ouverture",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Demander un contact commercial ou une visite des lieux"
   }
  ]
 }
