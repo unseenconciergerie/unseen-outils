@@ -865,7 +865,18 @@
   "https://www.cfnewsimmo.net/L-actualite/M-A/M-A-corporate/Plenitude-Arena-Live-Nation-a-finalise-l-acquisition-aupres-d-Ovalto-506545": "2026-10-08",
   "https://robbreport.com/travel/destinations/venice-without-the-crowds-1238732006": "2026-10-08",
   "https://actu.fr/ile-de-france/nanterre_92050/une-chute-et-un-trou-de-memoire-un-premier-couac-pour-celine-dion-a-la-plenitude-arena_64898412.html": "2026-10-08",
-  "https://robbreport.com/shelter/art-collectibles/wealthiest-collectors-ai-art-basel-ubs-report-1238741454": "2026-10-08"
+  "https://robbreport.com/shelter/art-collectibles/wealthiest-collectors-ai-art-basel-ubs-report-1238741454": "2026-10-08",
+  "https://presseagence.fr/paris-hotellerie-de-luxe-benjamin-piat-prend-la-direction-generale-du-nolinski": "2026-10-08",
+  "https://www.sortiraparis.com/loisirs/shopping-mode/articles/318900-ou-trouver-une-brocante-ou-un-vide-grenier-en-banlieue-parisienne-ce-week-end-des-10-et-11-octobre": "2026-10-08",
+  "https://www.facebook.com/meltyfr/posts/%C3%A0-la-plenitude-arena-de-nanterre-le-final-du-11%E1%B5%89-concert-parisien-de-c%C3%A9line-dion/1683281756491001": "2026-10-08",
+  "https://wwd.com/fashion-news/fashion-features/chanel-vionnet-vintage-couture-auction-bonhams-paris-1239333426": "2026-10-08",
+  "https://www.foot-sur7.fr/785094-ol-casse-tete-pour-fonseca-avant-le-rc-lens-et-crystal-palace": "2026-10-08",
+  "https://www.instagram.com/reel/DeOmJ8tx42P": "2026-10-08",
+  "https://www.parisselectbook.com/2026/10/08/miu-miu-retravaille-le-denim-wrangler-pour-son-defile-printemps-ete-2027": "2026-10-08",
+  "https://www.parisselectbook.com/2026/10/08/la-technique-des-5-points-cardinaux-des-italiennes-pour-avoir-une-superbe-chevelure-oxygenee": "2026-10-08",
+  "https://latribunedelhotellerie.com/chapitre-six-dix-ans-nouvelle-identite-editeur-hotels": "2026-10-08",
+  "https://www.leparisien.fr/economie/lagence-a-la-conquete-de-la-suisse-la-famille-kretz-specialisee-dans-limmobilier-de-luxe-sallie-a-une-societe-genevoise-08-10-2026-NIU5LLWUDFDZTGDKZ6RNEWJIAQ.php": "2026-10-08",
+  "https://wwd.com/pop-culture/new-fashion-releases/pamela-anderson-sonsie-skin-care-makeup-1239317604": "2026-10-08"
  },
  "en_attente": [
   {
@@ -1223,6 +1234,106 @@
    "lien": "https://robbreport.com/shelter/art-collectibles/wealthiest-collectors-ai-art-basel-ubs-report-1238741454",
    "source": "Robb Report",
    "date": "2026-10-08T15:00:00+00:00",
+   "categorie": "Événement",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "Où trouver une brocante ou un vide-grenier en banlieue parisienne ce week-end des 10 et ...",
+   "lien": "https://www.sortiraparis.com/loisirs/shopping-mode/articles/318900-ou-trouver-une-brocante-ou-un-vide-grenier-en-banlieue-parisienne-ce-week-end-des-10-et-11-octobre",
+   "source": "Alerte Google - Guides shopping Paris (a creer)",
+   "date": "2026-10-08T09:24:32+00:00",
+   "categorie": "Tour-opérateur",
+   "priorite": "🟠",
+   "zone": "Paris",
+   "action": "Identifier un contact chez cette agence, proposer un partenariat commission/co-package"
+  },
+  {
+   "titre": "À la Plenitude Arena de Nanterre, le final du 11ᵉ concert parisien de Céline Dion bascule d ...",
+   "lien": "https://www.facebook.com/meltyfr/posts/%C3%A0-la-plenitude-arena-de-nanterre-le-final-du-11%E1%B5%89-concert-parisien-de-c%C3%A9line-dion/1683281756491001",
+   "source": "Alerte Google - Plenitude Arena",
+   "date": "2026-10-08T15:58:22+00:00",
+   "categorie": "Événement",
+   "priorite": "🟠",
+   "zone": "Paris",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "Chanel, Vionnet Vintage Dresses Go Under the Hammer at Bonhams in Major Paris Couture Sale",
+   "lien": "https://wwd.com/fashion-news/fashion-features/chanel-vionnet-vintage-couture-auction-bonhams-paris-1239333426",
+   "source": "WWD",
+   "date": "2026-10-08T16:53:49+00:00",
+   "categorie": "Événement",
+   "priorite": "🟠",
+   "zone": "Paris",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "OL : Casse-tête pour Fonseca avant le RC Lens et Crystal Palace",
+   "lien": "https://www.foot-sur7.fr/785094-ol-casse-tete-pour-fonseca-avant-le-rc-lens-et-crystal-palace",
+   "source": "Alerte Google - Ouvertures",
+   "date": "2026-10-08T08:14:25+00:00",
+   "categorie": "Ouverture",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Demander un contact commercial ou une visite des lieux"
+  },
+  {
+   "titre": "Céline Dion a fait une petite chute sur scène à la Plénitude Arena ! Heureusement ...",
+   "lien": "https://www.instagram.com/reel/DeOmJ8tx42P",
+   "source": "Alerte Google - Plenitude Arena",
+   "date": "2026-10-08T13:03:05+00:00",
+   "categorie": "Événement",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "Miu Miu retravaille le denim Wrangler pour son défilé printemps-été 2027",
+   "lien": "https://www.parisselectbook.com/2026/10/08/miu-miu-retravaille-le-denim-wrangler-pour-son-defile-printemps-ete-2027",
+   "source": "Alerte Google - Guides shopping Paris (a creer)",
+   "date": "2026-10-08T13:06:12+00:00",
+   "categorie": "Tour-opérateur",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Identifier un contact chez cette agence, proposer un partenariat commission/co-package"
+  },
+  {
+   "titre": "La technique des 5 points cardinaux des Italiennes pour avoir une superbe chevelure oxygénée",
+   "lien": "https://www.parisselectbook.com/2026/10/08/la-technique-des-5-points-cardinaux-des-italiennes-pour-avoir-une-superbe-chevelure-oxygenee",
+   "source": "Alerte Google - Guides shopping Paris (a creer)",
+   "date": "2026-10-08T14:06:33+00:00",
+   "categorie": "Tour-opérateur",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Identifier un contact chez cette agence, proposer un partenariat commission/co-package"
+  },
+  {
+   "titre": "Chapitre Six refond son identité et se dit éditeur d'hôtels",
+   "lien": "https://latribunedelhotellerie.com/chapitre-six-dix-ans-nouvelle-identite-editeur-hotels",
+   "source": "Alerte Google - Nominations hotellerie FR",
+   "date": "2026-10-08T14:06:49+00:00",
+   "categorie": "Nomination",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "« L'Agence » à la conquête de la Suisse : la famille Kretz, spécialisée dans l'immobilier de ...",
+   "lien": "https://www.leparisien.fr/economie/lagence-a-la-conquete-de-la-suisse-la-famille-kretz-specialisee-dans-limmobilier-de-luxe-sallie-a-une-societe-genevoise-08-10-2026-NIU5LLWUDFDZTGDKZ6RNEWJIAQ.php",
+   "source": "Alerte Google - Guides shopping Paris (a creer)",
+   "date": "2026-10-08T15:34:01+00:00",
+   "categorie": "Tour-opérateur",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Identifier un contact chez cette agence, proposer un partenariat commission/co-package"
+  },
+  {
+   "titre": "Pamela Anderson Talks Sonsie’s Latest Launch and Why She’ll Never Wear Foundation Again",
+   "lien": "https://wwd.com/pop-culture/new-fashion-releases/pamela-anderson-sonsie-skin-care-makeup-1239317604",
+   "source": "WWD",
+   "date": "2026-10-08T16:58:45+00:00",
    "categorie": "Événement",
    "priorite": "⚪",
    "zone": "",
