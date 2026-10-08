@@ -846,7 +846,15 @@
   "https://wwd.com/fashion-news/designer-luxury/chanel-new-boutique-san-diego-peter-marino-1239288891": "2026-10-08",
   "https://www.huffingtonpost.fr/culture/video/double-couac-pour-celine-dion-qui-en-garde-le-sourire-lors-de-son-11e-concert_336471.html": "2026-10-08",
   "https://www.closermag.fr/people/celine-dion-chute-lourdement-a-la-plenitude-arena-oublie-de-paroles-et-incident-vestimentaire-concert-chaotique-pour-la-star-qui-livre-un-message-fort-a-son-public-3662664": "2026-10-08",
-  "http://defimedia.info/cinema-indien-lacteur-nana-patekar-est-decede-lage-de-75-ans": "2026-10-08"
+  "http://defimedia.info/cinema-indien-lacteur-nana-patekar-est-decede-lage-de-75-ans": "2026-10-08",
+  "https://www.facebook.com/Cosmopolitan.fr/posts/pour-son-11e-concert-parisien-c%C3%A9line-dion-a-illumin%C3%A9-la-sc%C3%A8ne-de-la-plenitude-ar/1556195319876822": "2026-10-08",
+  "https://www.tiktok.com/@le_progres_/video/7694212522127265056": "2026-10-08",
+  "https://www.facebook.com/LeHuffPost/posts/la-chanteuse-qu%C3%A9b%C3%A9coise-a-chut%C3%A9-mercredi-soir-sur-la-sc%C3%A8ne-de-la-plenitude-arena/1562897419208815": "2026-10-08",
+  "https://www.facebook.com/vosgesmatin/posts/tr%C3%A8s-%C3%A9mue-lors-de-son-11e-concert-%C3%A0-la-pl%C3%A9nitude-arena-mercredi-7-octobre-c%C3%A9line/1588205133323280": "2026-10-08",
+  "https://www.lechotouristique.com/production/le-club-med-repense-sa-gouvernance-avant-l-introduction-en-bourse": "2026-10-08",
+  "https://www.instagram.com/reel/DeOmaCyjWwK": "2026-10-08",
+  "https://www.facebook.com/CNEWSofficiel/videos/soir%C3%A9e-riche-en-%C3%A9motions-%C3%A0-la-pl%C3%A9nitude-arena-ce-mercredi-7-octobre-c%C3%A9line-dion-/939643812168492": "2026-10-08",
+  "https://wwd.com/beauty-industry-news/beauty-features/natalie-mackey-jewelry-brand-terramore-1239319755": "2026-10-08"
  },
  "en_attente": [
   {
@@ -1018,6 +1026,86 @@
    "priorite": "⚪",
    "zone": "",
    "action": "Lire et archiver : argument utile pour les propositions clients"
+  },
+  {
+   "titre": "Pour son 11e concert parisien, Céline Dion a illuminé la scène de la Plenitude Arena dans ...",
+   "lien": "https://www.facebook.com/Cosmopolitan.fr/posts/pour-son-11e-concert-parisien-c%C3%A9line-dion-a-illumin%C3%A9-la-sc%C3%A8ne-de-la-plenitude-ar/1556195319876822",
+   "source": "Alerte Google - Plenitude Arena",
+   "date": "2026-10-08T08:44:05+00:00",
+   "categorie": "Événement",
+   "priorite": "🟠",
+   "zone": "Paris",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "Très émue lors de son 11e concert à la Plénitude Arena, mercredi 7 oct... | TikTok",
+   "lien": "https://www.tiktok.com/@le_progres_/video/7694212522127265056",
+   "source": "Alerte Google - Plenitude Arena",
+   "date": "2026-10-08T08:38:03+00:00",
+   "categorie": "Événement",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "La chanteuse québécoise a chuté mercredi soir sur la scène de la Plenitude Arena, avant d ...",
+   "lien": "https://www.facebook.com/LeHuffPost/posts/la-chanteuse-qu%C3%A9b%C3%A9coise-a-chut%C3%A9-mercredi-soir-sur-la-sc%C3%A8ne-de-la-plenitude-arena/1562897419208815",
+   "source": "Alerte Google - Plenitude Arena",
+   "date": "2026-10-08T08:50:17+00:00",
+   "categorie": "Événement",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "Très émue lors de son 11e concert à la Plénitude Arena, mercredi 7 octobre, Céline Dion a ...",
+   "lien": "https://www.facebook.com/vosgesmatin/posts/tr%C3%A8s-%C3%A9mue-lors-de-son-11e-concert-%C3%A0-la-pl%C3%A9nitude-arena-mercredi-7-octobre-c%C3%A9line/1588205133323280",
+   "source": "Alerte Google - Plenitude Arena",
+   "date": "2026-10-08T08:54:13+00:00",
+   "categorie": "Événement",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "Le Club Med repense sa gouvernance avant l'introduction en Bourse | L'Echo touristique",
+   "lien": "https://www.lechotouristique.com/production/le-club-med-repense-sa-gouvernance-avant-l-introduction-en-bourse",
+   "source": "Alerte Google - Nominations hotellerie FR",
+   "date": "2026-10-08T09:50:58+00:00",
+   "categorie": "Nomination",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "\"La Plénitude Arena a retenu son souffle ce mercredi soir, quand Céline a glissé sur ...",
+   "lien": "https://www.instagram.com/reel/DeOmaCyjWwK",
+   "source": "Alerte Google - Plenitude Arena",
+   "date": "2026-10-08T09:56:08+00:00",
+   "categorie": "Événement",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "Soirée riche en émotions à la Plénitude Arena. Ce mercredi 7 octobre, Céline Dion a d ...",
+   "lien": "https://www.facebook.com/CNEWSofficiel/videos/soir%C3%A9e-riche-en-%C3%A9motions-%C3%A0-la-pl%C3%A9nitude-arena-ce-mercredi-7-octobre-c%C3%A9line-dion-/939643812168492",
+   "source": "Alerte Google - Plenitude Arena",
+   "date": "2026-10-08T11:03:15+00:00",
+   "categorie": "Événement",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "EXCLUSIVE: Winky Lux Founder Natalie Mackey Launches Fine Jewelry Brand",
+   "lien": "https://wwd.com/beauty-industry-news/beauty-features/natalie-mackey-jewelry-brand-terramore-1239319755",
+   "source": "WWD",
+   "date": "2026-10-08T12:00:00+00:00",
+   "categorie": "Ouverture",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Demander un contact commercial ou une visite des lieux"
   }
  ]
 }
