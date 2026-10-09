@@ -912,7 +912,14 @@
   "https://www.parisselectbook.com/2026/10/08/le-greige-la-technique-douce-pour-passer-aux-cheveux-gris-sans-faire-mamie-selon-cette-coloriste": "2026-10-09",
   "https://www.globalcosmeticsnews.com/estee-lauder-appoints-gaetane-baudry-global-general-manager-of-bobbi-brown": "2026-10-09",
   "https://us.fashionnetwork.com/news/Valentino-names-karim-zebdji-new-global-director-of-communication,1874441.html": "2026-10-09",
-  "https://robbreport.com/motors/marine/custom-line-launches-saetta-128-superyacht-1238744660": "2026-10-09"
+  "https://robbreport.com/motors/marine/custom-line-launches-saetta-128-superyacht-1238744660": "2026-10-09",
+  "https://hospitality-on.com/fr/nomination/evok-collection-confie-nolinski-paris-benjamin-piat-ancien-directeur-du-pavillon": "2026-10-09",
+  "https://presseagence.fr/paris-ethique-des-affaires-un-nouveau-guide-pour-faire-de-la-compliance-un-veritable-levier-de-management": "2026-10-09",
+  "https://wwd.com/sourcing-journal/sj-denim/denim-street-style-paris-fashion-week-orange-destroyed-1239317597": "2026-10-09",
+  "https://www.sortiraparis.com/en/what-to-do-in-paris/shopping-fashion/articles/353740-dreamland-a-free-pop-up-with-an-exhibition-and-autograph-sessions-to-celebrate-the-manga-s-20th-anniversary-in-paris": "2026-10-09",
+  "https://www.nanterre.fr/agenda/evenement/inauguration-du-city-stade-au-petit-nanterre": "2026-10-09",
+  "https://wwd.com/menswear-news/mens-clothing-furnishings/tayion-collection-peerless-clothing-montee-holland-jeff-tweedy-1239334100": "2026-10-09",
+  "https://www.closermag.fr/people/celine-dion-en-playback-a-la-plenitude-arena-apres-sa-chute-sur-scene-une-imposture-vocale-imparable-pour-certains-3662897": "2026-10-09"
  },
  "en_attente": [
   {
@@ -1274,6 +1281,76 @@
    "priorite": "⚪",
    "zone": "",
    "action": "Lire et archiver : argument utile pour les propositions clients"
+  },
+  {
+   "titre": "Evok Collection confie Nolinski Paris à Benjamin Piat, ancien directeur du Pavillon Faubourg Saint-Germain",
+   "lien": "https://hospitality-on.com/fr/nomination/evok-collection-confie-nolinski-paris-benjamin-piat-ancien-directeur-du-pavillon",
+   "source": "Hospitality ON",
+   "date": "2026-10-09T10:42:12+00:00",
+   "categorie": "Nomination",
+   "priorite": "🟠",
+   "zone": "Paris",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "Compliance et management : un nouveau guide pratique à Paris",
+   "lien": "https://presseagence.fr/paris-ethique-des-affaires-un-nouveau-guide-pour-faire-de-la-compliance-un-veritable-levier-de-management",
+   "source": "Alerte Google - Guides shopping Paris (a creer)",
+   "date": "2026-10-09T11:59:16+00:00",
+   "categorie": "Tour-opérateur",
+   "priorite": "🟠",
+   "zone": "Paris",
+   "action": "Identifier un contact chez cette agence, proposer un partenariat commission/co-package"
+  },
+  {
+   "titre": "Denim Street Style at Paris Fashion Week",
+   "lien": "https://wwd.com/sourcing-journal/sj-denim/denim-street-style-paris-fashion-week-orange-destroyed-1239317597",
+   "source": "WWD",
+   "date": "2026-10-09T15:00:00+00:00",
+   "categorie": "Événement",
+   "priorite": "🟠",
+   "zone": "Paris",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "Dreamland: a free pop-up with an exhibition and signings to mark the 20th anniversary of ...",
+   "lien": "https://www.sortiraparis.com/en/what-to-do-in-paris/shopping-fashion/articles/353740-dreamland-a-free-pop-up-with-an-exhibition-and-autograph-sessions-to-celebrate-the-manga-s-20th-anniversary-in-paris",
+   "source": "Alerte Google - Guides shopping Paris (a creer)",
+   "date": "2026-10-09T12:41:28+00:00",
+   "categorie": "Tour-opérateur",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Identifier un contact chez cette agence, proposer un partenariat commission/co-package"
+  },
+  {
+   "titre": "Inauguration du city-stade au Petit-Nanterre",
+   "lien": "https://www.nanterre.fr/agenda/evenement/inauguration-du-city-stade-au-petit-nanterre",
+   "source": "Alerte Google - Plenitude Arena",
+   "date": "2026-10-09T14:20:11+00:00",
+   "categorie": "Ouverture",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Demander un contact commercial ou une visite des lieux"
+  },
+  {
+   "titre": "Tayion Collection Extends License With Peerless Clothing",
+   "lien": "https://wwd.com/menswear-news/mens-clothing-furnishings/tayion-collection-peerless-clothing-montee-holland-jeff-tweedy-1239334100",
+   "source": "WWD",
+   "date": "2026-10-09T14:28:57+00:00",
+   "categorie": "Ouverture",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Demander un contact commercial ou une visite des lieux"
+  },
+  {
+   "titre": "Céline Dion en playback à la Plénitude Arena ? Après sa chute sur scène, une “imposture ...",
+   "lien": "https://www.closermag.fr/people/celine-dion-en-playback-a-la-plenitude-arena-apres-sa-chute-sur-scene-une-imposture-vocale-imparable-pour-certains-3662897",
+   "source": "Alerte Google - Plenitude Arena",
+   "date": "2026-10-09T14:50:41+00:00",
+   "categorie": "Événement",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
   }
  ]
 }
