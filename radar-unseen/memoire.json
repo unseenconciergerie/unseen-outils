@@ -965,7 +965,11 @@
   "https://www.tiktok.com/@ulysseodysee/video/7694813955461549344": "2026-10-10",
   "https://www.globalcosmeticsnews.com/global-cosmetics-news-weekly-review-week-41-october-2026": "2026-10-10",
   "https://www.mrweb.com/drno/news40449.htm": "2026-10-10",
-  "http://defimedia.info/ouverture-du-forest-side-secondary-college-dr-reza-saumtally-pas-de-faveur-politique": "2026-10-10"
+  "http://defimedia.info/ouverture-du-forest-side-secondary-college-dr-reza-saumtally-pas-de-faveur-politique": "2026-10-10",
+  "https://www.youtube.com/watch?v=j-2YSv_qSQ8": "2026-10-10",
+  "https://www.facebook.com/closerfrance/posts/-c%C3%A9line-dion-de-retour-au-royal-monceau-apr%C3%A8s-son-concert-%C3%A0-la-pl%C3%A9nitude-arena-c/1528314545992702": "2026-10-10",
+  "https://latribunedelhotellerie.com/nicholas-untermann-directeur-general-viceroy-park-avenue": "2026-10-10",
+  "https://www.ohmymag.com/people/actu-people/art184955-jean-jacques-goldman-discret-au-concert-de-celine-dion-la-plenitude-arena.html": "2026-10-10"
  },
  "en_attente": [
   {
@@ -1247,6 +1251,46 @@
    "priorite": "⚪",
    "zone": "",
    "action": "Demander un contact commercial ou une visite des lieux"
+  },
+  {
+   "titre": "Céline Dion - All by myself - Live 2026 - Plenitude Arena - Paris",
+   "lien": "https://www.youtube.com/watch?v=j-2YSv_qSQ8",
+   "source": "Alerte Google - Plenitude Arena",
+   "date": "2026-10-10T12:56:14+00:00",
+   "categorie": "Événement",
+   "priorite": "🟠",
+   "zone": "Paris",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "Céline Dion de retour au Royal Monceau ! Après son concert à la Plénitude Arena, Céline Dion ...",
+   "lien": "https://www.facebook.com/closerfrance/posts/-c%C3%A9line-dion-de-retour-au-royal-monceau-apr%C3%A8s-son-concert-%C3%A0-la-pl%C3%A9nitude-arena-c/1528314545992702",
+   "source": "Alerte Google - Plenitude Arena",
+   "date": "2026-10-10T10:33:34+00:00",
+   "categorie": "Événement",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "Nicholas Untermann nommé DG du Viceroy Park Avenue",
+   "lien": "https://latribunedelhotellerie.com/nicholas-untermann-directeur-general-viceroy-park-avenue",
+   "source": "Alerte Google - Nominations internationales",
+   "date": "2026-10-10T11:26:19+00:00",
+   "categorie": "Nomination",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "Jean-Jacques Goldman discret au concert de Céline Dion à la Plénitude Arena | Ohmymag",
+   "lien": "https://www.ohmymag.com/people/actu-people/art184955-jean-jacques-goldman-discret-au-concert-de-celine-dion-la-plenitude-arena.html",
+   "source": "Alerte Google - Plenitude Arena",
+   "date": "2026-10-10T13:18:19+00:00",
+   "categorie": "Événement",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
   }
  ]
 }
