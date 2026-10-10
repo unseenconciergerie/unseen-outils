@@ -962,7 +962,10 @@
   "https://www.tiktok.com/@_namelessw/video/7694255035206651168": "2026-10-10",
   "https://www.public.fr/jean-jacques-goldman-rejoint-celine-dion-plenitude-arena": "2026-10-10",
   "https://www.lelezard.com/communique-servicepower-nomme-rob-mcginnis-au-poste-de-directeur-general-22396944.html": "2026-10-10",
-  "https://www.tiktok.com/@ulysseodysee/video/7694813955461549344": "2026-10-10"
+  "https://www.tiktok.com/@ulysseodysee/video/7694813955461549344": "2026-10-10",
+  "https://www.globalcosmeticsnews.com/global-cosmetics-news-weekly-review-week-41-october-2026": "2026-10-10",
+  "https://www.mrweb.com/drno/news40449.htm": "2026-10-10",
+  "http://defimedia.info/ouverture-du-forest-side-secondary-college-dr-reza-saumtally-pas-de-faveur-politique": "2026-10-10"
  },
  "en_attente": [
   {
@@ -1214,6 +1217,36 @@
    "priorite": "⚪",
    "zone": "",
    "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "Global Cosmetics News – Weekly Review | Week 41, October 2026",
+   "lien": "https://www.globalcosmeticsnews.com/global-cosmetics-news-weekly-review-week-41-october-2026",
+   "source": "Alerte Google - Nominations internationales",
+   "date": "2026-10-10T05:02:04+00:00",
+   "categorie": "Nomination",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "Daily Research News Online no. 40449",
+   "lien": "https://www.mrweb.com/drno/news40449.htm",
+   "source": "Alerte Google - Nominations internationales",
+   "date": "2026-10-10T07:13:24+00:00",
+   "categorie": "Nomination",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "Ouverture du Forest Side Secondary College - Dr Reza Saumtally : «Pas de faveur politique»",
+   "lien": "http://defimedia.info/ouverture-du-forest-side-secondary-college-dr-reza-saumtally-pas-de-faveur-politique",
+   "source": "Defimedia",
+   "date": "2026-10-10T12:01:52.624937+00:00",
+   "categorie": "Ouverture",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Demander un contact commercial ou une visite des lieux"
   }
  ]
 }
