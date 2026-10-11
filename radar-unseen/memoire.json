@@ -1000,7 +1000,9 @@
   "https://www.facebook.com/billboardfr/videos/lambiance-de-la-plenitude-arena-lors-de-la-13e-date-de-c%C3%A9line-dion/1642583767538834": "2026-10-11",
   "https://www.instagram.com/p/DeUwRJaIcDM": "2026-10-11",
   "https://www.facebook.com/newscelinedionfr/videos/%EF%B8%8F-c%C3%A9line-dion-prend-la-direction-de-la-plenitude-arena-pour-le-show-n%C2%BA-13-ce-soi/2318321365402153": "2026-10-11",
-  "https://www.visa-algerie.com/visa-schengen-cinq-pays-arabes-sur-le-point-dobtenir-une-exemption": "2026-10-11"
+  "https://www.visa-algerie.com/visa-schengen-cinq-pays-arabes-sur-le-point-dobtenir-une-exemption": "2026-10-11",
+  "https://actu.orange.fr/videos/economie/le-mag-de-luxe-le-guide-du-nouveau-paris-etudiant-figaroscope-05-10-CNT000002sBFDF.html": "2026-10-11",
+  "https://www.gala.fr/l_actu/news_de_stars/du-banc-des-bleus-aux-gradins-de-la-plenitude-arena-apres-didier-deschamps-zinedine-zidane-repere-au-concert-de-celine-dion-20261011": "2026-10-11"
  },
  "en_attente": [
   {
@@ -1192,6 +1194,26 @@
    "priorite": "⚪",
    "zone": "",
    "action": "Identifier un contact chez cette agence, proposer un partenariat commission/co-package"
+  },
+  {
+   "titre": "Le Mag de Luxe: Le guide du nouveau \"Paris étudiant\", Figaroscope - 05/10",
+   "lien": "https://actu.orange.fr/videos/economie/le-mag-de-luxe-le-guide-du-nouveau-paris-etudiant-figaroscope-05-10-CNT000002sBFDF.html",
+   "source": "Alerte Google - Guides shopping Paris (a creer)",
+   "date": "2026-10-11T09:18:52+00:00",
+   "categorie": "Tour-opérateur",
+   "priorite": "🟠",
+   "zone": "Paris",
+   "action": "Identifier un contact chez cette agence, proposer un partenariat commission/co-package"
+  },
+  {
+   "titre": "Du banc des Bleus aux gradins de la Plénitude Arena : après Didier Deschamps, Zinédine ...",
+   "lien": "https://www.gala.fr/l_actu/news_de_stars/du-banc-des-bleus-aux-gradins-de-la-plenitude-arena-apres-didier-deschamps-zinedine-zidane-repere-au-concert-de-celine-dion-20261011",
+   "source": "Alerte Google - Plenitude Arena",
+   "date": "2026-10-11T10:17:12+00:00",
+   "categorie": "Événement",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
   }
  ]
 }
