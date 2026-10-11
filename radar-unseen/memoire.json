@@ -1002,7 +1002,10 @@
   "https://www.facebook.com/newscelinedionfr/videos/%EF%B8%8F-c%C3%A9line-dion-prend-la-direction-de-la-plenitude-arena-pour-le-show-n%C2%BA-13-ce-soi/2318321365402153": "2026-10-11",
   "https://www.visa-algerie.com/visa-schengen-cinq-pays-arabes-sur-le-point-dobtenir-une-exemption": "2026-10-11",
   "https://actu.orange.fr/videos/economie/le-mag-de-luxe-le-guide-du-nouveau-paris-etudiant-figaroscope-05-10-CNT000002sBFDF.html": "2026-10-11",
-  "https://www.gala.fr/l_actu/news_de_stars/du-banc-des-bleus-aux-gradins-de-la-plenitude-arena-apres-didier-deschamps-zinedine-zidane-repere-au-concert-de-celine-dion-20261011": "2026-10-11"
+  "https://www.gala.fr/l_actu/news_de_stars/du-banc-des-bleus-aux-gradins-de-la-plenitude-arena-apres-didier-deschamps-zinedine-zidane-repere-au-concert-de-celine-dion-20261011": "2026-10-11",
+  "https://latribunedelhotellerie.com/francoise-perrier-direction-narcisse-blanc-paris": "2026-10-11",
+  "https://ticketix.fr/event/karol-g-paris-plenitude-arena-2027": "2026-10-11",
+  "https://www.facebook.com/BseanTvMedia/posts/c%C3%A9line-dion-poursuit-sa-r%C3%A9sidence-%C3%A0-la-plenitude-arena-de-nanterre-avec-16-conce/122328994646233479": "2026-10-11"
  },
  "en_attente": [
   {
@@ -1210,6 +1213,36 @@
    "lien": "https://www.gala.fr/l_actu/news_de_stars/du-banc-des-bleus-aux-gradins-de-la-plenitude-arena-apres-didier-deschamps-zinedine-zidane-repere-au-concert-de-celine-dion-20261011",
    "source": "Alerte Google - Plenitude Arena",
    "date": "2026-10-11T10:17:12+00:00",
+   "categorie": "Événement",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "Paris, France | Françoise Perrier nommée à la direction du Narcisse Blanc Hôtel & Spa",
+   "lien": "https://latribunedelhotellerie.com/francoise-perrier-direction-narcisse-blanc-paris",
+   "source": "Alerte Google - Nominations hotellerie FR",
+   "date": "2026-10-11T01:33:01+00:00",
+   "categorie": "Nomination",
+   "priorite": "🟠",
+   "zone": "Paris",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "Karol G à Paris 2027 : billets Plenitude Arena et revente",
+   "lien": "https://ticketix.fr/event/karol-g-paris-plenitude-arena-2027",
+   "source": "Alerte Google - Plenitude Arena",
+   "date": "2026-10-11T11:54:39+00:00",
+   "categorie": "Événement",
+   "priorite": "🟠",
+   "zone": "Paris",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "Céline Dion poursuit sa résidence à la Plenitude Arena de Nanterre, avec 16 concerts ...",
+   "lien": "https://www.facebook.com/BseanTvMedia/posts/c%C3%A9line-dion-poursuit-sa-r%C3%A9sidence-%C3%A0-la-plenitude-arena-de-nanterre-avec-16-conce/122328994646233479",
+   "source": "Alerte Google - Plenitude Arena",
+   "date": "2026-10-11T09:23:26+00:00",
    "categorie": "Événement",
    "priorite": "⚪",
    "zone": "",
