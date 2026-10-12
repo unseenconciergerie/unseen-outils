@@ -1012,7 +1012,151 @@
   "https://wwd.com/pop-culture/celebrity-news/kim-kardashian-hermes-bag-chrome-hearts-singapore-1239342093": "2026-10-11",
   "https://www.public.fr/julia-roberts-et-zinedine-zidane-se-retrouvent-ensemble-a-la-plenitude-arena-pour-celine-dion": "2026-10-11",
   "https://www.parisselectbook.com/2026/10/11/rose-peche-ou-berry-les-3-couleurs-de-blush-qui-explosent-sur-pinterest-en-2026": "2026-10-11",
-  "http://defimedia.info/inde-les-chefs-du-mouvement-des-cafards-remis-en-liberte-appels-de-nouvelles-manifestations": "2026-10-11"
+  "http://defimedia.info/inde-les-chefs-du-mouvement-des-cafards-remis-en-liberte-appels-de-nouvelles-manifestations": "2026-10-11",
+  "https://wwd.com/business-news/retail/borsalino-paris-store-china-us-expansion-growth-1239335632": "2026-10-12",
+  "https://www.leboncoin.fr/ad/billetterie/3286648990": "2026-10-12",
+  "https://ticketix.fr/event/olivia-rodrigo-paris-plenitude-arena-2027": "2026-10-12",
+  "https://wwd.com/fashion-news/fashion-features/kim-jones-signature-label-japan-store-hong-kong-2027-oct-1239342348": "2026-10-12",
+  "https://egov.eletsonline.com/2026/10/hindustan-copper-appoints-tarak-nath-nayak-as-unit-head-of-two-projects": "2026-10-12",
+  "https://www.tiktok.com/@chloecfi/video/7695318621597289761": "2026-10-12",
+  "https://www.chine-magazine.com/touristes-chinois-en-france-ce-ne-sont-ni-google-ni-chatgpt-qui-choisissent-leur-restaurant": "2026-10-12",
+  "https://unevuedemaplace.fr/site/La+Plenitude+Arena/115/18": "2026-10-12",
+  "https://newsinfo.inquirer.net/2321715/lino-cayetano-named-palace-communications-chief": "2026-10-12",
+  "https://www.centrepresseaveyron.fr/2026/10/11/brouillon-un-spectacle-de-magie-nouvelle-ouvre-le-festival-dautomne-13595609.php": "2026-10-12",
+  "https://actu.orange.fr/videos/economie/le-livre-de-luxe-mixo-le-guide-ultime-des-cocktails-20-11-CNT000002srJJ2.html": "2026-10-12",
+  "https://www.laranews.net/aasa-elects-new-chair-and-deputy-chair-for-2026": "2026-10-12",
+  "https://www.laquotidienne.fr/pourquoi-les-touristes-chinois-depensent-ils-beaucoup-moins-quavant-malgre-un-volume-de-deplacements-en-hausse": "2026-10-12"
  },
- "en_attente": []
+ "en_attente": [
+  {
+   "titre": "Muse concert catégorie 2 Paris Plénitude arena - Billetterie",
+   "lien": "https://www.leboncoin.fr/ad/billetterie/3286648990",
+   "source": "Alerte Google - Plenitude Arena",
+   "date": "2026-10-11T16:58:50+00:00",
+   "categorie": "Événement",
+   "priorite": "🟠",
+   "zone": "Paris",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "Olivia Rodrigo Paris 2027 : billets Plenitude Arena, revente",
+   "lien": "https://ticketix.fr/event/olivia-rodrigo-paris-plenitude-arena-2027",
+   "source": "Alerte Google - Plenitude Arena",
+   "date": "2026-10-11T20:43:26+00:00",
+   "categorie": "Événement",
+   "priorite": "🟠",
+   "zone": "Paris",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "Designer Kim Jones Will Launch a Signature Label Made in Japan, and a Store in Hong Kong in 2027",
+   "lien": "https://wwd.com/fashion-news/fashion-features/kim-jones-signature-label-japan-store-hong-kong-2027-oct-1239342348",
+   "source": "WWD",
+   "date": "2026-10-12T07:00:00+00:00",
+   "categorie": "Ouverture",
+   "priorite": "🟠",
+   "zone": "Hong Kong",
+   "action": "Demander un contact commercial ou une visite des lieux"
+  },
+  {
+   "titre": "Hindustan Copper Appoints Tarak Nath Nayak as Unit Head of Two Projects",
+   "lien": "https://egov.eletsonline.com/2026/10/hindustan-copper-appoints-tarak-nath-nayak-as-unit-head-of-two-projects",
+   "source": "Alerte Google - Nominations internationales",
+   "date": "2026-10-11T10:27:11+00:00",
+   "categorie": "Nomination",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "J'ai vu @Celine Dion à la @Plenitude Arena #concert #concerttok #celin... | TikTok",
+   "lien": "https://www.tiktok.com/@chloecfi/video/7695318621597289761",
+   "source": "Alerte Google - Plenitude Arena",
+   "date": "2026-10-11T16:29:47+00:00",
+   "categorie": "Événement",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "Touristes chinois en France : ce ne sont ni Google ni ChatGPT qui choisissent leur restaurant",
+   "lien": "https://www.chine-magazine.com/touristes-chinois-en-france-ce-ne-sont-ni-google-ni-chatgpt-qui-choisissent-leur-restaurant",
+   "source": "Alerte Google - Clientele cible",
+   "date": "2026-10-11T17:08:16+00:00",
+   "categorie": "Tendance clientèle",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Lire et archiver : argument utile pour les propositions clients"
+  },
+  {
+   "titre": "La Plenitude Arena, bloc 115, rangée 18, domicile de Racing 92",
+   "lien": "https://unevuedemaplace.fr/site/La+Plenitude+Arena/115/18",
+   "source": "Alerte Google - Plenitude Arena",
+   "date": "2026-10-11T20:52:58+00:00",
+   "categorie": "Événement",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "Lino Cayetano named Palace communications chief",
+   "lien": "https://newsinfo.inquirer.net/2321715/lino-cayetano-named-palace-communications-chief",
+   "source": "Alerte Google - Nominations internationales",
+   "date": "2026-10-11T21:41:12+00:00",
+   "categorie": "Nomination",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "Pont-de-Salars. \"Brouillon\" : un spectacle de magie nouvelle ouvre le Festival d'automne",
+   "lien": "https://www.centrepresseaveyron.fr/2026/10/11/brouillon-un-spectacle-de-magie-nouvelle-ouvre-le-festival-dautomne-13595609.php",
+   "source": "Alerte Google - Plenitude Arena",
+   "date": "2026-10-12T00:41:32+00:00",
+   "categorie": "Ouverture",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Demander un contact commercial ou une visite des lieux"
+  },
+  {
+   "titre": "Le livre de luxe: Mixo, le guide ultime des cocktails - 20/11 : Actualités",
+   "lien": "https://actu.orange.fr/videos/economie/le-livre-de-luxe-mixo-le-guide-ultime-des-cocktails-20-11-CNT000002srJJ2.html",
+   "source": "Alerte Google - Guides shopping Paris (a creer)",
+   "date": "2026-10-12T00:41:34+00:00",
+   "categorie": "Tour-opérateur",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Identifier un contact chez cette agence, proposer un partenariat commission/co-package"
+  },
+  {
+   "titre": "New leadership appointed at Airlines Association of Southern Africa",
+   "lien": "https://www.laranews.net/aasa-elects-new-chair-and-deputy-chair-for-2026",
+   "source": "Alerte Google - Nominations internationales",
+   "date": "2026-10-12T03:51:59+00:00",
+   "categorie": "Nomination",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "Pourquoi les touristes chinois dépensent-ils beaucoup moins qu'avant, malgré un volume ...",
+   "lien": "https://www.laquotidienne.fr/pourquoi-les-touristes-chinois-depensent-ils-beaucoup-moins-quavant-malgre-un-volume-de-deplacements-en-hausse",
+   "source": "Alerte Google - Clientele cible",
+   "date": "2026-10-12T06:22:17+00:00",
+   "categorie": "Tendance clientèle",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Lire et archiver : argument utile pour les propositions clients"
+  },
+  {
+   "titre": "Pourquoi les touristes chinois dépensent-ils beaucoup moins qu'avant, malgré un volume ...",
+   "lien": "https://www.laquotidienne.fr/pourquoi-les-touristes-chinois-depensent-ils-beaucoup-moins-quavant-malgre-un-volume-de-deplacements-en-hausse",
+   "source": "Alerte Google - Tourisme chinois France, tendance (a creer)",
+   "date": "2026-10-12T06:22:17+00:00",
+   "categorie": "Tendance clientèle",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Lire et archiver : argument utile pour les propositions clients"
+  }
+ ]
 }
