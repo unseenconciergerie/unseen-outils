@@ -1025,7 +1025,10 @@
   "https://www.centrepresseaveyron.fr/2026/10/11/brouillon-un-spectacle-de-magie-nouvelle-ouvre-le-festival-dautomne-13595609.php": "2026-10-12",
   "https://actu.orange.fr/videos/economie/le-livre-de-luxe-mixo-le-guide-ultime-des-cocktails-20-11-CNT000002srJJ2.html": "2026-10-12",
   "https://www.laranews.net/aasa-elects-new-chair-and-deputy-chair-for-2026": "2026-10-12",
-  "https://www.laquotidienne.fr/pourquoi-les-touristes-chinois-depensent-ils-beaucoup-moins-quavant-malgre-un-volume-de-deplacements-en-hausse": "2026-10-12"
+  "https://www.laquotidienne.fr/pourquoi-les-touristes-chinois-depensent-ils-beaucoup-moins-quavant-malgre-un-volume-de-deplacements-en-hausse": "2026-10-12",
+  "https://wwd.com/eye/parties/paris-opera-ballet-gala-chanel-rolex-1239342360": "2026-10-12",
+  "https://www.theage.com.au/national/victoria/melbourne-imam-named-by-accused-hijack-pilot-vows-to-fast-from-talking-20261012-p614so.html": "2026-10-12",
+  "http://defimedia.info/prise-en-charge-delodie-thomas-arrivee-de-lequipe-medicale-indienne": "2026-10-12"
  },
  "en_attente": [
   {
@@ -1153,6 +1156,36 @@
    "lien": "https://www.laquotidienne.fr/pourquoi-les-touristes-chinois-depensent-ils-beaucoup-moins-quavant-malgre-un-volume-de-deplacements-en-hausse",
    "source": "Alerte Google - Tourisme chinois France, tendance (a creer)",
    "date": "2026-10-12T06:22:17+00:00",
+   "categorie": "Tendance clientèle",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Lire et archiver : argument utile pour les propositions clients"
+  },
+  {
+   "titre": "Inside the Paris Opera Ballet Gala",
+   "lien": "https://wwd.com/eye/parties/paris-opera-ballet-gala-chanel-rolex-1239342360",
+   "source": "WWD",
+   "date": "2026-10-12T11:05:03+00:00",
+   "categorie": "Ouverture",
+   "priorite": "🟠",
+   "zone": "Paris",
+   "action": "Demander un contact commercial ou une visite des lieux"
+  },
+  {
+   "titre": "Melbourne imam named by accused hijack pilot vows to 'fast from talking'",
+   "lien": "https://www.theage.com.au/national/victoria/melbourne-imam-named-by-accused-hijack-pilot-vows-to-fast-from-talking-20261012-p614so.html",
+   "source": "Alerte Google - Nominations internationales",
+   "date": "2026-10-12T08:11:31+00:00",
+   "categorie": "Nomination",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "Prise en charge d’Élodie Thomas : arrivée de l’équipe médicale indienne",
+   "lien": "http://defimedia.info/prise-en-charge-delodie-thomas-arrivee-de-lequipe-medicale-indienne",
+   "source": "Defimedia",
+   "date": "2026-10-12T12:08:08.140257+00:00",
    "categorie": "Tendance clientèle",
    "priorite": "⚪",
    "zone": "",
