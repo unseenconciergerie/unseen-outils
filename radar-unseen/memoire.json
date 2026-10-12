@@ -1028,7 +1028,16 @@
   "https://www.laquotidienne.fr/pourquoi-les-touristes-chinois-depensent-ils-beaucoup-moins-quavant-malgre-un-volume-de-deplacements-en-hausse": "2026-10-12",
   "https://wwd.com/eye/parties/paris-opera-ballet-gala-chanel-rolex-1239342360": "2026-10-12",
   "https://www.theage.com.au/national/victoria/melbourne-imam-named-by-accused-hijack-pilot-vows-to-fast-from-talking-20261012-p614so.html": "2026-10-12",
-  "http://defimedia.info/prise-en-charge-delodie-thomas-arrivee-de-lequipe-medicale-indienne": "2026-10-12"
+  "http://defimedia.info/prise-en-charge-delodie-thomas-arrivee-de-lequipe-medicale-indienne": "2026-10-12",
+  "https://www.marketscreener.com/news/ooredoo-q-p-s-c-named-official-sponsor-of-we-run-doha-in-partnership-with-paris-saint-germain-ce785ddcd180fe20": "2026-10-12",
+  "https://latribunedelhotellerie.com/niclas-prokop-directeur-general-ifuru-island-maldives": "2026-10-12",
+  "https://filipinotimes.net/latest-news/2026/10/12/marcos-names-lino-cayetano-new-pco-chief-replacing-dave-gomez": "2026-10-12",
+  "https://www.youtube.com/watch?v=iUbVDgePTIY": "2026-10-12",
+  "https://latribunedelhotellerie.com/360-tour-du-monde-actu-hoteliere-12-octobre-2026": "2026-10-12",
+  "https://latribunedelhotellerie.com/minor-hotels-anantara-retreat-rabat-maroc": "2026-10-12",
+  "https://hospitality-on.com/fr/hotellerie/coree-taiwan-europe-les-clienteles-qui-ont-pris-la-place-des-chinois-au-japon": "2026-10-12",
+  "https://www.travolution.com/distribution/trip-com-les-voyageurs-chinois-recherchent-une-immersion-plus-profonde": "2026-10-12",
+  "https://thefinancialexpress.com.bd/trade/sonali-banks-board-greets-two-new-dmds": "2026-10-12"
  },
  "en_attente": [
   {
@@ -1190,6 +1199,106 @@
    "priorite": "⚪",
    "zone": "",
    "action": "Lire et archiver : argument utile pour les propositions clients"
+  },
+  {
+   "titre": "Ooredoo Q P S C : Named Official Sponsor of We Run Doha in Partnership with Paris Saint-Germain",
+   "lien": "https://www.marketscreener.com/news/ooredoo-q-p-s-c-named-official-sponsor-of-we-run-doha-in-partnership-with-paris-saint-germain-ce785ddcd180fe20",
+   "source": "Alerte Google - Nominations internationales",
+   "date": "2026-10-12T11:31:31+00:00",
+   "categorie": "Nomination",
+   "priorite": "🟠",
+   "zone": "Paris",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "Niclas Prokop nommé à la tête d'Ifuru Island Maldives",
+   "lien": "https://latribunedelhotellerie.com/niclas-prokop-directeur-general-ifuru-island-maldives",
+   "source": "Alerte Google - Nominations internationales",
+   "date": "2026-10-12T07:44:27+00:00",
+   "categorie": "Nomination",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "Niclas Prokop nommé à la tête d'Ifuru Island Maldives",
+   "lien": "https://latribunedelhotellerie.com/niclas-prokop-directeur-general-ifuru-island-maldives",
+   "source": "Alerte Google - Nominations hotellerie FR",
+   "date": "2026-10-12T07:44:27+00:00",
+   "categorie": "Nomination",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "Marcos names Lino Cayetano new PCO chief, replacing Dave Gomez",
+   "lien": "https://filipinotimes.net/latest-news/2026/10/12/marcos-names-lino-cayetano-new-pco-chief-replacing-dave-gomez",
+   "source": "Alerte Google - Nominations internationales",
+   "date": "2026-10-12T10:30:14+00:00",
+   "categorie": "Nomination",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "Céline Dion - It's all coming back to be now - 10/10/2026 - La Plénitude Aréna",
+   "lien": "https://www.youtube.com/watch?v=iUbVDgePTIY",
+   "source": "Alerte Google - Plenitude Arena",
+   "date": "2026-10-12T11:22:01+00:00",
+   "categorie": "Événement",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "360° : tour du monde de l'actu hôtelière du 12 octobre 2026",
+   "lien": "https://latribunedelhotellerie.com/360-tour-du-monde-actu-hoteliere-12-octobre-2026",
+   "source": "Alerte Google - Nominations hotellerie FR",
+   "date": "2026-10-12T11:49:53+00:00",
+   "categorie": "Nomination",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "Minor Hotels signe l'Anantara Retreat Rabat au Maroc",
+   "lien": "https://latribunedelhotellerie.com/minor-hotels-anantara-retreat-rabat-maroc",
+   "source": "Alerte Google - Nominations hotellerie FR",
+   "date": "2026-10-12T11:49:53+00:00",
+   "categorie": "Nomination",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "Corée, Taïwan, Europe : les clientèles qui ont pris la place des Chinois au Japon",
+   "lien": "https://hospitality-on.com/fr/hotellerie/coree-taiwan-europe-les-clienteles-qui-ont-pris-la-place-des-chinois-au-japon",
+   "source": "Hospitality ON",
+   "date": "2026-10-12T12:18:20+00:00",
+   "categorie": "Tendance clientèle",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Lire et archiver : argument utile pour les propositions clients"
+  },
+  {
+   "titre": "Trip.com : « Les voyageurs chinois recherchent une immersion plus profonde»",
+   "lien": "https://www.travolution.com/distribution/trip-com-les-voyageurs-chinois-recherchent-une-immersion-plus-profonde",
+   "source": "TOM.travel",
+   "date": "2026-10-12T12:46:00+00:00",
+   "categorie": "Tendance clientèle",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Lire et archiver : argument utile pour les propositions clients"
+  },
+  {
+   "titre": "Sonali Bank's board greets two new DMDs",
+   "lien": "https://thefinancialexpress.com.bd/trade/sonali-banks-board-greets-two-new-dmds",
+   "source": "Alerte Google - Nominations internationales",
+   "date": "2026-10-12T13:18:26+00:00",
+   "categorie": "Nomination",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
   }
  ]
 }
