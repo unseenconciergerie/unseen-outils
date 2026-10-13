@@ -1087,7 +1087,15 @@
   "https://www.bloomberg.com/news/articles/2026-10-13/visa-approved-to-prepare-domestic-payments-business-in-china": "2026-10-13",
   "https://www.youtube.com/watch?v=l0-5y6kW5Mw": "2026-10-13",
   "https://wwd.com/fashion-news/designer-luxury/louis-vuitton-real-madrid-partnership-jude-bellingham-1239342545": "2026-10-13",
-  "https://safariindia.com/six-senses-southern-dunes-general-manager": "2026-10-13"
+  "https://safariindia.com/six-senses-southern-dunes-general-manager": "2026-10-13",
+  "https://expo.paris/visite/galeries-lafayette-printemps-2026": "2026-10-13",
+  "https://medias24.com/agence-presse/la-bourse-de-paris-resiste-au-repli-des-valeurs-du-luxe": "2026-10-13",
+  "https://wwd.com/beauty-industry-news/fragrance/givaudan-q3-2026-symrise-scent-center-singapore-1239344586": "2026-10-13",
+  "https://hospitality-on.com/fr/developpement/kevin-goh-ceo-dascott-ltd-40-de-notre-parc-reste-venir-et-tout-est-signe": "2026-10-13",
+  "https://www.reuters.com/world/china/visa-gets-approval-prepare-domestic-business-china-2026-10-13": "2026-10-13",
+  "https://www.thestandard.com.hk/finance/article/345293/China-gloom-hits-LVMH-dims-hopes-of-luxury-revival": "2026-10-13",
+  "https://hospitality-on.com/fr/ouverture/ihg-inaugure-lintercontinental-taipei-nouvelle-reference-de-la-marque-taiwan": "2026-10-13",
+  "https://supersevens.lnr.fr/actualite/la-plenitude-arena-une-nouvelle-fois-theatre-des-finales-de-lin-extenso-supersevens": "2026-10-13"
  },
  "en_attente": [
   {
@@ -1409,6 +1417,86 @@
    "priorite": "⚪",
    "zone": "",
    "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "Visite guidée Galeries Lafayette & Printemps | Réservation de Billet | Expo Paris 2026",
+   "lien": "https://expo.paris/visite/galeries-lafayette-printemps-2026",
+   "source": "Alerte Google - Guides shopping Paris (a creer)",
+   "date": "2026-10-13T08:08:24+00:00",
+   "categorie": "Tour-opérateur",
+   "priorite": "🟠",
+   "zone": "Paris",
+   "action": "Identifier un contact chez cette agence, proposer un partenariat commission/co-package"
+  },
+  {
+   "titre": "La Bourse de Paris résiste au repli des valeurs du luxe",
+   "lien": "https://medias24.com/agence-presse/la-bourse-de-paris-resiste-au-repli-des-valeurs-du-luxe",
+   "source": "Alerte Google - Guides shopping Paris (a creer)",
+   "date": "2026-10-13T09:06:25+00:00",
+   "categorie": "Tour-opérateur",
+   "priorite": "🟠",
+   "zone": "Paris",
+   "action": "Identifier un contact chez cette agence, proposer un partenariat commission/co-package"
+  },
+  {
+   "titre": "Givaudan Stock Surges, Symrise Opens Scent Center in Singapore",
+   "lien": "https://wwd.com/beauty-industry-news/fragrance/givaudan-q3-2026-symrise-scent-center-singapore-1239344586",
+   "source": "WWD",
+   "date": "2026-10-13T11:33:00+00:00",
+   "categorie": "Ouverture",
+   "priorite": "🟠",
+   "zone": "Singapour",
+   "action": "Demander un contact commercial ou une visite des lieux"
+  },
+  {
+   "titre": "Kevin Goh, CEO d'Ascott Ltd : « 40 % de notre parc reste à venir, et tout est signé »",
+   "lien": "https://hospitality-on.com/fr/developpement/kevin-goh-ceo-dascott-ltd-40-de-notre-parc-reste-venir-et-tout-est-signe",
+   "source": "Hospitality ON",
+   "date": "2026-10-12T10:52:57+00:00",
+   "categorie": "Tendance clientèle",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Lire et archiver : argument utile pour les propositions clients"
+  },
+  {
+   "titre": "Visa gets approval to prepare for domestic business in China",
+   "lien": "https://www.reuters.com/world/china/visa-gets-approval-prepare-domestic-business-china-2026-10-13",
+   "source": "Alerte Google - Vols et visas Chine-Golfe vers France (a creer)",
+   "date": "2026-10-13T08:08:31+00:00",
+   "categorie": "Tour-opérateur",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Identifier un contact chez cette agence, proposer un partenariat commission/co-package"
+  },
+  {
+   "titre": "China gloom hits LVMH, dims hopes of luxury revival",
+   "lien": "https://www.thestandard.com.hk/finance/article/345293/China-gloom-hits-LVMH-dims-hopes-of-luxury-revival",
+   "source": "Alerte Google - Vols et visas Chine-Golfe vers France (a creer)",
+   "date": "2026-10-13T08:12:26+00:00",
+   "categorie": "Tour-opérateur",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Identifier un contact chez cette agence, proposer un partenariat commission/co-package"
+  },
+  {
+   "titre": "IHG inaugure l'InterContinental Taipei, nouvelle référence de la marque à Taïwan",
+   "lien": "https://hospitality-on.com/fr/ouverture/ihg-inaugure-lintercontinental-taipei-nouvelle-reference-de-la-marque-taiwan",
+   "source": "Hospitality ON",
+   "date": "2026-10-13T11:14:48+00:00",
+   "categorie": "Ouverture",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Demander un contact commercial ou une visite des lieux"
+  },
+  {
+   "titre": "La Plenitude Arena une nouvelle fois théâtre des finales de l'In Extenso Supersevens",
+   "lien": "https://supersevens.lnr.fr/actualite/la-plenitude-arena-une-nouvelle-fois-theatre-des-finales-de-lin-extenso-supersevens",
+   "source": "Alerte Google - Plenitude Arena",
+   "date": "2026-10-13T11:33:10+00:00",
+   "categorie": "Événement",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
   }
  ]
 }
