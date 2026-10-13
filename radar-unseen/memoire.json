@@ -1119,7 +1119,20 @@
   "https://www.tendancehotellerie.fr/articles-breves/communique-de-presse/25950-article/christie-co-france-renforce-son-equipe-bordelaise-en-recrutant-giulia-baudon-en-tant-que-negociatrice": "2026-10-13",
   "https://hospitality-on.com/fr/nomination/amelie-thiriet-prend-la-direction-generale-dorient-express": "2026-10-13",
   "https://www.boursorama.com/bourse/actualites/visa-obtient-l-autorisation-d-exercer-ses-activites-en-chine-70861a6b793306836d9d410106c1de6d": "2026-10-13",
-  "https://wwd.com/sustainability/environment/patagonia-heyes-peak-collection-thermore-insulation-1239344557": "2026-10-13"
+  "https://wwd.com/sustainability/environment/patagonia-heyes-peak-collection-thermore-insulation-1239344557": "2026-10-13",
+  "https://www.hotel-online.com/news/colorados-renaissance-boulder-suites-hotel-at-flatiron-named-the-marriott-renaissance-hotel-of-the-year-april-2005": "2026-10-13",
+  "https://www.vietnam.vn/fr/tri-tue-nhan-tao-lam-thay-doi-cach-di-du-lich": "2026-10-13",
+  "https://www.vietnam.vn/fr/tri-tue-nhan-tao-dang-thay-doi-cach-con-nguoi-di-du-lich": "2026-10-13",
+  "https://www.linfo.re/la-reunion/faits-divers/un-petrolier-intercepte-au-large-de-la-reunion-ouverture-d-une-enquete-judiciaire": "2026-10-13",
+  "https://latribunedelhotellerie.com/tiago-moraes-sarmento-belmond-mexique-caraibes": "2026-10-13",
+  "https://hospitality-on.com/fr/hotellerie/mariages-repas-daffaires-fetes-le-banquet-nouveau-terrain-des-groupes-internationaux-en": "2026-10-13",
+  "https://larevuedeshotels.com/hotel-six-senses-loire-valley-ouverture-2028-chateau-bel-air": "2026-10-13",
+  "https://www.facebook.com/groups/1529201198393565/posts/1827517105228638": "2026-10-13",
+  "https://latribunedelhotellerie.com/ihg-holiday-inn-express-suites-debrecen-hongrie-2029": "2026-10-13",
+  "https://blog.onepark.fr/nos-actus/concerts-de-celine-dion-a-la-plenitude-arena-parkings-dates-et-acces": "2026-10-13",
+  "https://www.musicbusinessworldwide.com/viktoria-siniavskaia-appointed-president-emea-at-believe": "2026-10-13",
+  "https://www.boutiquehotelier.com/hakan-ozel-vp-operations-shangri-la-group": "2026-10-13",
+  "https://wwd.com/business-news/retail/jonathan-adler-opens-new-store-lexington-avenue-expands-gifting-wholesale-strategy-1239343491": "2026-10-13"
  },
  "en_attente": [
   {
@@ -1737,6 +1750,136 @@
    "lien": "https://wwd.com/sustainability/environment/patagonia-heyes-peak-collection-thermore-insulation-1239344557",
    "source": "WWD",
    "date": "2026-10-13T14:21:01+00:00",
+   "categorie": "Ouverture",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Demander un contact commercial ou une visite des lieux"
+  },
+  {
+   "titre": "Colorado's Renaissance Boulder Suites Hotel at Flatiron Named the Marriott ...",
+   "lien": "https://www.hotel-online.com/news/colorados-renaissance-boulder-suites-hotel-at-flatiron-named-the-marriott-renaissance-hotel-of-the-year-april-2005",
+   "source": "Alerte Google - Nominations internationales",
+   "date": "2026-10-12T21:54:46+00:00",
+   "categorie": "Nomination",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "L'intelligence artificielle est en train de transformer notre façon de voyager.",
+   "lien": "https://www.vietnam.vn/fr/tri-tue-nhan-tao-lam-thay-doi-cach-di-du-lich",
+   "source": "Alerte Google - Tourisme chinois France, tendance (a creer)",
+   "date": "2026-10-13T03:21:57+00:00",
+   "categorie": "Tour-opérateur",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Identifier un contact chez cette agence, proposer un partenariat commission/co-package"
+  },
+  {
+   "titre": "L'intelligence artificielle est en train de transformer la façon dont les gens voyagent.",
+   "lien": "https://www.vietnam.vn/fr/tri-tue-nhan-tao-dang-thay-doi-cach-con-nguoi-di-du-lich",
+   "source": "Alerte Google - Tourisme chinois France, tendance (a creer)",
+   "date": "2026-10-13T04:10:34+00:00",
+   "categorie": "Tour-opérateur",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Identifier un contact chez cette agence, proposer un partenariat commission/co-package"
+  },
+  {
+   "titre": "Un pétrolier intercepté au large de La Réunion : ouverture d'une enquête judiciaire",
+   "lien": "https://www.linfo.re/la-reunion/faits-divers/un-petrolier-intercepte-au-large-de-la-reunion-ouverture-d-une-enquete-judiciaire",
+   "source": "Alerte Google - Maurice",
+   "date": "2026-10-13T12:40:43+00:00",
+   "categorie": "Ouverture",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Demander un contact commercial ou une visite des lieux"
+  },
+  {
+   "titre": "Tiago Moraes Sarmento promu chez Belmond Mexique et Caraïbes",
+   "lien": "https://latribunedelhotellerie.com/tiago-moraes-sarmento-belmond-mexique-caraibes",
+   "source": "Alerte Google - Nominations hotellerie FR",
+   "date": "2026-10-13T12:42:27+00:00",
+   "categorie": "Nomination",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "Mariages, repas d'affaires, fêtes : le banquet, nouveau terrain des groupes internationaux en Chine",
+   "lien": "https://hospitality-on.com/fr/hotellerie/mariages-repas-daffaires-fetes-le-banquet-nouveau-terrain-des-groupes-internationaux-en",
+   "source": "Hospitality ON",
+   "date": "2026-10-13T13:03:51+00:00",
+   "categorie": "Tendance clientèle",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Lire et archiver : argument utile pour les propositions clients"
+  },
+  {
+   "titre": "Six Senses Loire Valley : ouverture repoussée à 2028",
+   "lien": "https://larevuedeshotels.com/hotel-six-senses-loire-valley-ouverture-2028-chateau-bel-air",
+   "source": "Alerte Google - Maurice",
+   "date": "2026-10-13T13:23:19+00:00",
+   "categorie": "Ouverture",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Demander un contact commercial ou une visite des lieux"
+  },
+  {
+   "titre": "4 Places en fosse pour Plenitude Arena au prix d'achat. (transfert possible via Fan Wallet)",
+   "lien": "https://www.facebook.com/groups/1529201198393565/posts/1827517105228638",
+   "source": "Alerte Google - Plenitude Arena",
+   "date": "2026-10-13T13:24:29+00:00",
+   "categorie": "Événement",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "IHG signe un Holiday Inn Express & Suites à Debrecen",
+   "lien": "https://latribunedelhotellerie.com/ihg-holiday-inn-express-suites-debrecen-hongrie-2029",
+   "source": "Alerte Google - Nominations hotellerie FR",
+   "date": "2026-10-13T14:02:39+00:00",
+   "categorie": "Nomination",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "Concerts de Céline Dion à la Plenitude Arena : parkings, dates et accès",
+   "lien": "https://blog.onepark.fr/nos-actus/concerts-de-celine-dion-a-la-plenitude-arena-parkings-dates-et-acces",
+   "source": "Alerte Google - Plenitude Arena",
+   "date": "2026-10-13T15:33:53+00:00",
+   "categorie": "Événement",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "Viktoria Siniavskaia appointed President EMEA at Believe",
+   "lien": "https://www.musicbusinessworldwide.com/viktoria-siniavskaia-appointed-president-emea-at-believe",
+   "source": "Alerte Google - Nominations internationales",
+   "date": "2026-10-13T15:37:37+00:00",
+   "categorie": "Nomination",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "Hakan Ozel named vice president of operations at Shangri-La",
+   "lien": "https://www.boutiquehotelier.com/hakan-ozel-vp-operations-shangri-la-group",
+   "source": "Alerte Google - Nominations internationales",
+   "date": "2026-10-13T16:04:15+00:00",
+   "categorie": "Nomination",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "Jonathan Adler Opens New Store on Lexington Avenue, Expands Gifting and Wholesale Strategy",
+   "lien": "https://wwd.com/business-news/retail/jonathan-adler-opens-new-store-lexington-avenue-expands-gifting-wholesale-strategy-1239343491",
+   "source": "WWD",
+   "date": "2026-10-13T17:21:39+00:00",
    "categorie": "Ouverture",
    "priorite": "⚪",
    "zone": "",
