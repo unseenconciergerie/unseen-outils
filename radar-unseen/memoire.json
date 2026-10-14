@@ -1157,7 +1157,15 @@
   "https://www.facebook.com/hero.vertical/posts/c%C3%A9line-en-playback-%C3%A0-la-pl%C3%A9nitude-arena-/1710427670656487": "2026-10-14",
   "https://www.vietnam.vn/fr/bat-dong-san-phat-dat-pdr-bo-nhiem-pho-tong-giam-doc-hoan-thien-phap-ly-quy-dat-tai-tphcm": "2026-10-14",
   "https://aviewfrommyseat.co.uk/venue/La+Plenitude+Arena/115?page=3": "2026-10-14",
-  "https://www.facebook.com/actufr.paris/posts/lors-de-ses-concerts-%C3%A0-la-plenitude-arena-de-nanterre-la-chanteuse-canadienne-es/1780901007372343": "2026-10-14"
+  "https://www.facebook.com/actufr.paris/posts/lors-de-ses-concerts-%C3%A0-la-plenitude-arena-de-nanterre-la-chanteuse-canadienne-es/1780901007372343": "2026-10-14",
+  "https://gjepc.org/news_detail.php?news=from-indian-craftsmanship-to-french-luxury-gjepc-opens-new-doors-in-paris-1": "2026-10-14",
+  "https://hospitality-on.com/fr/nomination/wilfried-morandini-nomme-directeur-des-operations-de-lvmh-hotel-management": "2026-10-14",
+  "https://aviewfrommyseat.co.uk/venue/La+Plenitude+Arena/tag/4/est+une+place+de+gradin?page=6": "2026-10-14",
+  "https://www.aip.ci/cote-divoire-aip-henri-pepin-krou-succede-a-amidou-traore-a-la-direction-generale-de-lanare-ci": "2026-10-14",
+  "https://www.hospitalitynet.org/news/4134903/jeddah-hotel-performance-jumped-in-september": "2026-10-14",
+  "https://freshmagparis.com/lhotel-du-palais-de-biarritz-sans-etoile-michelin-ni-label-palace-affiche-90-de-taux-doccupation-en-aout": "2026-10-14",
+  "https://www.parisselectbook.com/2026/10/14/salon-du-vintage-ultimate-luxury-3-jours-au-coeur-du-marais-pour-denicher-des-objets-rares-mode-mobilier-vinyles": "2026-10-14",
+  "https://www.hospitalitynet.org/news/4134904/milan-hotel-room-rates-approached-all-time-high-thanks-to-grand-prix-and-fashion-week": "2026-10-14"
  },
  "en_attente": [
   {
@@ -1415,6 +1423,86 @@
    "lien": "https://www.facebook.com/actufr.paris/posts/lors-de-ses-concerts-%C3%A0-la-plenitude-arena-de-nanterre-la-chanteuse-canadienne-es/1780901007372343",
    "source": "Alerte Google - Plenitude Arena",
    "date": "2026-10-14T07:00:25+00:00",
+   "categorie": "Événement",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "Wilfried Morandini nommé directeur des opérations de LVMH Hotel Management",
+   "lien": "https://hospitality-on.com/fr/nomination/wilfried-morandini-nomme-directeur-des-operations-de-lvmh-hotel-management",
+   "source": "Hospitality ON",
+   "date": "2026-10-14T10:52:14+00:00",
+   "categorie": "Nomination",
+   "priorite": "🟠",
+   "zone": "Paris",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "Est une place de gradin at La Plenitude Arena. page6",
+   "lien": "https://aviewfrommyseat.co.uk/venue/La+Plenitude+Arena/tag/4/est+une+place+de+gradin?page=6",
+   "source": "Alerte Google - Plenitude Arena",
+   "date": "2026-10-14T01:24:28+00:00",
+   "categorie": "Événement",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "Côte d'Ivoire-AIP/Henri Pépin Krou succède à Amidou Traoré à la direction générale de l'ANARE-CI",
+   "lien": "https://www.aip.ci/cote-divoire-aip-henri-pepin-krou-succede-a-amidou-traore-a-la-direction-generale-de-lanare-ci",
+   "source": "Alerte Google - Nominations hotellerie FR",
+   "date": "2026-10-14T10:38:04+00:00",
+   "categorie": "Nomination",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "Jeddah hotel performance jumped in September",
+   "lien": "https://www.hospitalitynet.org/news/4134903/jeddah-hotel-performance-jumped-in-september",
+   "source": "Hospitality Net",
+   "date": "2026-10-14T10:41:00+00:00",
+   "categorie": "Ouverture",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Demander un contact commercial ou une visite des lieux"
+  },
+  {
+   "titre": "L'hôtel du Palais de Biarritz sans étoile Michelin ni label palace affiche 90% de taux d ...",
+   "lien": "https://freshmagparis.com/lhotel-du-palais-de-biarritz-sans-etoile-michelin-ni-label-palace-affiche-90-de-taux-doccupation-en-aout",
+   "source": "Alerte Google - Nominations hotellerie FR",
+   "date": "2026-10-14T11:07:17+00:00",
+   "categorie": "Nomination",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "Salon du Vintage « Ultimate Luxury » : 3 jours au coeur du Marais pour dénicher des objets ...",
+   "lien": "https://www.parisselectbook.com/2026/10/14/salon-du-vintage-ultimate-luxury-3-jours-au-coeur-du-marais-pour-denicher-des-objets-rares-mode-mobilier-vinyles",
+   "source": "Alerte Google - Guides shopping Paris (a creer)",
+   "date": "2026-10-14T11:24:17+00:00",
+   "categorie": "Tour-opérateur",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Identifier un contact chez cette agence, proposer un partenariat commission/co-package"
+  },
+  {
+   "titre": "Wilfried Morandini nommé directeur des opérations de LVMH Hotel Management",
+   "lien": "https://hospitality-on.com/fr/nomination/wilfried-morandini-nomme-directeur-des-operations-de-lvmh-hotel-management",
+   "source": "Alerte Google - Nominations hotellerie FR",
+   "date": "2026-10-14T11:30:43+00:00",
+   "categorie": "Nomination",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "Milan hotel room rates approached all-time high thanks to Grand Prix and Fashion Week",
+   "lien": "https://www.hospitalitynet.org/news/4134904/milan-hotel-room-rates-approached-all-time-high-thanks-to-grand-prix-and-fashion-week",
+   "source": "Hospitality Net",
+   "date": "2026-10-14T11:42:03+00:00",
    "categorie": "Événement",
    "priorite": "⚪",
    "zone": "",
