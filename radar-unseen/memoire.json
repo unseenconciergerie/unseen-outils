@@ -1165,7 +1165,12 @@
   "https://www.hospitalitynet.org/news/4134903/jeddah-hotel-performance-jumped-in-september": "2026-10-14",
   "https://freshmagparis.com/lhotel-du-palais-de-biarritz-sans-etoile-michelin-ni-label-palace-affiche-90-de-taux-doccupation-en-aout": "2026-10-14",
   "https://www.parisselectbook.com/2026/10/14/salon-du-vintage-ultimate-luxury-3-jours-au-coeur-du-marais-pour-denicher-des-objets-rares-mode-mobilier-vinyles": "2026-10-14",
-  "https://www.hospitalitynet.org/news/4134904/milan-hotel-room-rates-approached-all-time-high-thanks-to-grand-prix-and-fashion-week": "2026-10-14"
+  "https://www.hospitalitynet.org/news/4134904/milan-hotel-room-rates-approached-all-time-high-thanks-to-grand-prix-and-fashion-week": "2026-10-14",
+  "https://aviewfrommyseat.com/venue/La+Plenitude+Arena/103/2/22": "2026-10-14",
+  "https://glideparis.fr/fr/blog/plenitude-arena-paris-la-defense-arena": "2026-10-14",
+  "https://www.leboncoin.fr/ad/dvd_films/3288265931": "2026-10-14",
+  "https://www.facebook.com/purecharts/posts/%C3%A0-la-plenitude-arena-la-premi%C3%A8re-partie-sach%C3%A8ve-samedi-17-octobre-une-s%C3%A9rie-lucr/1558201486345535": "2026-10-14",
+  "https://robbreport.com/shelter/art-collectibles/le-large-art-museum-renault-factory-paris-1238757640": "2026-10-14"
  },
  "en_attente": [
   {
@@ -1507,6 +1512,56 @@
    "priorite": "⚪",
    "zone": "",
    "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "La Plenitude Arena, section 103, row 2, seat 22, home of Racing 92",
+   "lien": "https://aviewfrommyseat.com/venue/La+Plenitude+Arena/103/2/22",
+   "source": "Alerte Google - Plenitude Arena",
+   "date": "2026-10-14T06:07:18+00:00",
+   "categorie": "Événement",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "Plenitude Arena (ex-La Défense Arena) : accès et parking",
+   "lien": "https://glideparis.fr/fr/blog/plenitude-arena-paris-la-defense-arena",
+   "source": "Alerte Google - Plenitude Arena",
+   "date": "2026-10-14T09:49:09+00:00",
+   "categorie": "Événement",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "Celine Dion Blu Ray Non Officiel Hors Commerce Du Concert \"A La Plénitude Arena Le 12 ...",
+   "lien": "https://www.leboncoin.fr/ad/dvd_films/3288265931",
+   "source": "Alerte Google - Plenitude Arena",
+   "date": "2026-10-14T13:29:42+00:00",
+   "categorie": "Événement",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "À la Plenitude Arena, la première partie s'achève samedi 17 octobre. Une série lucrative ...",
+   "lien": "https://www.facebook.com/purecharts/posts/%C3%A0-la-plenitude-arena-la-premi%C3%A8re-partie-sach%C3%A8ve-samedi-17-octobre-une-s%C3%A9rie-lucr/1558201486345535",
+   "source": "Alerte Google - Plenitude Arena",
+   "date": "2026-10-14T14:36:50+00:00",
+   "categorie": "Événement",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "France’s New Contemporary Art Museum Has Opened in a Former Renault Factory",
+   "lien": "https://robbreport.com/shelter/art-collectibles/le-large-art-museum-renault-factory-paris-1238757640",
+   "source": "Robb Report",
+   "date": "2026-10-14T15:00:00+00:00",
+   "categorie": "Ouverture",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Demander un contact commercial ou une visite des lieux"
   }
  ]
 }
