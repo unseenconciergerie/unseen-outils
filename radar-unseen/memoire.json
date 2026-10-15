@@ -1222,7 +1222,13 @@
   "https://www.facebook.com/Ohmymag/posts/cyril-hanouna-%C3%A9mu-au-concert-de-c%C3%A9line-dion-%C3%A0-la-plenitude-arena-confession-amou/1459484126317666": "2026-10-15",
   "https://www.ohmymag.com/people/actu-people/art185376-cyril-hanouna-declare-sa-flamme-celine-dion-apres-un-concert-la-plenitude-arena.html": "2026-10-15",
   "https://www.closermag.fr/people/celine-dion-va-faire-ses-aux-revoir-a-la-plenitude-arena-retrouvailles-avec-ses-fils-et-studio-ce-qui-lattend-vraiment-avant-son-retour-a-paris-3663935": "2026-10-15",
-  "https://www.instagram.com/p/Degu8cpDDR1": "2026-10-15"
+  "https://www.instagram.com/p/Degu8cpDDR1": "2026-10-15",
+  "https://mesinfos.fr/77700-magny-le-hongre/l-hotel-crowne-plaza-a-ouvert-ses-portes-pres-de-disneyland-paris-340994.html": "2026-10-15",
+  "https://larevuedeshotels.com/hotel-king-fahd-palace-dakar-renovation-joj-2026": "2026-10-15",
+  "https://robbreport.com/travel/hotels/the-knox-auberge-collection-dallas-hotel-1238705747": "2026-10-15",
+  "https://www.seneweb.com/fr/news/Sport/un-joyau-national-le-constat-dalpha-thiam-lors-de-sa-visite-dinspection-au-king-fahd-palace_n_999000712.html": "2026-10-15",
+  "https://www.hospitalitynet.org/news/4134946/emerging-travel-group-and-agoda-enter-strategic-partnership": "2026-10-15",
+  "https://www.senenews.com/actualites/passation-de-services-outhmane-diagne-sen-prend-a-diomaye-cheikh-dieng-replique-sechement_602920.html": "2026-10-15"
  },
  "en_attente": [
   {
@@ -1574,6 +1580,66 @@
    "priorite": "⚪",
    "zone": "",
    "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "L'hôtel Crowne Plaza a ouvert ses portes près de Disneyland Paris",
+   "lien": "https://mesinfos.fr/77700-magny-le-hongre/l-hotel-crowne-plaza-a-ouvert-ses-portes-pres-de-disneyland-paris-340994.html",
+   "source": "Alerte Google - Ouvertures",
+   "date": "2026-10-15T05:56:05+00:00",
+   "categorie": "Ouverture",
+   "priorite": "🟠",
+   "zone": "Paris",
+   "action": "Demander un contact commercial ou une visite des lieux"
+  },
+  {
+   "titre": "King Fahd Palace à Dakar, rénové et complet pour les JOJ",
+   "lien": "https://larevuedeshotels.com/hotel-king-fahd-palace-dakar-renovation-joj-2026",
+   "source": "Alerte Google - Ouvertures",
+   "date": "2026-10-15T10:46:59+00:00",
+   "categorie": "Ouverture",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Demander un contact commercial ou une visite des lieux"
+  },
+  {
+   "titre": "Auberge Is Opening a Luxe New Hotel in Dallas. Here’s a Look Inside.",
+   "lien": "https://robbreport.com/travel/hotels/the-knox-auberge-collection-dallas-hotel-1238705747",
+   "source": "Robb Report",
+   "date": "2026-10-15T13:00:00+00:00",
+   "categorie": "Ouverture",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Demander un contact commercial ou une visite des lieux"
+  },
+  {
+   "titre": "« Un joyau national » : Le constat d'Alpha Thiam lors de sa visite d'inspection au King Fahd ...",
+   "lien": "https://www.seneweb.com/fr/news/Sport/un-joyau-national-le-constat-dalpha-thiam-lors-de-sa-visite-dinspection-au-king-fahd-palace_n_999000712.html",
+   "source": "Alerte Google - Nominations hotellerie FR",
+   "date": "2026-10-15T13:18:20+00:00",
+   "categorie": "Nomination",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "Emerging Travel Group and Agoda Enter Strategic Partnership",
+   "lien": "https://www.hospitalitynet.org/news/4134946/emerging-travel-group-and-agoda-enter-strategic-partnership",
+   "source": "Hospitality Net",
+   "date": "2026-10-15T13:53:45+00:00",
+   "categorie": "Tendance clientèle",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Lire et archiver : argument utile pour les propositions clients"
+  },
+  {
+   "titre": "Passation de services : Outhmane Diagne s'en prend à Diomaye, Cheikh Dieng réplique sèchement",
+   "lien": "https://www.senenews.com/actualites/passation-de-services-outhmane-diagne-sen-prend-a-diomaye-cheikh-dieng-replique-sechement_602920.html",
+   "source": "Alerte Google - Nominations hotellerie FR",
+   "date": "2026-10-15T14:43:21+00:00",
+   "categorie": "Nomination",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
   }
  ]
 }
