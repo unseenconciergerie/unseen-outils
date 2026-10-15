@@ -1219,7 +1219,10 @@
   "https://wwd.com/home-design/furniture/fritz-hansen-nyc-showroom-us-market-expansio-1239346605": "2026-10-15",
   "https://latribunedelhotellerie.com/xavier-destribats-directeur-hotel-du-palais-biarritz": "2026-10-15",
   "https://lepetitjournal.com/pekin/actualites/golden-week-2026-ou-sont-partis-les-chinois-cette-annee-456317": "2026-10-15",
-  "https://www.facebook.com/Ohmymag/posts/cyril-hanouna-%C3%A9mu-au-concert-de-c%C3%A9line-dion-%C3%A0-la-plenitude-arena-confession-amou/1459484126317666": "2026-10-15"
+  "https://www.facebook.com/Ohmymag/posts/cyril-hanouna-%C3%A9mu-au-concert-de-c%C3%A9line-dion-%C3%A0-la-plenitude-arena-confession-amou/1459484126317666": "2026-10-15",
+  "https://www.ohmymag.com/people/actu-people/art185376-cyril-hanouna-declare-sa-flamme-celine-dion-apres-un-concert-la-plenitude-arena.html": "2026-10-15",
+  "https://www.closermag.fr/people/celine-dion-va-faire-ses-aux-revoir-a-la-plenitude-arena-retrouvailles-avec-ses-fils-et-studio-ce-qui-lattend-vraiment-avant-son-retour-a-paris-3663935": "2026-10-15",
+  "https://www.instagram.com/p/Degu8cpDDR1": "2026-10-15"
  },
  "en_attente": [
   {
@@ -1537,6 +1540,36 @@
    "lien": "https://www.facebook.com/Ohmymag/posts/cyril-hanouna-%C3%A9mu-au-concert-de-c%C3%A9line-dion-%C3%A0-la-plenitude-arena-confession-amou/1459484126317666",
    "source": "Alerte Google - Plenitude Arena",
    "date": "2026-10-15T08:14:40+00:00",
+   "categorie": "Événement",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "Cyril Hanouna déclare sa flamme à Céline Dion après un concert à la Plenitude Arena",
+   "lien": "https://www.ohmymag.com/people/actu-people/art185376-cyril-hanouna-declare-sa-flamme-celine-dion-apres-un-concert-la-plenitude-arena.html",
+   "source": "Alerte Google - Plenitude Arena",
+   "date": "2026-10-15T07:15:09+00:00",
+   "categorie": "Événement",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "Céline Dion va faire ses aux revoir à la Plénitude Arena : retrouvailles avec ses fils et studio ...",
+   "lien": "https://www.closermag.fr/people/celine-dion-va-faire-ses-aux-revoir-a-la-plenitude-arena-retrouvailles-avec-ses-fils-et-studio-ce-qui-lattend-vraiment-avant-son-retour-a-paris-3663935",
+   "source": "Alerte Google - Plenitude Arena",
+   "date": "2026-10-15T08:16:10+00:00",
+   "categorie": "Événement",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "Pour l'une de ses dernières dates de concert à la Plénitude Arena, Céline Dion portait une ...",
+   "lien": "https://www.instagram.com/p/Degu8cpDDR1",
+   "source": "Alerte Google - Plenitude Arena",
+   "date": "2026-10-15T10:24:34+00:00",
    "categorie": "Événement",
    "priorite": "⚪",
    "zone": "",
