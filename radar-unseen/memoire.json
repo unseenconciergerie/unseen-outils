@@ -1336,7 +1336,12 @@
   "https://larevuedeshotels.com/resort-radisson-blu-golf-du-verger-lyon-ouverture-2029": "2026-10-17",
   "https://latribunedelhotellerie.com/vinpearl-dream-palace-can-gio-836-chambres-2027": "2026-10-17",
   "https://www.purepeople.com/article/a-lhotel-5-etoiles-de-patrick-bruel-dans-le-vaucluse-une-collaboratrice-sort-du-lot-cette-distinction-recompense-son-investissement_a555262/1": "2026-10-17",
-  "https://robbreport.com/motors/marine/superyacht-marinas-luxury-amenities-1238754422": "2026-10-17"
+  "https://robbreport.com/motors/marine/superyacht-marinas-luxury-amenities-1238754422": "2026-10-17",
+  "https://www.facebook.com/closerfrance/posts/c%C3%A9line-dion-triomphe-%C3%A0-paris-c%C3%A9line-dion-a-une-nouvelle-fois-enflamm%C3%A9-la-pl%C3%A9nit/1535677591923064": "2026-10-17",
+  "https://www.parisselectbook.com/2026/10/17/5-lieux-de-culture-dans-le-16e-arrondissement-de-paris-a-decouvrir-absolument": "2026-10-17",
+  "https://latribunedelhotellerie.com/may-co-rolex-cologne-projet-hotel": "2026-10-17",
+  "https://latribunedelhotellerie.com/actualite-hoteliere-internationale-17-octobre-2026": "2026-10-17",
+  "https://www.parisselectbook.com/2026/10/17/a-22-ans-cette-patissiere-des-yvelines-signe-le-meilleur-millefeuille-de-france-a-520e": "2026-10-17"
  },
  "en_attente": [
   {
@@ -1578,6 +1583,56 @@
    "priorite": "⚪",
    "zone": "Singapour",
    "action": "Lire et archiver : argument utile pour les propositions clients"
+  },
+  {
+   "titre": "Céline Dion triomphe à Paris ! Céline Dion a une nouvelle fois enflammé la Plénitude Arena lors ...",
+   "lien": "https://www.facebook.com/closerfrance/posts/c%C3%A9line-dion-triomphe-%C3%A0-paris-c%C3%A9line-dion-a-une-nouvelle-fois-enflamm%C3%A9-la-pl%C3%A9nit/1535677591923064",
+   "source": "Alerte Google - Plenitude Arena",
+   "date": "2026-10-17T16:17:53+00:00",
+   "categorie": "Événement",
+   "priorite": "🟠",
+   "zone": "Paris",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "5 lieux de culture dans le 16e arrondissement de Paris à découvrir absolument",
+   "lien": "https://www.parisselectbook.com/2026/10/17/5-lieux-de-culture-dans-le-16e-arrondissement-de-paris-a-decouvrir-absolument",
+   "source": "Alerte Google - Guides shopping Paris (a creer)",
+   "date": "2026-10-17T17:50:31+00:00",
+   "categorie": "Tour-opérateur",
+   "priorite": "🟠",
+   "zone": "Paris",
+   "action": "Identifier un contact chez cette agence, proposer un partenariat commission/co-package"
+  },
+  {
+   "titre": "Cologne : May & Co. acquiert l'ancien siège de Rolex pour un hôtel",
+   "lien": "https://latribunedelhotellerie.com/may-co-rolex-cologne-projet-hotel",
+   "source": "Alerte Google - Nominations hotellerie FR",
+   "date": "2026-10-17T07:32:37+00:00",
+   "categorie": "Nomination",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "360° | Actualité hôtelière du 17 octobre 2026",
+   "lien": "https://latribunedelhotellerie.com/actualite-hoteliere-internationale-17-octobre-2026",
+   "source": "Alerte Google - Nominations hotellerie FR",
+   "date": "2026-10-17T11:27:26+00:00",
+   "categorie": "Nomination",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "À 22 ans, cette pâtissière des Yvelines signe le meilleur millefeuille de France à 5,20€",
+   "lien": "https://www.parisselectbook.com/2026/10/17/a-22-ans-cette-patissiere-des-yvelines-signe-le-meilleur-millefeuille-de-france-a-520e",
+   "source": "Alerte Google - Guides shopping Paris (a creer)",
+   "date": "2026-10-17T12:45:34+00:00",
+   "categorie": "Tour-opérateur",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Identifier un contact chez cette agence, proposer un partenariat commission/co-package"
   }
  ]
 }
