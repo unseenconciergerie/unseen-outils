@@ -1331,7 +1331,12 @@
   "https://www.parisselectbook.com/2026/10/16/dolce-gabbana-habille-la-table-aux-etoiles-avec-dg-casa-zodiaco": "2026-10-17",
   "https://www.parisselectbook.com/2026/10/16/fendi-ressort-le-sac-croissant-de-ses-archives-pour-la-cruise-2027": "2026-10-17",
   "https://www.gala.fr/politique/brigitte-et-emmanuel-macron-au-concert-de-celine-dion-a-la-plenitude-arena-a-fond-dans-l-ambiance-la-premiere-dame-se-lache-20261017": "2026-10-17",
-  "https://actu.fr/ile-de-france/nanterre_92050/celine-dion-on-connait-le-montant-pharamineux-des-recettes-de-sa-residence-a-la-plenitude-arena_64934138.html": "2026-10-17"
+  "https://actu.fr/ile-de-france/nanterre_92050/celine-dion-on-connait-le-montant-pharamineux-des-recettes-de-sa-residence-a-la-plenitude-arena_64934138.html": "2026-10-17",
+  "https://www.traveldailymedia.com/ecos-dubai-hotel-unveils-flexible-winter-stay-offers": "2026-10-17",
+  "https://larevuedeshotels.com/resort-radisson-blu-golf-du-verger-lyon-ouverture-2029": "2026-10-17",
+  "https://latribunedelhotellerie.com/vinpearl-dream-palace-can-gio-836-chambres-2027": "2026-10-17",
+  "https://www.purepeople.com/article/a-lhotel-5-etoiles-de-patrick-bruel-dans-le-vaucluse-une-collaboratrice-sort-du-lot-cette-distinction-recompense-son-investissement_a555262/1": "2026-10-17",
+  "https://robbreport.com/motors/marine/superyacht-marinas-luxury-amenities-1238754422": "2026-10-17"
  },
  "en_attente": [
   {
@@ -1523,6 +1528,56 @@
    "priorite": "⚪",
    "zone": "",
    "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "ECOS Dubai Hotel unveils flexible winter stay offers",
+   "lien": "https://www.traveldailymedia.com/ecos-dubai-hotel-unveils-flexible-winter-stay-offers",
+   "source": "Alerte Google - Nominations internationales",
+   "date": "2026-10-17T12:03:00+00:00",
+   "categorie": "Nomination",
+   "priorite": "🟠",
+   "zone": "Dubaï",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "Radisson Blu Golf du Verger, un resort près de Lyon en 2029",
+   "lien": "https://larevuedeshotels.com/resort-radisson-blu-golf-du-verger-lyon-ouverture-2029",
+   "source": "Alerte Google - Ouvertures",
+   "date": "2026-10-17T09:44:58+00:00",
+   "categorie": "Ouverture",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Demander un contact commercial ou une visite des lieux"
+  },
+  {
+   "titre": "Vinpearl Dream Palace : 836 chambres au Vietnam en 2027",
+   "lien": "https://latribunedelhotellerie.com/vinpearl-dream-palace-can-gio-836-chambres-2027",
+   "source": "Alerte Google - Ouvertures",
+   "date": "2026-10-17T11:36:12+00:00",
+   "categorie": "Ouverture",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Demander un contact commercial ou une visite des lieux"
+  },
+  {
+   "titre": "A l'hôtel 5 étoiles de Patrick Bruel dans le Vaucluse, une collaboratrice sort du lot",
+   "lien": "https://www.purepeople.com/article/a-lhotel-5-etoiles-de-patrick-bruel-dans-le-vaucluse-une-collaboratrice-sort-du-lot-cette-distinction-recompense-son-investissement_a555262/1",
+   "source": "Alerte Google - Ouvertures",
+   "date": "2026-10-17T12:47:27+00:00",
+   "categorie": "Ouverture",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Demander un contact commercial ou une visite des lieux"
+  },
+  {
+   "titre": "Superyacht Marinas Are Transforming Into Luxury Destinations That’ll Rival Your Yacht Club",
+   "lien": "https://robbreport.com/motors/marine/superyacht-marinas-luxury-amenities-1238754422",
+   "source": "Robb Report",
+   "date": "2026-10-17T13:00:00+00:00",
+   "categorie": "Tendance clientèle",
+   "priorite": "⚪",
+   "zone": "Singapour",
+   "action": "Lire et archiver : argument utile pour les propositions clients"
   }
  ]
 }
