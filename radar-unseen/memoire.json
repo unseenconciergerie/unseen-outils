@@ -1372,7 +1372,12 @@
   "https://www.instagram.com/p/DeoPqQ6CI0V": "2026-10-18",
   "https://www.defense-92.fr/musique/celine-dion-acheve-en-beaute-sa-premiere-residence-a-la-plenitude-arena-88963": "2026-10-18",
   "https://www.facebook.com/MadameFigaro/videos/l%C3%A9motion-de-c%C3%A9line-dion-pour-son-dernier-concert-%C3%A0-la-plenitude-arena-avant-mai-/1788684618914604": "2026-10-18",
-  "https://www.parismatch.be/actualites/people/2026/10/18/avant-son-dernier-concert-a-paris-celine-dion-a-honore-un-nouveau-rendez-vous-avec-ses-fans-vetue-de-lune-de-ses-marques-fetiches-7W2EAGKUCNGYBCSL4FFOZGWAD4": "2026-10-18"
+  "https://www.parismatch.be/actualites/people/2026/10/18/avant-son-dernier-concert-a-paris-celine-dion-a-honore-un-nouveau-rendez-vous-avec-ses-fans-vetue-de-lune-de-ses-marques-fetiches-7W2EAGKUCNGYBCSL4FFOZGWAD4": "2026-10-18",
+  "https://redon.maville.com/sortir/infos_-celine-dion-a-paris-pour-son-dernier-concert-a-la-plenitude-arena-les-larmes-de-la-queen-ont-coule_54135-7533164_actu.Htm": "2026-10-18",
+  "https://brignoles.maville.com/sortir/infos_-celine-dion-a-paris-pour-son-dernier-concert-a-la-plenitude-arena-les-larmes-de-la-queen-ont-coule_54135-7533164_actu.Htm": "2026-10-18",
+  "https://www.parisselectbook.com/2026/10/18/wes-gordon-signe-les-lunettes-carolina-herrera-pour-lautomne-2026": "2026-10-18",
+  "https://www.instagram.com/reel/DenFToIMLSf": "2026-10-18",
+  "https://wwd.com/business-news/retail/chanel-to-open-wuhan-store-skp-1239372362": "2026-10-18"
  },
  "en_attente": [
   {
@@ -1674,6 +1679,56 @@
    "priorite": "⚪",
    "zone": "",
    "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "Céline Dion à Paris : pour son dernier concert à la Plenitude Arena, les larmes de la",
+   "lien": "https://redon.maville.com/sortir/infos_-celine-dion-a-paris-pour-son-dernier-concert-a-la-plenitude-arena-les-larmes-de-la-queen-ont-coule_54135-7533164_actu.Htm",
+   "source": "Alerte Google - Plenitude Arena",
+   "date": "2026-10-18T10:02:03+00:00",
+   "categorie": "Événement",
+   "priorite": "🟠",
+   "zone": "Paris",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "Céline Dion à Paris : pour son dernier concert à la Plenitude Arena, les larmes de la",
+   "lien": "https://brignoles.maville.com/sortir/infos_-celine-dion-a-paris-pour-son-dernier-concert-a-la-plenitude-arena-les-larmes-de-la-queen-ont-coule_54135-7533164_actu.Htm",
+   "source": "Alerte Google - Plenitude Arena",
+   "date": "2026-10-18T14:28:46+00:00",
+   "categorie": "Événement",
+   "priorite": "🟠",
+   "zone": "Paris",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "Wes Gordon signe les lunettes Carolina Herrera pour l'automne 2026",
+   "lien": "https://www.parisselectbook.com/2026/10/18/wes-gordon-signe-les-lunettes-carolina-herrera-pour-lautomne-2026",
+   "source": "Alerte Google - Guides shopping Paris (a creer)",
+   "date": "2026-10-18T12:05:40+00:00",
+   "categorie": "Tour-opérateur",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Identifier un contact chez cette agence, proposer un partenariat commission/co-package"
+  },
+  {
+   "titre": "L'émotion de @celinedion pour son dernier concert à la Plenitude Arena avant mai prochain ...",
+   "lien": "https://www.instagram.com/reel/DenFToIMLSf",
+   "source": "Alerte Google - Plenitude Arena",
+   "date": "2026-10-18T13:41:16+00:00",
+   "categorie": "Événement",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "Chanel to Open First Wuhan Store at SKP",
+   "lien": "https://wwd.com/business-news/retail/chanel-to-open-wuhan-store-skp-1239372362",
+   "source": "WWD",
+   "date": "2026-10-18T15:03:37+00:00",
+   "categorie": "Ouverture",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Demander un contact commercial ou une visite des lieux"
   }
  ]
 }
