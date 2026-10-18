@@ -1377,7 +1377,14 @@
   "https://brignoles.maville.com/sortir/infos_-celine-dion-a-paris-pour-son-dernier-concert-a-la-plenitude-arena-les-larmes-de-la-queen-ont-coule_54135-7533164_actu.Htm": "2026-10-18",
   "https://www.parisselectbook.com/2026/10/18/wes-gordon-signe-les-lunettes-carolina-herrera-pour-lautomne-2026": "2026-10-18",
   "https://www.instagram.com/reel/DenFToIMLSf": "2026-10-18",
-  "https://wwd.com/business-news/retail/chanel-to-open-wuhan-store-skp-1239372362": "2026-10-18"
+  "https://wwd.com/business-news/retail/chanel-to-open-wuhan-store-skp-1239372362": "2026-10-18",
+  "https://actu.orange.fr/videos/economie/hotels-paris-revient-elle-dans-la-course-1-3-24-12-CNT000002t3Pd2.html": "2026-10-18",
+  "https://pixidia.com/harbin-festival-glace-2026-2027": "2026-10-18",
+  "https://actu.orange.fr/videos/economie/l-evolution-des-activites-de-john-paul-david-amsellem-dans-gmb-26-02-CNT000002t2gxk.html": "2026-10-18",
+  "https://indovizka.com/news/detail/23338/gtcfx-mengangkat-abdulrahman-ahmed-al-ali-sebagai-general-manager-memperkuat-kepemimpinan-dengan-keahlian-mendalam-di-bidang-regulasi": "2026-10-18",
+  "https://www.instagram.com/p/DeonEcUIF21": "2026-10-18",
+  "http://defimedia.info/inde-lacteur-tiger-shroff-vise-par-des-tirs-mumbai-deux-blesses": "2026-10-18",
+  "http://defimedia.info/elodie-thomas-blessee-par-balle-dr-kapil-khandelwal-neurochirurgien-indien-jetais-persuade-que": "2026-10-18"
  },
  "en_attente": [
   {
@@ -1729,6 +1736,76 @@
    "priorite": "⚪",
    "zone": "",
    "action": "Demander un contact commercial ou une visite des lieux"
+  },
+  {
+   "titre": "Hôtels: Paris revient-elle dans la course ? (1/3) - 24/12 : Actualités",
+   "lien": "https://actu.orange.fr/videos/economie/hotels-paris-revient-elle-dans-la-course-1-3-24-12-CNT000002t3Pd2.html",
+   "source": "Alerte Google - Concurrence",
+   "date": "2026-10-18T12:40:12+00:00",
+   "categorie": "Concurrent",
+   "priorite": "🟠",
+   "zone": "Paris",
+   "action": "Observer le positionnement et l'offre. Ne pas contacter"
+  },
+  {
+   "titre": "Festival de glace Harbin 2026-2027 : dates, visa et conseils",
+   "lien": "https://pixidia.com/harbin-festival-glace-2026-2027",
+   "source": "Alerte Google - Tourisme chinois France, tendance (a creer)",
+   "date": "2026-10-18T08:40:58+00:00",
+   "categorie": "Tour-opérateur",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Identifier un contact chez cette agence, proposer un partenariat commission/co-package"
+  },
+  {
+   "titre": "L'évolution des activités de John Paul: David Amsellem, dans GMB – 26/02",
+   "lien": "https://actu.orange.fr/videos/economie/l-evolution-des-activites-de-john-paul-david-amsellem-dans-gmb-26-02-CNT000002t2gxk.html",
+   "source": "Alerte Google - Concurrence",
+   "date": "2026-10-18T10:15:47+00:00",
+   "categorie": "Concurrent",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Observer le positionnement et l'offre. Ne pas contacter"
+  },
+  {
+   "titre": "GTCFX Mengangkat Abdulrahman Ahmed Al Ali sebagai General Manager, Memperkuat ...",
+   "lien": "https://indovizka.com/news/detail/23338/gtcfx-mengangkat-abdulrahman-ahmed-al-ali-sebagai-general-manager-memperkuat-kepemimpinan-dengan-keahlian-mendalam-di-bidang-regulasi",
+   "source": "Alerte Google - Nominations internationales",
+   "date": "2026-10-18T11:49:21+00:00",
+   "categorie": "Nomination",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "Leto se produira à la Plenitude Arena, le samedi 11 décembre 2027. Deux ans après ...",
+   "lien": "https://www.instagram.com/p/DeonEcUIF21",
+   "source": "Alerte Google - Plenitude Arena",
+   "date": "2026-10-18T12:47:48+00:00",
+   "categorie": "Événement",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "Inde : l’acteur Tiger Shroff visé par des tirs à Mumbai, deux blessés",
+   "lien": "http://defimedia.info/inde-lacteur-tiger-shroff-vise-par-des-tirs-mumbai-deux-blesses",
+   "source": "Defimedia",
+   "date": "2026-10-18T18:07:08.932621+00:00",
+   "categorie": "Tendance clientèle",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Lire et archiver : argument utile pour les propositions clients"
+  },
+  {
+   "titre": "Elodie Thomas blessée par balle - Dr Kapil Khandelwal, neurochirurgien indien : «J’étais persuadé que l’opération serait un succès absolu»",
+   "lien": "http://defimedia.info/elodie-thomas-blessee-par-balle-dr-kapil-khandelwal-neurochirurgien-indien-jetais-persuade-que",
+   "source": "Defimedia",
+   "date": "2026-10-18T18:07:08.933206+00:00",
+   "categorie": "Tendance clientèle",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Lire et archiver : argument utile pour les propositions clients"
   }
  ]
 }
