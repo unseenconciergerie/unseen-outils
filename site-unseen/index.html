@@ -188,6 +188,7 @@ svg.leaflet-zoom-animated{will-change:transform}
    ============================================================= */
 :root{
   --accent:#1E4636;
+  --sur-accent:#FFFFFF;   /* texte posé sur la couleur d'accent : blanc si l'accent est foncé, #000000 s'il est clair */
   --noir:#000000;
   --blanc:#FFFFFF;
   --bleu-clair:#F4F6FC;
@@ -301,7 +302,7 @@ section[id],div[id]{scroll-margin-top:88px}
 .cta-row{margin-top:44px;display:flex;gap:16px;flex-wrap:wrap}
 .btn{display:inline-block;padding:17px 34px;font-size:13px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;text-decoration:none;border:1px solid currentColor;color:var(--blanc);transition:background .18s,color .18s,border-color .18s}
 .btn:hover,.btn:focus-visible{background:var(--blanc);color:var(--noir)}
-.btn-accent{background:var(--accent);border-color:var(--accent);color:var(--noir)}
+.btn-accent{background:var(--accent);border-color:var(--accent);color:var(--sur-accent)}
 .btn-accent:hover,.btn-accent:focus-visible{background:var(--blanc);border-color:var(--blanc);color:var(--noir)}
 @media(max-width:600px){.hero-in{padding:82px var(--pad) 74px}.hero .veil{background:linear-gradient(180deg,rgba(0,0,0,.70) 0%,rgba(0,0,0,.86) 100%)}}
 
@@ -361,7 +362,7 @@ h2{font-weight:800;font-size:clamp(30px,4.2vw,46px);line-height:1.05;letter-spac
 .leaflet-control-attribution{background:rgba(0,0,0,.55)!important;color:#8A8A8A!important;font-size:10px!important}
 .leaflet-control-attribution a{color:#B4B4B4!important}
 .leaflet-control-zoom a{background:#111!important;color:#FFF!important;border-color:rgba(255,255,255,.2)!important}
-.leaflet-control-zoom a:hover{background:var(--accent)!important;color:#111!important}
+.leaflet-control-zoom a:hover{background:var(--accent)!important;color:var(--sur-accent)!important}
 .leaflet-popup-tip,.leaflet-popup-content-wrapper{background:#111!important;color:#EDEDED!important}
 .mapcard{max-height:440px;overflow-y:auto;padding-right:8px;scrollbar-width:thin}
 .mapcard::-webkit-scrollbar{width:6px}
@@ -536,7 +537,7 @@ form.enq{margin-top:40px;max-width:840px}
 .agree-msg{display:none;font-size:13px;color:#E0705F;margin:0 0 20px 30px}
 .agree-msg.on{display:block}
 .enq-actions{display:flex;flex-wrap:wrap;gap:22px;align-items:center;margin-top:26px}
-button.btn{cursor:pointer;font-family:'Montserrat',system-ui,sans-serif}
+button.btn{background:transparent;cursor:pointer;font-family:'Montserrat',system-ui,sans-serif}
 .enq-alt{font-size:14.5px;color:#8A8A8A}
 .enq-alt a{color:#D6D6D6;text-decoration:none;border-bottom:1px solid var(--accent);padding-bottom:2px;cursor:pointer}
 .enq-alt a:hover{color:var(--accent)}
