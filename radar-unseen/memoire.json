@@ -1421,7 +1421,11 @@
   "https://www.defense-92.fr/musique/le-rappeur-leto-sattaque-a-la-plenitude-arena-88972": "2026-10-19",
   "https://www.ohmymag.com/people/actu-people/art185775-marine-le-pen-apercue-discretement-au-concert-de-celine-dion-la-plenitude-arena.html": "2026-10-19",
   "https://www.tiktok.com/@adri1lm/video/7697779060398755104": "2026-10-19",
-  "https://www.gala.fr/l_actu/news_de_stars/apres-52-jours-et-16-concerts-a-la-plenitude-arena-celine-dion-quitte-le-royal-monceau-ses-jumeaux-nelson-et-eddy-et-son-chien-madison-a-ses-cotes-pour-un-depart-charge-d-emotion-20261019": "2026-10-19"
+  "https://www.gala.fr/l_actu/news_de_stars/apres-52-jours-et-16-concerts-a-la-plenitude-arena-celine-dion-quitte-le-royal-monceau-ses-jumeaux-nelson-et-eddy-et-son-chien-madison-a-ses-cotes-pour-un-depart-charge-d-emotion-20261019": "2026-10-19",
+  "https://vogueadria.com/paris-wellness-guide-amandine-fornot-top-10-places": "2026-10-19",
+  "https://www.premiumbeautynews.com/en/guillaume-gellusseau-to-lead-brand,28369": "2026-10-19",
+  "https://www.parisselectbook.com/2026/10/19/kate-middleton-affiche-un-look-automnal-parfait-aux-cotes-de-william-a-belfast-pour-homewards": "2026-10-19",
+  "https://wwd.com/footwear-news/shoe-industry-news/brunch-shoes-nolita-nyc-store-details-1239373195": "2026-10-19"
  },
  "en_attente": [
   {
@@ -1793,6 +1797,46 @@
    "priorite": "⚪",
    "zone": "",
    "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "The author of Paris Wellness Guide shares her 10 favourite wellness spots",
+   "lien": "https://vogueadria.com/paris-wellness-guide-amandine-fornot-top-10-places",
+   "source": "Alerte Google - Guides shopping Paris (a creer)",
+   "date": "2026-10-19T13:14:04+00:00",
+   "categorie": "Tour-opérateur",
+   "priorite": "🟠",
+   "zone": "Paris",
+   "action": "Identifier un contact chez cette agence, proposer un partenariat commission/co-package"
+  },
+  {
+   "titre": "Guillaume Gellusseau to lead brand strategy for Kilian Paris and Frédéric Malle",
+   "lien": "https://www.premiumbeautynews.com/en/guillaume-gellusseau-to-lead-brand,28369",
+   "source": "Alerte Google - Guides shopping Paris (a creer)",
+   "date": "2026-10-19T14:50:45+00:00",
+   "categorie": "Tour-opérateur",
+   "priorite": "🟠",
+   "zone": "Paris",
+   "action": "Identifier un contact chez cette agence, proposer un partenariat commission/co-package"
+  },
+  {
+   "titre": "Kate Middleton affiche un look automnal parfait aux côtés de William à Belfast pour Homewards",
+   "lien": "https://www.parisselectbook.com/2026/10/19/kate-middleton-affiche-un-look-automnal-parfait-aux-cotes-de-william-a-belfast-pour-homewards",
+   "source": "Alerte Google - Guides shopping Paris (a creer)",
+   "date": "2026-10-19T12:25:52+00:00",
+   "categorie": "Tour-opérateur",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Identifier un contact chez cette agence, proposer un partenariat commission/co-package"
+  },
+  {
+   "titre": "After Years of Pop-ups, Brunch Opens First Permanent Location in Nolita",
+   "lien": "https://wwd.com/footwear-news/shoe-industry-news/brunch-shoes-nolita-nyc-store-details-1239373195",
+   "source": "WWD",
+   "date": "2026-10-19T14:11:16+00:00",
+   "categorie": "Ouverture",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Demander un contact commercial ou une visite des lieux"
   }
  ]
 }
