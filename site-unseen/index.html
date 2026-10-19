@@ -177,17 +177,17 @@ svg.leaflet-zoom-animated{will-change:transform}
    Pour changer de saison, ne modifiez QUE la ligne --accent.
    Charte 3.2 : une seule couleur d'accent a la fois.
 
-   #F09D54  Orange abricot   South of France / Summer   [ACTIF]
-   #C51500  Rouge vif        Formula 1 Grand Prix
-   #0C5A38  Vert sapin       Winter season / New Year's Eve
-   #B8923D  Or               Cannes Film Festival
-   #1C6E9C  Azur             French Riviera / Yachting
-   #16C8FF  Bleu glacier     Ski season / Alps
-   #5C2A45  Prune            Fashion Week
-   #D9D1C3  Sable            St Barth / Winter escape
+   #D08A5C  Orange abricot   South of France / Summer
+   #A3161A  Rouge vif        Formula 1 Grand Prix
+   #1E4636  Vert sapin       Winter season / New Year's Eve   [ACTIF]
+   #A8823A  Or               Cannes Film Festival
+   #1F5E8A  Azur             French Riviera / Yachting
+   #7AA3BC  Bleu glacier     Ski season / Alps
+   #4B2236  Prune            Fashion Week
+   #CFC3AE  Sable            St Barth / Winter escape
    ============================================================= */
 :root{
-  --accent:#F09D54;
+  --accent:#1E4636;
   --noir:#000000;
   --blanc:#FFFFFF;
   --bleu-clair:#F4F6FC;
@@ -1113,7 +1113,7 @@ button.btn{cursor:pointer;font-family:'Montserrat',system-ui,sans-serif}
   var tabs = document.getElementById('maptabs');
   if (!stageWrap || !card || typeof L === 'undefined') return;
 
-  var accent = (getComputedStyle(document.documentElement).getPropertyValue('--accent') || '').trim() || '#F09D54';
+  var accent = (getComputedStyle(document.documentElement).getPropertyValue('--accent') || '').trim() || '#D08A5C';
   var GREY = '#D9D9D9';
 
   var TYPES = {

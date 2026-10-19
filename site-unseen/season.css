@@ -12,16 +12,16 @@
 
    Regle de la charte 3.2 : une seule couleur d'accent a la fois.
 
-     #F09D54   Orange abricot   Sud de la France / ete
-     #C51500   Rouge vif        Grand Prix de Formule 1
-     #0C5A38   Vert sapin       Saison hivernale / Nouvel An
-     #B8923D   Or               Festival de Cannes
-     #1C6E9C   Azur             Riviera / yachting
-     #16C8FF   Bleu glacier     Saison de ski / Alpes
-     #5C2A45   Prune            Fashion Week
-     #D9D1C3   Sable            St Barth / echappee hivernale
+     #D08A5C   Orange abricot   Sud de la France / ete
+     #A3161A   Rouge vif        Grand Prix de Formule 1
+     #1E4636   Vert sapin       Saison hivernale / Nouvel An
+     #A8823A   Or               Festival de Cannes
+     #1F5E8A   Azur             Riviera / yachting
+     #7AA3BC   Bleu glacier     Saison de ski / Alpes
+     #4B2236   Prune            Fashion Week
+     #CFC3AE   Sable            St Barth / echappee hivernale
    ================================================================= */
 
 :root{
-  --accent:#0C5A38;   /* SAISON ACTIVE : Vert sapin, saison hivernale */
+  --accent:#1E4636;   /* SAISON ACTIVE : Vert sapin, saison hivernale */
 }
