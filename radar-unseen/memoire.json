@@ -1488,7 +1488,17 @@
   "https://www.21news.be/sous-les-frappes-des-houthis-larabie-saoudite-renonce-a-son-davos-du-desert": "2026-10-20",
   "https://larevuedeshotels.com/violences-17-octobre-hotels-luxe-touches-france": "2026-10-20",
   "https://www.yonder.fr/news/hotels/ouverture-anantara-zambie-safari": "2026-10-20",
-  "https://www.instagram.com/p/DetYWB0EjsQ": "2026-10-20"
+  "https://www.instagram.com/p/DetYWB0EjsQ": "2026-10-20",
+  "https://www.observatoiredeleurope.com/lisbonne-nommee-meilleure-ville-et-destination-de-croisiere-deurope-pour-2026_a96054.html": "2026-10-20",
+  "https://www.visa-algerie.com/voyage-france-algerie-3-dates-a-eviter-pendant-les-manifestations-et-les-greves": "2026-10-20",
+  "https://www.sportbuzzbusiness.fr/amine-et-squeezie-annoncent-the-final-slam-un-evenement-de-catch-a-la-plenitude-arena.html": "2026-10-20",
+  "https://www.defense-92.fr/spectacle/the-finalslam-amine-et-squeezie-vont-saffronter-dans-un-show-de-catch-a-la-plenitude-arena-88985": "2026-10-20",
+  "https://toutelathailande.fr/arrivees-touristes-etrangers-thailande-reculent-412": "2026-10-20",
+  "https://hospitality-on.com/fr/ouverture/florence-la-reserve-ouvre-sa-premiere-adresse-italienne-en-plein-boom-du-luxe-hotelier": "2026-10-20",
+  "https://visasnews.com/visa-schengen-lue-ouvre-la-voie-a-une-exemption-pour-cinq-pays-du-golfe": "2026-10-20",
+  "https://www.hospitalitynet.org/news/4135001/hvs-europe-hotel-transactions-bulletin-week-ending-16-october-2026": "2026-10-20",
+  "https://hospitality-on.com/fr/gestion-operationnelle/chronique-dun-depart-anticipe-barbara-muckermann-ex-ceo-de-kempinski-na-pas": "2026-10-20",
+  "https://www.hospitalitynet.org/news/4135004/hilton-and-scandic-sign-new-nordics-strategic-agreement": "2026-10-20"
  },
  "en_attente": [
   {
@@ -1860,6 +1870,106 @@
    "priorite": "⚪",
    "zone": "",
    "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "Lisbonne nommée meilleure ville et destination de croisière d'Europe pour 2026",
+   "lien": "https://www.observatoiredeleurope.com/lisbonne-nommee-meilleure-ville-et-destination-de-croisiere-deurope-pour-2026_a96054.html",
+   "source": "Alerte Google - Nominations hotellerie FR",
+   "date": "2026-10-20T05:46:44+00:00",
+   "categorie": "Nomination",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "Voyage France - Algérie : 3 dates à éviter pendant les manifestations et les grèves",
+   "lien": "https://www.visa-algerie.com/voyage-france-algerie-3-dates-a-eviter-pendant-les-manifestations-et-les-greves",
+   "source": "Alerte Google - Vols et visas Chine-Golfe vers France (a creer)",
+   "date": "2026-10-20T07:16:49+00:00",
+   "categorie": "Tour-opérateur",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Identifier un contact chez cette agence, proposer un partenariat commission/co-package"
+  },
+  {
+   "titre": "Amine et Squeezie annoncent The Final Slam, un événement de catch à la Plenitude Arena",
+   "lien": "https://www.sportbuzzbusiness.fr/amine-et-squeezie-annoncent-the-final-slam-un-evenement-de-catch-a-la-plenitude-arena.html",
+   "source": "Alerte Google - Plenitude Arena",
+   "date": "2026-10-20T08:16:48+00:00",
+   "categorie": "Événement",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "The FinalSlam : Amine et Squeezie vont s'affronter dans un show de catch à la Plenitude Arena",
+   "lien": "https://www.defense-92.fr/spectacle/the-finalslam-amine-et-squeezie-vont-saffronter-dans-un-show-de-catch-a-la-plenitude-arena-88985",
+   "source": "Alerte Google - Plenitude Arena",
+   "date": "2026-10-20T08:43:54+00:00",
+   "categorie": "Événement",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "Les arrivées de touristes étrangers en Thaïlande reculent de 4,12 %",
+   "lien": "https://toutelathailande.fr/arrivees-touristes-etrangers-thailande-reculent-412",
+   "source": "Alerte Google - Tourisme chinois France, tendance (a creer)",
+   "date": "2026-10-20T09:31:58+00:00",
+   "categorie": "Tour-opérateur",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Identifier un contact chez cette agence, proposer un partenariat commission/co-package"
+  },
+  {
+   "titre": "À Florence, La Réserve ouvre sa première adresse italienne en plein boom du luxe hôtelier",
+   "lien": "https://hospitality-on.com/fr/ouverture/florence-la-reserve-ouvre-sa-premiere-adresse-italienne-en-plein-boom-du-luxe-hotelier",
+   "source": "Hospitality ON",
+   "date": "2026-10-20T09:46:26+00:00",
+   "categorie": "Ouverture",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Demander un contact commercial ou une visite des lieux"
+  },
+  {
+   "titre": "Visa Schengen : l'UE ouvre la voie à une exemption pour cinq pays du Golfe",
+   "lien": "https://visasnews.com/visa-schengen-lue-ouvre-la-voie-a-une-exemption-pour-cinq-pays-du-golfe",
+   "source": "Alerte Google - Vols et visas Chine-Golfe vers France (a creer)",
+   "date": "2026-10-20T09:49:27+00:00",
+   "categorie": "Ouverture",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Demander un contact commercial ou une visite des lieux"
+  },
+  {
+   "titre": "HVS Europe Hotel Transactions Bulletin - Week Ending 16 October 2026",
+   "lien": "https://www.hospitalitynet.org/news/4135001/hvs-europe-hotel-transactions-bulletin-week-ending-16-october-2026",
+   "source": "Hospitality Net",
+   "date": "2026-10-20T10:09:16+00:00",
+   "categorie": "Tendance clientèle",
+   "priorite": "⚪",
+   "zone": "Dubaï",
+   "action": "Lire et archiver : argument utile pour les propositions clients"
+  },
+  {
+   "titre": "Chronique d’un départ anticipé, Barbara Muckermann, ex-CEO de Kempinski, n’a pas réussi son pari",
+   "lien": "https://hospitality-on.com/fr/gestion-operationnelle/chronique-dun-depart-anticipe-barbara-muckermann-ex-ceo-de-kempinski-na-pas",
+   "source": "Hospitality ON",
+   "date": "2026-10-20T10:45:22+00:00",
+   "categorie": "Nomination",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "Hilton and Scandic Sign New Nordics Strategic Agreement",
+   "lien": "https://www.hospitalitynet.org/news/4135004/hilton-and-scandic-sign-new-nordics-strategic-agreement",
+   "source": "Hospitality Net",
+   "date": "2026-10-20T12:08:40+00:00",
+   "categorie": "Ouverture",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Demander un contact commercial ou une visite des lieux"
   }
  ]
 }
