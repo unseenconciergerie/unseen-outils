@@ -1498,7 +1498,19 @@
   "https://visasnews.com/visa-schengen-lue-ouvre-la-voie-a-une-exemption-pour-cinq-pays-du-golfe": "2026-10-20",
   "https://www.hospitalitynet.org/news/4135001/hvs-europe-hotel-transactions-bulletin-week-ending-16-october-2026": "2026-10-20",
   "https://hospitality-on.com/fr/gestion-operationnelle/chronique-dun-depart-anticipe-barbara-muckermann-ex-ceo-de-kempinski-na-pas": "2026-10-20",
-  "https://www.hospitalitynet.org/news/4135004/hilton-and-scandic-sign-new-nordics-strategic-agreement": "2026-10-20"
+  "https://www.hospitalitynet.org/news/4135004/hilton-and-scandic-sign-new-nordics-strategic-agreement": "2026-10-20",
+  "https://redon.maville.com/actu/actudet_-ce-train-de-luxe-mythique-reliant-paris-a-venise-desservira-monaco-en-2027_54135-7535212_actu.Htm": "2026-10-20",
+  "https://larevuedeshotels.com/tea-time-noel-2026-peninsula-paris-anne-coruble": "2026-10-20",
+  "https://www.sortiraparis.com/actualites/a-paris/guides/53380-que-faire-cette-semaine-du-19-au-25-octobre-2026-vos-sorties-pour-une-semaine-memorable-a-paris": "2026-10-20",
+  "https://www.parisselectbook.com/2026/10/20/jai-teste-ce-gloss-coreen-2-en-1-repulpant-de-laneige-et-mes-levres-paraissent-plus-rebondies-en-quelques-secondes": "2026-10-20",
+  "https://www.frenchentree.com/living-in-france/a-guide-to-belle-epoque-architecture-in-france": "2026-10-20",
+  "https://www.socialrama.fr/events-amine-officialise-the-finalslam-un-show-de-catch-a-la-plenitude-arena-avec-squeezie": "2026-10-20",
+  "https://www.ozap.com/actu/the-finalslam-amine-annonce-un-immense-show-de-catch-a-la-plenitude-arena-avec-squeezie-inoxtag-ou-encore-mister-v/657555": "2026-10-20",
+  "https://www.parisselectbook.com/2026/10/20/5-sorties-culturelles-dans-le-15e-arrondissement-que-vous-ne-soupconnez-pas": "2026-10-20",
+  "https://hospitality-on.com/fr/developpement/bb-home-ouvre-un-10e-etablissement-bruxelles-sur-le-theme-de-la-bande-dessinee": "2026-10-20",
+  "https://robbreport.com/partners/elevate-jet-more-personalized-jet-experience-1238756755": "2026-10-20",
+  "https://hospitality-on.com/fr/hotellerie/richard-cooke-rejoint-dorchester-collection-et-la-tete-de-lhotel-bel-air": "2026-10-20",
+  "https://robbreport.com/shelter/art-collectibles/art-basel-miami-beach-threatened-move-las-vegas-1238778843": "2026-10-20"
  },
  "en_attente": [
   {
@@ -1970,6 +1982,126 @@
    "priorite": "⚪",
    "zone": "",
    "action": "Demander un contact commercial ou une visite des lieux"
+  },
+  {
+   "titre": "Ce train de luxe mythique reliant Paris à Venise desservira Monaco en 2027",
+   "lien": "https://redon.maville.com/actu/actudet_-ce-train-de-luxe-mythique-reliant-paris-a-venise-desservira-monaco-en-2027_54135-7535212_actu.Htm",
+   "source": "Alerte Google - Guides shopping Paris (a creer)",
+   "date": "2026-10-20T05:30:43+00:00",
+   "categorie": "Tour-opérateur",
+   "priorite": "🟠",
+   "zone": "Paris",
+   "action": "Identifier un contact chez cette agence, proposer un partenariat commission/co-package"
+  },
+  {
+   "titre": "Tea time de Noël 2026 au Peninsula Paris : prix et carte",
+   "lien": "https://larevuedeshotels.com/tea-time-noel-2026-peninsula-paris-anne-coruble",
+   "source": "Alerte Google - Ouvertures",
+   "date": "2026-10-20T06:36:52+00:00",
+   "categorie": "Ouverture",
+   "priorite": "🟠",
+   "zone": "Paris",
+   "action": "Demander un contact commercial ou une visite des lieux"
+  },
+  {
+   "titre": "Que faire cette semaine du 19 au 25 octobre 2026 : vos sorties pour une semaine mémorable à Paris",
+   "lien": "https://www.sortiraparis.com/actualites/a-paris/guides/53380-que-faire-cette-semaine-du-19-au-25-octobre-2026-vos-sorties-pour-une-semaine-memorable-a-paris",
+   "source": "Alerte Google - Ouvertures",
+   "date": "2026-10-20T09:18:42+00:00",
+   "categorie": "Ouverture",
+   "priorite": "🟠",
+   "zone": "Paris",
+   "action": "Demander un contact commercial ou une visite des lieux"
+  },
+  {
+   "titre": "J'ai testé ce gloss coréen 2-en-1 repulpant de Laneige et mes lèvres paraissent plus ...",
+   "lien": "https://www.parisselectbook.com/2026/10/20/jai-teste-ce-gloss-coreen-2-en-1-repulpant-de-laneige-et-mes-levres-paraissent-plus-rebondies-en-quelques-secondes",
+   "source": "Alerte Google - Guides shopping Paris (a creer)",
+   "date": "2026-10-20T08:57:11+00:00",
+   "categorie": "Tour-opérateur",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Identifier un contact chez cette agence, proposer un partenariat commission/co-package"
+  },
+  {
+   "titre": "A Guide to Belle Époque Architecture in France",
+   "lien": "https://www.frenchentree.com/living-in-france/a-guide-to-belle-epoque-architecture-in-france",
+   "source": "Alerte Google - Guides shopping Paris (a creer)",
+   "date": "2026-10-20T10:20:11+00:00",
+   "categorie": "Tour-opérateur",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Identifier un contact chez cette agence, proposer un partenariat commission/co-package"
+  },
+  {
+   "titre": "EVENTS : Amine officialise « The FinalSlam », un show de catch à la Plénitude Arena avec Squeezie",
+   "lien": "https://www.socialrama.fr/events-amine-officialise-the-finalslam-un-show-de-catch-a-la-plenitude-arena-avec-squeezie",
+   "source": "Alerte Google - Plenitude Arena",
+   "date": "2026-10-20T10:35:14+00:00",
+   "categorie": "Événement",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "\"The FinalSlam\" : Amine annonce un immense show de catch à la Plénitude Arena avec ...",
+   "lien": "https://www.ozap.com/actu/the-finalslam-amine-annonce-un-immense-show-de-catch-a-la-plenitude-arena-avec-squeezie-inoxtag-ou-encore-mister-v/657555",
+   "source": "Alerte Google - Plenitude Arena",
+   "date": "2026-10-20T11:55:27+00:00",
+   "categorie": "Événement",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "5 sorties culturelles dans le 15e arrondissement que vous ne soupçonnez pas",
+   "lien": "https://www.parisselectbook.com/2026/10/20/5-sorties-culturelles-dans-le-15e-arrondissement-que-vous-ne-soupconnez-pas",
+   "source": "Alerte Google - Guides shopping Paris (a creer)",
+   "date": "2026-10-20T12:05:46+00:00",
+   "categorie": "Tour-opérateur",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Identifier un contact chez cette agence, proposer un partenariat commission/co-package"
+  },
+  {
+   "titre": "B&B Home ouvre un 10e établissement à Bruxelles, sur le thème de la bande dessinée",
+   "lien": "https://hospitality-on.com/fr/developpement/bb-home-ouvre-un-10e-etablissement-bruxelles-sur-le-theme-de-la-bande-dessinee",
+   "source": "Hospitality ON",
+   "date": "2026-10-20T12:56:48+00:00",
+   "categorie": "Ouverture",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Demander un contact commercial ou une visite des lieux"
+  },
+  {
+   "titre": "How Elevate Jet Is Pairing Transparent Pricing With A More Personalized Private Jet Experience",
+   "lien": "https://robbreport.com/partners/elevate-jet-more-personalized-jet-experience-1238756755",
+   "source": "Robb Report",
+   "date": "2026-10-20T13:00:00+00:00",
+   "categorie": "Tendance clientèle",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Lire et archiver : argument utile pour les propositions clients"
+  },
+  {
+   "titre": "Richard Cooke rejoint Dorchester Collection et la tête de l'Hotel Bel-Air",
+   "lien": "https://hospitality-on.com/fr/hotellerie/richard-cooke-rejoint-dorchester-collection-et-la-tete-de-lhotel-bel-air",
+   "source": "Hospitality ON",
+   "date": "2026-10-20T13:59:33+00:00",
+   "categorie": "Nomination",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "Art Basel Miami Beach Is Threatening to Move to Las Vegas: Report",
+   "lien": "https://robbreport.com/shelter/art-collectibles/art-basel-miami-beach-threatened-move-las-vegas-1238778843",
+   "source": "Robb Report",
+   "date": "2026-10-20T15:00:00+00:00",
+   "categorie": "Événement",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
   }
  ]
 }
