@@ -1510,7 +1510,20 @@
   "https://hospitality-on.com/fr/developpement/bb-home-ouvre-un-10e-etablissement-bruxelles-sur-le-theme-de-la-bande-dessinee": "2026-10-20",
   "https://robbreport.com/partners/elevate-jet-more-personalized-jet-experience-1238756755": "2026-10-20",
   "https://hospitality-on.com/fr/hotellerie/richard-cooke-rejoint-dorchester-collection-et-la-tete-de-lhotel-bel-air": "2026-10-20",
-  "https://robbreport.com/shelter/art-collectibles/art-basel-miami-beach-threatened-move-las-vegas-1238778843": "2026-10-20"
+  "https://robbreport.com/shelter/art-collectibles/art-basel-miami-beach-threatened-move-las-vegas-1238778843": "2026-10-20",
+  "https://rennes.maville.com/actu/actudet_-ce-train-de-luxe-mythique-reliant-paris-a-venise-desservira-monaco-en-2027_54135-7535212_actu.Htm": "2026-10-20",
+  "https://information.tv5monde.com/sport/masters-1000-de-paris-lannee-de-la-confirmation-la-plenitude-arena-espere-pioline-lafp-2842432": "2026-10-20",
+  "https://larevuedeshotels.com/hotel-the-nora-west-palm-beach-ouverture-floride": "2026-10-20",
+  "https://latribunedelhotellerie.com/accor-antoine-gizardin-estee-lauder-chief-commercial-officer": "2026-10-20",
+  "https://latribunedelhotellerie.com/hyatt-centric-downtown-st-louis-ouverture-missouri": "2026-10-20",
+  "https://aviewfrommyseat.com/venue/La+Plenitude+Arena/seating/concert?page=30": "2026-10-20",
+  "https://www.sortiraparis.com/actualites/noel-et-fetes/articles/99814-reveillon-de-noel-2026-au-oh-cesar-diner-revue-et-club": "2026-10-20",
+  "https://www.parisselectbook.com/2026/10/20/bobbi-brown-promet-une-peau-lisse-apres-60-ans-grace-a-5-fois-plus-de-vitamines-dans-sa-creme-best-seller": "2026-10-20",
+  "https://www.thiesinfo.com/Abdoulaye-Dieye-de-Siggi-Jotna-a-l-ambition-municipale_a15125.html": "2026-10-20",
+  "https://www.sportbusiness.club/aminematue-et-squeezie": "2026-10-20",
+  "https://www.flashscore.fr/actualites/tennis-paris-atp-simples-l-annee-de-la-confirmation-pour-le-masters-de-paris-a-la-plenitude-arena-espere-pioline/QZmXlGJ8": "2026-10-20",
+  "http://www.cridem.org/C_Info.php?article=797643": "2026-10-20",
+  "https://fr.news.yahoo.com/the-finalslam-amine-annonce-immense-112000395.html": "2026-10-20"
  },
  "en_attente": [
   {
@@ -2098,6 +2111,136 @@
    "lien": "https://robbreport.com/shelter/art-collectibles/art-basel-miami-beach-threatened-move-las-vegas-1238778843",
    "source": "Robb Report",
    "date": "2026-10-20T15:00:00+00:00",
+   "categorie": "Événement",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "Ce train de luxe mythique reliant Paris à Venise desservira Monaco en 2027",
+   "lien": "https://rennes.maville.com/actu/actudet_-ce-train-de-luxe-mythique-reliant-paris-a-venise-desservira-monaco-en-2027_54135-7535212_actu.Htm",
+   "source": "Alerte Google - Guides shopping Paris (a creer)",
+   "date": "2026-10-20T05:18:15+00:00",
+   "categorie": "Tour-opérateur",
+   "priorite": "🟠",
+   "zone": "Paris",
+   "action": "Identifier un contact chez cette agence, proposer un partenariat commission/co-package"
+  },
+  {
+   "titre": "Masters 1000 de Paris: l'année de 'la confirmation' à la Plenitude Arena, espère Pioline (à l'AFP)",
+   "lien": "https://information.tv5monde.com/sport/masters-1000-de-paris-lannee-de-la-confirmation-la-plenitude-arena-espere-pioline-lafp-2842432",
+   "source": "Alerte Google - Plenitude Arena",
+   "date": "2026-10-20T15:20:24+00:00",
+   "categorie": "Événement",
+   "priorite": "🟠",
+   "zone": "Paris",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "The Nora Hotel West Palm Beach : l'hôtel ouvre en Floride",
+   "lien": "https://larevuedeshotels.com/hotel-the-nora-west-palm-beach-ouverture-floride",
+   "source": "Alerte Google - Maurice",
+   "date": "2026-10-20T06:38:09+00:00",
+   "categorie": "Ouverture",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Demander un contact commercial ou une visite des lieux"
+  },
+  {
+   "titre": "Accor : Antoine Gizardin, ex-Estée Lauder, nommé CCO",
+   "lien": "https://latribunedelhotellerie.com/accor-antoine-gizardin-estee-lauder-chief-commercial-officer",
+   "source": "Alerte Google - Nominations hotellerie FR",
+   "date": "2026-10-20T10:33:24+00:00",
+   "categorie": "Nomination",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "Hyatt Centric ouvre son premier hôtel dans le Missouri",
+   "lien": "https://latribunedelhotellerie.com/hyatt-centric-downtown-st-louis-ouverture-missouri",
+   "source": "Alerte Google - Maurice",
+   "date": "2026-10-20T13:06:48+00:00",
+   "categorie": "Ouverture",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Demander un contact commercial ou une visite des lieux"
+  },
+  {
+   "titre": "Concert photos at La Plenitude Arena",
+   "lien": "https://aviewfrommyseat.com/venue/La+Plenitude+Arena/seating/concert?page=30",
+   "source": "Alerte Google - Plenitude Arena",
+   "date": "2026-10-20T13:31:54+00:00",
+   "categorie": "Événement",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "Réveillon de Noël 2026 au Oh! César : dîner, revue et club",
+   "lien": "https://www.sortiraparis.com/actualites/noel-et-fetes/articles/99814-reveillon-de-noel-2026-au-oh-cesar-diner-revue-et-club",
+   "source": "Alerte Google - Ouvertures",
+   "date": "2026-10-20T14:08:29+00:00",
+   "categorie": "Ouverture",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Demander un contact commercial ou une visite des lieux"
+  },
+  {
+   "titre": "Bobbi Brown promet une peau lisse après 60 ans grâce à 5 fois plus de vitamines dans sa ...",
+   "lien": "https://www.parisselectbook.com/2026/10/20/bobbi-brown-promet-une-peau-lisse-apres-60-ans-grace-a-5-fois-plus-de-vitamines-dans-sa-creme-best-seller",
+   "source": "Alerte Google - Guides shopping Paris (a creer)",
+   "date": "2026-10-20T14:11:36+00:00",
+   "categorie": "Tour-opérateur",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Identifier un contact chez cette agence, proposer un partenariat commission/co-package"
+  },
+  {
+   "titre": "Abdoulaye Dièye : portrait du président de Siggi Jotna",
+   "lien": "https://www.thiesinfo.com/Abdoulaye-Dieye-de-Siggi-Jotna-a-l-ambition-municipale_a15125.html",
+   "source": "Alerte Google - Nominations hotellerie FR",
+   "date": "2026-10-20T14:46:51+00:00",
+   "categorie": "Nomination",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "AmineMaTue et Squeezie mise sur le catch à la Plénitude Arena",
+   "lien": "https://www.sportbusiness.club/aminematue-et-squeezie",
+   "source": "Alerte Google - Plenitude Arena",
+   "date": "2026-10-20T14:49:19+00:00",
+   "categorie": "Événement",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "Tennis : L'année de \"la confirmation\" à la Plenitude Arena, espère Pioline | Flashscore.fr",
+   "lien": "https://www.flashscore.fr/actualites/tennis-paris-atp-simples-l-annee-de-la-confirmation-pour-le-masters-de-paris-a-la-plenitude-arena-espere-pioline/QZmXlGJ8",
+   "source": "Alerte Google - Plenitude Arena",
+   "date": "2026-10-20T15:10:28+00:00",
+   "categorie": "Événement",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "M. Sall Abdoulaye reconduit à la tête du nouveau bureau de l'ADEM",
+   "lien": "http://www.cridem.org/C_Info.php?article=797643",
+   "source": "Alerte Google - Nominations hotellerie FR",
+   "date": "2026-10-20T16:08:44+00:00",
+   "categorie": "Nomination",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "\"The FinalSlam\" : Amine annonce un immense show de catch à la Plénitude Arena avec ...",
+   "lien": "https://fr.news.yahoo.com/the-finalslam-amine-annonce-immense-112000395.html",
+   "source": "Alerte Google - Plenitude Arena",
+   "date": "2026-10-20T17:42:30+00:00",
    "categorie": "Événement",
    "priorite": "⚪",
    "zone": "",
