@@ -1706,7 +1706,13 @@
   "https://www.gala.fr/l_actu/news_de_stars/elle-n-a-recu-personne-dans-sa-loge-a-l-exception-de-cette-seule-star-qui-a-eu-un-acces-privilegie-a-celine-dion-lors-de-ses-concerts-a-la-plenitude-arena-20261024": "2026-10-24",
   "https://www.parisselectbook.com/2026/10/24/soins-du-visage-la-creme-anti-rides-a-moins-de-10-euros-preferee-de-marion-cotillard-pour-remplacer-les-injections": "2026-10-24",
   "https://hospitality-on.com/fr/hotellerie/puy-du-fou-31-millions-de-visiteurs-et-un-parc-qui-veut-tourner-toute-lannee": "2026-10-24",
-  "https://www.parisselectbook.com/2026/10/24/zenith-ressuscite-son-calibre-legendaire-sans-trahir-son-ame": "2026-10-24"
+  "https://www.parisselectbook.com/2026/10/24/zenith-ressuscite-son-calibre-legendaire-sans-trahir-son-ame": "2026-10-24",
+  "https://larevuedeshotels.com/meilleurs-hotels-luxe-gstaad-hiver-2026-2027": "2026-10-24",
+  "https://larevuedeshotels.com/reveillon-31-decembre-palaces-paris-prix-2026": "2026-10-24",
+  "https://unevuedemaplace.fr/site/La+Plenitude+Arena/115?page=2": "2026-10-24",
+  "https://www.parisselectbook.com/2026/10/24/treize-sacs-louis-vuitton-signes-keith-haring-en-edition-limitee-des-janvier-2027": "2026-10-24",
+  "https://joinmeeps.com/fr/event/muse-rxm3epqd": "2026-10-24",
+  "https://www.facebook.com/letribunaldunetTV/posts/%C3%A0-la-pl%C3%A9nitude-arena-c%C3%A9line-dion-aurait-ferm%C3%A9-sa-loge-%C3%A0-presque-tous-ses-invit%C3%A9s/1443293688018230": "2026-10-24"
  },
  "en_attente": [
   {
@@ -2038,6 +2044,66 @@
    "priorite": "⚪",
    "zone": "",
    "action": "Identifier un contact chez cette agence, proposer un partenariat commission/co-package"
+  },
+  {
+   "titre": "Hôtels de luxe à Gstaad : hiver 2026-2027, prix relevés",
+   "lien": "https://larevuedeshotels.com/meilleurs-hotels-luxe-gstaad-hiver-2026-2027",
+   "source": "Alerte Google - Ouvertures",
+   "date": "2026-10-24T09:25:00+00:00",
+   "categorie": "Ouverture",
+   "priorite": "🟠",
+   "zone": "Gstaad",
+   "action": "Demander un contact commercial ou une visite des lieux"
+  },
+  {
+   "titre": "Réveillon du 31 décembre dans un palace à Paris : prix 2026",
+   "lien": "https://larevuedeshotels.com/reveillon-31-decembre-palaces-paris-prix-2026",
+   "source": "Alerte Google - Ouvertures",
+   "date": "2026-10-24T11:59:09+00:00",
+   "categorie": "Ouverture",
+   "priorite": "🟠",
+   "zone": "Paris",
+   "action": "Demander un contact commercial ou une visite des lieux"
+  },
+  {
+   "titre": "La Plenitude Arena, bloc 115, domicile de Racing 92, page 2",
+   "lien": "https://unevuedemaplace.fr/site/La+Plenitude+Arena/115?page=2",
+   "source": "Alerte Google - Plenitude Arena",
+   "date": "2026-10-24T11:08:16+00:00",
+   "categorie": "Événement",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "Treize sacs Louis Vuitton signés Keith Haring en édition limitée dès janvier 2027",
+   "lien": "https://www.parisselectbook.com/2026/10/24/treize-sacs-louis-vuitton-signes-keith-haring-en-edition-limitee-des-janvier-2027",
+   "source": "Alerte Google - Guides shopping Paris (a creer)",
+   "date": "2026-10-24T14:47:40+00:00",
+   "categorie": "Tour-opérateur",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Identifier un contact chez cette agence, proposer un partenariat commission/co-package"
+  },
+  {
+   "titre": "MUSE · ven. 27 nov. · PLENITUDE ARENA",
+   "lien": "https://joinmeeps.com/fr/event/muse-rxm3epqd",
+   "source": "Alerte Google - Plenitude Arena",
+   "date": "2026-10-24T15:17:56+00:00",
+   "categorie": "Événement",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "À la Plénitude Arena, Céline Dion aurait fermé sa loge à presque tous ses invités. Un ...",
+   "lien": "https://www.facebook.com/letribunaldunetTV/posts/%C3%A0-la-pl%C3%A9nitude-arena-c%C3%A9line-dion-aurait-ferm%C3%A9-sa-loge-%C3%A0-presque-tous-ses-invit%C3%A9s/1443293688018230",
+   "source": "Alerte Google - Plenitude Arena",
+   "date": "2026-10-24T15:38:13+00:00",
+   "categorie": "Événement",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
   }
  ]
 }
