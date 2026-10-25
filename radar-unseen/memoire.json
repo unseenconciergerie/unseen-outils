@@ -1728,7 +1728,14 @@
   "https://larevuedeshotels.com/resort-pyrmont-curacao-tout-compris-adultes-ouverture": "2026-10-25",
   "https://larevuedeshotels.com/chateau-de-voisins-projet-hotel-luxe-golf-rambouillet": "2026-10-25",
   "https://www.leparisien.fr/guide-shopping/maison/cuisine-alimentation/oubliez-krups-et-delonghi-les-baristas-ne-jurent-que-par-cette-machine-a-cafe-haut-de-gamme-a-prix-reduit-ce-dimanche-25-10-2026-M5LJWKCRBRE3LO7NU7Y4MX27IU.php": "2026-10-25",
-  "https://www.tiktok.com/@isabelbacilio/video/7700409155386952993": "2026-10-25"
+  "https://www.tiktok.com/@isabelbacilio/video/7700409155386952993": "2026-10-25",
+  "https://larevuedeshotels.com/hotel-fouquets-gstaad-ouverture-decembre-2026": "2026-10-25",
+  "https://www.bangladeshmonitor.com.bd/en/qatar-airways-al-safwa-lounge-named-world-s-best": "2026-10-25",
+  "https://bangladeshmonitor.com.bd/en/qatar-airways-al-safwa-lounge-named-world-s-best": "2026-10-25",
+  "https://www.bangladeshmonitor.com.bd/en/cathay-pacific-named-best-airline-lounge-provider-in-asia-pacific": "2026-10-25",
+  "https://entarabi.com/en/2026/10/paymentology-appoints-sultan-al-abdellatif-as-general-manager-in-saudi": "2026-10-25",
+  "https://www.parisselectbook.com/2026/10/25/la-coiffure-ideale-apres-50-ans-selon-franck-provost-nest-pas-celle-que-vous-croyez": "2026-10-25",
+  "https://www.bangladeshmonitor.com.bd/en/emirates-wins-top-honors-across-three-cabin-classes": "2026-10-25"
  },
  "en_attente": [
   {
@@ -1890,6 +1897,66 @@
    "priorite": "⚪",
    "zone": "",
    "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "Qatar Airways' Al Safwa Lounge named world's best",
+   "lien": "https://www.bangladeshmonitor.com.bd/en/qatar-airways-al-safwa-lounge-named-world-s-best",
+   "source": "Alerte Google - Nominations internationales",
+   "date": "2026-10-25T09:41:49+00:00",
+   "categorie": "Nomination",
+   "priorite": "🟠",
+   "zone": "Doha",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "Qatar Airways' Al Safwa Lounge named world's best",
+   "lien": "https://bangladeshmonitor.com.bd/en/qatar-airways-al-safwa-lounge-named-world-s-best",
+   "source": "Alerte Google - Nominations internationales",
+   "date": "2026-10-25T10:33:47+00:00",
+   "categorie": "Nomination",
+   "priorite": "🟠",
+   "zone": "Doha",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "Cathay Pacific named best airline lounge provider in Asia-Pacific",
+   "lien": "https://www.bangladeshmonitor.com.bd/en/cathay-pacific-named-best-airline-lounge-provider-in-asia-pacific",
+   "source": "Alerte Google - Nominations internationales",
+   "date": "2026-10-25T10:02:40+00:00",
+   "categorie": "Nomination",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "Paymentology Appoints Sultan Alabdullatif as Saudi Arabia General Manager | إنت عربي",
+   "lien": "https://entarabi.com/en/2026/10/paymentology-appoints-sultan-al-abdellatif-as-general-manager-in-saudi",
+   "source": "Alerte Google - Nominations internationales",
+   "date": "2026-10-25T13:52:01+00:00",
+   "categorie": "Nomination",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "La coiffure idéale après 50 ans selon Franck Provost n'est pas celle que vous croyez",
+   "lien": "https://www.parisselectbook.com/2026/10/25/la-coiffure-ideale-apres-50-ans-selon-franck-provost-nest-pas-celle-que-vous-croyez",
+   "source": "Alerte Google - Guides shopping Paris (a creer)",
+   "date": "2026-10-25T14:27:39+00:00",
+   "categorie": "Tour-opérateur",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Identifier un contact chez cette agence, proposer un partenariat commission/co-package"
+  },
+  {
+   "titre": "Emirates wins top honors across three cabin classes",
+   "lien": "https://www.bangladeshmonitor.com.bd/en/emirates-wins-top-honors-across-three-cabin-classes",
+   "source": "Alerte Google - Nominations internationales",
+   "date": "2026-10-25T15:32:07+00:00",
+   "categorie": "Nomination",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
   }
  ]
 }
