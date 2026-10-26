@@ -1,4 +1,14 @@
 # Le dossier contexte/ est confidentiel : jamais envoyé sur GitHub
 contexte/
 
+# L'étude de marché est de la stratégie interne : jamais envoyée sur GitHub
+etude-marche/
+
+# Les documents finis (PDF partenaires, etc.) ne sont pas du code : jamais sur GitHub
+Livrables/
+
 .DS_Store
+
+# Transcriptions d appels : confidentiel, jamais sur GitHub
+transcription-appel/
+site-unseen/outils/captures_safari/

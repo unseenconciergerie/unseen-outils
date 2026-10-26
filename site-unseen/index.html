@@ -471,6 +471,15 @@ svg .pt.base text{fill:#E9C4B8;font-size:13px;font-weight:600}
 /* Téléphone : tout est visible tout de suite (l'apparition douce laissait des blocs vides sur iPhone) */
 @media(max-width:900px){.rv,.reveal{opacity:1!important;transform:none!important;transition:none!important}}
 @media(max-width:860px){.nv-dest{scroll-padding-left:var(--pad)}}
+
+/* Téléphone : les services défilent de gauche à droite, en cartes */
+@media(max-width:860px){
+  .nv-list{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;margin:32px calc(var(--pad) * -1) 0;padding:0 var(--pad) 8px;scroll-padding-left:var(--pad);scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .nv-list::-webkit-scrollbar{display:none}
+  .nv-list li,.nv-list li:last-child{flex:0 0 80%;scroll-snap-align:start;display:block;border:0;border-top:2px solid var(--accent);background:rgba(255,255,255,.05);padding:20px 18px 22px!important}
+  .nv-list li h3{color:#fff!important;margin-top:6px}
+  .nv-list p{max-height:none!important;opacity:1!important;margin-top:10px!important}
+}
 /* partenaires : bandeau qui défile sans s'arrêter */
 .marquee{pointer-events:none;-webkit-user-select:none;user-select:none;-webkit-tap-highlight-color:transparent;overflow:hidden;margin-top:40px;border-top:1px solid var(--gris-doux);border-bottom:1px solid var(--gris-doux);padding:38px 0;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
 .track{display:flex;align-items:center;gap:80px;width:max-content;animation:defile 36s linear infinite;will-change:transform;-webkit-backface-visibility:hidden;backface-visibility:hidden}
