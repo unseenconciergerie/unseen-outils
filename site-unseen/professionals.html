@@ -202,6 +202,14 @@ footer .mark{color:var(--blanc);font-size:34px}
 /* Téléphone : tout est visible tout de suite (l'apparition douce laissait des blocs vides sur iPhone) */
 @media(max-width:900px){.rv,.reveal{opacity:1!important;transform:none!important;transition:none!important}}
 :lang(zh) h1,:lang(zh) h2,:lang(zh) h3{font-family:'Noto Sans SC',sans-serif;font-weight:700;letter-spacing:0}
+/* Menu téléphone : même montage que l'accueil (fiable au toucher sur iPhone) */
+.top{z-index:70}
+.burger{z-index:2;touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+.burger span{pointer-events:none}
+.panel{inset:0;padding-top:100px;visibility:hidden;transition:opacity .25s,transform .25s,visibility .25s}
+.menu-open .panel{visibility:visible}
+/* Langues visibles dans la barre sur téléphone, comme sur l'accueil */
+@media(max-width:900px){.top .lang{display:flex;margin-left:auto}}
 </style>
 <link rel="stylesheet" href="season.css">
 </head>
@@ -342,6 +350,11 @@ document.getElementById('proform').addEventListener('submit',function(e){
 // Apparition douce
 var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12});
 document.querySelectorAll('.rv').forEach(function(el){io.observe(el);});
+</script>
+<script>
+/* iPhone : le toucher ouvre le menu tout de suite, sans attendre le clic de Safari */
+(function(){var b=document.getElementById('burger');if(!b)return;
+b.addEventListener('touchend',function(e){e.preventDefault();b.click();},{passive:false});})();
 </script>
 </body>
 </html>

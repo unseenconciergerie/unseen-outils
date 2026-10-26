@@ -176,6 +176,14 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 .mpanel .bas{margin-top:auto;display:flex;flex-direction:column;gap:10px}
 .mpanel .bas a{font-family:'DM Sans',sans-serif;font-weight:500;font-size:16px;border:0;padding:0}
 @media(max-width:900px){.burger{display:block}}
+/* Menu téléphone : même montage que l'accueil (fiable au toucher sur iPhone) */
+.topbar{z-index:70}
+.burger{z-index:2;touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+.burger span{pointer-events:none}
+.mpanel{top:0;padding-top:104px;visibility:hidden;transition:opacity .25s,transform .25s,visibility .25s}
+.menu-open .mpanel{visibility:visible}
+/* Grille de 3 photos sur téléphone : la première sur toute la largeur, pas de case vide */
+@media(max-width:700px){.mosaic figure:first-child:nth-last-child(3){grid-column:1/-1;aspect-ratio:16/10}}
 </style>
 </head>
 <body>
@@ -382,6 +390,11 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 (function(){var b=document.getElementById('burger'),p=document.getElementById('mpanel');if(!b)return;
 b.addEventListener('click',function(){var o=document.body.classList.toggle('menu-open');b.setAttribute('aria-expanded',o);p.setAttribute('aria-hidden',!o);});
 p.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){document.body.classList.remove('menu-open');});});})();
+</script>
+<script>
+/* iPhone : le toucher ouvre le menu tout de suite, sans attendre le clic de Safari */
+(function(){var b=document.getElementById('burger');if(!b)return;
+b.addEventListener('touchend',function(e){e.preventDefault();b.click();},{passive:false});})();
 </script>
 </body>
 </html>

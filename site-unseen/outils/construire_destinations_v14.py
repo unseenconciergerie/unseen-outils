@@ -108,7 +108,7 @@ def page(fichier, titres, meta, hero, sections):
 '''
     h = h[:i] + corps + h[j:]
     # script : titre d'onglet, et plus de formulaire Professionals sur ces pages
-    h = re.sub(r"var TITRES=\{[^}]*\};", "var TITRES={en:'UNSEEN. — %s',fr:'UNSEEN. — %s',zh:'UNSEEN. — %s'};" % titres, h, count=1)
+    h = re.sub(r"var TITRES=\{[^}]*\};", "var TITRES={en:'UNSEEN. — %s',fr:'UNSEEN. — %s',zh:'UNSEEN. — %s'};" % tuple(x.replace("'", "\\\\'") for x in titres), h, count=1)
     i = h.index("// Onglets des publics"); j = h.index("// Apparition douce")
     h = h[:i] + h[j:]
     (SITE / fichier).write_text(h, encoding="utf-8")
