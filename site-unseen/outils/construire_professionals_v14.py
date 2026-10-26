@@ -297,6 +297,14 @@ pn.querySelectorAll('a').forEach(function(a){{a.onclick=function(){{document.bod
 // Onglets des publics
 var bt=document.querySelectorAll('#tabs button'),pu=document.querySelectorAll('.pub');
 bt.forEach(function(x){{x.onclick=function(){{bt.forEach(function(y){{y.classList.remove('on');}});x.classList.add('on');pu.forEach(function(p,i){{p.classList.toggle('on',i==x.dataset.i);}});x.scrollIntoView({{behavior:'smooth',inline:'center',block:'nearest'}});}};}});
+// Lien direct vers un onglet, utilisé dans les mails (ex. unseenconciergerie.com/professionals#athletes)
+var ANCRES={{agencies:0,aviation:1,athletes:2,embassies:3,weddings:4,hotels:5}};
+function ouvrirAncre(){{var i=ANCRES[(location.hash||'').slice(1).toLowerCase()];if(i===undefined)return;
+bt.forEach(function(y,k){{y.classList.toggle('on',k==i);}});pu.forEach(function(p,k){{p.classList.toggle('on',k==i);}});
+var t=document.getElementById('tabs');t.scrollLeft=Math.max(0,bt[i].offsetLeft-t.offsetLeft-22);
+var s=t.closest('section'),h=document.querySelector('.top').offsetHeight;
+window.scrollTo({{top:s.getBoundingClientRect().top+window.pageYOffset-h,behavior:'instant'}});}}
+ouvrirAncre();window.addEventListener('load',ouvrirAncre);window.addEventListener('hashchange',ouvrirAncre);
 // Formulaire : prépare un e-mail à partners@ (le site n'a pas de serveur)
 document.getElementById('proform').addEventListener('submit',function(e){{
   e.preventDefault();
