@@ -180,8 +180,8 @@ h = h[:i] + now + h[j:]
 LOGOS = [("lux.svg", "LUX* Resorts &amp; Hotels", 40), ("dorchester.svg", "Dorchester Collection", 24), ("heritage.png", "Heritage Resorts", 56),
          ("luxaviation.svg", "Luxaviation", 26), ("p1-travel.svg", "P1 Travel", 50), ("f1-experiences.png", "F1 Experiences", 30),
          ("la-folie-douce.png", "La Folie Douce", 26)]
-une = "".join(f'<img src="img/partenaires/{f}" alt="{a}" style="height:{hh}px" loading="lazy">' for f, a, hh in LOGOS)
-deux = "".join(f'<img src="img/partenaires/{f}" alt="" aria-hidden="true" style="height:{hh}px" loading="lazy">' for f, a, hh in LOGOS)
+une = "".join(f'<img src="img/partenaires/{f}" alt="{a}" style="height:{hh}px" decoding="async">' for f, a, hh in LOGOS)
+deux = "".join(f'<img src="img/partenaires/{f}" alt="" aria-hidden="true" style="height:{hh}px" decoding="async">' for f, a, hh in LOGOS)
 part = f'''<section id="partners" class="sec-white">
   <div class="wrap">
     <div class="head reveal"><div class="eyebrow"><span class="n">06</span>{t("Partners", "Partenaires", "合作伙伴", "span", ' class="t"')}</div>{t("They work with us.", "Ils travaillent avec nous.", "与我们同行的伙伴。", "h2")}</div>
@@ -194,11 +194,11 @@ h = h.replace('<span class="n">06</span><span class="t" data-en="Contact"', '<sp
 
 # ---------------------------------------------------------------- styles du bandeau
 h = h.replace("/* partenaires */", '''/* partenaires : bandeau qui défile sans s'arrêter */
-.marquee{overflow:hidden;margin-top:40px;border-top:1px solid var(--gris-doux);border-bottom:1px solid var(--gris-doux);padding:38px 0;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
-.track{display:flex;align-items:center;gap:80px;width:max-content;animation:defile 36s linear infinite}
+.marquee{pointer-events:none;-webkit-user-select:none;user-select:none;-webkit-tap-highlight-color:transparent;overflow:hidden;margin-top:40px;border-top:1px solid var(--gris-doux);border-bottom:1px solid var(--gris-doux);padding:38px 0;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.track{display:flex;align-items:center;gap:80px;width:max-content;animation:defile 36s linear infinite;will-change:transform;-webkit-backface-visibility:hidden;backface-visibility:hidden}
 .track img{width:auto;flex:none}
-@keyframes defile{to{transform:translateX(-50%)}}
-@media(max-width:860px){.marquee{padding:28px 0}.track{gap:52px;animation-duration:13s}.track img{transform:scale(.8)}}
+@keyframes defile{from{transform:translate3d(0,0,0)}to{transform:translate3d(-50%,0,0)}}
+@media(max-width:860px){.marquee{padding:28px 0}.track{gap:52px;animation-duration:17s}.track img{transform:scale(.8)}}
 @media(prefers-reduced-motion:reduce){.track{animation:none;flex-wrap:wrap;justify-content:center;width:auto}}
 /* partenaires */''', 1)
 

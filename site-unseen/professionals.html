@@ -111,10 +111,10 @@ h2{font-size:clamp(30px,4.2vw,46px);margin-bottom:18px}
 .ex span{color:#EEE6E2;font-size:16px;line-height:1.65}
 
 /* ---------- 04 partenaires : bandeau qui défile ---------- */
-.marquee{overflow:hidden;margin-top:44px;border-top:1px solid var(--trait);border-bottom:1px solid var(--trait);padding:38px 0;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
-.track{display:flex;align-items:center;gap:80px;width:max-content;animation:defile 36s linear infinite}
+.marquee{pointer-events:none;-webkit-user-select:none;user-select:none;-webkit-tap-highlight-color:transparent;overflow:hidden;margin-top:44px;border-top:1px solid var(--trait);border-bottom:1px solid var(--trait);padding:38px 0;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.track{display:flex;align-items:center;gap:80px;width:max-content;animation:defile 36s linear infinite;will-change:transform;-webkit-backface-visibility:hidden;backface-visibility:hidden}
 .track img{height:40px;width:auto;flex:none}
-@keyframes defile{to{transform:translateX(-50%)}}
+@keyframes defile{from{transform:translate3d(0,0,0)}to{transform:translate3d(-50%,0,0)}}
 @media(prefers-reduced-motion:reduce){.track{animation:none;flex-wrap:wrap;justify-content:center;width:auto}}
 
 /* ---------- 05 destinations ---------- */
@@ -175,7 +175,7 @@ footer .mark{color:var(--blanc);font-size:34px}
   .pub,.pub.on{grid-template-columns:1fr;gap:22px}
   .pub .ph{aspect-ratio:16/11;margin:0 calc(var(--pad) * -1)}
   .marquee{padding:28px 0}
-  .track{gap:52px;animation-duration:13s}
+  .track{gap:52px;animation-duration:17s}
   .track img{height:30px}
   .dests{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:30px calc(var(--pad) * -1) 0;padding:0 var(--pad) 6px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
   .dests::-webkit-scrollbar{display:none}
@@ -270,7 +270,7 @@ footer .mark{color:var(--blanc);font-size:34px}
     <div class="eyebrow"><span class="n">04</span><span class="t" data-en="Partners" data-fr="Partenaires" data-zh="合作伙伴">Partners</span></div>
     <h2 data-en="They work with us." data-fr="Ils travaillent avec nous." data-zh="与我们同行的伙伴。">They work with us.</h2>
   </div>
-  <div class="marquee" aria-label="Partners"><div class="track"><img src="img/partenaires/lux.svg" alt="LUX* Resorts &amp; Hotels" style="height:40px" loading="lazy"><img src="img/partenaires/dorchester.svg" alt="Dorchester Collection" style="height:24px" loading="lazy"><img src="img/partenaires/heritage.png" alt="Heritage Resorts" style="height:56px" loading="lazy"><img src="img/partenaires/luxaviation.svg" alt="Luxaviation" style="height:26px" loading="lazy"><img src="img/partenaires/p1-travel.svg" alt="P1 Travel" style="height:50px" loading="lazy"><img src="img/partenaires/f1-experiences.png" alt="F1 Experiences" style="height:30px" loading="lazy"><img src="img/partenaires/la-folie-douce.png" alt="La Folie Douce" style="height:26px" loading="lazy"><img src="img/partenaires/lux.svg" alt="" aria-hidden="true" style="height:40px" loading="lazy"><img src="img/partenaires/dorchester.svg" alt="" aria-hidden="true" style="height:24px" loading="lazy"><img src="img/partenaires/heritage.png" alt="" aria-hidden="true" style="height:56px" loading="lazy"><img src="img/partenaires/luxaviation.svg" alt="" aria-hidden="true" style="height:26px" loading="lazy"><img src="img/partenaires/p1-travel.svg" alt="" aria-hidden="true" style="height:50px" loading="lazy"><img src="img/partenaires/f1-experiences.png" alt="" aria-hidden="true" style="height:30px" loading="lazy"><img src="img/partenaires/la-folie-douce.png" alt="" aria-hidden="true" style="height:26px" loading="lazy"></div></div>
+  <div class="marquee" aria-label="Partners"><div class="track"><img src="img/partenaires/lux.svg" alt="LUX* Resorts &amp; Hotels" style="height:40px" decoding="async"><img src="img/partenaires/dorchester.svg" alt="Dorchester Collection" style="height:24px" decoding="async"><img src="img/partenaires/heritage.png" alt="Heritage Resorts" style="height:56px" decoding="async"><img src="img/partenaires/luxaviation.svg" alt="Luxaviation" style="height:26px" decoding="async"><img src="img/partenaires/p1-travel.svg" alt="P1 Travel" style="height:50px" decoding="async"><img src="img/partenaires/f1-experiences.png" alt="F1 Experiences" style="height:30px" decoding="async"><img src="img/partenaires/la-folie-douce.png" alt="La Folie Douce" style="height:26px" decoding="async"><img src="img/partenaires/lux.svg" alt="" aria-hidden="true" style="height:40px" decoding="async"><img src="img/partenaires/dorchester.svg" alt="" aria-hidden="true" style="height:24px" decoding="async"><img src="img/partenaires/heritage.png" alt="" aria-hidden="true" style="height:56px" decoding="async"><img src="img/partenaires/luxaviation.svg" alt="" aria-hidden="true" style="height:26px" decoding="async"><img src="img/partenaires/p1-travel.svg" alt="" aria-hidden="true" style="height:50px" decoding="async"><img src="img/partenaires/f1-experiences.png" alt="" aria-hidden="true" style="height:30px" decoding="async"><img src="img/partenaires/la-folie-douce.png" alt="" aria-hidden="true" style="height:26px" decoding="async"></div></div>
 </section>
 
 <section class="sombre" id="contact">

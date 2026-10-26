@@ -131,8 +131,8 @@ for i, (img, alt, tag, titre, texte, exemple) in enumerate(PUBLICS):
 LOGOS = [("lux.svg", "LUX* Resorts &amp; Hotels", 40), ("dorchester.svg", "Dorchester Collection", 24), ("heritage.png", "Heritage Resorts", 56),
          ("luxaviation.svg", "Luxaviation", 26), ("p1-travel.svg", "P1 Travel", 50), ("f1-experiences.png", "F1 Experiences", 30),
          ("la-folie-douce.png", "La Folie Douce", 26)]
-logos = "".join(f'<img src="img/partenaires/{f}" alt="{a}" style="height:{h}px" loading="lazy">' for f, a, h in LOGOS)
-logos += "".join(f'<img src="img/partenaires/{f}" alt="" aria-hidden="true" style="height:{h}px" loading="lazy">' for f, a, h in LOGOS)
+logos = "".join(f'<img src="img/partenaires/{f}" alt="{a}" style="height:{h}px" decoding="async">' for f, a, h in LOGOS)
+logos += "".join(f'<img src="img/partenaires/{f}" alt="" aria-hidden="true" style="height:{h}px" decoding="async">' for f, a, h in LOGOS)
 
 CHOIX = [("Agency or DMC", "Agence ou DMC", "旅行社或目的地管理公司"), ("Private aviation", "Aviation privée", "私人航空"),
          ("Sports management", "Agent de sportifs", "体育经纪"), ("Embassy", "Ambassade", "使馆"),
