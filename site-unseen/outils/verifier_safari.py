@@ -70,7 +70,7 @@ def main():
                 vue = appel("POST", f"/session/{sid}/execute/sync", {"script": "return window.innerHeight", "args": []})["value"]
                 images, y = [], 0
                 while y < total and len(images) < 30:
-                    appel("POST", f"/session/{sid}/execute/sync", {"script": f"window.scrollTo(0,{y})", "args": []})
+                    appel("POST", f"/session/{sid}/execute/sync", {"script": f"document.documentElement.style.scrollBehavior='auto';window.scrollTo({{top:{y},behavior:'instant'}})", "args": []})
                     time.sleep(1.2)
                     png = appel("GET", f"/session/{sid}/screenshot")["value"]
                     images.append(Image.open(io.BytesIO(base64.b64decode(png))).convert("RGB"))
