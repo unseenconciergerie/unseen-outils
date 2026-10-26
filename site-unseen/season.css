@@ -11,15 +11,19 @@
      3. Recharger le site avec Cmd + Maj + R.
 
    Regle de la charte 3.2 : une seule couleur d'accent a la fois.
+   Couleurs de saison de la charte V1.4 (validees le 26/10/2026) :
 
-     #D08A5C   Orange abricot   Sud de la France / ete
-     #A3161A   Rouge vif        Grand Prix de Formule 1
-     #1E4636   Vert sapin       Saison hivernale / Nouvel An
-     #A8823A   Or               Festival de Cannes
-     #1F5E8A   Azur             Riviera / yachting
-     #7AA3BC   Bleu glacier     Saison de ski / Alpes
-     #4B2236   Prune            Fashion Week
-     #CFC3AE   Sable            St Barth / echappee hivernale
+     #7AA3BC   Glacier            Ski / Alpes (decembre a mars)
+     #9C8CC4   Lilas              Fashion Weeks (janvier, fin fevrier, fin juin, fin septembre)
+     #D49A9F   Rose tapis rouge   Festival de Cannes (mi-mai)
+     #A3161A   Rouge circuit      Roland-Garros et Grand Prix de F1
+     #D08A5C   Abricot            L'ete dans le Sud : Riviera, Saint-Tropez, Ibiza, Mykonos
+     #6B2D4F   Prune velours      Noel et Nouvel An
+     #CFC3AE   Sable              Maurice, ocean Indien (hors calendrier)
+
+   Texte pose sur la couleur (--sur-accent, dans index.html) :
+     #000000 pour Glacier, Lilas, Rose tapis rouge, Abricot, Sable ;
+     #FFFFFF pour Rouge circuit et Prune velours.
    ================================================================= */
 
 :root{

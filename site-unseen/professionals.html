@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#FFFFFF">
+<title>UNSEEN. — For travel professionals</title>
+<meta name="description" content="UNSEEN. for travel agencies, DMCs, private aviation, sports management, embassies and planners: your clients in France, looked after through one point of contact.">
+<meta property="og:title" content="UNSEEN. — For travel professionals">
+<meta property="og:description" content="Your clients in France, looked after as you would yourself.">
+<meta property="og:image" content="https://unseenconciergerie.com/img/hero.jpg">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://unseenconciergerie.com/professionals.html">
+<link rel="canonical" href="https://unseenconciergerie.com/professionals.html">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700;800&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=Noto+Sans+SC:wght@400;700&display=swap" rel="stylesheet">
+<style>
+/* Maquette de la page Professionals : charte V1.4 (noir, blanc, sable rosé, anthracite, accent de saison) */
+:root{
+  --noir:#000;--blanc:#FFF;--sable:#F4EAE5;--anthra:#2B2A2E;--trait:#E5D7D0;
+  --texte-2:#5C5556;--texte-3:#8A8083;--clair:#E9C4B8;
+  --accent:#7AA3BC;--sur-accent:#000;            /* remplacé par season.css */
+  --max:1240px;--pad:40px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--blanc);color:var(--noir);font-family:'DM Sans',system-ui,-apple-system,sans-serif;font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:'League Spartan',sans-serif;font-weight:800;letter-spacing:-.02em;line-height:1.04}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
+section{padding:104px 0}
+.sable{background:var(--sable)}
+.sombre{background:var(--anthra);color:var(--blanc)}
+.eyebrow{display:flex;gap:14px;align-items:baseline;margin-bottom:14px}
+.eyebrow .n{color:var(--accent);font-size:14px;font-weight:500}
+.eyebrow .t{font-size:12.5px;letter-spacing:.22em;text-transform:uppercase;font-weight:600}
+h2{font-size:clamp(30px,4.2vw,46px);margin-bottom:18px}
+.lede{font-weight:300;font-size:19px;line-height:1.6;color:var(--texte-2);max-width:640px}
+.sombre .lede{color:#C9C3C5}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 30px;font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;text-decoration:none;border:1px solid currentColor;transition:background .2s,color .2s}
+.btn-accent{background:var(--accent);border-color:var(--accent);color:var(--sur-accent)}
+.btn-accent:hover{background:var(--blanc);border-color:var(--blanc);color:var(--noir)}
+.btn-ghost{color:var(--blanc)}
+.btn-ghost:hover{background:var(--blanc);color:var(--noir)}
+.go{font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;text-decoration:none;border-bottom:2px solid var(--accent);padding-bottom:4px}
+
+/* ---------- barre du haut + menu téléphone ---------- */
+.top{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid rgba(0,0,0,.07)}
+.top-in{max-width:var(--max);margin:0 auto;padding:16px var(--pad);display:flex;align-items:center;justify-content:space-between;gap:20px}
+.mark{font-family:'League Spartan',sans-serif;font-weight:800;font-size:22px;text-decoration:none}
+.nav{display:flex;gap:28px}
+.nav a{font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;font-weight:500;padding:6px 0;border-bottom:1px solid transparent}
+.nav a:hover,.nav a.on{border-bottom-color:var(--accent)}
+.lang{display:flex;gap:8px;font-size:12.5px;font-weight:600;color:var(--texte-3)}
+.lang b{color:var(--noir)}
+.burger{display:none;width:44px;height:44px;border:0;background:none;cursor:pointer;position:relative}
+.burger span{position:absolute;left:11px;right:11px;height:1.5px;background:var(--noir);transition:transform .25s,opacity .25s}
+.burger span:nth-child(1){top:16px}.burger span:nth-child(2){top:22px}.burger span:nth-child(3){top:28px}
+.menu-open .burger span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.menu-open .burger span:nth-child(2){opacity:0}
+.menu-open .burger span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+.panel{position:fixed;inset:65px 0 0 0;background:var(--blanc);z-index:49;padding:30px 24px calc(30px + env(safe-area-inset-bottom));display:flex;flex-direction:column;gap:2px;transform:translateY(-8px);opacity:0;pointer-events:none;transition:opacity .25s,transform .25s}
+.menu-open .panel{opacity:1;transform:none;pointer-events:auto}
+.panel a{font-family:'League Spartan',sans-serif;font-weight:800;font-size:32px;text-decoration:none;padding:12px 0;border-bottom:1px solid var(--trait)}
+.panel .bas{margin-top:auto;display:flex;flex-direction:column;gap:12px}
+.panel .bas a{font-family:'DM Sans';font-weight:500;font-size:16px;border:0;padding:0}
+
+/* ---------- haut de page ---------- */
+.hero{position:relative;min-height:min(86vh,760px);display:flex;align-items:flex-end;color:var(--blanc);overflow:hidden;background:#000}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(20,19,22,.82) 0%,rgba(20,19,22,.45) 60%,rgba(20,19,22,.2) 100%)}
+.hero-in{position:relative;z-index:2;max-width:var(--max);margin:0 auto;padding:0 var(--pad) 84px;width:100%}
+.hero .k{font-size:12.5px;letter-spacing:.26em;text-transform:uppercase;color:#D8D2D4}
+.hero h1{font-size:clamp(38px,6vw,76px);max-width:820px;margin-top:18px}
+.hero p{margin-top:22px;max-width:560px;font-weight:300;font-size:19px;color:#E6E1E2}
+.hero .row{margin-top:34px;display:flex;gap:14px;flex-wrap:wrap}
+
+/* ---------- 01 ce qu'on prend en charge ---------- */
+.split{display:grid;grid-template-columns:5fr 6fr;gap:72px;align-items:center}
+.split-img{aspect-ratio:4/5;overflow:hidden}
+.split-img img{width:100%;height:100%;object-fit:cover}
+.prose{margin-top:24px;font-size:17px;line-height:1.85;color:var(--texte-2)}
+.prose strong{color:var(--noir);font-weight:600}
+
+/* ---------- 02 comment ça se passe ---------- */
+.steps{list-style:none;display:grid;grid-template-columns:repeat(5,1fr);gap:28px;margin-top:56px;counter-reset:s}
+.steps li{border-top:1px solid var(--noir);padding-top:18px;counter-increment:s}
+.steps li:before{content:"0" counter(s);display:block;color:var(--accent);font-size:13px;font-weight:600;margin-bottom:10px}
+.steps h3{font-size:20px;margin-bottom:8px}
+.steps p{font-size:15px;color:var(--texte-2);line-height:1.6}
+
+/* ---------- 03 par public : onglets (ordinateur) / défilement (téléphone) ---------- */
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-top:44px}
+.tabs button{font:inherit;font-size:13.5px;font-weight:500;padding:11px 18px;border:1px solid rgba(255,255,255,.28);background:none;color:#D8D2D4;border-radius:999px;cursor:pointer;white-space:nowrap;transition:.2s}
+.tabs button.on{background:var(--blanc);color:var(--noir);border-color:var(--blanc)}
+.pubs{margin-top:34px}
+.pub{display:none;grid-template-columns:1fr 1.1fr;gap:56px;align-items:center}
+.pub.on{display:grid;animation:apparait .45s ease}
+@keyframes apparait{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.pub .ph{aspect-ratio:4/3;overflow:hidden}
+.pub .ph img{width:100%;height:100%;object-fit:cover}
+.pub .tag{font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--clair)}
+.pub h3{font-size:clamp(26px,3vw,36px);margin-top:10px}
+.pub p{margin-top:14px;color:#C9C3C5;font-size:16.5px}
+.ex{margin-top:24px;border-left:2px solid var(--accent);padding:4px 0 4px 18px}
+.ex b{display:block;font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--clair);font-weight:600;margin-bottom:6px}
+.ex span{color:#EEE6E2;font-size:16px;line-height:1.65}
+
+/* ---------- 04 partenaires : bandeau qui défile ---------- */
+.marquee{overflow:hidden;margin-top:44px;border-top:1px solid var(--trait);border-bottom:1px solid var(--trait);padding:38px 0;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.track{display:flex;align-items:center;gap:80px;width:max-content;animation:defile 36s linear infinite}
+.track img{height:40px;width:auto;flex:none}
+@keyframes defile{to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.track{animation:none;flex-wrap:wrap;justify-content:center;width:auto}}
+
+/* ---------- 05 destinations ---------- */
+.dests{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:44px}
+.d{position:relative;aspect-ratio:3/4;overflow:hidden;color:var(--blanc);text-decoration:none;display:flex;align-items:flex-end}
+.d img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .9s}
+.d:hover img{transform:scale(1.05)}
+.d:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(20,19,22,.8))}
+.d div{position:relative;z-index:2;padding:20px}
+.d span{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--clair)}
+.d h3{font-size:26px;margin-top:4px}
+
+/* ---------- 06 contact pro ---------- */
+.contact{display:grid;grid-template-columns:1fr 1.1fr;gap:72px}
+.ci{border-top:1px solid rgba(255,255,255,.14);padding:18px 0;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.ci span{font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--clair)}
+.ci a{text-decoration:none;font-weight:500}
+form{display:grid;grid-template-columns:1fr 1fr;gap:20px 24px}
+form .full{grid-column:1/-1}
+label{display:block;font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:#C9C3C5;margin-bottom:6px}
+input,select,textarea{width:100%;font:inherit;font-size:16px;color:var(--blanc);background:transparent;border:0;border-bottom:1px solid rgba(255,255,255,.3);padding:10px 0;border-radius:0;-webkit-appearance:none;appearance:none;outline:none}
+select option{color:#000}
+input:focus,select:focus,textarea:focus{border-bottom-color:var(--accent)}
+form .btn{border:0;cursor:pointer;justify-self:start}
+
+footer{background:#1E1D20;color:#A39C9E;padding:60px 0 calc(40px + env(safe-area-inset-bottom));font-size:13.5px;line-height:2}
+footer .mark{color:var(--blanc);font-size:34px}
+
+/* apparition douce */
+.rv{opacity:0;transform:translateY(20px);transition:opacity .9s,transform .9s}
+.rv.in{opacity:1;transform:none}
+
+/* bouton WhatsApp fixe sur téléphone */
+.wa{display:none}
+
+/* ================= TÉLÉPHONE ================= */
+@media(max-width:900px){
+  :root{--pad:22px}
+  body{font-size:16.5px}
+  section{padding:68px 0}
+  .nav,.lang{display:none}
+  .burger{display:block}
+  .top-in{padding:10px var(--pad)}
+  .hero{min-height:82svh}
+  .hero:after{background:linear-gradient(180deg,rgba(20,19,22,.55) 0%,rgba(20,19,22,.7) 45%,rgba(20,19,22,.9) 100%)}
+  .hero-in{padding-bottom:56px}
+  .hero p{font-size:17px}
+  .hero .row{flex-direction:column}
+  .hero .btn{width:100%}
+  .split{grid-template-columns:1fr;gap:28px}
+  .split-img{aspect-ratio:16/11}
+  .steps{grid-template-columns:1fr;gap:0;margin-top:30px}
+  .steps li{display:grid;grid-template-columns:44px 1fr;gap:0 4px;padding:18px 0;border-top:1px solid var(--trait)}
+  .steps li:before{grid-row:span 2;margin:0}
+  .tabs{flex-wrap:nowrap;overflow-x:auto;margin:30px calc(var(--pad) * -1) 0;padding:0 var(--pad) 6px;scrollbar-width:none;-webkit-overflow-scrolling:touch;scroll-snap-type:x proximity}
+  .tabs::-webkit-scrollbar{display:none}
+  .tabs button{scroll-snap-align:start;min-height:44px}
+  .pub,.pub.on{grid-template-columns:1fr;gap:22px}
+  .pub .ph{aspect-ratio:16/11;margin:0 calc(var(--pad) * -1)}
+  .marquee{padding:28px 0}
+  .track{gap:52px;animation-duration:26s}
+  .track img{height:30px}
+  .dests{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:30px calc(var(--pad) * -1) 0;padding:0 var(--pad) 6px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .dests::-webkit-scrollbar{display:none}
+  .d{flex:0 0 72%;scroll-snap-align:start}
+  .contact{grid-template-columns:1fr;gap:40px}
+  form{grid-template-columns:1fr}
+  form .btn{width:100%;justify-self:stretch}
+  .wa{display:flex;position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom));z-index:40;width:56px;height:56px;border-radius:50%;background:var(--accent);color:var(--sur-accent);align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(0,0,0,.25);text-decoration:none}
+  .wa svg{width:26px;height:26px}
+}
+
+.lang{align-items:center;line-height:1}
+.lang span{color:var(--trait);font-weight:400}
+.lang button{background:none;border:0;font:inherit;line-height:1;color:var(--texte-3);cursor:pointer;padding:6px 2px}
+.lang button[aria-pressed="true"]{color:var(--noir)}
+.panel .langs{display:flex;gap:14px}
+.panel .langs button{background:none;border:0;font:inherit;font-size:16px;color:var(--texte-3);padding:6px 0;cursor:pointer}
+.panel .langs button[aria-pressed="true"]{color:var(--noir)}
+.ph picture,.split-img picture{display:block;height:100%}
+.hero picture{position:absolute;inset:0}
+.hero h1{font-size:clamp(34px,4.6vw,60px);max-width:760px}
+.hero-in{padding-top:120px}
+:lang(zh) h1,:lang(zh) h2,:lang(zh) h3{font-family:'Noto Sans SC',sans-serif;font-weight:700;letter-spacing:0}
+</style>
+<link rel="stylesheet" href="season.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="top-in">
+    <a class="mark" href="index.html">UNSEEN.</a>
+    <nav class="nav"><a href="index.html#services" data-en="Services" data-fr="Services" data-zh="服务">Services</a><a href="index.html#destinations" data-en="Destinations" data-fr="Destinations" data-zh="目的地">Destinations</a><a href="index.html#now" data-en="Seasons" data-fr="Saisons" data-zh="当季">Seasons</a><a href="professionals.html" class="on" data-en="Professionals" data-fr="Professionnels" data-zh="合作伙伴">Professionals</a><a href="#contact" data-en="Contact" data-fr="Contact" data-zh="联系我们">Contact</a></nav>
+    <div class="lang"><button type="button" data-l="en" aria-pressed="true">EN</button><span>/</span><button type="button" data-l="fr" aria-pressed="false">FR</button><span>/</span><button type="button" data-l="zh" aria-pressed="false" lang="zh">中文</button></div>
+    <button class="burger" id="burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="panel"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<nav class="panel" id="panel" aria-hidden="true">
+  <a href="index.html#services" data-en="Services" data-fr="Services" data-zh="服务">Services</a><a href="index.html#destinations" data-en="Destinations" data-fr="Destinations" data-zh="目的地">Destinations</a><a href="index.html#now" data-en="Seasons" data-fr="Saisons" data-zh="当季">Seasons</a><a href="professionals.html" data-en="Professionals" data-fr="Professionnels" data-zh="合作伙伴">Professionals</a><a href="#contact" data-en="Contact" data-fr="Contact" data-zh="联系我们">Contact</a>
+  <div class="bas"><a href="https://wa.me/33613850733">WhatsApp</a><a href="mailto:contact@unseenconciergerie.com">contact@unseenconciergerie.com</a><div class="langs"><button type="button" data-l="en" aria-pressed="true">EN</button><span>/</span><button type="button" data-l="fr" aria-pressed="false">FR</button><span>/</span><button type="button" data-l="zh" aria-pressed="false" lang="zh">中文</button></div></div>
+</nav>
+
+<div class="hero">
+  <picture><source type="image/avif" srcset="img/pro-hero.avif"><img src="img/pro-hero.webp" alt="A private jet on a snowy runway" data-alt-en="A private jet on a snowy runway" data-alt-fr="Un jet privé sur une piste enneigée" data-alt-zh="停在雪地跑道上的私人飞机" fetchpriority="high"></picture>
+  <div class="hero-in">
+    <div class="k" data-en="For travel professionals" data-fr="Pour les professionnels du voyage" data-zh="致旅行行业伙伴">For travel professionals</div>
+    <h1 data-en="Your clients in France, looked after as you would yourself." data-fr="Vos clients en France, comme si vous étiez là." data-zh="您的客户在法国，我们像您一样用心照料。">Your clients in France, looked after as you would yourself.</h1>
+    <p data-en="Agencies, private aviation, sports management, embassies, planners. When your clients land, UNSEEN. takes over the ground, discreetly, through one point of contact." data-fr="Agences, aviation privée, agents de sportifs, ambassades, organisateurs. Quand vos clients atterrissent, UNSEEN. prend le relais au sol, discrètement, avec un seul interlocuteur." data-zh="旅行社、私人航空、体育经纪、使馆、活动策划。您的客户一落地，UNSEEN.便低调接手地面的一切，全程只需一位联系人。">Agencies, private aviation, sports management, embassies, planners. When your clients land, UNSEEN. takes over the ground, discreetly, through one point of contact.</p>
+    <div class="row"><a class="btn btn-accent" href="#contact" data-en="Send us a brief" data-fr="Envoyer une demande" data-zh="提交需求">Send us a brief</a><a class="btn btn-ghost" href="https://wa.me/33613850733">WhatsApp</a></div>
+  </div>
+</div>
+
+<section>
+  <div class="wrap split">
+    <div class="split-img rv"><picture><source type="image/avif" srcset="img/pro-bar.avif"><img src="img/pro-bar.webp" alt="A bar lit in amber" data-alt-en="A bar lit in amber" data-alt-fr="Un bar aux lumières ambrées" data-alt-zh="琥珀色灯光下的酒吧" loading="lazy"></picture></div>
+    <div class="rv">
+      <div class="eyebrow"><span class="n">01</span><span class="t" data-en="What we handle" data-fr="Ce que nous prenons en charge" data-zh="我们负责什么">What we handle</span></div>
+      <h2 data-en="Everything that happens once they land." data-fr="Tout ce qui se passe une fois qu&#x27;ils ont atterri." data-zh="落地之后的一切。">Everything that happens once they land.</h2>
+      <p class="lede" data-en="You keep the client and the relationship. We take care of what happens on the ground, and keep you informed at every step." data-fr="Vous gardez le client et la relation. Nous nous occupons de ce qui se passe sur place, et vous tenons informé à chaque étape." data-zh="客户与关系始终属于您。我们负责地面的一切，并在每一步向您通报。">You keep the client and the relationship. We take care of what happens on the ground, and keep you informed at every step.</p>
+      <p class="prose" data-en="A &lt;strong&gt;palace suite&lt;/strong&gt; that never appears online. A &lt;strong&gt;table&lt;/strong&gt; at the restaurant that is full, on the evening they want it. A &lt;strong&gt;driver&lt;/strong&gt; waiting at the aircraft. A seat at the &lt;strong&gt;Fashion Week&lt;/strong&gt; show or the &lt;strong&gt;Grand Prix&lt;/strong&gt;. A &lt;strong&gt;private appointment&lt;/strong&gt; with a maison. And everything nobody planned, handled by the same person, from arrival to departure." data-fr="Une &lt;strong&gt;suite de palace&lt;/strong&gt; qui n&#x27;apparaît jamais en ligne. Une &lt;strong&gt;table&lt;/strong&gt; dans le restaurant complet, le soir voulu. Un &lt;strong&gt;chauffeur&lt;/strong&gt; qui attend au pied de l&#x27;avion. Une place au défilé de la &lt;strong&gt;Fashion Week&lt;/strong&gt; ou au &lt;strong&gt;Grand Prix&lt;/strong&gt;. Un &lt;strong&gt;rendez-vous privé&lt;/strong&gt; dans une maison. Et tout ce que personne n&#x27;avait prévu, géré par la même personne, de l&#x27;arrivée au départ." data-zh="从不在网上出现的&lt;strong&gt;殿堂级酒店套房&lt;/strong&gt;。客满餐厅里、指定当晚的&lt;strong&gt;餐桌&lt;/strong&gt;。在飞机旁等候的&lt;strong&gt;专车司机&lt;/strong&gt;。&lt;strong&gt;时装周&lt;/strong&gt;秀场或&lt;strong&gt;大奖赛&lt;/strong&gt;的座位。品牌名店的&lt;strong&gt;私人预约&lt;/strong&gt;。还有一切计划之外的事，从抵达到离开，都由同一个人处理。">A <strong>palace suite</strong> that never appears online. A <strong>table</strong> at the restaurant that is full, on the evening they want it. A <strong>driver</strong> waiting at the aircraft. A seat at the <strong>Fashion Week</strong> show or the <strong>Grand Prix</strong>. A <strong>private appointment</strong> with a maison. And everything nobody planned, handled by the same person, from arrival to departure.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sable">
+  <div class="wrap">
+    <div class="eyebrow"><span class="n">02</span><span class="t" data-en="How it works" data-fr="Comment ça se passe" data-zh="合作流程">How it works</span></div>
+    <h2 data-en="One brief. One contact. No surprises." data-fr="Une demande. Un interlocuteur. Aucune surprise." data-zh="一份需求，一位联系人，没有意外。">One brief. One contact. No surprises.</h2>
+    <ol class="steps rv"><li><h3 data-en="The brief" data-fr="Le brief" data-zh="需求">The brief</h3><p data-en="Dates, guests, what they expect. A message is enough." data-fr="Les dates, les invités, ce qu&#x27;ils attendent. Un message suffit." data-zh="日期、客人、期望。一条消息就够。">Dates, guests, what they expect. A message is enough.</p></li><li><h3 data-en="The answer" data-fr="La réponse" data-zh="答复">The answer</h3><p data-en="What is possible, in writing, within the day." data-fr="Ce qui est possible, par écrit, dans la journée." data-zh="当天书面告知可行方案。">What is possible, in writing, within the day.</p></li><li><h3 data-en="Your terms" data-fr="Vos conditions" data-zh="合作条款">Your terms</h3><p data-en="Agreed with you before the first request, never discussed with your client." data-fr="Convenues avec vous avant la première demande, jamais discutées devant votre client." data-zh="在首次合作前与您约定，绝不在您的客户面前讨论。">Agreed with you before the first request, never discussed with your client.</p></li><li><h3 data-en="On the ground" data-fr="Sur place" data-zh="落地执行">On the ground</h3><p data-en="One person follows your clients from arrival to departure." data-fr="Une seule personne suit vos clients de l&#x27;arrivée au départ." data-zh="从抵达到离开，由同一位专人全程跟进。">One person follows your clients from arrival to departure.</p></li><li><h3 data-en="The debrief" data-fr="Le compte rendu" data-zh="回访">The debrief</h3><p data-en="A short note after the stay, so the next one is even easier." data-fr="Une courte note après le séjour, pour que le suivant soit encore plus simple." data-zh="行程结束后附上简短回顾，让下一次更加顺畅。">A short note after the stay, so the next one is even easier.</p></li></ol>
+  </div>
+</section>
+
+<section class="sombre">
+  <div class="wrap">
+    <div class="eyebrow"><span class="n">03</span><span class="t" data-en="Who we work with" data-fr="Avec qui nous travaillons" data-zh="我们的合作对象">Who we work with</span></div>
+    <h2 data-en="Each partner has its own way of working." data-fr="Chaque partenaire a sa façon de travailler." data-zh="每一位伙伴，都有自己的合作方式。">Each partner has its own way of working.</h2>
+    <p class="lede" data-en="Choose yours: what we do for you, and what a request looks like, start to finish." data-fr="Choisissez le vôtre : ce que nous faisons pour vous, et à quoi ressemble une demande, du début à la fin." data-zh="请选择您的类型：我们能为您做什么，一次委托从头到尾是什么样子。">Choose yours: what we do for you, and what a request looks like, start to finish.</p>
+    <div class="tabs" id="tabs"><button type="button" data-i="0" class="on" data-en="Agencies &amp; DMCs" data-fr="Agences et DMC" data-zh="旅行社与目的地管理公司">Agencies & DMCs</button><button type="button" data-i="1" data-en="Private aviation" data-fr="Aviation privée" data-zh="私人航空">Private aviation</button><button type="button" data-i="2" data-en="Athletes &amp; agents" data-fr="Sportifs et agents" data-zh="运动员与经纪人">Athletes & agents</button><button type="button" data-i="3" data-en="Embassies &amp; missions" data-fr="Ambassades et missions" data-zh="使馆与外交使团">Embassies & missions</button><button type="button" data-i="4" data-en="Weddings &amp; events" data-fr="Mariages et événements" data-zh="婚礼与活动">Weddings & events</button><button type="button" data-i="5" data-en="Hotels &amp; resorts" data-fr="Hôtels et resorts" data-zh="酒店与度假村">Hotels & resorts</button></div>
+    <div class="pubs" id="pubs">
+      <div class="pub on"><div class="ph"><picture><source type="image/avif" srcset="img/pro-agencies.avif"><img src="img/pro-agencies.webp" alt="Monaco harbour at night" data-alt-en="Monaco harbour at night" data-alt-fr="Le port de Monaco la nuit" data-alt-zh="夜色中的摩纳哥港" loading="lazy"></picture></div><div><span class="tag" data-en="Agencies &amp; DMCs" data-fr="Agences et DMC" data-zh="旅行社与目的地管理公司">Agencies & DMCs</span><h3 data-en="You sell the trip. We make France work." data-fr="Vous vendez le voyage. Nous faisons fonctionner la France." data-zh="行程由您设计，法国的一切由我们落实。">You sell the trip. We make France work.</h3><p data-en="Your itinerary stays yours. We add what a local team can open: tables, suites, access, drivers, and the last-minute changes." data-fr="Votre itinéraire reste le vôtre. Nous ajoutons ce qu&#x27;une équipe sur place sait ouvrir : tables, suites, accès, chauffeurs, et les changements de dernière minute." data-zh="行程依旧属于您。我们补上只有本地团队才能打开的部分：餐桌、套房、准入、专车，以及最后一刻的变动。">Your itinerary stays yours. We add what a local team can open: tables, suites, access, drivers, and the last-minute changes.</p><div class="ex"><b data-en="A request, start to finish" data-fr="Une demande, du début à la fin" data-zh="一次委托，从头到尾">A request, start to finish</b><span data-en="An agency in Mumbai sends a family of six for five days. We hold two suites on the Avenue Montaigne, a chef&#x27;s table, a private visit of the Louvre at opening, and a car for the week. The agency hears from us after each day." data-fr="Une agence de Mumbai envoie une famille de six personnes pour cinq jours. Nous retenons deux suites avenue Montaigne, une table du chef, une visite privée du Louvre à l&#x27;ouverture et une voiture pour la semaine. L&#x27;agence reçoit un point chaque soir." data-zh="孟买一家旅行社送来六口之家，停留五天。我们为其预留蒙田大道的两间套房、一张主厨餐桌、卢浮宫开馆时的私人参观，以及一周的专车。每天结束后，我们都会向旅行社汇报。">An agency in Mumbai sends a family of six for five days. We hold two suites on the Avenue Montaigne, a chef's table, a private visit of the Louvre at opening, and a car for the week. The agency hears from us after each day.</span></div></div></div>
+      <div class="pub"><div class="ph"><picture><source type="image/avif" srcset="img/pro-aviation.avif"><img src="img/pro-aviation.webp" alt="A private van with leather seats" data-alt-en="A private van with leather seats" data-alt-fr="Un van privé aux sièges en cuir" data-alt-zh="配备真皮座椅的私人商务车" loading="lazy"></picture></div><div><span class="tag" data-en="Private aviation" data-fr="Aviation privée" data-zh="私人航空">Private aviation</span><h3 data-en="Once your passengers have landed in France, we look after their stay." data-fr="Une fois vos passagers posés en France, nous prenons soin de leur séjour." data-zh="您的乘客在法国落地之后，余下的行程交给我们。">Once your passengers have landed in France, we look after their stay.</h3><p data-en="Car at the aircraft, hotel, dinner, the next day. Your crew flies, we take the ground." data-fr="La voiture au pied de l&#x27;avion, l&#x27;hôtel, le dîner, le lendemain. Votre équipage vole, nous prenons le relais au sol." data-zh="机旁接机、酒店、晚餐，乃至第二天的安排。机组负责飞行，地面由我们接手。">Car at the aircraft, hotel, dinner, the next day. Your crew flies, we take the ground.</p><div class="ex"><b data-en="A request, start to finish" data-fr="Une demande, du début à la fin" data-zh="一次委托，从头到尾">A request, start to finish</b><span data-en="A charter lands at Le Bourget on Friday night. A driver is at the stairs, the suite is ready, a table is held for 10 pm, and Saturday is planned around the boutique appointments." data-fr="Un vol privé se pose au Bourget le vendredi soir. Le chauffeur attend au pied de la passerelle, la suite est prête, une table est retenue pour 22 h, et le samedi s&#x27;organise autour des rendez-vous en boutique." data-zh="一架包机周五晚间降落勒布尔歇机场。司机已在舷梯旁等候，套房已备妥，晚上十点的餐桌已预留，周六则围绕精品店的预约来安排。">A charter lands at Le Bourget on Friday night. A driver is at the stairs, the suite is ready, a table is held for 10 pm, and Saturday is planned around the boutique appointments.</span></div></div></div>
+      <div class="pub"><div class="ph"><picture><source type="image/avif" srcset="img/pro-sport.avif"><img src="img/pro-sport.webp" alt="A private gym with a city view" data-alt-en="A private gym with a city view" data-alt-fr="Une salle de sport privée avec vue sur la ville" data-alt-zh="俯瞰城市的私人健身房" loading="lazy"></picture></div><div><span class="tag" data-en="Athletes &amp; agents" data-fr="Sportifs et agents" data-zh="运动员与经纪人">Athletes & agents</span><h3 data-en="Discreet stays around the calendar." data-fr="Des séjours discrets, autour du calendrier." data-zh="围绕赛程，低调安排每一次出行。">Discreet stays around the calendar.</h3><p data-en="Private gym hours, recovery on site, meals built around a plan, arrivals that avoid the lobby. For the athlete, the family and the entourage." data-fr="Des créneaux privés en salle de sport, la récupération sur place, des repas pensés selon un plan, des arrivées qui évitent le hall. Pour le sportif, sa famille et son entourage." data-zh="私人健身时段、现场恢复理疗、按营养计划定制的餐食，以及避开大堂的出入动线。为运动员本人、家人与团队而设。">Private gym hours, recovery on site, meals built around a plan, arrivals that avoid the lobby. For the athlete, the family and the entourage.</p><div class="ex"><b data-en="A request, start to finish" data-fr="Une demande, du début à la fin" data-zh="一次委托，从头到尾">A request, start to finish</b><span data-en="A player&#x27;s family travels for a match in Paris. A private floor, a nutritionist&#x27;s menu, seats for the family, a quiet exit after the final whistle." data-fr="La famille d&#x27;un joueur vient pour un match à Paris. Un étage privatisé, un menu de nutritionniste, des places pour la famille, une sortie discrète après le coup de sifflet final." data-zh="一位球员的家人来巴黎观赛。整层私享、营养师定制菜单、家属观赛席位，终场哨响后安静离场。">A player's family travels for a match in Paris. A private floor, a nutritionist's menu, seats for the family, a quiet exit after the final whistle.</span></div></div></div>
+      <div class="pub"><div class="ph"><picture><source type="image/avif" srcset="img/pro-embassy.avif"><img src="img/pro-embassy.webp" alt="A Haussmann façade in Paris" data-alt-en="A Haussmann façade in Paris" data-alt-fr="Une façade haussmannienne à Paris" data-alt-zh="巴黎的奥斯曼风格建筑立面" loading="lazy"></picture></div><div><span class="tag" data-en="Embassies &amp; missions" data-fr="Ambassades et missions" data-zh="使馆与外交使团">Embassies & missions</span><h3 data-en="The details around official visits." data-fr="Les détails autour des visites officielles." data-zh="官方访问之外的每一处细节。">The details around official visits.</h3><p data-en="The protocol is yours. We handle what surrounds it: accommodation for the delegation, dinners, shopping, family programmes." data-fr="Le protocole vous appartient. Nous gérons ce qui l&#x27;entoure : l&#x27;hébergement de la délégation, les dîners, le shopping, les programmes pour les familles." data-zh="礼宾由您负责。我们处理其余的一切：代表团住宿、晚宴、购物，以及家属行程。">The protocol is yours. We handle what surrounds it: accommodation for the delegation, dinners, shopping, family programmes.</p><div class="ex"><b data-en="A request, start to finish" data-fr="Une demande, du début à la fin" data-zh="一次委托，从头到尾">A request, start to finish</b><span data-en="A delegation of twelve for three days. Rooms on one floor, a private dining room for the second evening, a programme for the spouses, and one contact for the embassy." data-fr="Une délégation de douze personnes pendant trois jours. Des chambres sur un même étage, un salon privé pour le deuxième soir, un programme pour les conjoints, et un seul contact pour l&#x27;ambassade." data-zh="十二人代表团，为期三天。同层客房、第二晚的私人包厢、为配偶准备的专属行程，使馆只需对接一位联系人。">A delegation of twelve for three days. Rooms on one floor, a private dining room for the second evening, a programme for the spouses, and one contact for the embassy.</span></div></div></div>
+      <div class="pub"><div class="ph"><picture><source type="image/avif" srcset="img/pro-events.avif"><img src="img/pro-events.webp" alt="Guests and photographers at a private evening" data-alt-en="Guests and photographers at a private evening" data-alt-fr="Invités et photographes lors d&#x27;une soirée privée" data-alt-zh="私人晚会上的宾客与摄影师" loading="lazy"></picture></div><div><span class="tag" data-en="Weddings &amp; events" data-fr="Mariages et événements" data-zh="婚礼与活动">Weddings & events</span><h3 data-en="Your guests, looked after in France." data-fr="Vos invités, pris en charge en France." data-zh="您的宾客，在法国有人照料。">Your guests, looked after in France.</h3><p data-en="For planners bringing a celebration to Paris or the Riviera: guest stays, transfers, dinners, the day after." data-fr="Pour les organisateurs qui font venir une célébration à Paris ou sur la Riviera : les séjours des invités, les transferts, les dîners, le lendemain." data-zh="为将庆典带到巴黎或蔚蓝海岸的策划人：宾客住宿、接送、晚宴，以及庆典后的安排。">For planners bringing a celebration to Paris or the Riviera: guest stays, transfers, dinners, the day after.</p><div class="ex"><b data-en="A request, start to finish" data-fr="Une demande, du début à la fin" data-zh="一次委托，从头到尾">A request, start to finish</b><span data-en="Eighty guests for a wedding on the Riviera. Hotels by family, airport welcome, a rehearsal dinner by the sea, and a concierge desk for the whole week." data-fr="Quatre-vingts invités pour un mariage sur la Riviera. Les hôtels par famille, l&#x27;accueil à l&#x27;aéroport, un dîner de répétition au bord de la mer, et un comptoir de conciergerie pour toute la semaine." data-zh="蔚蓝海岸的一场婚礼，八十位宾客。按家庭安排酒店、机场迎接、海边彩排晚宴，整周设有礼宾服务台。">Eighty guests for a wedding on the Riviera. Hotels by family, airport welcome, a rehearsal dinner by the sea, and a concierge desk for the whole week.</span></div></div></div>
+      <div class="pub"><div class="ph"><picture><source type="image/avif" srcset="img/pro-hotels.avif"><img src="img/pro-hotels.webp" alt="The Mondo restaurant at LUX* Belle Mare, Mauritius" data-alt-en="The Mondo restaurant at LUX* Belle Mare, Mauritius" data-alt-fr="Le restaurant Mondo du LUX* Belle Mare, à Maurice" data-alt-zh="毛里求斯LUX* Belle Mare的Mondo餐厅" loading="lazy"></picture></div><div><span class="tag" data-en="Hotels &amp; resorts" data-fr="Hôtels et resorts" data-zh="酒店与度假村">Hotels & resorts</span><h3 data-en="Your guests, before and after your doors." data-fr="Vos clients, avant et après votre porte." data-zh="在您的酒店之外，继续照料您的客人。">Your guests, before and after your doors.</h3><p data-en="We send an international clientele to a limited number of houses, and look after them in Paris before they fly to you." data-fr="Nous adressons une clientèle internationale à un nombre limité de maisons, et nous en prenons soin à Paris avant qu&#x27;elle ne s&#x27;envole vers vous." data-zh="我们只为少数酒店输送国际客人，并在他们飞往您那里之前，在巴黎照料好他们。">We send an international clientele to a limited number of houses, and look after them in Paris before they fly to you.</p><div class="ex"><b data-en="A request, start to finish" data-fr="Une demande, du début à la fin" data-zh="一次委托，从头到尾">A request, start to finish</b><span data-en="A couple stays three nights in Paris before Mauritius. We arrange the city, then hand them over to the resort with their preferences already known." data-fr="Un couple passe trois nuits à Paris avant Maurice. Nous organisons la ville, puis nous le confions au resort avec ses préférences déjà connues." data-zh="一对夫妇飞往毛里求斯前在巴黎停留三晚。我们安排好巴黎的一切，再把他们交给度假村，连同已知的偏好一起。">A couple stays three nights in Paris before Mauritius. We arrange the city, then hand them over to the resort with their preferences already known.</span></div></div></div>
+      
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="eyebrow"><span class="n">04</span><span class="t" data-en="Partners" data-fr="Partenaires" data-zh="合作伙伴">Partners</span></div>
+    <h2 data-en="They work with us." data-fr="Ils travaillent avec nous." data-zh="与我们同行的伙伴。">They work with us.</h2>
+  </div>
+  <div class="marquee" aria-label="Partners"><div class="track"><img src="img/partenaires/lux.svg" alt="LUX* Resorts &amp; Hotels" style="height:40px" loading="lazy"><img src="img/partenaires/dorchester.svg" alt="Dorchester Collection" style="height:24px" loading="lazy"><img src="img/partenaires/heritage.png" alt="Heritage Resorts" style="height:56px" loading="lazy"><img src="img/partenaires/luxaviation.svg" alt="Luxaviation" style="height:26px" loading="lazy"><img src="img/partenaires/p1-travel.svg" alt="P1 Travel" style="height:50px" loading="lazy"><img src="img/partenaires/f1-experiences.png" alt="F1 Experiences" style="height:30px" loading="lazy"><img src="img/partenaires/la-folie-douce.png" alt="La Folie Douce" style="height:26px" loading="lazy"><img src="img/partenaires/lux.svg" alt="" aria-hidden="true" style="height:40px" loading="lazy"><img src="img/partenaires/dorchester.svg" alt="" aria-hidden="true" style="height:24px" loading="lazy"><img src="img/partenaires/heritage.png" alt="" aria-hidden="true" style="height:56px" loading="lazy"><img src="img/partenaires/luxaviation.svg" alt="" aria-hidden="true" style="height:26px" loading="lazy"><img src="img/partenaires/p1-travel.svg" alt="" aria-hidden="true" style="height:50px" loading="lazy"><img src="img/partenaires/f1-experiences.png" alt="" aria-hidden="true" style="height:30px" loading="lazy"><img src="img/partenaires/la-folie-douce.png" alt="" aria-hidden="true" style="height:26px" loading="lazy"></div></div>
+</section>
+
+<section class="sombre" id="contact">
+  <div class="wrap contact">
+    <div>
+      <div class="eyebrow"><span class="n">05</span><span class="t" data-en="Contact" data-fr="Contact" data-zh="联系我们">Contact</span></div>
+      <h2 data-en="Send us your next brief." data-fr="Envoyez-nous votre prochaine demande." data-zh="把下一份需求交给我们。">Send us your next brief.</h2>
+      <p class="lede" data-en="Terms, references and a sample programme for your clients are shared by email, on request." data-fr="Nos conditions, nos références et un exemple de programme pour vos clients vous sont envoyés par e-mail, sur demande." data-zh="合作条款、参考案例和客户行程示例，可应要求通过电子邮件发送。">Terms, references and a sample programme for your clients are shared by email, on request.</p>
+      <div style="margin-top:36px">
+        <div class="ci"><span data-en="Partnerships" data-fr="Partenariats" data-zh="合作洽谈">Partnerships</span><a href="mailto:partners@unseenconciergerie.com">partners@unseenconciergerie.com</a></div>
+        <div class="ci"><span>WhatsApp</span><a href="https://wa.me/33613850733">+33 6 13 85 07 33</a></div>
+        <div class="ci"><span data-en="Direct" data-fr="Ligne directe" data-zh="直线电话">Direct</span><a href="tel:+33649668833">+33 6 49 66 88 33</a></div>
+      </div>
+    </div>
+    <form id="proform" novalidate>
+      <div><label for="p-nom"><span data-en="Name" data-fr="Nom" data-zh="姓名">Name</span></label><input id="p-nom" type="text" autocomplete="name"></div>
+      <div><label for="p-soc"><span data-en="Company" data-fr="Société" data-zh="公司">Company</span></label><input id="p-soc" type="text" autocomplete="organization"></div>
+      <div><label for="p-mail"><span data-en="Email" data-fr="E-mail" data-zh="邮箱">Email</span></label><input id="p-mail" type="email" autocomplete="email" inputmode="email"></div>
+      <div><label for="p-type"><span data-en="You are" data-fr="Vous êtes" data-zh="您的身份">You are</span></label><select id="p-type"><option data-en="Agency or DMC" data-fr="Agence ou DMC" data-zh="旅行社或目的地管理公司">Agency or DMC</option><option data-en="Private aviation" data-fr="Aviation privée" data-zh="私人航空">Private aviation</option><option data-en="Sports management" data-fr="Agent de sportifs" data-zh="体育经纪">Sports management</option><option data-en="Embassy" data-fr="Ambassade" data-zh="使馆">Embassy</option><option data-en="Planner" data-fr="Organisateur d&#x27;événements" data-zh="活动策划">Planner</option><option data-en="Hotel or resort" data-fr="Hôtel ou resort" data-zh="酒店或度假村">Hotel or resort</option><option data-en="Other" data-fr="Autre" data-zh="其他">Other</option></select></div>
+      <div class="full"><label for="p-brief"><span data-en="Your brief" data-fr="Votre demande" data-zh="您的需求">Your brief</span></label><textarea id="p-brief" rows="3"></textarea></div>
+      <button class="btn btn-accent" type="submit" data-en="Send" data-fr="Envoyer" data-zh="发送">Send</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="mark">UNSEEN.</div>
+    <div style="margin-top:20px"><span data-en="Private luxury concierge. Sole trader registered in France." data-fr="Conciergerie privée de luxe. Entreprise individuelle immatriculée en France." data-zh="私人尊享礼宾服务。法国注册个人企业。">Private luxury concierge. Sole trader registered in France.</span> 8 rue du Docteur Gravery, 77100 Meaux. SIRET 999 356 587 00017.
+      <br><a href="legal.html"><span data-en="Legal notice, terms and privacy" data-fr="Mentions légales, conditions et confidentialité" data-zh="法律声明、条款与隐私">Legal notice, terms and privacy</span></a></div>
+  </div>
+</footer>
+
+<a class="wa" href="https://wa.me/33613850733" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.4c.1.1 1.6 2.5 4 3.5 1.5.6 2.1.7 2.8.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg></a>
+
+<script>
+// Langues : même mémoire que la page d'accueil (localStorage « unseen-lang »)
+(function(){
+  var TITRES={en:'UNSEEN. — For travel professionals',fr:'UNSEEN. — Pour les professionnels du voyage',zh:'UNSEEN. — 旅行行业合作'};
+  function setLang(l){
+    document.querySelectorAll('[data-en]').forEach(function(n){var v=n.getAttribute('data-'+l);if(v!==null)n.innerHTML=v;});
+    document.querySelectorAll('[data-alt-en]').forEach(function(n){var v=n.getAttribute('data-alt-'+l);if(v!==null)n.setAttribute('alt',v);});
+    document.documentElement.lang=l;document.title=TITRES[l];
+    document.querySelectorAll('button[data-l]').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.l===l?'true':'false');});
+    try{localStorage.setItem('unseen-lang',l);}catch(e){}
+  }
+  document.querySelectorAll('button[data-l]').forEach(function(b){b.addEventListener('click',function(){setLang(b.dataset.l);});});
+  var s=null;try{s=localStorage.getItem('unseen-lang');}catch(e){}
+  var nav=(navigator.language||'').toLowerCase();
+  if(s==='fr'||s==='zh')setLang(s);else if(!s&&nav.indexOf('zh')===0)setLang('zh');else if(!s&&nav.indexOf('fr')===0)setLang('fr');
+})();
+// Menu sur téléphone
+var b=document.getElementById('burger'),pn=document.getElementById('panel');
+b.onclick=function(){var o=document.body.classList.toggle('menu-open');b.setAttribute('aria-expanded',o);pn.setAttribute('aria-hidden',!o);};
+pn.querySelectorAll('a').forEach(function(a){a.onclick=function(){document.body.classList.remove('menu-open');};});
+// Onglets des publics
+var bt=document.querySelectorAll('#tabs button'),pu=document.querySelectorAll('.pub');
+bt.forEach(function(x){x.onclick=function(){bt.forEach(function(y){y.classList.remove('on');});x.classList.add('on');pu.forEach(function(p,i){p.classList.toggle('on',i==x.dataset.i);});x.scrollIntoView({behavior:'smooth',inline:'center',block:'nearest'});};});
+// Formulaire : prépare un e-mail à partners@ (le site n'a pas de serveur)
+document.getElementById('proform').addEventListener('submit',function(e){
+  e.preventDefault();
+  var v=function(id){return document.getElementById(id).value.trim();};
+  var corps='Name: '+v('p-nom')+'\nCompany: '+v('p-soc')+'\nEmail: '+v('p-mail')+'\nType: '+document.getElementById('p-type').selectedOptions[0].text+'\n\n'+v('p-brief');
+  location.href='mailto:partners@unseenconciergerie.com?subject='+encodeURIComponent('Brief: '+(v('p-soc')||v('p-nom')))+'&body='+encodeURIComponent(corps);
+});
+// Apparition douce
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12});
+document.querySelectorAll('.rv').forEach(function(el){io.observe(el);});
+</script>
+</body>
+</html>

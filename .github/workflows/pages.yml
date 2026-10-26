@@ -26,6 +26,9 @@ jobs:
     steps:
       - name: Récupérer le code
         uses: actions/checkout@v4
+      - name: Retirer les fichiers de travail (outils, fiche de publication)
+        run: |
+          rm -rf site-unseen/outils site-unseen/PUBLIER.md
       - name: Préparer la publication (uniquement le dossier du site)
         uses: actions/upload-pages-artifact@v3
         with:

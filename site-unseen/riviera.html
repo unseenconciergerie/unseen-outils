@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#FFFFFF">
+<title>UNSEEN. — The Riviera</title>
+<meta name="description" content="UNSEEN. on the French Riviera: Monaco, Saint-Tropez, Cannes, Cap Ferrat. Villas, yachts, beach clubs, the Grand Prix and the Festival.">
+<meta property="og:title" content="UNSEEN. — The Riviera">
+<meta property="og:description" content="UNSEEN. on the French Riviera: Monaco, Saint-Tropez, Cannes, Cap Ferrat. Villas, yachts, beach clubs, the Grand Prix and the Festival.">
+<meta property="og:image" content="https://unseenconciergerie.com/img/hero.jpg">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://unseenconciergerie.com/riviera.html">
+<link rel="canonical" href="https://unseenconciergerie.com/riviera.html">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700;800&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=Noto+Sans+SC:wght@400;700&display=swap" rel="stylesheet">
+<style>
+/* Maquette de la page Professionals : charte V1.4 (noir, blanc, sable rosé, anthracite, accent de saison) */
+:root{
+  --noir:#000;--blanc:#FFF;--sable:#F4EAE5;--anthra:#2B2A2E;--trait:#E5D7D0;
+  --texte-2:#5C5556;--texte-3:#8A8083;--clair:#E9C4B8;
+  --accent:#7AA3BC;--sur-accent:#000;            /* remplacé par season.css */
+  --max:1240px;--pad:40px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--blanc);color:var(--noir);font-family:'DM Sans',system-ui,-apple-system,sans-serif;font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:'League Spartan',sans-serif;font-weight:800;letter-spacing:-.02em;line-height:1.04}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
+section{padding:104px 0}
+.sable{background:var(--sable)}
+.sombre{background:var(--anthra);color:var(--blanc)}
+.eyebrow{display:flex;gap:14px;align-items:baseline;margin-bottom:14px}
+.eyebrow .n{color:var(--accent);font-size:14px;font-weight:500}
+.eyebrow .t{font-size:12.5px;letter-spacing:.22em;text-transform:uppercase;font-weight:600}
+h2{font-size:clamp(30px,4.2vw,46px);margin-bottom:18px}
+.lede{font-weight:300;font-size:19px;line-height:1.6;color:var(--texte-2);max-width:640px}
+.sombre .lede{color:#C9C3C5}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 30px;font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;text-decoration:none;border:1px solid currentColor;transition:background .2s,color .2s}
+.btn-accent{background:var(--accent);border-color:var(--accent);color:var(--sur-accent)}
+.btn-accent:hover{background:var(--blanc);border-color:var(--blanc);color:var(--noir)}
+.btn-ghost{color:var(--blanc)}
+.btn-ghost:hover{background:var(--blanc);color:var(--noir)}
+.go{font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;text-decoration:none;border-bottom:2px solid var(--accent);padding-bottom:4px}
+
+/* ---------- barre du haut + menu téléphone ---------- */
+.top{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid rgba(0,0,0,.07)}
+.top-in{max-width:var(--max);margin:0 auto;padding:16px var(--pad);display:flex;align-items:center;justify-content:space-between;gap:20px}
+.mark{font-family:'League Spartan',sans-serif;font-weight:800;font-size:22px;text-decoration:none}
+.nav{display:flex;gap:28px}
+.nav a{font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;font-weight:500;padding:6px 0;border-bottom:1px solid transparent}
+.nav a:hover,.nav a.on{border-bottom-color:var(--accent)}
+.lang{display:flex;gap:8px;font-size:12.5px;font-weight:600;color:var(--texte-3)}
+.lang b{color:var(--noir)}
+.burger{display:none;width:44px;height:44px;border:0;background:none;cursor:pointer;position:relative}
+.burger span{position:absolute;left:11px;right:11px;height:1.5px;background:var(--noir);transition:transform .25s,opacity .25s}
+.burger span:nth-child(1){top:16px}.burger span:nth-child(2){top:22px}.burger span:nth-child(3){top:28px}
+.menu-open .burger span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.menu-open .burger span:nth-child(2){opacity:0}
+.menu-open .burger span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+.panel{position:fixed;inset:65px 0 0 0;background:var(--blanc);z-index:49;padding:30px 24px calc(30px + env(safe-area-inset-bottom));display:flex;flex-direction:column;gap:2px;transform:translateY(-8px);opacity:0;pointer-events:none;transition:opacity .25s,transform .25s}
+.menu-open .panel{opacity:1;transform:none;pointer-events:auto}
+.panel a{font-family:'League Spartan',sans-serif;font-weight:800;font-size:32px;text-decoration:none;padding:12px 0;border-bottom:1px solid var(--trait)}
+.panel .bas{margin-top:auto;display:flex;flex-direction:column;gap:12px}
+.panel .bas a{font-family:'DM Sans';font-weight:500;font-size:16px;border:0;padding:0}
+
+/* ---------- haut de page ---------- */
+.hero{position:relative;min-height:min(86vh,760px);display:flex;align-items:flex-end;color:var(--blanc);overflow:hidden;background:#000}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(20,19,22,.82) 0%,rgba(20,19,22,.45) 60%,rgba(20,19,22,.2) 100%)}
+.hero-in{position:relative;z-index:2;max-width:var(--max);margin:0 auto;padding:0 var(--pad) 84px;width:100%}
+.hero .k{font-size:12.5px;letter-spacing:.26em;text-transform:uppercase;color:#D8D2D4}
+.hero h1{font-size:clamp(38px,6vw,76px);max-width:820px;margin-top:18px}
+.hero p{margin-top:22px;max-width:560px;font-weight:300;font-size:19px;color:#E6E1E2}
+.hero .row{margin-top:34px;display:flex;gap:14px;flex-wrap:wrap}
+
+/* ---------- 01 ce qu'on prend en charge ---------- */
+.split{display:grid;grid-template-columns:5fr 6fr;gap:72px;align-items:center}
+.split-img{aspect-ratio:4/5;overflow:hidden}
+.split-img img{width:100%;height:100%;object-fit:cover}
+.prose{margin-top:24px;font-size:17px;line-height:1.85;color:var(--texte-2)}
+.prose strong{color:var(--noir);font-weight:600}
+
+/* ---------- 02 comment ça se passe ---------- */
+.steps{list-style:none;display:grid;grid-template-columns:repeat(5,1fr);gap:28px;margin-top:56px;counter-reset:s}
+.steps li{border-top:1px solid var(--noir);padding-top:18px;counter-increment:s}
+.steps li:before{content:"0" counter(s);display:block;color:var(--accent);font-size:13px;font-weight:600;margin-bottom:10px}
+.steps h3{font-size:20px;margin-bottom:8px}
+.steps p{font-size:15px;color:var(--texte-2);line-height:1.6}
+
+/* ---------- 03 par public : onglets (ordinateur) / défilement (téléphone) ---------- */
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-top:44px}
+.tabs button{font:inherit;font-size:13.5px;font-weight:500;padding:11px 18px;border:1px solid rgba(255,255,255,.28);background:none;color:#D8D2D4;border-radius:999px;cursor:pointer;white-space:nowrap;transition:.2s}
+.tabs button.on{background:var(--blanc);color:var(--noir);border-color:var(--blanc)}
+.pubs{margin-top:34px}
+.pub{display:none;grid-template-columns:1fr 1.1fr;gap:56px;align-items:center}
+.pub.on{display:grid;animation:apparait .45s ease}
+@keyframes apparait{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.pub .ph{aspect-ratio:4/3;overflow:hidden}
+.pub .ph img{width:100%;height:100%;object-fit:cover}
+.pub .tag{font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--clair)}
+.pub h3{font-size:clamp(26px,3vw,36px);margin-top:10px}
+.pub p{margin-top:14px;color:#C9C3C5;font-size:16.5px}
+.ex{margin-top:24px;border-left:2px solid var(--accent);padding:4px 0 4px 18px}
+.ex b{display:block;font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--clair);font-weight:600;margin-bottom:6px}
+.ex span{color:#EEE6E2;font-size:16px;line-height:1.65}
+
+/* ---------- 04 partenaires : bandeau qui défile ---------- */
+.marquee{overflow:hidden;margin-top:44px;border-top:1px solid var(--trait);border-bottom:1px solid var(--trait);padding:38px 0;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.track{display:flex;align-items:center;gap:80px;width:max-content;animation:defile 36s linear infinite}
+.track img{height:40px;width:auto;flex:none}
+@keyframes defile{to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.track{animation:none;flex-wrap:wrap;justify-content:center;width:auto}}
+
+/* ---------- 05 destinations ---------- */
+.dests{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:44px}
+.d{position:relative;aspect-ratio:3/4;overflow:hidden;color:var(--blanc);text-decoration:none;display:flex;align-items:flex-end}
+.d img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .9s}
+.d:hover img{transform:scale(1.05)}
+.d:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(20,19,22,.8))}
+.d div{position:relative;z-index:2;padding:20px}
+.d span{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--clair)}
+.d h3{font-size:26px;margin-top:4px}
+
+/* ---------- 06 contact pro ---------- */
+.contact{display:grid;grid-template-columns:1fr 1.1fr;gap:72px}
+.ci{border-top:1px solid rgba(255,255,255,.14);padding:18px 0;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.ci span{font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--clair)}
+.ci a{text-decoration:none;font-weight:500}
+form{display:grid;grid-template-columns:1fr 1fr;gap:20px 24px}
+form .full{grid-column:1/-1}
+label{display:block;font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:#C9C3C5;margin-bottom:6px}
+input,select,textarea{width:100%;font:inherit;font-size:16px;color:var(--blanc);background:transparent;border:0;border-bottom:1px solid rgba(255,255,255,.3);padding:10px 0;border-radius:0;-webkit-appearance:none;appearance:none;outline:none}
+select option{color:#000}
+input:focus,select:focus,textarea:focus{border-bottom-color:var(--accent)}
+form .btn{border:0;cursor:pointer;justify-self:start}
+
+footer{background:#1E1D20;color:#A39C9E;padding:60px 0 calc(40px + env(safe-area-inset-bottom));font-size:13.5px;line-height:2}
+footer .mark{color:var(--blanc);font-size:34px}
+
+/* apparition douce */
+.rv{opacity:0;transform:translateY(20px);transition:opacity .9s,transform .9s}
+.rv.in{opacity:1;transform:none}
+
+/* bouton WhatsApp fixe sur téléphone */
+.wa{display:none}
+
+/* ================= TÉLÉPHONE ================= */
+@media(max-width:900px){
+  :root{--pad:22px}
+  body{font-size:16.5px}
+  section{padding:68px 0}
+  .nav,.lang{display:none}
+  .burger{display:block}
+  .top-in{padding:10px var(--pad)}
+  .hero{min-height:82svh}
+  .hero:after{background:linear-gradient(180deg,rgba(20,19,22,.55) 0%,rgba(20,19,22,.7) 45%,rgba(20,19,22,.9) 100%)}
+  .hero-in{padding-bottom:56px}
+  .hero p{font-size:17px}
+  .hero .row{flex-direction:column}
+  .hero .btn{width:100%}
+  .split{grid-template-columns:1fr;gap:28px}
+  .split-img{aspect-ratio:16/11}
+  .steps{grid-template-columns:1fr;gap:0;margin-top:30px}
+  .steps li{display:grid;grid-template-columns:44px 1fr;gap:0 4px;padding:18px 0;border-top:1px solid var(--trait)}
+  .steps li:before{grid-row:span 2;margin:0}
+  .tabs{flex-wrap:nowrap;overflow-x:auto;margin:30px calc(var(--pad) * -1) 0;padding:0 var(--pad) 6px;scrollbar-width:none;-webkit-overflow-scrolling:touch;scroll-snap-type:x proximity}
+  .tabs::-webkit-scrollbar{display:none}
+  .tabs button{scroll-snap-align:start;min-height:44px}
+  .pub,.pub.on{grid-template-columns:1fr;gap:22px}
+  .pub .ph{aspect-ratio:16/11;margin:0 calc(var(--pad) * -1)}
+  .marquee{padding:28px 0}
+  .track{gap:52px;animation-duration:26s}
+  .track img{height:30px}
+  .dests{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:30px calc(var(--pad) * -1) 0;padding:0 var(--pad) 6px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .dests::-webkit-scrollbar{display:none}
+  .d{flex:0 0 72%;scroll-snap-align:start}
+  .contact{grid-template-columns:1fr;gap:40px}
+  form{grid-template-columns:1fr}
+  form .btn{width:100%;justify-self:stretch}
+  .wa{display:flex;position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom));z-index:40;width:56px;height:56px;border-radius:50%;background:var(--accent);color:var(--sur-accent);align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(0,0,0,.25);text-decoration:none}
+  .wa svg{width:26px;height:26px}
+}
+
+.lang{align-items:center;line-height:1}
+.lang span{color:var(--trait);font-weight:400}
+.lang button{background:none;border:0;font:inherit;line-height:1;color:var(--texte-3);cursor:pointer;padding:6px 2px}
+.lang button[aria-pressed="true"]{color:var(--noir)}
+.panel .langs{display:flex;gap:14px}
+.panel .langs button{background:none;border:0;font:inherit;font-size:16px;color:var(--texte-3);padding:6px 0;cursor:pointer}
+.panel .langs button[aria-pressed="true"]{color:var(--noir)}
+.ph picture,.split-img picture{display:block;height:100%}
+.hero picture{position:absolute;inset:0}
+.hero h1{font-size:clamp(34px,4.6vw,60px);max-width:760px}
+.hero-in{padding-top:120px}
+:lang(zh) h1,:lang(zh) h2,:lang(zh) h3{font-family:'Noto Sans SC',sans-serif;font-weight:700;letter-spacing:0}
+
+/* Pages de destination */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:34px;margin-top:52px}
+.cardd .ph{aspect-ratio:4/5;overflow:hidden;background:#111;margin-bottom:20px}
+.cardd .ph picture{display:block;height:100%}
+.cardd .ph img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.cardd:hover .ph img{transform:scale(1.04)}
+.cardd .tag{display:block;font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:8px}
+.cardd h3{font-size:22px;margin-bottom:8px}
+.cardd p{font-size:15.5px;color:var(--texte-2);line-height:1.6}
+.rows{list-style:none;margin-top:44px;max-width:780px}
+.rows li{display:flex;gap:20px;padding:20px 0;border-top:1px solid rgba(255,255,255,.14);font-size:17px;line-height:1.6}
+.rows li:last-child{border-bottom:1px solid rgba(255,255,255,.14)}
+.rows li b{color:var(--accent);font-weight:600;font-size:13px;flex:0 0 26px;padding-top:3px}
+.cats{display:grid;grid-template-columns:repeat(4,1fr);gap:48px 40px;margin-top:52px}
+.cats.trois{grid-template-columns:repeat(3,1fr)}
+.cat{border-top:1px solid rgba(255,255,255,.2);padding-top:20px}
+.cat .k2{display:block;font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);font-weight:600}
+.cat h3{font-size:20px;margin:8px 0 16px}
+.cat ul{list-style:none;display:flex;flex-direction:column;gap:12px}
+.cat li{position:relative;padding-left:18px;font-size:15px;line-height:1.55;color:#CFC8CA}
+.cat li:before{content:"";position:absolute;left:0;top:.8em;width:8px;height:1px;background:var(--accent)}
+.cat.large{grid-column:1/-1;display:grid;grid-template-columns:1fr 2fr;gap:0 40px;align-items:start}
+.cat.large ul{flex-direction:row;flex-wrap:wrap;gap:12px 40px;padding-top:4px}
+.cat.large li{flex:1 1 220px}
+@media(max-width:900px){.cats,.cats.trois{grid-template-columns:1fr;gap:30px;margin-top:32px}.cat.large{display:block}.cat.large ul{flex-direction:column}}
+.mosaic{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;background:#000}
+.mosaic figure{margin:0;aspect-ratio:4/5;overflow:hidden}
+.mosaic picture{display:block;height:100%}
+.mosaic img{width:100%;height:100%;object-fit:cover}
+.cta{text-align:center}
+.cta .lede{margin:0 auto}
+.cta .row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:30px}
+.cta .btn-noir{background:#000;color:#fff;border-color:#000}
+.cta .btn-noir:hover{background:var(--accent);border-color:var(--accent);color:var(--sur-accent)}
+.cta .btn-ligne{color:#000}
+.cta .btn-ligne:hover{background:#000;color:#fff}
+@media(max-width:900px){
+  .cards{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:16px;margin:32px calc(var(--pad) * -1) 0;padding:0 var(--pad) 8px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .cards::-webkit-scrollbar{display:none}
+  .cardd{flex:0 0 76%;scroll-snap-align:start}
+  .mosaic{grid-template-columns:1fr 1fr}
+  .mosaic figure{aspect-ratio:1/1}
+  .cta .row{flex-direction:column}
+  .cta .btn{width:100%}
+}
+</style>
+<link rel="stylesheet" href="season.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="top-in">
+    <a class="mark" href="index.html">UNSEEN.</a>
+    <nav class="nav"><a href="index.html#services" data-en="Services" data-fr="Services" data-zh="服务">Services</a><a href="index.html#destinations" data-en="Destinations" data-fr="Destinations" data-zh="目的地">Destinations</a><a href="index.html#now" data-en="Seasons" data-fr="Saisons" data-zh="当季">Seasons</a><a href="professionals.html" data-en="Professionals" data-fr="Professionnels" data-zh="合作伙伴">Professionals</a><a href="#contact" data-en="Contact" data-fr="Contact" data-zh="联系我们">Contact</a></nav>
+    <div class="lang"><button type="button" data-l="en" aria-pressed="true">EN</button><span>/</span><button type="button" data-l="fr" aria-pressed="false">FR</button><span>/</span><button type="button" data-l="zh" aria-pressed="false" lang="zh">中文</button></div>
+    <button class="burger" id="burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="panel"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<nav class="panel" id="panel" aria-hidden="true">
+  <a href="index.html#services" data-en="Services" data-fr="Services" data-zh="服务">Services</a><a href="index.html#destinations" data-en="Destinations" data-fr="Destinations" data-zh="目的地">Destinations</a><a href="index.html#now" data-en="Seasons" data-fr="Saisons" data-zh="当季">Seasons</a><a href="professionals.html" data-en="Professionals" data-fr="Professionnels" data-zh="合作伙伴">Professionals</a><a href="#contact" data-en="Contact" data-fr="Contact" data-zh="联系我们">Contact</a>
+  <div class="bas"><a href="https://wa.me/33613850733">WhatsApp</a><a href="mailto:contact@unseenconciergerie.com">contact@unseenconciergerie.com</a><div class="langs"><button type="button" data-l="en" aria-pressed="true">EN</button><span>/</span><button type="button" data-l="fr" aria-pressed="false">FR</button><span>/</span><button type="button" data-l="zh" aria-pressed="false" lang="zh">中文</button></div></div>
+</nav>
+
+<div class="hero">
+  <picture><source type="image/avif" srcset="img/riviera-hero.avif"><img src="img/riviera-hero.webp" alt="Monaco at night seen from the heights" data-alt-en="Monaco at night seen from the heights" data-alt-fr="Monaco la nuit, vu des hauteurs" data-alt-zh="从高处俯瞰夜色中的摩纳哥" fetchpriority="high"></picture>
+  <div class="hero-in">
+    <div class="k" data-en="Summer" data-fr="L&#x27;été" data-zh="夏季">Summer</div>
+    <h1 data-en="The Riviera, from the water." data-fr="La Riviera, côté mer." data-zh="从海上看蔚蓝海岸。">The Riviera, from the water.</h1>
+    <p data-en="Monaco, Saint-Tropez, Cannes. Villas taken before winter ends, beach clubs where a table already carries a name, days that begin at the berth." data-fr="Monaco, Saint-Tropez, Cannes. Des villas réservées avant la fin de l&#x27;hiver, des beach clubs où une table porte déjà un nom, des journées qui commencent au ponton." data-zh="摩纳哥、圣特罗佩、戛纳。冬天未尽，别墅已被订走；海滩俱乐部的餐桌，早已写上了名字；一天，从码头开始。">Monaco, Saint-Tropez, Cannes. Villas taken before winter ends, beach clubs where a table already carries a name, days that begin at the berth.</p>
+    <div class="row"><a class="btn btn-accent" href="https://wa.me/33613850733" data-en="Enquire on WhatsApp" data-fr="Nous écrire sur WhatsApp" data-zh="WhatsApp咨询">Enquire on WhatsApp</a><a class="btn btn-ghost" href="#dates" data-en="Tell us your dates" data-fr="Indiquez-nous vos dates" data-zh="告诉我们您的日期">Tell us your dates</a></div>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="eyebrow"><span class="n">01</span><span class="t" data-en="Why now" data-fr="Pourquoi maintenant" data-zh="为何现在">Why now</span></div>
+    <h2 data-en="The summer is booked in winter." data-fr="L&#x27;été se réserve en hiver." data-zh="夏天，要在冬天就订好。">The summer is booked in winter.</h2>
+    <p class="lede" data-en="The villas, the boats and the Grand Prix terraces are taken months ahead. We start in January, so your name is already on the list when you decide." data-fr="Les villas, les bateaux et les terrasses du Grand Prix partent des mois à l&#x27;avance. Nous commençons en janvier, pour que votre nom soit déjà sur la liste le jour où vous décidez." data-zh="别墅、游艇和大奖赛的观赛露台，都会提前数月被订走。我们从一月开始准备，让您决定出行时，名字早已在名单上。">The villas, the boats and the Grand Prix terraces are taken months ahead. We start in January, so your name is already on the list when you decide.</p>
+  </div>
+</section>
+
+<section class="sable">
+  <div class="wrap">
+    <div class="eyebrow"><span class="n">02</span><span class="t" data-en="Destinations" data-fr="Destinations" data-zh="目的地">Destinations</span></div>
+    <h2 data-en="Six places, one coast." data-fr="Six adresses, une seule côte." data-zh="一条海岸，六处去处。">Six places, one coast.</h2>
+    <div class="cards"><article class="cardd rv"><div class="ph"><picture><source type="image/avif" srcset="img/riviera-monaco.avif"><img src="img/riviera-monaco.webp" alt="Yachts in Monaco harbour" data-alt-en="Yachts in Monaco harbour" data-alt-fr="Des yachts dans le port de Monaco" data-alt-zh="摩纳哥港内的游艇" loading="lazy"></picture></div><span class="tag" data-en="Principality" data-fr="Principauté" data-zh="公国">Principality</span><h3 data-en="Monaco" data-fr="Monaco" data-zh="摩纳哥">Monaco</h3><p data-en="The Grand Prix, the Casino square, a table above the harbour." data-fr="Le Grand Prix, la place du Casino, une table au-dessus du port." data-zh="大奖赛、赌场广场，以及俯瞰港口的一张餐桌。">The Grand Prix, the Casino square, a table above the harbour.</p></article><article class="cardd rv"><div class="ph"><picture><source type="image/avif" srcset="img/riviera-tropez.avif"><img src="img/riviera-tropez.webp" alt="A beach club on the Riviera" data-alt-en="A beach club on the Riviera" data-alt-fr="Un beach club sur la Riviera" data-alt-zh="蔚蓝海岸的海滩俱乐部" loading="lazy"></picture></div><span class="tag" data-en="Var" data-fr="Var" data-zh="瓦尔省">Var</span><h3 data-en="Saint-Tropez" data-fr="Saint-Tropez" data-zh="圣特罗佩">Saint-Tropez</h3><p data-en="Pampelonne, the beach clubs, the old port at night." data-fr="Pampelonne, les beach clubs, le vieux port la nuit." data-zh="庞佩洛纳海滩、海滩俱乐部，以及夜色中的老港。">Pampelonne, the beach clubs, the old port at night.</p></article><article class="cardd rv"><div class="ph"><picture><source type="image/avif" srcset="img/riviera-cannes.avif"><img src="img/riviera-cannes.webp" alt="The Croisette in Cannes" data-alt-en="The Croisette in Cannes" data-alt-fr="La Croisette à Cannes" data-alt-zh="戛纳的十字大道" loading="lazy"></picture></div><span class="tag" data-en="Alpes-Maritimes" data-fr="Alpes-Maritimes" data-zh="滨海阿尔卑斯省">Alpes-Maritimes</span><h3 data-en="Cannes" data-fr="Cannes" data-zh="戛纳">Cannes</h3><p data-en="The Croisette, the Festival in May, the islands opposite." data-fr="La Croisette, le Festival en mai, les îles juste en face." data-zh="十字大道、五月的电影节，以及对面的群岛。">The Croisette, the Festival in May, the islands opposite.</p></article><article class="cardd rv"><div class="ph"><picture><source type="image/avif" srcset="img/riviera-ferrat.avif"><img src="img/riviera-ferrat.webp" alt="A villa above a cove on Cap Ferrat" data-alt-en="A villa above a cove on Cap Ferrat" data-alt-fr="Une villa au-dessus d&#x27;une crique du Cap Ferrat" data-alt-zh="费拉角海湾上方的别墅" loading="lazy"></picture></div><span class="tag" data-en="The cape" data-fr="Le cap" data-zh="海角">The cape</span><h3 data-en="Cap Ferrat" data-fr="Cap Ferrat" data-zh="费拉角">Cap Ferrat</h3><p data-en="Villas behind the pines, the quietest bays on the coast." data-fr="Des villas derrière les pins, les baies les plus calmes de la côte." data-zh="松林后的别墅，整条海岸最安静的海湾。">Villas behind the pines, the quietest bays on the coast.</p></article><article class="cardd rv"><div class="ph"><picture><source type="image/avif" srcset="img/riviera-eze.avif"><img src="img/riviera-eze.webp" alt="A stone street in Èze village" data-alt-en="A stone street in Èze village" data-alt-fr="Une ruelle en pierre du village d&#x27;Èze" data-alt-zh="埃兹村的石板小巷" loading="lazy"></picture></div><span class="tag" data-en="Above the sea" data-fr="Au-dessus de la mer" data-zh="临海之上">Above the sea</span><h3 data-en="Èze" data-fr="Èze" data-zh="埃兹">Èze</h3><p data-en="A village above the sea, dinner on a terrace at sunset." data-fr="Un village perché au-dessus de la mer, un dîner en terrasse au coucher du soleil." data-zh="悬于海上的小村，日落时分在露台晚餐。">A village above the sea, dinner on a terrace at sunset.</p></article><article class="cardd rv"><div class="ph"><picture><source type="image/avif" srcset="img/riviera-mer.avif"><img src="img/riviera-mer.webp" alt="The deck of a yacht at sea" data-alt-en="The deck of a yacht at sea" data-alt-fr="Le pont d&#x27;un yacht en mer" data-alt-zh="海上游艇的甲板" loading="lazy"></picture></div><span class="tag" data-en="At sea" data-fr="En mer" data-zh="海上">At sea</span><h3 data-en="On board" data-fr="À bord" data-zh="游艇之上">On board</h3><p data-en="A yacht for the day or the week, with crew, tender and chef." data-fr="Un yacht pour la journée ou la semaine, avec équipage, annexe et chef." data-zh="按天或按周包租游艇，配备船员、接驳艇与主厨。">A yacht for the day or the week, with crew, tender and chef.</p></article></div>
+  </div>
+</section>
+
+<section class="sombre">
+  <div class="wrap">
+    <div class="eyebrow"><span class="n">03</span><span class="t" data-en="What we arrange" data-fr="Ce que nous organisons" data-zh="我们为您安排">What we arrange</span></div>
+    <h2 data-en="The whole summer, one contact." data-fr="Tout l&#x27;été, un seul contact." data-zh="整个夏天，只需一位联系人。">The whole summer, one contact.</h2>
+    <div class="cats"><div class="cat rv"><div><span class="k2" data-en="Stay" data-fr="Séjour" data-zh="住宿">Stay</span><h3 data-en="Where you sleep" data-fr="Où dormir" data-zh="下榻之处">Where you sleep</h3></div><ul><li><span data-en="A villa with staff, for the week or the season." data-fr="Une villa avec personnel, à la semaine ou à la saison." data-zh="配备管家的别墅，按周或整季。">A villa with staff, for the week or the season.</span></li><li><span data-en="A suite in Monaco or on Cap Ferrat." data-fr="Une suite à Monaco ou au Cap Ferrat." data-zh="摩纳哥或费拉角的套房。">A suite in Monaco or on Cap Ferrat.</span></li><li><span data-en="A room on the beach in Saint-Tropez." data-fr="Une chambre sur la plage à Saint-Tropez." data-zh="圣特罗佩海滩上的客房。">A room on the beach in Saint-Tropez.</span></li></ul></div><div class="cat rv"><div><span class="k2" data-en="Tables" data-fr="Tables" data-zh="餐桌">Tables</span><h3 data-en="Where you eat" data-fr="Où manger" data-zh="用餐之处">Where you eat</h3></div><ul><li><span data-en="Lunch at a beach club on Pampelonne." data-fr="Un déjeuner dans un beach club de Pampelonne." data-zh="在庞佩洛纳的海滩俱乐部午餐。">Lunch at a beach club on Pampelonne.</span></li><li><span data-en="A terrace above the sea in Èze." data-fr="Une terrasse au-dessus de la mer à Èze." data-zh="埃兹临海的露台。">A terrace above the sea in Èze.</span></li><li><span data-en="The right table in Monaco on Grand Prix night." data-fr="La bonne table à Monaco le soir du Grand Prix." data-zh="大奖赛之夜，摩纳哥那张对的餐桌。">The right table in Monaco on Grand Prix night.</span></li></ul></div><div class="cat rv"><div><span class="k2" data-en="Experiences" data-fr="Expériences" data-zh="体验">Experiences</span><h3 data-en="What you do" data-fr="Que faire" data-zh="做些什么">What you do</h3></div><ul><li><span data-en="The Grand Prix from a terrace or a boat." data-fr="Le Grand Prix depuis une terrasse ou un bateau." data-zh="在露台或游艇上观赏大奖赛。">The Grand Prix from a terrace or a boat.</span></li><li><span data-en="The Cannes Festival and its evenings." data-fr="Le Festival de Cannes et ses soirées." data-zh="戛纳电影节及其晚会。">The Cannes Festival and its evenings.</span></li><li><span data-en="A day on the Lérins islands." data-fr="Une journée sur les îles de Lérins." data-zh="在莱兰群岛度过一天。">A day on the Lérins islands.</span></li></ul></div><div class="cat rv"><div><span class="k2" data-en="Getting around" data-fr="Déplacements" data-zh="出行">Getting around</span><h3 data-en="How you move" data-fr="Comment circuler" data-zh="如何往来">How you move</h3></div><ul><li><span data-en="Nice to Monaco by helicopter, in seven minutes." data-fr="Nice-Monaco en hélicoptère, en sept minutes." data-zh="乘直升机从尼斯到摩纳哥，只需七分钟。">Nice to Monaco by helicopter, in seven minutes.</span></li><li><span data-en="A private driver for the whole stay." data-fr="Un chauffeur privé pendant tout le séjour." data-zh="全程专属私人司机。">A private driver for the whole stay.</span></li><li><span data-en="A tender from the boat to the beach." data-fr="Une annexe du bateau jusqu&#x27;à la plage." data-zh="从游艇乘接驳艇直达海滩。">A tender from the boat to the beach.</span></li></ul></div></div>
+  </div>
+</section>
+
+<div class="mosaic"><figure><picture><source type="image/avif" srcset="img/riviera-m1.avif"><img src="img/riviera-m1.webp" alt="A restaurant built into the rocks above the sea" data-alt-en="A restaurant built into the rocks above the sea" data-alt-fr="Un restaurant accroché aux rochers au-dessus de la mer" data-alt-zh="嵌在海边岩石上的餐厅" loading="lazy"></picture></figure><figure><picture><source type="image/avif" srcset="img/riviera-m2.avif"><img src="img/riviera-m2.webp" alt="A table set facing the bay" data-alt-en="A table set facing the bay" data-alt-fr="Une table dressée face à la baie" data-alt-zh="面朝海湾布置好的餐桌" loading="lazy"></picture></figure><figure><picture><source type="image/avif" srcset="img/riviera-m3.avif"><img src="img/riviera-m3.webp" alt="A beach terrace by the sea" data-alt-en="A beach terrace by the sea" data-alt-fr="Une terrasse de plage au bord de l&#x27;eau" data-alt-zh="海边的海滩露台" loading="lazy"></picture></figure><figure><picture><source type="image/avif" srcset="img/riviera-m4.avif"><img src="img/riviera-m4.webp" alt="A turquoise cove below the hills" data-alt-en="A turquoise cove below the hills" data-alt-fr="Une crique turquoise au pied des collines" data-alt-zh="山脚下的碧绿海湾" loading="lazy"></picture></figure></div>
+
+<section class="cta" id="dates">
+  <div class="wrap">
+    <div class="eyebrow" style="justify-content:center"><span class="n">04</span><span class="t" data-en="Your stay" data-fr="Votre séjour" data-zh="您的行程">Your stay</span></div>
+    <h2 data-en="Tell us the dates." data-fr="Indiquez-nous les dates." data-zh="告诉我们日期。">Tell us the dates.</h2>
+    <p class="lede" data-en="One message is enough to start." data-fr="Un message suffit pour commencer." data-zh="一条消息，即可开始。">One message is enough to start.</p>
+    <div class="row"><a class="btn btn-noir" href="https://wa.me/33613850733" data-en="Enquire on WhatsApp" data-fr="Nous écrire sur WhatsApp" data-zh="WhatsApp咨询">Enquire on WhatsApp</a><a class="btn btn-ligne" href="index.html#contact" data-en="Use the contact form" data-fr="Utiliser le formulaire" data-zh="使用联系表单">Use the contact form</a></div>
+  </div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="mark">UNSEEN.</div>
+    <div style="margin-top:20px"><span data-en="Private luxury concierge. Sole trader registered in France." data-fr="Conciergerie privée de luxe. Entreprise individuelle immatriculée en France." data-zh="私人尊享礼宾服务。法国注册个人企业。">Private luxury concierge. Sole trader registered in France.</span> 8 rue du Docteur Gravery, 77100 Meaux. SIRET 999 356 587 00017.
+      <br><a href="legal.html"><span data-en="Legal notice, terms and privacy" data-fr="Mentions légales, conditions et confidentialité" data-zh="法律声明、条款与隐私">Legal notice, terms and privacy</span></a></div>
+  </div>
+</footer>
+
+<a class="wa" href="https://wa.me/33613850733" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.4c.1.1 1.6 2.5 4 3.5 1.5.6 2.1.7 2.8.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg></a>
+
+<script>
+// Langues : même mémoire que la page d'accueil (localStorage « unseen-lang »)
+(function(){
+  var TITRES={en:'UNSEEN. — The Riviera',fr:'UNSEEN. — La Riviera',zh:'UNSEEN. — 蔚蓝海岸'};
+  function setLang(l){
+    document.querySelectorAll('[data-en]').forEach(function(n){var v=n.getAttribute('data-'+l);if(v!==null)n.innerHTML=v;});
+    document.querySelectorAll('[data-alt-en]').forEach(function(n){var v=n.getAttribute('data-alt-'+l);if(v!==null)n.setAttribute('alt',v);});
+    document.documentElement.lang=l;document.title=TITRES[l];
+    document.querySelectorAll('button[data-l]').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.l===l?'true':'false');});
+    try{localStorage.setItem('unseen-lang',l);}catch(e){}
+  }
+  document.querySelectorAll('button[data-l]').forEach(function(b){b.addEventListener('click',function(){setLang(b.dataset.l);});});
+  var s=null;try{s=localStorage.getItem('unseen-lang');}catch(e){}
+  var nav=(navigator.language||'').toLowerCase();
+  if(s==='fr'||s==='zh')setLang(s);else if(!s&&nav.indexOf('zh')===0)setLang('zh');else if(!s&&nav.indexOf('fr')===0)setLang('fr');
+})();
+// Menu sur téléphone
+var b=document.getElementById('burger'),pn=document.getElementById('panel');
+b.onclick=function(){var o=document.body.classList.toggle('menu-open');b.setAttribute('aria-expanded',o);pn.setAttribute('aria-hidden',!o);};
+pn.querySelectorAll('a').forEach(function(a){a.onclick=function(){document.body.classList.remove('menu-open');};});
+// Apparition douce
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12});
+document.querySelectorAll('.rv').forEach(function(el){io.observe(el);});
+</script>
+</body>
+</html>

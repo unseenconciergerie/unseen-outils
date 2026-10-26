@@ -60,10 +60,10 @@
 
 
   /* --------------------------------------------------------- */
-  /* 2. L'ouverture : trois photos qui se relaient             */
+  /* 2. L'ouverture : deux photos qui se relaient              */
   /* --------------------------------------------------------- */
 
-  var AUTRES_PHOTOS = ['hero-2', 'hero-3'];
+  var AUTRES_PHOTOS = ['hero-2'];   /* le pont Alexandre III au coucher du soleil */
   var DUREE_PHOTO = 8000;      /* huit secondes par photo */
 
   function composerOuverture(){

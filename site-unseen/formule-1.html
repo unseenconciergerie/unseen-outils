@@ -15,15 +15,15 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700;800&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700;800&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 <style>
 :root{
   --accent:#A3161A;
   --noir:#000000;
   --blanc:#FFFFFF;
-  --bleu-clair:#F4F6FC;
-  --gris-doux:#D9D9D9;
+  --bleu-clair:#F4EAE5;
+  --gris-doux:#E5D7D0;
   --texte-2:#4E4E4E;
   --texte-3:#7A7A7A;
   --max:1240px;
@@ -31,18 +31,18 @@
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{background:var(--bleu-clair);color:var(--noir);font-family:'Montserrat','Noto Sans SC',system-ui,-apple-system,sans-serif;font-weight:400;font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+body{background:var(--bleu-clair);color:var(--noir);font-family:'DM Sans','Noto Sans SC',system-ui,-apple-system,sans-serif;font-weight:400;font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
 h1,h2,h3{font-family:'League Spartan','Noto Sans SC',sans-serif;font-weight:700}
 :lang(zh) h1,:lang(zh) h2,:lang(zh) h3,:lang(zh) .hero-mark{font-weight:900}
 :lang(zh) h1,:lang(zh) h2,:lang(zh) h3,:lang(zh) .lede,:lang(zh) .hero-body p,:lang(zh) .sitem p,:lang(zh) .band p{letter-spacing:0}
 :lang(zh) .lede,:lang(zh) .hero-body p,:lang(zh) .sitem p{line-height:1.9}
 img{display:block;max-width:100%}
 .wrap{max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
-.num{font-family:'Montserrat',sans-serif;font-variant-numeric:tabular-nums}
+.num{font-family:'DM Sans',sans-serif;font-variant-numeric:tabular-nums}
 .rule-accent{height:2px;width:44px;background:var(--accent);border:0}
 picture{display:block;width:100%;height:100%}
 
-.topbar{position:sticky;top:0;z-index:60;background:var(--bleu-clair);border-bottom:1px solid rgba(0,0,0,.09)}
+.topbar{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid rgba(0,0,0,.09)}
 .topbar-in{max-width:var(--max);margin:0 auto;padding:16px var(--pad);display:flex;align-items:center;justify-content:space-between;gap:20px}
 .mark{font-family:'League Spartan',sans-serif;font-weight:800;font-size:21px;letter-spacing:-.01em;line-height:1;text-decoration:none;color:var(--noir)}
 .nav{display:flex;align-items:center;gap:26px}
@@ -74,10 +74,10 @@ section[id],div[id]{scroll-margin-top:88px}
 section{padding:96px 0}
 .sec-white{background:var(--blanc)}
 .sec-pale{background:var(--bleu-clair)}
-.sec-dark{background:var(--noir);color:var(--blanc)}
+.sec-dark{background:#2B2A2E;color:var(--blanc)}
 .head{max-width:720px}
 .eyebrow{display:flex;align-items:baseline;gap:16px;margin-bottom:14px}
-.eyebrow .n{font-family:'Montserrat',sans-serif;font-size:14px;color:var(--accent);font-weight:500}
+.eyebrow .n{font-family:'DM Sans',sans-serif;font-size:14px;color:var(--accent);font-weight:500}
 .eyebrow .t{font-size:13px;letter-spacing:.22em;text-transform:uppercase;font-weight:600}
 h2{font-weight:800;font-size:clamp(30px,4.2vw,46px);line-height:1.05;letter-spacing:-.02em;margin-bottom:20px}
 .lede{font-weight:300;font-size:20px;line-height:1.55;color:var(--texte-2)}
@@ -96,7 +96,7 @@ h2{font-weight:800;font-size:clamp(30px,4.2vw,46px);line-height:1.05;letter-spac
 .list-sec{margin-top:52px;display:flex;flex-direction:column;gap:0;max-width:760px}
 .list-row{display:flex;gap:22px;padding:24px 0;border-top:1px solid rgba(255,255,255,.14)}
 .list-row:last-child{border-bottom:1px solid rgba(255,255,255,.14)}
-.list-row .k{font-family:'Montserrat',sans-serif;font-weight:600;font-size:13px;color:var(--accent);flex:0 0 28px;padding-top:2px}
+.list-row .k{font-family:'DM Sans',sans-serif;font-weight:600;font-size:13px;color:var(--accent);flex:0 0 28px;padding-top:2px}
 .list-row p{font-size:17px;line-height:1.55}
 
 .band{position:relative;background:var(--noir);overflow:hidden;min-height:clamp(340px,48vh,480px);display:flex;align-items:flex-end}
@@ -117,7 +117,7 @@ h2{font-weight:800;font-size:clamp(30px,4.2vw,46px);line-height:1.05;letter-spac
 .cta-band .head{max-width:620px;margin:0 auto}
 .cta-band .cta-row{justify-content:center}
 
-footer{background:var(--noir);color:var(--blanc);padding:72px 0 46px;border-top:1px solid rgba(255,255,255,.14)}
+footer{background:#1E1D20;color:var(--blanc);padding:72px 0 46px;border-top:1px solid rgba(255,255,255,.14)}
 .foot-mark{font-family:'League Spartan',sans-serif;font-weight:800;font-size:38px;line-height:1}
 .curated{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#8A8A8A;margin-top:10px}
 .foot-sep{height:1px;background:#FFFFFF;opacity:.16;border:0;margin-top:34px}
@@ -140,6 +140,20 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
   footer{padding:52px 0 38px}
   .foot-mark{font-size:32px}
 }
+
+/* Menu sur téléphone (charte V1.4) */
+.burger{display:none;width:44px;height:44px;border:0;background:none;cursor:pointer;position:relative;margin-left:6px}
+.burger span{position:absolute;left:11px;right:11px;height:1.5px;background:#000;transition:transform .25s,opacity .25s}
+.burger span:nth-child(1){top:16px}.burger span:nth-child(2){top:22px}.burger span:nth-child(3){top:28px}
+.menu-open .burger span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.menu-open .burger span:nth-child(2){opacity:0}
+.menu-open .burger span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+.mpanel{position:fixed;left:0;right:0;bottom:0;top:64px;background:#fff;z-index:59;padding:26px 22px calc(26px + env(safe-area-inset-bottom));display:flex;flex-direction:column;opacity:0;pointer-events:none;transform:translateY(-8px);transition:opacity .25s,transform .25s}
+.menu-open .mpanel{opacity:1;pointer-events:auto;transform:none}
+.mpanel a{font-family:'League Spartan',sans-serif;font-weight:800;font-size:30px;text-decoration:none;color:#000;padding:12px 0;border-bottom:1px solid #E5D7D0}
+.mpanel .bas{margin-top:auto;display:flex;flex-direction:column;gap:10px}
+.mpanel .bas a{font-family:'DM Sans',sans-serif;font-weight:500;font-size:16px;border:0;padding:0}
+@media(max-width:900px){.burger{display:block}}
 </style>
 </head>
 <body>
@@ -148,9 +162,10 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
   <div class="topbar-in">
     <a class="mark" href="index.html#top">UNSEEN.</a>
     <nav class="nav">
-      <a href="index.html#method" data-en="Method" data-fr="Méthode" data-zh="服务流程">Method</a>
+      <a href="index.html#services" data-en="Services" data-fr="Services" data-zh="服务">Services</a>
       <a href="index.html#destinations" data-en="Destinations" data-fr="Destinations" data-zh="目的地">Destinations</a>
-      <a href="index.html#seasons" data-en="Seasons" data-fr="Saisons" data-zh="季节">Seasons</a>
+      <a href="index.html#now" data-en="Seasons" data-fr="Saisons" data-zh="当季">Seasons</a>
+      <a href="professionals.html" data-en="Professionals" data-fr="Professionnels" data-zh="合作伙伴">Professionals</a>
       <a href="index.html#contact" data-en="Contact" data-fr="Contact" data-zh="联系我们">Contact</a>
     </nav>
     <div class="langsw">
@@ -160,8 +175,18 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
       <span class="sep">/</span>
       <button type="button" id="btn-zh" aria-pressed="false" lang="zh">中文</button>
     </div>
+    <button class="burger" id="burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="mpanel"><span></span><span></span><span></span></button>
   </div>
 </div>
+<nav class="mpanel" id="mpanel" aria-hidden="true">
+  <a href="index.html#services" data-en="Services" data-fr="Services" data-zh="服务">Services</a>
+      <a href="index.html#destinations" data-en="Destinations" data-fr="Destinations" data-zh="目的地">Destinations</a>
+      <a href="index.html#now" data-en="Seasons" data-fr="Saisons" data-zh="当季">Seasons</a>
+      <a href="professionals.html" data-en="Professionals" data-fr="Professionnels" data-zh="合作伙伴">Professionals</a>
+      <a href="index.html#contact" data-en="Contact" data-fr="Contact" data-zh="联系我们">Contact</a>
+  <div class="bas"><a href="https://wa.me/33613850733">WhatsApp</a><a href="mailto:contact@unseenconciergerie.com">contact@unseenconciergerie.com</a></div>
+</nav>
+
 
 <div class="hero">
   <div class="hero-bg" aria-hidden="true">
@@ -238,15 +263,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
   </div>
 </section>
 
-<div class="band">
-  <picture><source type="image/webp" srcset="img/f1-piste.webp"><img src="img/f1-piste.jpg" alt="A Formula 1 car on track" data-alt-en="A Formula 1 car on track" data-alt-fr="Une Formule 1 en piste" data-alt-zh="赛道上的F1赛车"></picture>
-  <div class="veil"></div>
-  <div class="in">
-    <hr class="wl">
-    <p data-en="You don't queue for the paddock. You're already in it." data-fr="On ne fait pas la queue pour le paddock. On y est déjà." data-zh="您无需为进入维修区排队，因为您早已置身其中。">You don't queue for the paddock. You're already in it.</p>
-    <div class="sig">CURATED BY UNSEEN.</div>
-  </div>
-</div>
+
 
 <div class="mosaic reveal">
   <figure><picture><source type="image/webp" srcset="img/f1-detail.webp"><img src="img/f1-detail.jpg" alt="A close detail of a Formula 1 car" data-alt-en="A close detail of a Formula 1 car" data-alt-fr="Un détail d'une Formule 1" data-alt-zh="F1赛车细节特写" loading="lazy"></picture></figure>
@@ -322,5 +339,10 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 })();
 </script>
 
+<script>
+(function(){var b=document.getElementById('burger'),p=document.getElementById('mpanel');if(!b)return;
+b.addEventListener('click',function(){var o=document.body.classList.toggle('menu-open');b.setAttribute('aria-expanded',o);p.setAttribute('aria-hidden',!o);});
+p.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){document.body.classList.remove('menu-open');});});})();
+</script>
 </body>
 </html>

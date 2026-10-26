@@ -43,7 +43,7 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700;800&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700;800&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
 <!-- Police pour les caracteres chinois (aucune des deux polices ci-dessus n'en dessine).
      Chargee separement : le navigateur ne prend que les poids utilises. -->
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
@@ -51,125 +51,7 @@
 /* Leaflet 1.9.4 — feuille de style officielle, integree ici (et non chargee
    via <link>) pour que la carte reste stylee meme quand les feuilles de
    style externes autres que Google Fonts sont bloquees (ex. apercu). */
-.leaflet-pane,.leaflet-tile,.leaflet-marker-icon,.leaflet-marker-shadow,.leaflet-tile-container,.leaflet-pane>svg,.leaflet-pane>canvas,.leaflet-zoom-box,.leaflet-image-layer,.leaflet-layer{position:absolute;left:0;top:0}
-.leaflet-container{overflow:hidden}
-.leaflet-tile,.leaflet-marker-icon,.leaflet-marker-shadow{-webkit-user-select:none;-moz-user-select:none;user-select:none;-webkit-user-drag:none}
-.leaflet-tile::selection{background:transparent}
-.leaflet-safari .leaflet-tile{image-rendering:-webkit-optimize-contrast}
-.leaflet-safari .leaflet-tile-container{width:1600px;height:1600px;-webkit-transform-origin:0 0}
-.leaflet-marker-icon,.leaflet-marker-shadow{display:block}
-.leaflet-container .leaflet-overlay-pane svg{max-width:none!important;max-height:none!important}
-.leaflet-container .leaflet-marker-pane img,.leaflet-container .leaflet-shadow-pane img,.leaflet-container .leaflet-tile-pane img,.leaflet-container img.leaflet-image-layer,.leaflet-container .leaflet-tile{max-width:none!important;max-height:none!important;width:auto;padding:0}
-.leaflet-container img.leaflet-tile{mix-blend-mode:plus-lighter}
-.leaflet-container.leaflet-touch-zoom{-ms-touch-action:pan-x pan-y;touch-action:pan-x pan-y}
-.leaflet-container.leaflet-touch-drag{-ms-touch-action:pinch-zoom;touch-action:none;touch-action:pinch-zoom}
-.leaflet-container.leaflet-touch-drag.leaflet-touch-zoom{-ms-touch-action:none;touch-action:none}
-.leaflet-container{-webkit-tap-highlight-color:transparent}
-.leaflet-container a{-webkit-tap-highlight-color:rgba(51,181,229,.4)}
-.leaflet-tile{filter:inherit;visibility:hidden}
-.leaflet-tile-loaded{visibility:inherit}
-.leaflet-zoom-box{width:0;height:0;box-sizing:border-box;z-index:800}
-.leaflet-overlay-pane svg{-moz-user-select:none}
-.leaflet-pane{z-index:400}
-.leaflet-tile-pane{z-index:200}
-.leaflet-overlay-pane{z-index:400}
-.leaflet-shadow-pane{z-index:500}
-.leaflet-marker-pane{z-index:600}
-.leaflet-tooltip-pane{z-index:650}
-.leaflet-popup-pane{z-index:700}
-.leaflet-map-pane canvas{z-index:100}
-.leaflet-map-pane svg{z-index:200}
-.leaflet-vml-shape{width:1px;height:1px}
 .lvml{behavior:url(#default#VML);display:inline-block;position:absolute}
-.leaflet-control{position:relative;z-index:800;pointer-events:visiblePainted;pointer-events:auto}
-.leaflet-top,.leaflet-bottom{position:absolute;z-index:1000;pointer-events:none}
-.leaflet-top{top:0}
-.leaflet-right{right:0}
-.leaflet-bottom{bottom:0}
-.leaflet-left{left:0}
-.leaflet-control{float:left;clear:both}
-.leaflet-right .leaflet-control{float:right}
-.leaflet-top .leaflet-control{margin-top:10px}
-.leaflet-bottom .leaflet-control{margin-bottom:10px}
-.leaflet-left .leaflet-control{margin-left:10px}
-.leaflet-right .leaflet-control{margin-right:10px}
-.leaflet-fade-anim .leaflet-popup{opacity:0;transition:opacity .2s linear}
-.leaflet-fade-anim .leaflet-map-pane .leaflet-popup{opacity:1}
-.leaflet-zoom-animated{transform-origin:0 0}
-svg.leaflet-zoom-animated{will-change:transform}
-.leaflet-zoom-anim .leaflet-zoom-animated{transition:transform .25s cubic-bezier(0,0,.25,1)}
-.leaflet-zoom-anim .leaflet-tile,.leaflet-pan-anim .leaflet-tile{transition:none}
-.leaflet-zoom-anim .leaflet-zoom-hide{visibility:hidden}
-.leaflet-interactive{cursor:pointer}
-.leaflet-grab{cursor:grab}
-.leaflet-crosshair,.leaflet-crosshair .leaflet-interactive{cursor:crosshair}
-.leaflet-popup-pane,.leaflet-control{cursor:auto}
-.leaflet-dragging .leaflet-grab,.leaflet-dragging .leaflet-grab .leaflet-interactive,.leaflet-dragging .leaflet-marker-draggable{cursor:grabbing}
-.leaflet-marker-icon,.leaflet-marker-shadow,.leaflet-image-layer,.leaflet-pane>svg path,.leaflet-tile-container{pointer-events:none}
-.leaflet-marker-icon.leaflet-interactive,.leaflet-image-layer.leaflet-interactive,.leaflet-pane>svg path.leaflet-interactive,svg.leaflet-image-layer.leaflet-interactive path{pointer-events:visiblePainted;pointer-events:auto}
-.leaflet-container{background:#ddd;outline-offset:1px}
-.leaflet-container a{color:#0078A8}
-.leaflet-zoom-box{border:2px dotted #38f;background:rgba(255,255,255,.5)}
-.leaflet-container{font-family:"Helvetica Neue",Arial,Helvetica,sans-serif;font-size:.75rem;line-height:1.5}
-.leaflet-bar{box-shadow:0 1px 5px rgba(0,0,0,.65);border-radius:4px}
-.leaflet-bar a{background-color:#fff;border-bottom:1px solid #ccc;width:26px;height:26px;line-height:26px;display:block;text-align:center;text-decoration:none;color:#000}
-.leaflet-bar a,.leaflet-control-layers-toggle{background-position:50% 50%;background-repeat:no-repeat;display:block}
-.leaflet-bar a:hover,.leaflet-bar a:focus{background-color:#f4f4f4}
-.leaflet-bar a:first-child{border-top-left-radius:4px;border-top-right-radius:4px}
-.leaflet-bar a:last-child{border-bottom-left-radius:4px;border-bottom-right-radius:4px;border-bottom:none}
-.leaflet-bar a.leaflet-disabled{cursor:default;background-color:#f4f4f4;color:#bbb}
-.leaflet-touch .leaflet-bar a{width:30px;height:30px;line-height:30px}
-.leaflet-touch .leaflet-bar a:first-child{border-top-left-radius:2px;border-top-right-radius:2px}
-.leaflet-touch .leaflet-bar a:last-child{border-bottom-left-radius:2px;border-bottom-right-radius:2px}
-.leaflet-control-zoom-in,.leaflet-control-zoom-out{font:bold 18px 'Lucida Console',Monaco,monospace;text-indent:1px}
-.leaflet-touch .leaflet-control-zoom-in,.leaflet-touch .leaflet-control-zoom-out{font-size:22px}
-.leaflet-control-layers{box-shadow:0 1px 5px rgba(0,0,0,.4);background:#fff;border-radius:5px}
-.leaflet-control-layers-toggle{width:36px;height:36px}
-.leaflet-touch .leaflet-control-layers-toggle{width:44px;height:44px}
-.leaflet-control-layers .leaflet-control-layers-list,.leaflet-control-layers-expanded .leaflet-control-layers-toggle{display:none}
-.leaflet-control-layers-expanded .leaflet-control-layers-list{display:block;position:relative}
-.leaflet-control-layers-expanded{padding:6px 10px 6px 6px;color:#333;background:#fff}
-.leaflet-control-layers-scrollbar{overflow-y:scroll;overflow-x:hidden;padding-right:5px}
-.leaflet-control-layers-selector{margin-top:2px;position:relative;top:1px}
-.leaflet-control-layers label{display:block;font-size:1.08333em}
-.leaflet-control-layers-separator{height:0;border-top:1px solid #ddd;margin:5px -10px 5px -6px}
-.leaflet-container .leaflet-control-attribution{background:rgba(255,255,255,.8);margin:0}
-.leaflet-control-attribution,.leaflet-control-scale-line{padding:0 5px;color:#333;line-height:1.4}
-.leaflet-control-attribution a{text-decoration:none}
-.leaflet-control-attribution a:hover,.leaflet-control-attribution a:focus{text-decoration:underline}
-.leaflet-attribution-flag{display:inline!important;vertical-align:baseline!important;width:1em;height:.6669em}
-.leaflet-left .leaflet-control-scale{margin-left:5px}
-.leaflet-bottom .leaflet-control-scale{margin-bottom:5px}
-.leaflet-control-scale-line{border:2px solid #777;border-top:none;line-height:1.1;padding:2px 5px 1px;white-space:nowrap;box-sizing:border-box;background:rgba(255,255,255,.8);text-shadow:1px 1px #fff}
-.leaflet-control-scale-line:not(:first-child){border-top:2px solid #777;border-bottom:none;margin-top:-2px}
-.leaflet-control-scale-line:not(:first-child):not(:last-child){border-bottom:2px solid #777}
-.leaflet-touch .leaflet-control-attribution,.leaflet-touch .leaflet-control-layers,.leaflet-touch .leaflet-bar{box-shadow:none}
-.leaflet-touch .leaflet-control-layers,.leaflet-touch .leaflet-bar{border:2px solid rgba(0,0,0,.2);background-clip:padding-box}
-.leaflet-popup{position:absolute;text-align:center;margin-bottom:20px}
-.leaflet-popup-content-wrapper{padding:1px;text-align:left;border-radius:12px}
-.leaflet-popup-content{margin:13px 24px 13px 20px;line-height:1.3;font-size:1.08333em;min-height:1px}
-.leaflet-popup-content p{margin:1.3em 0}
-.leaflet-popup-tip-container{width:40px;height:20px;position:absolute;left:50%;margin-top:-1px;margin-left:-20px;overflow:hidden;pointer-events:none}
-.leaflet-popup-tip{width:17px;height:17px;padding:1px;margin:-10px auto 0;pointer-events:auto;transform:rotate(45deg)}
-.leaflet-popup-content-wrapper,.leaflet-popup-tip{background:#fff;color:#333;box-shadow:0 3px 14px rgba(0,0,0,.4)}
-.leaflet-container a.leaflet-popup-close-button{position:absolute;top:0;right:0;border:none;text-align:center;width:24px;height:24px;font:16px/24px Tahoma,Verdana,sans-serif;color:#757575;text-decoration:none;background:transparent}
-.leaflet-container a.leaflet-popup-close-button:hover,.leaflet-container a.leaflet-popup-close-button:focus{color:#585858}
-.leaflet-popup-scrolled{overflow:auto}
-.leaflet-div-icon{background:#fff;border:1px solid #666}
-.leaflet-tooltip{position:absolute;padding:6px;background-color:#fff;border:1px solid #fff;border-radius:3px;color:#222;white-space:nowrap;user-select:none;pointer-events:none;box-shadow:0 1px 3px rgba(0,0,0,.4)}
-.leaflet-tooltip.leaflet-interactive{cursor:pointer;pointer-events:auto}
-.leaflet-tooltip-top:before,.leaflet-tooltip-bottom:before,.leaflet-tooltip-left:before,.leaflet-tooltip-right:before{position:absolute;pointer-events:none;border:6px solid transparent;background:transparent;content:""}
-.leaflet-tooltip-bottom{margin-top:6px}
-.leaflet-tooltip-top{margin-top:-6px}
-.leaflet-tooltip-bottom:before,.leaflet-tooltip-top:before{left:50%;margin-left:-6px}
-.leaflet-tooltip-top:before{bottom:0;margin-bottom:-12px;border-top-color:#fff}
-.leaflet-tooltip-bottom:before{top:0;margin-top:-12px;margin-left:-6px;border-bottom-color:#fff}
-.leaflet-tooltip-left{margin-left:-6px}
-.leaflet-tooltip-right{margin-left:6px}
-.leaflet-tooltip-left:before,.leaflet-tooltip-right:before{top:50%;margin-top:-6px}
-.leaflet-tooltip-left:before{right:0;margin-right:-12px;border-left-color:#fff}
-.leaflet-tooltip-right:before{left:0;margin-left:-12px;border-right-color:#fff}
-@media print{.leaflet-control{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
 </style>
 <style>
 /* =============================================================
@@ -191,10 +73,10 @@ svg.leaflet-zoom-animated{will-change:transform}
   --sur-accent:#000000;   /* texte posé sur la couleur d'accent : blanc si l'accent est foncé, #000000 s'il est clair */
   --noir:#000000;
   --blanc:#FFFFFF;
-  --bleu-clair:#F4F6FC;
-  --gris-doux:#D9D9D9;
-  --texte-2:#4E4E4E;
-  --texte-3:#7A7A7A;
+  --bleu-clair:#F4EAE5;
+  --gris-doux:#E5D7D0;
+  --texte-2:#5C5556;
+  --texte-3:#8A8083;
   --max:1240px;
   --pad:40px;
 }
@@ -203,7 +85,7 @@ html{scroll-behavior:smooth}
 body{
   background:var(--bleu-clair);
   color:var(--noir);
-  font-family:'Montserrat','Noto Sans SC',system-ui,-apple-system,sans-serif;
+  font-family:'DM Sans','Noto Sans SC',system-ui,-apple-system,sans-serif;
   font-weight:400;
   font-size:17px;
   line-height:1.65;
@@ -230,7 +112,7 @@ h1,h2,h3{font-family:'League Spartan','Noto Sans SC',sans-serif;font-weight:700}
 :lang(zh) .sitem p,:lang(zh) .tl-step p,:lang(zh) .mc-item p{line-height:1.9}
 img{display:block;max-width:100%}
 .wrap{max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
-.num{font-family:'Montserrat',sans-serif;font-variant-numeric:tabular-nums}
+.num{font-family:'DM Sans',sans-serif;font-variant-numeric:tabular-nums}
 .rule-accent{height:2px;width:44px;background:var(--accent);border:0}
 
 /* ---------- barre haute ---------- */
@@ -313,7 +195,7 @@ section{padding:96px 0}
 .sec-dark{background:var(--noir);color:var(--blanc)}
 .head{max-width:720px}
 .eyebrow{display:flex;align-items:baseline;gap:16px;margin-bottom:14px}
-.eyebrow .n{font-family:'Montserrat',sans-serif;font-size:14px;color:var(--accent);font-weight:500}
+.eyebrow .n{font-family:'DM Sans',sans-serif;font-size:14px;color:var(--accent);font-weight:500}
 .eyebrow .t{font-size:13px;letter-spacing:.22em;text-transform:uppercase;font-weight:600}
 h2{font-weight:800;font-size:clamp(30px,4.2vw,46px);line-height:1.05;letter-spacing:-.02em;margin-bottom:20px}
 .lede{font-weight:300;font-size:20px;line-height:1.55;color:var(--texte-2)}
@@ -356,37 +238,17 @@ h2{font-weight:800;font-size:clamp(30px,4.2vw,46px);line-height:1.05;letter-spac
 
 
 /* ---------- carte interactive (Leaflet) ---------- */
-#leafletmap{width:100%;height:440px;background:#0B0B0B;position:relative;isolation:isolate;overflow:hidden;transition:opacity .15s ease}
-#leafletmap.map-shift{opacity:.25}
-.leaflet-container{background:#0B0B0B;font-family:'Montserrat',sans-serif}
-.leaflet-control-attribution{background:rgba(0,0,0,.55)!important;color:#8A8A8A!important;font-size:10px!important}
-.leaflet-control-attribution a{color:#B4B4B4!important}
-.leaflet-control-zoom a{background:#111!important;color:#FFF!important;border-color:rgba(255,255,255,.2)!important}
-.leaflet-control-zoom a:hover{background:var(--accent)!important;color:var(--sur-accent)!important}
-.leaflet-popup-tip,.leaflet-popup-content-wrapper{background:#111!important;color:#EDEDED!important}
-.mapcard{max-height:440px;overflow-y:auto;padding-right:8px;scrollbar-width:thin}
-.mapcard::-webkit-scrollbar{width:6px}
-.mapcard::-webkit-scrollbar-thumb{background:rgba(255,255,255,.18);border-radius:3px}
-.mapcard .maphead{position:sticky;top:0;background:var(--noir);padding-bottom:6px}
 .partner-list{margin-top:16px;display:flex;flex-direction:column}
 .partner-item{display:flex;align-items:center;gap:12px;padding:13px 0;border-bottom:1px solid rgba(255,255,255,.10);cursor:pointer}
 .partner-item .pn{font-size:15.5px;color:var(--blanc);line-height:1.35;transition:color .15s;flex:1 1 auto}
 .partner-item:hover .pn{color:var(--accent)}
 .partner-item .pt{font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:#8A8A8A;white-space:nowrap;flex:0 0 auto}
-.partner-note{margin-top:14px;font-size:13px;color:#767676;line-height:1.6}
-.maptabs{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
-.maptabs button{background:none;border:1px solid rgba(255,255,255,.22);color:#B4B4B4;font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;padding:8px 14px;cursor:pointer;font-family:'Montserrat',sans-serif;transition:border-color .18s,color .18s}
-.maptabs button.on{border-color:var(--accent);color:var(--blanc)}
-.maptabs button:hover{color:var(--blanc)}
-.map-overview{background:none;border:0;margin-top:10px;padding:0;font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:#767676;cursor:pointer;font-family:'Montserrat',sans-serif;text-decoration:underline;text-underline-offset:3px}
-.map-overview:hover{color:var(--accent)}
-@media(max-width:880px){#leafletmap{height:320px}.mapcard{max-height:320px}}
 
 /* ---------- methode : frise horizontale ---------- */
 .timeline{list-style:none;margin:58px 0 0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:0;position:relative}
 .timeline::before{content:"";position:absolute;top:13px;left:0;right:0;height:1px;background:rgba(0,0,0,.13)}
 .tl-step{position:relative;padding-right:30px}
-.tl-k{position:relative;display:flex;align-items:center;justify-content:center;width:27px;height:27px;border-radius:50%;background:var(--blanc);border:1px solid var(--accent);color:var(--accent);font-family:'Montserrat',sans-serif;font-size:11px;font-weight:600;z-index:1}
+.tl-k{position:relative;display:flex;align-items:center;justify-content:center;width:27px;height:27px;border-radius:50%;background:var(--blanc);border:1px solid var(--accent);color:var(--accent);font-family:'DM Sans',sans-serif;font-size:11px;font-weight:600;z-index:1}
 .tl-step h3{font-weight:700;font-size:18px;margin:22px 0 9px}
 .tl-step p{font-size:15.5px;line-height:1.6;color:var(--texte-2)}
 @media(max-width:860px){
@@ -410,12 +272,6 @@ h2{font-weight:800;font-size:clamp(30px,4.2vw,46px);line-height:1.05;letter-spac
 
 /* ---------- partenaires : bandeau sous la carte ---------- */
 .map-cta{margin-top:56px;padding-top:42px;border-top:1px solid rgba(255,255,255,.14)}
-.mc-intro{font-weight:300;font-size:18px;line-height:1.6;color:#C2C2C2;max-width:720px}
-.mc-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;margin-top:34px}
-.mc-item .tag{display:block;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:12px}
-.mc-item p{font-size:15.5px;line-height:1.62;color:#B4B4B4}
-.mc-item .go{display:inline-block;margin-top:18px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;text-decoration:none;color:var(--blanc);border-bottom:2px solid var(--accent);padding-bottom:4px}
-.mc-item .go:hover,.mc-item .go:focus-visible{color:var(--accent)}
 @media(max-width:760px){.mc-grid{grid-template-columns:1fr;gap:32px}.mc-intro{font-size:16.5px}}
 
 /* ---------- pied de page ---------- */
@@ -449,12 +305,6 @@ picture{display:block;width:100%;height:100%}
 
 /* ---------- carte interactive ---------- */
 .mapsec{background:var(--noir);color:var(--blanc)}
-.mapgrid{margin-top:56px;display:grid;grid-template-columns:1.25fr 1fr;gap:52px;align-items:center}
-.mapstage{position:relative}
-.mapcard{min-height:230px}
-.mapcard .tag{display:block;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:12px}
-.mapcard h3{font-weight:800;font-size:26px;letter-spacing:-.015em;margin-bottom:14px}
-.mapcard p{font-size:16.5px;line-height:1.65;color:#B4B4B4}
 @media(max-width:880px){.mapgrid{grid-template-columns:1fr;gap:30px}}
 
 a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
@@ -497,7 +347,6 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
   .fld{margin-bottom:22px}
   .enq-actions{gap:18px}
   .enq-actions .enq-alt{width:100%;text-align:center}
-  .mapcard h3{font-size:23px}
 }
 
 /* ---------- formulaire de demande ---------- */
@@ -513,7 +362,7 @@ form.enq{margin-top:40px;max-width:840px}
 .fld label em{font-style:normal;color:#767676;font-weight:500;letter-spacing:.1em}
 .fld input,.fld select,.fld textarea{
   width:100%;background:transparent;border:0;border-bottom:1px solid rgba(255,255,255,.26);
-  color:var(--blanc);font-family:'Montserrat',system-ui,sans-serif;font-size:16.5px;
+  color:var(--blanc);font-family:'DM Sans',system-ui,sans-serif;font-size:16.5px;
   padding:13px 0;outline:none;border-radius:0;transition:border-color .18s ease;
   -webkit-appearance:none;appearance:none
 }
@@ -537,7 +386,7 @@ form.enq{margin-top:40px;max-width:840px}
 .agree-msg{display:none;font-size:13px;color:#E0705F;margin:0 0 20px 30px}
 .agree-msg.on{display:block}
 .enq-actions{display:flex;flex-wrap:wrap;gap:22px;align-items:center;margin-top:26px}
-button.btn{background:transparent;cursor:pointer;font-family:'Montserrat',system-ui,sans-serif}
+button.btn{background:transparent;cursor:pointer;font-family:'DM Sans',system-ui,sans-serif}
 .enq-alt{font-size:14.5px;color:#8A8A8A}
 .enq-alt a{color:#D6D6D6;text-decoration:none;border-bottom:1px solid var(--accent);padding-bottom:2px;cursor:pointer}
 .enq-alt a:hover{color:var(--accent)}
@@ -551,8 +400,102 @@ button.btn{background:transparent;cursor:pointer;font-family:'Montserrat',system
   .enq-actions .btn{width:100%}
 }
 </style>
-<link rel="stylesheet" href="season.css">
+
 <link rel="stylesheet" href="anim.css">
+<style>.srow.four{grid-template-columns:repeat(4,1fr)}@media(max-width:860px){.srow.four{grid-template-columns:1fr 1fr}}.plogos{display:flex;flex-wrap:wrap;gap:44px;align-items:center;margin-top:44px}.plogos img{height:44px;width:auto}.plogos .ph2{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--texte-3);border:1px dashed var(--gris-doux);padding:14px 20px}</style><style>#services .cards{grid-template-columns:repeat(4,1fr)}@media(max-width:860px){#services .cards{grid-template-columns:1fr 1fr}}</style><link rel="stylesheet" href="season.css">
+<style>
+/* --- Version 2 : Lin et prune --- */
+.hero,.sec-dark,footer{background:#2B2A2E}
+.hero{background:#000}
+.topbar{background:rgba(255,255,255,.95);backdrop-filter:blur(8px)}
+.hero .veil{background:linear-gradient(90deg,rgba(28,27,30,.72) 0%,rgba(28,27,30,.38) 55%,rgba(28,27,30,.12) 100%)!important}
+.eyebrow .n{color:var(--accent)}
+.nv-link{color:inherit;text-decoration:none;border-bottom:2px solid var(--accent)}
+/* services */
+.nv-grid{display:grid;grid-template-columns:1.15fr 1fr;gap:72px;margin-top:56px;align-items:start}
+.nv-list{list-style:none}
+.nv-list li{border-top:1px solid rgba(255,255,255,.14);padding:20px 0;display:grid;grid-template-columns:110px 1fr;gap:18px;cursor:pointer}
+.nv-list li:last-child{border-bottom:1px solid rgba(255,255,255,.14)}
+.nv-list .t{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#E9C4B8;padding-top:9px}
+.nv-list h3{font-size:clamp(22px,2.6vw,30px);line-height:1.1;transition:color .3s}
+.nv-list p{font-size:15px;line-height:1.6;color:#C9C3C5;max-height:0;overflow:hidden;opacity:0;transition:max-height .45s,opacity .45s,margin .45s}
+.nv-list li.on h3{color:#E9C4B8}
+.nv-list li.on p{max-height:140px;opacity:1;margin-top:8px}
+.nv-img{position:sticky;top:110px;aspect-ratio:4/5;overflow:hidden;background:#1E1D20}
+.nv-img picture{position:absolute;inset:0}.nv-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .6s}
+.nv-img img.on{opacity:1}
+/* destinations */
+.nv-dest{display:grid;grid-template-columns:repeat(12,1fr);gap:22px;margin-top:56px}
+.nd{position:relative;overflow:hidden;color:#FFFFFF;text-decoration:none;min-height:400px;display:flex;align-items:flex-end}
+.nd img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1s}
+.nd:hover img{transform:scale(1.05)}
+.nd:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(28,27,30,.82))}
+.nd .in{position:relative;z-index:2;padding:26px}
+.nd .in span{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:#E9C4B8}
+.nd .in h3{font-size:clamp(30px,3.4vw,42px);line-height:1;margin-top:6px}
+.nd .in p{font-size:15px;color:#EEE6E2;max-width:360px;margin-top:6px}
+.nd1{grid-column:span 7;min-height:520px}.nd2{grid-column:span 5;min-height:520px}.nd3{grid-column:span 5}.nd4{grid-column:span 7}
+/* carte */
+.nv-world{margin-top:44px}.nv-mapgrid{display:grid;grid-template-columns:1.5fr 1fr;gap:56px;margin-top:44px;align-items:center}.nv-eu{border:1px solid rgba(255,255,255,.12);padding:14px}.nv-eu-t{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#C9C3C5;margin-bottom:6px}#europe{width:100%;height:auto;display:block}
+#world{width:100%;height:auto;display:block}
+svg .land{fill:#3A393E;stroke:#56545A;stroke-width:.5}
+svg .land.eu{fill:#47454B}
+svg .arc{fill:none;stroke-width:1.2}
+svg .arc.in{stroke:#C9C3C5;stroke-dasharray:3 5;opacity:.55}
+svg .arc.out{stroke:#E9C4B8;opacity:.9}
+svg .arc.hi{opacity:1;stroke-width:2.2}
+svg .pt{cursor:pointer}
+svg .pt circle{transition:r .2s}
+svg .pt text{fill:#EEE6E2;font-family:'DM Sans',sans-serif;font-size:11px;letter-spacing:.08em;text-transform:uppercase}
+svg .pt.base text{fill:#E9C4B8;font-size:13px;font-weight:600}
+.nv-key{display:flex;gap:26px;flex-wrap:wrap;margin-top:14px;font-size:13px;color:#C9C3C5}
+.nv-key i{display:inline-block;width:26px;height:0;border-top:2px dashed #C9C3C5;margin-right:8px;vertical-align:middle}
+.nv-key i.out{border-top:2px solid #E9C4B8}
+.nv-info{border-top:1px solid rgba(255,255,255,.16);padding-top:22px;min-height:180px}
+.nv-info .t{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#E9C4B8}
+.nv-info h3{font-size:34px;margin-top:6px}
+.nv-info p{margin-top:10px;color:#C9C3C5;font-size:15.5px;line-height:1.6}
+/* en ce moment */
+.nv-now{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:48px}
+.nn{display:grid;grid-template-columns:1fr 1.1fr;background:var(--blanc);text-decoration:none;color:inherit;min-height:300px}
+.nn img{width:100%;height:100%;object-fit:cover}
+.nn div{padding:28px}
+.nn span{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--accent)}
+.nn h3{font-size:28px;margin-top:8px}
+.nn p{margin-top:10px;font-size:15px;color:var(--texte-2);line-height:1.6}
+.nn b{display:inline-block;margin-top:16px;font-size:12px;letter-spacing:.16em;text-transform:uppercase;border-bottom:2px solid var(--accent);padding-bottom:4px}
+/* photos emballées (avif + webp) : le cadre prend toute la tuile */
+.nd picture{position:absolute;inset:0}
+.nn picture{display:block;height:100%;min-height:220px}
+/* partenaires : bandeau qui défile sans s'arrêter */
+.marquee{overflow:hidden;margin-top:40px;border-top:1px solid var(--gris-doux);border-bottom:1px solid var(--gris-doux);padding:38px 0;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.track{display:flex;align-items:center;gap:80px;width:max-content;animation:defile 36s linear infinite}
+.track img{width:auto;flex:none}
+@keyframes defile{to{transform:translateX(-50%)}}
+@media(max-width:860px){.marquee{padding:28px 0}.track{gap:52px;animation-duration:26s}.track img{transform:scale(.8)}}
+@media(prefers-reduced-motion:reduce){.track{animation:none;flex-wrap:wrap;justify-content:center;width:auto}}
+/* partenaires */
+.nv-logos{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:36px;margin-top:44px;padding:40px 0;border-top:1px solid var(--gris-doux);border-bottom:1px solid var(--gris-doux)}
+.nv-logos img{height:40px;width:auto}
+/* téléphone : comme une application */
+@media(max-width:860px){
+  .nv-grid{grid-template-columns:1fr;gap:0}
+  .nv-img{display:none}
+  .nv-list li{grid-template-columns:1fr;gap:4px;padding:18px 0}
+  .nv-list .t{padding-top:0}
+  .nv-list p{max-height:none;opacity:1;margin-top:6px}
+  .nv-dest{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;margin:40px calc(var(--pad) * -1) 0;padding:0 var(--pad) 8px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+  .nv-dest::-webkit-scrollbar{display:none}
+  .nd{flex:0 0 82%;min-height:440px!important;scroll-snap-align:start}
+  .nv-mapgrid{grid-template-columns:1fr;gap:20px}
+  .nv-now{grid-template-columns:1fr}
+  .nn{grid-template-columns:1fr}.nn img{aspect-ratio:16/10}
+  .nv-logos{justify-content:center;gap:28px 40px}
+  .nv-logos img{height:32px}
+}
+</style>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
 </head>
 <body>
 
@@ -560,11 +503,10 @@ button.btn{background:transparent;cursor:pointer;font-family:'Montserrat',system
   <div class="topbar-in">
     <a class="mark" href="#top">UNSEEN.</a>
     <nav class="nav">
-      <a href="#method" data-en="Method" data-fr="Méthode" data-zh="服务流程">Method</a>
       <a href="#services" data-en="Services" data-fr="Services" data-zh="服务">Services</a>
       <a href="#destinations" data-en="Destinations" data-fr="Destinations" data-zh="目的地">Destinations</a>
-      <a href="#map" data-en="Map" data-fr="Carte" data-zh="地图">Map</a>
-      <a href="#seasons" data-en="Seasons" data-fr="Saisons" data-zh="季节">Seasons</a>
+      <a href="#now" data-en="Seasons" data-fr="Saisons" data-zh="当季">Seasons</a>
+      <a href="professionals.html" data-en="Professionals" data-fr="Professionnels" data-zh="合作伙伴">Professionals</a>
       <a href="#contact" data-en="Contact" data-fr="Contact" data-zh="联系我们">Contact</a>
     </nav>
     <div class="langsw">
@@ -582,13 +524,12 @@ button.btn{background:transparent;cursor:pointer;font-family:'Montserrat',system
 
 <div class="navpanel" id="navpanel" aria-hidden="true">
   <nav>
-    <a href="#method" data-en="Method" data-fr="Méthode" data-zh="服务流程">Method</a>
-    <a href="#services" data-en="Services" data-fr="Services" data-zh="服务">Services</a>
-    <a href="#destinations" data-en="Destinations" data-fr="Destinations" data-zh="目的地">Destinations</a>
-    <a href="#map" data-en="Map" data-fr="Carte" data-zh="地图">Map</a>
-    <a href="#seasons" data-en="Seasons" data-fr="Saisons" data-zh="季节">Seasons</a>
-    <a href="#contact" data-en="Contact" data-fr="Contact" data-zh="联系我们">Contact</a>
-  </nav>
+      <a href="#services" data-en="Services" data-fr="Services" data-zh="服务">Services</a>
+      <a href="#destinations" data-en="Destinations" data-fr="Destinations" data-zh="目的地">Destinations</a>
+      <a href="#now" data-en="Seasons" data-fr="Saisons" data-zh="当季">Seasons</a>
+      <a href="professionals.html" data-en="Professionals" data-fr="Professionnels" data-zh="合作伙伴">Professionals</a>
+      <a href="#contact" data-en="Contact" data-fr="Contact" data-zh="联系我们">Contact</a>
+    </nav>
   <div class="pfoot">
     <a href="https://wa.me/33613850733">WhatsApp</a>
     <a href="mailto:contact@unseenconciergerie.com">contact@unseenconciergerie.com</a>
@@ -599,7 +540,7 @@ button.btn{background:transparent;cursor:pointer;font-family:'Montserrat',system
   <!-- Le cadre de l'image de fond est ecrit ici, et non cree par anim.js :
        si le script n'arrive pas, la photo doit rester DERRIERE le texte. -->
   <div class="hero-bg" aria-hidden="true">
-    <picture class="hslide is-on"><source type="image/avif" srcset="img/hero.avif"><img class="bg" src="img/hero.webp" alt="The illuminated top of the Eiffel Tower at night above Paris" data-alt-en="The illuminated top of the Eiffel Tower at night above Paris" data-alt-fr="Le sommet illuminé de la tour Eiffel la nuit au-dessus de Paris" data-alt-zh="巴黎埃菲尔铁塔顶部夜间灯光效果"></picture>
+    <picture class="hslide is-on"><source type="image/avif" srcset="img/hero.avif"><img class="bg" src="img/hero.webp" alt="The Eiffel Tower at dusk, seen from a Paris avenue" data-alt-en="The Eiffel Tower at dusk, seen from a Paris avenue" data-alt-fr="La tour Eiffel au crépuscule, vue depuis une avenue de Paris" data-alt-zh="黄昏时分，从巴黎街道远眺埃菲尔铁塔" fetchpriority="high"></picture>
   </div>
   <div class="veil"></div>
   <div class="hero-in">
@@ -654,86 +595,16 @@ button.btn{background:transparent;cursor:pointer;font-family:'Montserrat',system
   </div>
 </section>
 
-<section id="services" class="sec-pale">
+<section id="services" class="sec-dark nv-svc">
   <div class="wrap">
     <div class="head reveal">
       <div class="eyebrow"><span class="n">02</span><span class="t" data-en="Services" data-fr="Services" data-zh="服务">Services</span></div>
       <h2 data-en="One number. Everything behind it." data-fr="Un seul numéro. Tout le reste derrière." data-zh="一个号码，背后是一切。">One number. Everything behind it.</h2>
-      <p class="lede" data-en="No switchboard, no ticket, no account manager discovering your file as you speak. One person already knows it, and answers." data-fr="Pas de standard, pas de numéro de dossier, pas de gestionnaire qui découvre votre dossier en vous parlant. Une seule personne le connaît déjà, et répond." data-zh="没有总机转接，没有工单排队，没有客户经理一边听您说明一边翻查资料。只有一个人，早已了解您的一切，随时应答。">No switchboard, no ticket, no account manager discovering your file as you speak.</p>
+      <p class="lede" data-en="No switchboard, no ticket, no account manager discovering your file as you speak. One person already knows it, and answers." data-fr="Pas de standard, pas de numéro de dossier, pas de gestionnaire qui découvre votre dossier en vous parlant. Une seule personne le connaît déjà, et répond." data-zh="没有总机转接，没有工单排队，没有客户经理一边听您说明一边翻查资料。只有一个人，早已了解您的一切，随时应答。">No switchboard, no ticket, no account manager discovering your file as you speak. One person already knows it, and answers.</p>
     </div>
-
-    <div class="cards reveal">
-      <article class="card">
-        <div class="ph"><picture><source type="image/avif" srcset="img/s-stay.avif"><img src="img/s-stay.webp" alt="The domes of a Monte-Carlo palace hotel against a clear sky" data-alt-en="The domes of a Monte-Carlo palace hotel against a clear sky" data-alt-fr="Les coupoles d'un palace de Monte-Carlo sur un ciel dégagé" data-alt-zh="蒙特卡洛宫殿级酒店的穹顶与晴空" loading="lazy"></picture></div>
-        <div class="txt">
-          <span class="tag" data-en="Stay" data-fr="Séjour" data-zh="下榻">Stay</span>
-          <h3 data-en="Palaces and suites" data-fr="Palaces et suites" data-zh="宫殿级酒店与套房">Palaces and suites</h3>
-          <p data-en="Rooms and categories that never reach a booking engine. Upgrades arranged before arrival, late check-out held, and amenities set to your preferences rather than a standard list." data-fr="Des chambres et des catégories qui n'arrivent jamais jusqu'à un moteur de réservation. Le surclassement se règle avant l'arrivée, le départ tardif est retenu, et les attentions suivent vos préférences plutôt qu'une liste type." data-zh="从不出现在预订系统中的房型与房源。升房提前安排妥当，延迟退房予以保留，各项礼遇皆按您的喜好定制，而非千篇一律的标准清单。">Rooms and categories that never reach a booking engine.</p>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="ph"><picture><source type="image/avif" srcset="img/s-table.avif"><img src="img/s-table.webp" alt="A sushi chef preparing a piece at the counter" data-alt-en="A sushi chef preparing a piece at the counter" data-alt-fr="Un chef sushi préparant une pièce au comptoir" data-alt-zh="寿司主厨在吧台制作料理" loading="lazy"></picture></div>
-        <div class="txt">
-          <span class="tag" data-en="Table" data-fr="Table" data-zh="餐桌">Table</span>
-          <h3 data-en="Dining" data-fr="Tables" data-zh="餐饮">Dining</h3>
-          <p data-en="Tables at short notice in rooms that show nothing available. Private dining rooms, chef's counters, and menus adjusted to an allergy, a fast, or a schedule that will not wait." data-fr="Des tables obtenues tard dans des salles qui n'affichent plus rien. Salons privés, comptoirs de chef, et menus ajustés à une allergie, un jeûne ou un emploi du temps qui n'attend pas." data-zh="在显示“满座”的餐厅里，我们仍能为您觅得一席。私人包厢、主厨吧台，菜单可依据过敏、斋戒或紧凑行程灵活调整。">Tables at short notice in rooms that show nothing available.</p>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="ph"><picture><source type="image/avif" srcset="img/s-access.avif"><img src="img/s-access.webp" alt="Formula 1 cars lined up in the pit lane before the start" data-alt-en="Formula 1 cars lined up in the pit lane before the start" data-alt-fr="Les Formule 1 alignées dans la voie des stands avant le départ" data-alt-zh="F1赛车在起跑前排列于维修区通道" loading="lazy"></picture></div>
-        <div class="txt">
-          <span class="tag" data-en="Access" data-fr="Accès" data-zh="通行">Access</span>
-          <h3 data-en="Events and access" data-fr="Événements et accès" data-zh="活动与通行">Events and access</h3>
-          <p data-en="Formula 1 weekends, Fashion Weeks, Art Basel, Roland-Garros, sold-out shows. The paddock, the courtside, the front row, and the rooms that open afterwards." data-fr="Week-ends de Formule 1, Fashion Weeks, Art Basel, Roland-Garros, spectacles complets. Le paddock, le bord de court, le premier rang, et les salles qui ouvrent ensuite." data-zh="F1大奖赛周末、时装周、巴塞尔艺术展、法网公开赛、一票难求的演出——维修区通道、场边席位、前排座席，以及赛后开放的私密场所，皆可安排。">Formula 1 Grand Prix weekends, Fashion Weeks, Art Basel, Roland-Garros, sold-out shows and private previews.</p>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="ph"><picture><source type="image/avif" srcset="img/s-wardrobe.avif"><img src="img/s-wardrobe.webp" alt="Handbags displayed on the shelves of a luxury boutique" data-alt-en="Handbags displayed on the shelves of a luxury boutique" data-alt-fr="Des sacs exposés sur les étagères d'une boutique de luxe" data-alt-zh="奢侈品精品店货架上陈列的手袋" loading="lazy"></picture></div>
-        <div class="txt">
-          <span class="tag" data-en="Wardrobe" data-fr="Garde-robe" data-zh="衣橱">Wardrobe</span>
-          <h3 data-en="Shopping and sourcing" data-fr="Shopping et sourcing" data-zh="私人采购与寻源">Shopping and sourcing</h3>
-          <p data-en="Appointments outside opening hours with the major houses, waiting lists, styling, and sourcing pieces that are no longer made." data-fr="Des rendez-vous hors horaires chez les grandes maisons, des listes d'attente, du styling, et la recherche de pièces qui ne se font plus." data-zh="非营业时段与各大品牌的专属预约、排队名单、造型顾问，以及已停产单品的搜寻。">Appointments outside opening hours with the major houses, waiting lists, styling, and the search for pieces that are no longer made.</p>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="ph"><picture><source type="image/avif" srcset="img/s-transport.avif"><img src="img/s-transport.webp" alt="A black chauffeur-driven car waiting at night" data-alt-en="A black chauffeur-driven car waiting at night" data-alt-fr="Une berline noire avec chauffeur attendant de nuit" data-alt-zh="夜间等候的黑色专属座驾" loading="lazy"></picture></div>
-        <div class="txt">
-          <span class="tag" data-en="Movement" data-fr="Déplacement" data-zh="出行">Movement</span>
-          <h3 data-en="Private transport" data-fr="Transport privé" data-zh="私人用车">Private transport</h3>
-          <p data-en="Chauffeurs who know the city and never talk about it, airport and terminal transfers, long-distance journeys, and a helicopter leg where the road would cost three hours." data-fr="Des chauffeurs qui connaissent la ville et n'en parlent jamais, des transferts aéroport et terminal, des trajets longue distance, et un vol en hélicoptère là où la route coûterait trois heures." data-zh="熟悉城市却绝口不提的专属司机，机场与航站楼接送，长途行程，以及能省去三小时车程的直升机接驳。">Chauffeurs who know the city and never talk about it.</p>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="ph"><picture><source type="image/avif" srcset="img/s-evening.avif"><img src="img/s-evening.webp" alt="The gilded boxes and chandeliers of an opera house" data-alt-en="The gilded boxes and chandeliers of an opera house" data-alt-fr="Les loges dorées et les lustres d'un opéra" data-alt-zh="歌剧院的镀金包厢与水晶吊灯" loading="lazy"></picture></div>
-        <div class="txt">
-          <span class="tag" data-en="Evening" data-fr="Soirée" data-zh="夜晚">Evening</span>
-          <h3 data-en="Evenings and closed rooms" data-fr="Soirées et lieux fermés" data-zh="夜生活与私密场所">Evenings and closed rooms</h3>
-          <p data-en="Private clubs, booths that are never sold, opera boxes, and evenings built around a guest list rather than a venue. Entry is arranged before you arrive, never negotiated at the door." data-fr="Clubs privés, tables qui ne se vendent jamais, loges d'opéra, et soirées construites autour d'une liste plutôt que d'un lieu. L'entrée se règle avant votre arrivée, jamais devant la porte." data-zh="私人会所、从不对外出售的卡座、歌剧院包厢，以及以宾客名单而非场地为核心安排的夜晚。入场事先安排妥当，从不在门口交涉。">Private clubs, booths that are never sold, opera boxes, and evenings built around a guest list rather than a venue.</p>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="ph"><picture><source type="image/avif" srcset="img/s-charter.avif"><img src="img/s-charter.webp" alt="Yachts moored in a Mediterranean marina" data-alt-en="Yachts moored in a Mediterranean marina" data-alt-fr="Des yachts amarrés dans un port de Méditerranée" data-alt-zh="地中海游艇码头停泊的游艇" loading="lazy"></picture></div>
-        <div class="txt">
-          <span class="tag" data-en="Water" data-fr="Mer" data-zh="海上">Water</span>
-          <h3 data-en="Villas and charters" data-fr="Villas et affrètements" data-zh="别墅与游艇包船">Villas and charters</h3>
-          <p data-en="Staffed villas by the week, yachts by the day or by the season, with crew, tender and chef. Provisioning, berths and shore transfers form one plan rather than four separate bookings." data-fr="Des villas avec personnel à la semaine, des yachts à la journée ou à la saison, avec équipage, annexe et chef. Avitaillement, places de port et transferts à terre forment un seul plan plutôt que quatre réservations séparées." data-zh="配备管家团队的别墅可按周入住，游艇可按日或按季包船，配有船员、接驳艇与私厨。补给、泊位与岸上接送统一规划，而非四份独立预订。">Staffed villas by the week, yachts by the day or by the season, with crew, tender and chef.</p>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="ph"><picture><source type="image/avif" srcset="img/s-sport.avif"><img src="img/s-sport.webp" alt="The front wing and tyre of a Formula 1 car" data-alt-en="The front wing and tyre of a Formula 1 car" data-alt-fr="L'aileron avant et le pneu d'une Formule 1" data-alt-zh="F1赛车的前翼与轮胎" loading="lazy"></picture></div>
-        <div class="txt">
-          <span class="tag" data-en="Performance" data-fr="Performance" data-zh="竞技">Performance</span>
-          <h3 data-en="Athletes and entourage" data-fr="Sportifs et entourage" data-zh="运动员与随行团队">Athletes and entourage</h3>
-          <p data-en="Private gym hours, physiotherapy and recovery on site, meals built around a nutrition plan, arrivals and departures that avoid the lobby. Built for competition calendars, and for people who would rather not be recognised." data-fr="Des créneaux de salle privatisés, kinésithérapie et récupération sur place, des repas construits sur un plan nutritionnel, des arrivées et des départs qui évitent le hall. Pensé pour les calendriers de compétition, et pour ceux qui préfèrent ne pas être reconnus." data-zh="私人健身时段、现场理疗与恢复训练、按营养方案定制的餐食，以及避开大堂的进出安排。专为紧凑赛程而设，也为不愿被认出的人而设。">Private gym hours, physiotherapy and recovery on site, meals built around a nutrition plan, arrivals and departures that avoid the lobby.</p>
-        </div>
-      </article>
+    <div class="nv-grid">
+      <ul class="nv-list" id="nvsvc"><li class="on" data-i="0"><span class="t" data-en="Stay" data-fr="Séjour" data-zh="下榻">Stay</span><div><h3 data-en="Palaces and suites" data-fr="Palaces et suites" data-zh="宫殿级酒店与套房">Palaces and suites</h3><p data-en="Rooms and categories that never reach a booking engine. Upgrades arranged before arrival, late check-out held, and amenities set to your preferences rather than a standard list." data-fr="Des chambres et des catégories qui n&#x27;arrivent jamais jusqu&#x27;à un moteur de réservation. Le surclassement se règle avant l&#x27;arrivée, le départ tardif est retenu, et les attentions suivent vos préférences plutôt qu&#x27;une liste type." data-zh="从不出现在预订系统中的房型与房源。升房提前安排妥当，延迟退房予以保留，各项礼遇皆按您的喜好定制，而非千篇一律的标准清单。">Rooms and categories that never reach a booking engine. Upgrades arranged before arrival, late check-out held, and amenities set to your preferences rather than a standard list.</p></div></li><li data-i="1"><span class="t" data-en="Table" data-fr="Table" data-zh="餐桌">Table</span><div><h3 data-en="Dining" data-fr="Tables" data-zh="餐饮">Dining</h3><p data-en="Tables at short notice in rooms that show nothing available. Private dining rooms, chef&#x27;s counters, and menus adjusted to an allergy, a fast, or a schedule that will not wait." data-fr="Des tables obtenues tard dans des salles qui n&#x27;affichent plus rien. Salons privés, comptoirs de chef, et menus ajustés à une allergie, un jeûne ou un emploi du temps qui n&#x27;attend pas." data-zh="在显示“满座”的餐厅里，我们仍能为您觅得一席。私人包厢、主厨吧台，菜单可依据过敏、斋戒或紧凑行程灵活调整。">Tables at short notice in rooms that show nothing available. Private dining rooms, chef's counters, and menus adjusted to an allergy, a fast, or a schedule that will not wait.</p></div></li><li data-i="2"><span class="t" data-en="Access" data-fr="Accès" data-zh="通行">Access</span><div><h3 data-en="Events and access" data-fr="Événements et accès" data-zh="活动与通行">Events and access</h3><p data-en="Formula 1 weekends, Fashion Weeks, Art Basel, Roland-Garros, sold-out shows. The paddock, the courtside, the front row, and the rooms that open afterwards." data-fr="Week-ends de Formule 1, Fashion Weeks, Art Basel, Roland-Garros, spectacles complets. Le paddock, le bord de court, le premier rang, et les salles qui ouvrent ensuite." data-zh="F1大奖赛周末、时装周、巴塞尔艺术展、法网公开赛、一票难求的演出——维修区通道、场边席位、前排座席，以及赛后开放的私密场所，皆可安排。">Formula 1 weekends, Fashion Weeks, Art Basel, Roland-Garros, sold-out shows. The paddock, the courtside, the front row, and the rooms that open afterwards.</p></div></li><li data-i="3"><span class="t" data-en="Wardrobe" data-fr="Garde-robe" data-zh="衣橱">Wardrobe</span><div><h3 data-en="Shopping and sourcing" data-fr="Shopping et sourcing" data-zh="私人采购与寻源">Shopping and sourcing</h3><p data-en="Appointments outside opening hours with the major houses, waiting lists, styling, and sourcing pieces that are no longer made." data-fr="Des rendez-vous hors horaires chez les grandes maisons, des listes d&#x27;attente, du styling, et la recherche de pièces qui ne se font plus." data-zh="非营业时段与各大品牌的专属预约、排队名单、造型顾问，以及已停产单品的搜寻。">Appointments outside opening hours with the major houses, waiting lists, styling, and sourcing pieces that are no longer made.</p></div></li><li data-i="4"><span class="t" data-en="Movement" data-fr="Déplacement" data-zh="出行">Movement</span><div><h3 data-en="Private transport" data-fr="Transport privé" data-zh="私人用车">Private transport</h3><p data-en="Chauffeurs who know the city and never talk about it, airport and terminal transfers, long-distance journeys, and a helicopter leg where the road would cost three hours." data-fr="Des chauffeurs qui connaissent la ville et n&#x27;en parlent jamais, des transferts aéroport et terminal, des trajets longue distance, et un vol en hélicoptère là où la route coûterait trois heures." data-zh="熟悉城市却绝口不提的专属司机，机场与航站楼接送，长途行程，以及能省去三小时车程的直升机接驳。">Chauffeurs who know the city and never talk about it, airport and terminal transfers, long-distance journeys, and a helicopter leg where the road would cost three hours.</p></div></li><li data-i="5"><span class="t" data-en="Water" data-fr="Mer" data-zh="海上">Water</span><div><h3 data-en="Villas and charters" data-fr="Villas et affrètements" data-zh="别墅与游艇包船">Villas and charters</h3><p data-en="Staffed villas by the week, yachts by the day or by the season, with crew, tender and chef. Provisioning, berths and shore transfers form one plan rather than four separate bookings." data-fr="Des villas avec personnel à la semaine, des yachts à la journée ou à la saison, avec équipage, annexe et chef. Avitaillement, places de port et transferts à terre forment un seul plan plutôt que quatre réservations séparées." data-zh="配备管家团队的别墅可按周入住，游艇可按日或按季包船，配有船员、接驳艇与私厨。补给、泊位与岸上接送统一规划，而非四份独立预订。">Staffed villas by the week, yachts by the day or by the season, with crew, tender and chef. Provisioning, berths and shore transfers form one plan rather than four separate bookings.</p></div></li><li data-i="6"><span class="t" data-en="Evening" data-fr="Soirée" data-zh="夜晚">Evening</span><div><h3 data-en="Evenings and closed rooms" data-fr="Soirées et lieux fermés" data-zh="夜生活与私密场所">Evenings and closed rooms</h3><p data-en="Private clubs, booths that are never sold, opera boxes, and evenings built around a guest list rather than a venue. Entry is arranged before you arrive, never negotiated at the door." data-fr="Clubs privés, tables qui ne se vendent jamais, loges d&#x27;opéra, et soirées construites autour d&#x27;une liste plutôt que d&#x27;un lieu. L&#x27;entrée se règle avant votre arrivée, jamais devant la porte." data-zh="私人会所、从不对外出售的卡座、歌剧院包厢，以及以宾客名单而非场地为核心安排的夜晚。入场事先安排妥当，从不在门口交涉。">Private clubs, booths that are never sold, opera boxes, and evenings built around a guest list rather than a venue. Entry is arranged before you arrive, never negotiated at the door.</p></div></li></ul>
+      <div class="nv-img" id="nvimg"><picture><source type="image/avif" srcset="img/v2-stay.avif"><img class="on" src="img/v2-stay.webp" alt="" loading="lazy"></picture><picture><source type="image/avif" srcset="img/v2-dining.avif"><img src="img/v2-dining.webp" alt="" loading="lazy"></picture><picture><source type="image/avif" srcset="img/v2-access.avif"><img src="img/v2-access.webp" alt="" loading="lazy"></picture><picture><source type="image/avif" srcset="img/v2-shopping.avif"><img src="img/v2-shopping.webp" alt="" loading="lazy"></picture><picture><source type="image/avif" srcset="img/v2-transport.avif"><img src="img/v2-transport.webp" alt="" loading="lazy"></picture><picture><source type="image/avif" srcset="img/v2-season.avif"><img src="img/v2-season.webp" alt="" loading="lazy"></picture><picture><source type="image/avif" srcset="img/v2-evening.avif"><img src="img/v2-evening.webp" alt="" loading="lazy"></picture></div>
     </div>
   </div>
 </section>
@@ -742,144 +613,61 @@ button.btn{background:transparent;cursor:pointer;font-family:'Montserrat',system
   <div class="wrap">
     <div class="head reveal">
       <div class="eyebrow"><span class="n">03</span><span class="t" data-en="Destinations" data-fr="Destinations" data-zh="目的地">Destinations</span></div>
-      <h2 data-en="Three territories, one standard." data-fr="Trois territoires, une seule exigence." data-zh="三大版图，同一标准。">Three territories, one standard.</h2>
-      <p class="lede" data-en="We work where our clients actually go. Elsewhere, we say so rather than improvise." data-fr="Nous travaillons là où nos clients se rendent réellement. Ailleurs, nous le disons plutôt que d'improviser." data-zh="我们只在客户真正前往之地提供服务；其余之处，我们坦言不及，而非临场应付。">We work where our clients actually go, and we stop where our network stops.</p>
+      <h2 data-en="Among the places we go." data-fr="Parmi nos destinations." data-zh="我们常去的地方。">Among the places we go.</h2>
+      <p class="lede" data-en="Paris first, then wherever the season takes you. And further, when you ask: Ibiza, Mykonos, London, Milan, and wherever else you have in mind." data-fr="Paris d&#x27;abord, puis là où la saison vous emmène. Et plus loin si vous le demandez : Ibiza, Mykonos, Londres, Milan, et partout où vous avez envie d&#x27;aller." data-zh="从巴黎出发，随季节而行。若您有意，我们也可以走得更远：伊维萨、米科诺斯、伦敦、米兰，以及任何您心之所向的地方。">Paris first, then wherever the season takes you. And further, when you ask: Ibiza, Mykonos, London, Milan, and wherever else you have in mind.</p>
     </div>
-
-    <div class="dests reveal">
-      <div class="dest">
-        <div class="ph"><picture><source type="image/avif" srcset="img/d-paris.avif"><img src="img/d-paris.webp" alt="The rooftops of Paris at dusk, seen from above" data-alt-en="The rooftops of Paris at dusk, seen from above" data-alt-fr="Les toits de Paris au crépuscule, vus d'en haut" data-alt-zh="黄昏时分俯瞰巴黎屋顶" loading="lazy"></picture></div>
-        <div class="txt">
-          <span class="tag" data-en="The base" data-fr="La base" data-zh="根基所在">The base</span>
-          <h3>Paris</h3>
-          <p data-en="The city where the address book was built, and where a name still opens a door faster than a payment does. Palaces, starred kitchens, private clubs, ateliers, and the houses of the Faubourg." data-fr="La ville où le carnet d'adresses s'est construit, et où un nom ouvre encore une porte plus vite qu'un paiement. Palaces, cuisines étoilées, clubs privés, ateliers, et les maisons du Faubourg." data-zh="我们的人脉网络，正是从这座城市建立起来的。在这里，一个名字仍比一笔付款更快为您打开一扇门。宫殿级酒店、米其林星厨厨房、私人会所、时装工坊，以及圣奥诺雷街区的各大品牌之家。">The city where the address book was built, and where a name still opens a door faster than a payment does.</p>
-          <div class="list" data-en="Palaces &nbsp; Starred dining &nbsp; Fashion Week &nbsp; Private clubs" data-fr="Palaces &nbsp; Tables étoilées &nbsp; Fashion Week &nbsp; Clubs privés" data-zh="宫殿级酒店　米其林星级餐厅　时装周　私人会所">Palaces &nbsp; Starred dining &nbsp; Fashion Week &nbsp; Private clubs</div>
-        </div>
-      </div>
-
-      <div class="dest flip">
-        <div class="ph"><picture><source type="image/avif" srcset="img/d-europe.avif"><img src="img/d-europe.webp" alt="A seafront palace hotel lit up at night on the French Riviera" data-alt-en="A seafront palace hotel lit up at night on the French Riviera" data-alt-fr="Un palace en bord de mer illuminé la nuit sur la Côte d'Azur" data-alt-zh="蔚蓝海岸海滨宫殿级酒店的夜间灯光" loading="lazy"></picture></div>
-        <div class="txt">
-          <span class="tag" data-en="The continent" data-fr="Le continent" data-zh="欧洲大陆">The continent</span>
-          <h3>Europe</h3>
-          <p data-en="Monaco and the Riviera, Saint-Tropez, the Alps, Milan and the Italian lakes, London and the English countryside. The same people, the same weekends, moving between four countries on one calendar." data-fr="Monaco et la Riviera, Saint-Tropez, les Alpes, Milan et les lacs italiens, Londres et la campagne anglaise. Les mêmes personnes, les mêmes week-ends, un déplacement entre quatre pays sur un seul calendrier." data-zh="摩纳哥与蔚蓝海岸、圣特罗佩、阿尔卑斯山、米兰与意大利湖区、伦敦与英格兰乡间——同样的人群，同样的周末，在同一张日程表上穿梭于四个国家。">Monaco and the Riviera, Saint-Tropez, the Alps, Milan and the Italian lakes, London and the English countryside.</p>
-          <div class="list" data-en="Monaco &nbsp; Côte d'Azur &nbsp; Courchevel &nbsp; Milan &nbsp; London" data-fr="Monaco &nbsp; Côte d'Azur &nbsp; Courchevel &nbsp; Milan &nbsp; Londres" data-zh="摩纳哥　蔚蓝海岸　库雪维尔　米兰　伦敦">Monaco &nbsp; Côte d'Azur &nbsp; Courchevel &nbsp; Milan &nbsp; London</div>
-        </div>
-      </div>
-
-      <div class="dest">
-        <div class="ph"><picture><source type="image/avif" srcset="img/d-ocean.avif"><img src="img/d-ocean.webp" alt="Overwater villas on a turquoise lagoon in the Indian Ocean" data-alt-en="Overwater villas on a turquoise lagoon in the Indian Ocean" data-alt-fr="Des villas sur pilotis au-dessus d'un lagon turquoise de l'océan Indien" data-alt-zh="印度洋绿松石色潟湖上的水上别墅" loading="lazy"></picture></div>
-        <div class="txt">
-          <span class="tag" data-en="The counter-season" data-fr="La contre-saison" data-zh="反季胜地">The counter-season</span>
-          <h3 data-en="Indian Ocean" data-fr="Océan Indien" data-zh="印度洋">Indian Ocean</h3>
-          <p data-en="Mauritius runs on a calendar of its own and stays open when Europe closes: lagoons, five-star resorts, staffed villas, helicopter legs across the island, and days at sea with a crew." data-fr="Maurice suit un calendrier qui lui est propre et reste ouverte quand l'Europe se ferme : lagons, resorts cinq étoiles, villas avec personnel, liaisons en hélicoptère au-dessus de l'île, et journées en mer avec équipage." data-zh="毛里求斯自有其运转节奏，在欧洲进入淡季时依然全年开放：潟湖、五星度假村、管家别墅、飞跃全岛的直升机接驳，以及有船员随行的出海时光。">Mauritius runs on a calendar of its own and stays open when Europe closes.</p>
-          <div class="list" data-en="Resorts &nbsp; Staffed villas &nbsp; Helicopter &nbsp; Yacht days" data-fr="Resorts &nbsp; Villas avec personnel &nbsp; Hélicoptère &nbsp; Journées yacht" data-zh="度假村　管家别墅　直升机　游艇出海">Resorts &nbsp; Staffed villas &nbsp; Helicopter &nbsp; Yacht days</div>
-        </div>
-      </div>
+    <div class="nv-dest">
+      <a class="nd nd1 reveal" href="paris.html"><picture><source type="image/avif" srcset="img/v2-paris.avif"><img src="img/v2-paris.webp" alt="Paris at dusk" data-alt-en="Paris at dusk" data-alt-fr="Paris au crépuscule" data-alt-zh="黄昏时的巴黎" loading="lazy"></picture><div class="in"><span data-en="The base" data-fr="Notre base" data-zh="大本营">The base</span><h3 data-en="Paris" data-fr="Paris" data-zh="巴黎">Paris</h3><p data-en="Palaces, starred tables, Fashion Week, the houses of the Faubourg." data-fr="Palaces, tables étoilées, Fashion Week, les maisons du Faubourg." data-zh="殿堂级酒店、米其林餐桌、时装周，以及圣奥诺雷街的各大名店。">Palaces, starred tables, Fashion Week, the houses of the Faubourg.</p></div></a>
+      <a class="nd nd2 reveal" href="saison-ski-2026-2027.html"><picture><source type="image/avif" srcset="img/v2-alps.avif"><img src="img/v2-alps.webp" alt="A chalet at night in the Alps" data-alt-en="A chalet at night in the Alps" data-alt-fr="Un chalet la nuit dans les Alpes" data-alt-zh="阿尔卑斯山间的夜色木屋" loading="lazy"></picture><div class="in"><span data-en="Winter" data-fr="L&#x27;hiver" data-zh="冬季">Winter</span><h3 data-en="The Alps" data-fr="Les Alpes" data-zh="阿尔卑斯">The Alps</h3><p data-en="Courchevel, Megève, Gstaad. A season held a step ahead." data-fr="Courchevel, Megève, Gstaad. Une saison préparée avec un temps d&#x27;avance." data-zh="库舍维尔、梅杰夫、格施塔德。雪季，我们总是提前一步。">Courchevel, Megève, Gstaad. A season held a step ahead.</p></div></a>
+      <a class="nd nd3 reveal" href="riviera.html"><picture><source type="image/avif" srcset="img/v2-riviera.avif"><img src="img/v2-riviera.webp" alt="A table above the sea on the Riviera" data-alt-en="A table above the sea on the Riviera" data-alt-fr="Une table au-dessus de la mer, sur la Riviera" data-alt-zh="蔚蓝海岸，临海而设的餐桌" loading="lazy"></picture><div class="in"><span data-en="Summer" data-fr="L&#x27;été" data-zh="夏季">Summer</span><h3 data-en="The Riviera" data-fr="La Riviera" data-zh="蔚蓝海岸">The Riviera</h3><p data-en="Monaco, Saint-Tropez, Cannes. Villas, boats, the Grand Prix." data-fr="Monaco, Saint-Tropez, Cannes. Villas, bateaux, le Grand Prix." data-zh="摩纳哥、圣特罗佩、戛纳。别墅、游艇与大奖赛。">Monaco, Saint-Tropez, Cannes. Villas, boats, the Grand Prix.</p></div></a>
+      <a class="nd nd4 reveal" href="ocean-indien.html"><picture><source type="image/avif" srcset="img/v2-mauritius.avif"><img src="img/v2-mauritius.webp" alt="The beach of LUX* Le Morne, Mauritius" data-alt-en="The beach of LUX* Le Morne, Mauritius" data-alt-fr="La plage du LUX* Le Morne, à Maurice" data-alt-zh="毛里求斯LUX* Le Morne酒店的海滩" loading="lazy"></picture><div class="in"><span data-en="Counter-season" data-fr="Contre-saison" data-zh="反季之选">Counter-season</span><h3 data-en="Indian Ocean" data-fr="Océan Indien" data-zh="印度洋">Indian Ocean</h3><p data-en="Mauritius, Réunion, the Maldives. Open when Europe closes." data-fr="Maurice, La Réunion, les Maldives. Ouvert quand l&#x27;Europe ferme." data-zh="毛里求斯、留尼汪、马尔代夫。欧洲淡季时，这里正当时。">Mauritius, Réunion, the Maldives. Open when Europe closes.</p></div></a>
     </div>
+    <p class="lede" style="margin-top:44px"><span data-en="UNSEEN. belongs to no group and no booking network: we recommend an address because it is the right one. Agencies, jet operators, sports management:" data-fr="UNSEEN. n&#x27;appartient à aucun groupe ni réseau de réservation : nous recommandons une adresse parce que c&#x27;est la bonne. Agences, compagnies d&#x27;aviation privée, agents de sportifs :" data-zh="UNSEEN.不隶属于任何集团或预订网络：我们推荐一个地方，只因为它是对的。旅行社、私人航空公司、体育经纪机构：">UNSEEN. belongs to no group and no booking network: we recommend an address because it is the right one. Agencies, jet operators, sports management:</span> <a href="professionals.html" class="nv-link" data-en="working with us &amp;rarr;" data-fr="travailler avec nous &amp;rarr;" data-zh="与我们合作 &amp;rarr;">working with us &rarr;</a></p>
   </div>
 </section>
 
-<div class="band">
-  <picture><source type="image/avif" srcset="img/band.avif"><img src="img/band.webp" alt="An empty theatre auditorium, prepared before the audience arrives" data-alt-en="An empty theatre auditorium, prepared before the audience arrives" data-alt-fr="Une salle de spectacle vide, préparée avant l'arrivée du public" data-alt-zh="观众到场前，已准备就绪的空场剧院" loading="lazy"></picture>
-  <div class="veil"></div>
-  <div class="in reveal">
-    <hr class="wl">
-    <p data-en="The most useful part of this work is the part you never see." data-fr="La part la plus utile de ce métier est celle que vous ne voyez jamais." data-zh="这份工作最有价值的部分，是您永远看不见的那部分。">The most useful part of this work is the part you never see.</p>
-    <div class="sig">Curated by UNSEEN.</div>
-  </div>
-</div>
 
-<section id="map" class="mapsec">
+
+
+
+<section id="map" class="sec-dark nv-map">
   <div class="wrap">
     <div class="head reveal">
       <div class="eyebrow"><span class="n">04</span><span class="t" data-en="Map" data-fr="Carte" data-zh="地图">Map</span></div>
-      <h2 data-en="Where we take you." data-fr="Là où nous vous emmenons." data-zh="我们带您去的地方。">Where we take you.</h2>
-      <p class="lede" data-en="Paris is the base. Choose a point to see the addresses and events we work with there." data-fr="Paris est la base. Choisissez un point pour voir les adresses et événements que nous proposons." data-zh="巴黎是我们的根基所在。点击地图上的位置，查看我们在当地提供的地址与活动。">Paris is the base. Choose a point to see the addresses and events we work with there.</p>
+      <h2 data-en="Paris is where it starts." data-fr="Tout commence à Paris." data-zh="一切，从巴黎开始。">Paris is where it starts.</h2>
+      <p class="lede" data-en="A few ideas of what we arrange, from Paris to wherever the season is. Choose a point." data-fr="Quelques idées de ce que nous organisons, de Paris jusqu&#x27;à là où se trouve la saison. Choisissez un point." data-zh="从巴黎到当季所在之处，这是我们可以为您安排的一些灵感。请点选地图上的地点。">A few ideas of what we arrange, from Paris to wherever the season is. Choose a point.</p>
     </div>
-
-    <div class="mapgrid reveal">
-      <div class="mapstage" id="mapstage">
-        <div id="leafletmap" role="img" aria-label="Carte des destinations et partenaires UNSEEN."></div>
-        <p class="partner-note" data-en="Ctrl (or Cmd) + scroll or pinch to zoom. Two fingers to move around." data-fr="Ctrl (ou Cmd) + molette, ou pincement, pour zoomer. Deux doigts pour déplacer la carte." data-zh="按住Ctrl（或Cmd）键滚动，或双指捏合缩放；双指滑动可移动地图。">Ctrl (or Cmd) + scroll or pinch to zoom. Two fingers to move around.</p>
-        <div class="maptabs" id="maptabs"></div>
-        <button type="button" class="map-overview" id="map-overview" data-en="↺ Overview" data-fr="↺ Vue d'ensemble" data-zh="↺ 总览">↺ Overview</button>
-      </div>
-
-      <div class="mapcard" id="mapcard"></div>
-    </div>
-
-    <div class="map-cta reveal">
-      <p class="mc-intro" data-en="UNSEEN. belongs to no group, no booking network and no imposed inventory. That is what allows us to recommend an address because it is the right one, and not because it is under contract." data-fr="UNSEEN. n'appartient à aucun groupe, aucune centrale de réservation, aucun stock imposé. C'est ce qui nous permet de recommander une adresse parce qu'elle convient, et non parce qu'elle est sous contrat." data-zh="UNSEEN. 不隶属于任何集团、预订网络，也没有必须推荐的合作名单。正因如此，我们推荐一个地址，只因它恰如其分，而非因为合约在身。">UNSEEN. belongs to no group, no booking network and no imposed inventory.</p>
-      <div class="mc-grid">
-        <div class="mc-item">
-          <span class="tag" data-en="Hotels and resorts" data-fr="Hôtels et resorts" data-zh="酒店与度假村">Hotels and resorts</span>
-        <p data-en="We send an international clientele to a limited number of houses, in Paris, across Europe and beyond. If you would like your property to be considered, write to us and we will take it from there." data-fr="Nous adressons une clientèle internationale à un nombre limité de maisons, à Paris, en Europe et au-delà. Si vous souhaitez que votre établissement soit étudié, écrivez-nous et nous reprenons contact." data-zh="我们为数量有限的合作酒店引荐国际客源，覆盖巴黎、欧洲及更远的目的地。如您希望旗下物业获得考虑，欢迎与我们联系，后续事宜由我们跟进。">We send an international clientele to a limited number of houses, in Paris, across Europe and beyond.</p>
-        <a class="go" href="mailto:partners@unseenconciergerie.com" data-en="Contact partnerships" data-fr="Contacter les partenariats" data-zh="联系合作部门">Contact partnerships</a>
-        </div>
-        <div class="mc-item">
-          <span class="tag" data-en="Agencies and management" data-fr="Agences et management" data-zh="经纪与管理机构">Agencies and management</span>
-        <p data-en="Talent agencies, management companies and family offices: priority on the dates that matter, one dedicated contact, and terms agreed in writing before the first request. Trips for brands are run as one project." data-fr="Agences de talents, sociétés de management et family offices : priorité sur les dates clés, un interlocuteur dédié, et des conditions convenues par écrit avant la première demande. Les voyages de marque sont menés comme un seul projet." data-zh="经纪公司、管理机构与家族办公室：关键档期优先处理，配备专属联络人，合作条款在首次合作前以书面形式约定。品牌行程由我们作为一个项目统一执行。">Talent agencies, management companies and family offices: priority on the dates that matter, one dedicated contact, terms agreed in writing.</p>
-        <a class="go" href="mailto:partners@unseenconciergerie.com" data-en="Discuss working together" data-fr="Échanger sur une collaboration" data-zh="洽谈合作">Discuss working together</a>
-        </div>
-      </div>
+    <div class="nv-mapgrid">
+      <div class="nv-eu"><svg id="europe" viewBox="0 0 560 420" role="img" aria-label="Map of Europe with UNSEEN. destinations"></svg></div>
+      <div class="nv-info" id="nvinfo" aria-live="polite"></div>
     </div>
   </div>
 </section>
-
-<section id="seasons" class="sec-pale">
+<section id="now" class="sec-pale">
   <div class="wrap">
     <div class="head reveal">
-      <div class="eyebrow"><span class="n">05</span><span class="t" data-en="Seasons" data-fr="Saisons" data-zh="季节">Seasons</span></div>
-      <h2 data-en="The year has its own map." data-fr="L'année a sa propre carte." data-zh="一年之中，自有节奏。">The year has its own map.</h2>
-      <p class="lede" data-en="Where our clients go changes every three months, and the good addresses are taken long before the dates arrive. We work a season ahead." data-fr="Là où vont nos clients change tous les trois mois, et les bonnes adresses sont prises bien avant les dates. Nous travaillons une saison à l'avance." data-zh="客户的目的地每三个月更迭一次，而优质的地址往往在日期到来前早已被订满。我们始终提前一季筹备。">Where our clients go changes every three months, and the good addresses are taken long before the dates arrive.</p>
+      <div class="eyebrow"><span class="n">05</span><span class="t" data-en="Right now" data-fr="En ce moment" data-zh="当季">Right now</span></div>
+      <h2 data-en="What we are working on this season." data-fr="Ce que nous préparons cette saison." data-zh="本季，我们正在筹备的。">What we are working on this season.</h2>
     </div>
-
-    <div class="srow reveal">
-      <article class="sitem">
-        <div class="sph"><picture><source type="image/avif" srcset="img/y-summer.avif"><img src="img/y-summer.webp" alt="The coastline of Monaco at sunset" data-alt-en="The coastline of Monaco at sunset" data-alt-fr="La côte de Monaco au coucher du soleil" data-alt-zh="日落时分的摩纳哥海岸线" loading="lazy"></picture></div>
-        <hr class="rule-accent">
-          <span class="tag" data-en="May to September" data-fr="Mai à septembre" data-zh="五月至九月">May to September</span>
-          <h3 data-en="Summer season" data-fr="Saison estivale" data-zh="夏季">Summer season</h3>
-          <p data-en="Côte d'Azur, Cannes, Saint-Tropez, Portofino, Ibiza. Villas taken before winter ends, beach clubs where a table already carries a name, and yacht days that begin at the berth rather than at the harbour gate." data-fr="Côte d'Azur, Cannes, Saint-Tropez, Portofino, Ibiza. Des villas prises avant la fin de l'hiver, des beach clubs où la table porte déjà un nom, et des journées en mer qui commencent au ponton plutôt qu'à l'entrée du port." data-zh="蔚蓝海岸、戛纳、圣特罗佩、波托菲诺、伊维萨岛。别墅往往在冬季结束前便已订出，沙滩俱乐部的餐桌早已名花有主，出海时光从私人泊位启程，无需在港口排队。">Côte d'Azur, Cannes, Saint-Tropez, Portofino, Ibiza.</p>
-      </article>
-
-      <article class="sitem">
-        <div class="sph"><picture><source type="image/avif" srcset="img/y-winter.avif"><img src="img/y-winter.webp" alt="A wooden chalet under snow beside a cable car in the Alps" data-alt-en="A wooden chalet under snow beside a cable car in the Alps" data-alt-fr="Un chalet de bois sous la neige près d'une télécabine dans les Alpes" data-alt-zh="阿尔卑斯山缆车旁，白雪覆盖的木屋别墅" loading="lazy"></picture></div>
-        <hr class="rule-accent">
-          <span class="tag" data-en="December to April" data-fr="Décembre à avril" data-zh="十二月至四月">December to April</span>
-          <h3 data-en="Winter season" data-fr="Saison hivernale" data-zh="冬季">Winter season</h3>
-          <p data-en="Courchevel, Megève, Val d'Isère, Gstaad, St Moritz. Chalets with staff, tables held at altitude, and transfers that do not depend on the weather in Geneva." data-fr="Courchevel, Megève, Val d'Isère, Gstaad, Saint-Moritz. Des chalets avec personnel, des tables réservées en altitude, et des transferts qui ne dépendent pas de la météo à Genève." data-zh="库雪维尔、梅杰夫、伊瑟尔河谷、格斯塔德、圣莫里茨。配备管家的木屋别墅、保留席位的高山餐桌，以及不受日内瓦天气左右的接送安排。">Courchevel, Megève, Val d'Isère, Gstaad, St Moritz.</p>
-          <a class="go" href="saison-ski-2026-2027.html" style="display:inline-block;margin-top:16px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;text-decoration:none;color:var(--noir);border-bottom:2px solid var(--accent);padding-bottom:4px" data-en="Learn more" data-fr="En savoir plus" data-zh="了解更多">Learn more</a>
-      </article>
-
-      <article class="sitem">
-        <div class="sph"><picture><source type="image/avif" srcset="img/y-calendar.avif"><img src="img/y-calendar.webp" alt="Formula 1 cars through a corner during a Grand Prix" data-alt-en="Formula 1 cars through a corner during a Grand Prix" data-alt-fr="Des Formule 1 dans un virage pendant un Grand Prix" data-alt-zh="大奖赛期间F1赛车过弯" loading="lazy"></picture></div>
-        <hr class="rule-accent">
-          <span class="tag" data-en="Fixed dates" data-fr="Dates fixes" data-zh="固定档期">Fixed dates</span>
-          <h3 data-en="The calendar" data-fr="Le calendrier" data-zh="年度日历">The calendar</h3>
-          <p data-en="Monaco Grand Prix, Roland-Garros, Cannes Film Festival, Paris and Milan Fashion Weeks, Art Basel. Dates that never move, and inventory that disappears eleven months early." data-fr="Grand Prix de Monaco, Roland-Garros, Festival de Cannes, Fashion Weeks de Paris et Milan, Art Basel. Des dates qui ne bougent jamais, et des places qui disparaissent onze mois à l'avance." data-zh="摩纳哥大奖赛、法网公开赛、戛纳电影节、巴黎与米兰时装周、巴塞尔艺术展。档期从不更改，而房源与席位往往提前十一个月便已售罄。">Monaco Grand Prix, Roland-Garros, Cannes Film Festival, Paris and Milan Fashion Weeks, Art Basel.</p>
-          <a class="go" href="formule-1.html" style="display:inline-block;margin-top:16px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;text-decoration:none;color:var(--noir);border-bottom:2px solid var(--accent);padding-bottom:4px" data-en="Formula 1" data-fr="Formule 1" data-zh="F1方程式赛车">Formula 1</a>
-      </article>
+    <div class="nv-now">
+      <a class="nn reveal" href="saison-ski-2026-2027.html"><picture><source type="image/avif" srcset="img/v2-now-ski.avif"><img src="img/v2-now-ski.webp" alt="" loading="lazy"></picture><div><span data-en="December 2026 to April 2027" data-fr="Décembre 2026 à avril 2027" data-zh="2026年12月至2027年4月">December 2026 to April 2027</span><h3 data-en="The ski season" data-fr="La saison de ski" data-zh="滑雪季">The ski season</h3><p data-en="The good chalets for Christmas and February are being taken now. Tell us your weeks." data-fr="Les beaux chalets de Noël et de février partent maintenant. Dites-nous vos semaines." data-zh="圣诞与二月的好木屋，此刻正被陆续订走。告诉我们您的日期。">The good chalets for Christmas and February are being taken now. Tell us your weeks.</p><b data-en="The ski season &amp;rarr;" data-fr="La saison de ski &amp;rarr;" data-zh="滑雪季 &amp;rarr;">The ski season &rarr;</b></div></a>
+      <a class="nn reveal" href="formule-1.html"><picture><source type="image/avif" srcset="img/v2-now-gp.avif"><img src="img/v2-now-gp.webp" alt="" loading="lazy"></picture><div><span data-en="Monaco, June 2027" data-fr="Monaco, juin 2027" data-zh="摩纳哥，2027年6月">Monaco, June 2027</span><h3 data-en="The Grand Prix" data-fr="Le Grand Prix" data-zh="摩纳哥大奖赛">The Grand Prix</h3><p data-en="Terraces and boats for the race weekend sell out a season ahead." data-fr="Les terrasses et les bateaux du week-end de course partent une saison à l&#x27;avance." data-zh="比赛周末的观赛露台与游艇，提前一季便已售罄。">Terraces and boats for the race weekend sell out a season ahead.</p><b data-en="The Grand Prix weekend &amp;rarr;" data-fr="Le week-end du Grand Prix &amp;rarr;" data-zh="大奖赛周末 &amp;rarr;">The Grand Prix weekend &rarr;</b></div></a>
     </div>
   </div>
 </section>
 
-<div class="mosaic reveal">
-  <figure><picture><source type="image/avif" srcset="img/g1.avif"><img src="img/g1.webp" alt="The clay court at Roland-Garros during a match" data-alt-en="The clay court at Roland-Garros during a match" data-alt-fr="Le court en terre battue de Roland-Garros pendant un match" data-alt-zh="法网公开赛比赛中的红土球场" loading="lazy"></picture></figure>
-  <figure><picture><source type="image/avif" srcset="img/g2.avif"><img src="img/g2.webp" alt="A waterfall in the tropical forest of Mauritius" data-alt-en="A waterfall in the tropical forest of Mauritius" data-alt-fr="Une cascade dans la forêt tropicale de Maurice" data-alt-zh="毛里求斯热带雨林中的瀑布" loading="lazy"></picture></figure>
-  <figure><picture><source type="image/avif" srcset="img/g3.avif"><img src="img/g3.webp" alt="Palm trees below Le Morne mountain in Mauritius" data-alt-en="Palm trees below Le Morne mountain in Mauritius" data-alt-fr="Des palmiers au pied de la montagne du Morne à Maurice" data-alt-zh="毛里求斯勒莫恩山下的棕榈树" loading="lazy"></picture></figure>
-  <figure><picture><source type="image/avif" srcset="img/g4.avif"><img src="img/g4.webp" alt="A turquoise lagoon and its reef seen from the air" data-alt-en="A turquoise lagoon and its reef seen from the air" data-alt-fr="Un lagon turquoise et son récif vus du ciel" data-alt-zh="空中俯瞰绿松石色潟湖与珊瑚礁" loading="lazy"></picture></figure>
-  <figure><picture><source type="image/avif" srcset="img/g5.avif"><img src="img/g5.webp" alt="A white sand beach and turquoise water seen from above" data-alt-en="A white sand beach and turquoise water seen from above" data-alt-fr="Une plage de sable blanc et une eau turquoise vues d'en haut" data-alt-zh="俯瞰白沙滩与绿松石色海水" loading="lazy"></picture></figure>
-  <figure><picture><source type="image/avif" srcset="img/g6.avif"><img src="img/g6.webp" alt="A lit garden and its reflecting pool at nightfall" data-alt-en="A lit garden and its reflecting pool at nightfall" data-alt-fr="Un jardin éclairé et son bassin à la tombée de la nuit" data-alt-zh="夜幕降临时，灯光映照的花园与倒影池" loading="lazy"></picture></figure>
-  <figure><picture><source type="image/avif" srcset="img/g7.avif"><img src="img/g7.webp" alt="The Eiffel Tower against a clear blue sky" data-alt-en="The Eiffel Tower against a clear blue sky" data-alt-fr="La tour Eiffel sur un ciel bleu dégagé" data-alt-zh="晴朗蓝天下的埃菲尔铁塔" loading="lazy"></picture></figure>
-  <figure><picture><source type="image/avif" srcset="img/g8.avif"><img src="img/g8.webp" alt="Tower Bridge lit up at night in London" data-alt-en="Tower Bridge lit up at night in London" data-alt-fr="Le Tower Bridge illuminé la nuit à Londres" data-alt-zh="伦敦塔桥夜间灯光" loading="lazy"></picture></figure>
-</div>
+<section id="partners" class="sec-white">
+  <div class="wrap">
+    <div class="head reveal"><div class="eyebrow"><span class="n">06</span><span class="t" data-en="Partners" data-fr="Partenaires" data-zh="合作伙伴">Partners</span></div><h2 data-en="They work with us." data-fr="Ils travaillent avec nous." data-zh="与我们同行的伙伴。">They work with us.</h2></div>
+  </div>
+  <div class="marquee" aria-label="Partners"><div class="track"><img src="img/partenaires/lux.svg" alt="LUX* Resorts &amp; Hotels" style="height:40px" loading="lazy"><img src="img/partenaires/dorchester.svg" alt="Dorchester Collection" style="height:24px" loading="lazy"><img src="img/partenaires/heritage.png" alt="Heritage Resorts" style="height:56px" loading="lazy"><img src="img/partenaires/luxaviation.svg" alt="Luxaviation" style="height:26px" loading="lazy"><img src="img/partenaires/p1-travel.svg" alt="P1 Travel" style="height:50px" loading="lazy"><img src="img/partenaires/f1-experiences.png" alt="F1 Experiences" style="height:30px" loading="lazy"><img src="img/partenaires/la-folie-douce.png" alt="La Folie Douce" style="height:26px" loading="lazy"><img src="img/partenaires/lux.svg" alt="" aria-hidden="true" style="height:40px" loading="lazy"><img src="img/partenaires/dorchester.svg" alt="" aria-hidden="true" style="height:24px" loading="lazy"><img src="img/partenaires/heritage.png" alt="" aria-hidden="true" style="height:56px" loading="lazy"><img src="img/partenaires/luxaviation.svg" alt="" aria-hidden="true" style="height:26px" loading="lazy"><img src="img/partenaires/p1-travel.svg" alt="" aria-hidden="true" style="height:50px" loading="lazy"><img src="img/partenaires/f1-experiences.png" alt="" aria-hidden="true" style="height:30px" loading="lazy"><img src="img/partenaires/la-folie-douce.png" alt="" aria-hidden="true" style="height:26px" loading="lazy"></div></div>
+</section>
+
 
 <section id="contact" class="sec-dark">
   <div class="wrap">
     <div class="head reveal">
-      <div class="eyebrow"><span class="n">06</span><span class="t" data-en="Contact" data-fr="Contact" data-zh="联系我们">Contact</span></div>
+      <div class="eyebrow"><span class="n">07</span><span class="t" data-en="Contact" data-fr="Contact" data-zh="联系我们">Contact</span></div>
       <h2 data-en="Tell us when." data-fr="Dites-nous quand." data-zh="告诉我们，何时启程。">Tell us when.</h2>
       <p class="lede" data-en="WhatsApp is the fastest way to reach us, at any hour and in any time zone. A first message takes one line." data-fr="WhatsApp est le moyen le plus rapide de nous joindre, à toute heure et dans tous les fuseaux. Un premier message tient en une ligne." data-zh="WhatsApp是联系我们最快捷的方式，全天候、跨时区响应。第一条消息，一行字即可。">WhatsApp is the fastest way to reach us, at any hour and in any time zone.</p>
     </div>
@@ -1097,353 +885,7 @@ button.btn{background:transparent;cursor:pointer;font-family:'Montserrat',system
 })();
 </script>
 
-<script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
-<script>
-/* =============================================================
-   UNSEEN. — CARTE INTERACTIVE (Leaflet)
-   -------------------------------------------------------------
-   Une vraie carte, zoomable. Chaque point regroupe les
-   partenaires d'une destination ; le panneau de droite (et les
-   boutons sous la carte) affiche la liste, à faire défiler.
-   Pour ajouter/retirer un partenaire : modifier le tableau
-   "partners" de la destination concernée ci-dessous.
-   ============================================================= */
-(function(){
-  var stageWrap = document.getElementById('leafletmap');
-  var card = document.getElementById('mapcard');
-  var tabs = document.getElementById('maptabs');
-  if (!stageWrap || !card || typeof L === 'undefined') return;
 
-  var accent = (getComputedStyle(document.documentElement).getPropertyValue('--accent') || '').trim() || '#D08A5C';
-  var GREY = '#D9D9D9';
-
-  var TYPES = {
-    palace:{en:'Palace hotel', fr:'Palace', zh:'宫殿级酒店'},
-    hotel:{en:'Hotel', fr:'Hôtel', zh:'酒店'},
-    restaurant:{en:'Restaurant', fr:'Restaurant', zh:'餐厅'},
-    maison:{en:'Luxury maison', fr:'Maison de luxe', zh:'品牌之家'},
-    club:{en:'Private club', fr:'Club privé', zh:'私人会所'},
-    beach:{en:'Beach club', fr:'Beach club', zh:'沙滩俱乐部'},
-    venue:{en:'Venue', fr:'Lieu', zh:'场地'},
-    event:{en:'Event', fr:'Événement', zh:'活动'},
-    sport:{en:'Motorsport', fr:'Sport automobile', zh:'赛车运动'},
-    soon:{en:'Coming soon', fr:'À venir', zh:'即将推出'}
-  };
-
-  var DEST = {
-    paris:{
-      lat:48.8566, lng:2.3522, zoom:13, short:'Paris', shortZh:'巴黎', photo:'m-paris',
-      en:{tag:'The base', title:'Paris', text:'Palaces, tables, maisons and the venues behind the big Paris dates.'},
-      fr:{tag:'La base', title:'Paris', text:'Palaces, tables, maisons et les lieux des grands rendez-vous parisiens.'},
-      zh:{tag:'根基所在', title:'巴黎', text:'宫殿级酒店、餐厅、品牌之家，以及巴黎各大盛事的举办地。'},
-      partners:[
-        {name:'Le Meurice', type:'palace', lat:48.8651, lng:2.3283},
-        {name:'Hôtel Plaza Athénée', type:'palace', lat:48.8664, lng:2.3039},
-        {name:'Shangri-La Paris', type:'palace', lat:48.8637, lng:2.2934},
-        {name:'Le Bristol', type:'palace', lat:48.8718, lng:2.3150},
-        {name:'Chez Janou', type:'restaurant', lat:48.8567, lng:2.3672},
-        {name:'Septime', type:'restaurant', lat:48.8536, lng:2.3810},
-        {name:'Bistrot des Tournelles', type:'restaurant', lat:48.8541, lng:2.3674},
-        {name:"L'Atelier de Joël Robuchon", type:'restaurant', lat:48.8567, lng:2.3276},
-        {name:'Le Cinq', type:'restaurant', lat:48.8687, lng:2.3008},
-        {name:'Chanel — boutique Cambon', type:'maison', lat:48.8682, lng:2.3267},
-        {name:'Hermès Faubourg Saint-Honoré', type:'maison', lat:48.8689, lng:2.3217},
-        {name:'Hermès Rive Gauche', type:'maison', lat:48.8516, lng:2.3277},
-        {name:'Hermès George V', type:'maison', lat:48.8688, lng:2.3007},
-        {name:'Samaritaine', type:'maison', lat:48.8592, lng:2.3424},
-        {name:'Plénitude Arena', type:'venue', lat:48.8957, lng:2.2297},
-        {name:'Parc des Princes', type:'venue', lat:48.8414, lng:2.2531},
-        {name:'Roland-Garros', type:'event', lat:48.8469, lng:2.2484},
-        {name:'Stade de France', type:'venue', lat:48.9245, lng:2.3601},
-        {name:'Paris Fashion Week', type:'event', lat:48.8662, lng:2.3122},
-        {name:'Art Basel', type:'event', lat:48.8662, lng:2.3122}
-      ]
-    },
-    london:{
-      lat:51.5072, lng:-0.1276, zoom:12, short:'Londres', shortZh:'伦敦', photo:'m-london',
-      en:{tag:'Across the Channel', title:'London', text:'One name on the calendar for now, reachable the same afternoon as a request from Paris.'},
-      fr:{tag:"De l'autre côté de la Manche", title:'Londres', text:"Un rendez-vous sur le calendrier pour l'instant, joignable l'après-midi même d'une demande faite depuis Paris."},
-      zh:{tag:'海峡对岸', title:'伦敦', text:'目前仅一处合作地址，从巴黎发出请求，当天下午即可抵达。'},
-      partners:[{name:'Wimbledon', type:'event', lat:51.4340, lng:-0.2145}]
-    },
-    sainttropez:{
-      lat:43.2677, lng:6.6407, zoom:13, short:'Saint-Tropez', shortZh:'圣特罗佩', photo:'m-sainttropez',
-      en:{tag:'Summer', title:'Saint-Tropez & Ramatuelle', text:'Beach clubs, tables and the private rooms that open after dinner.'},
-      fr:{tag:'Été', title:'Saint-Tropez & Ramatuelle', text:'Beach clubs, tables et les salons privés qui ouvrent après le dîner.'},
-      zh:{tag:'夏季', title:'圣特罗佩与拉马图埃勒', text:'沙滩俱乐部、餐厅，以及晚餐后开放的私人包间。'},
-      partners:[
-        {name:'La Réserve Ramatuelle', type:'hotel', lat:43.2214, lng:6.6620},
-        {name:'Club 55', type:'beach', lat:43.2279, lng:6.6622},
-        {name:'Loulou Ramatuelle', type:'beach', lat:43.2260, lng:6.6610},
-        {name:'Les Caves du Roy', type:'club', lat:43.2704, lng:6.6438},
-        {name:'Nikki Beach Saint-Tropez', type:'beach', lat:43.2212, lng:6.6603},
-        {name:'Bagatelle Saint-Tropez', type:'beach', lat:43.2295, lng:6.6615}
-      ]
-    },
-    cannes:{
-      lat:43.5528, lng:7.0174, zoom:13, short:'Cannes', shortZh:'戛纳', photo:'m-cannes',
-      en:{tag:'Festival season', title:'Cannes & Antibes', text:'Beach clubs, private rooms and the venue behind the Film Festival.'},
-      fr:{tag:'Saison des festivals', title:'Cannes & Antibes', text:'Beach clubs, salons privés et le lieu du Festival de Cannes.'},
-      zh:{tag:'电影节季', title:'戛纳与安提布', text:'沙滩俱乐部、私人包间，以及戛纳电影节举办地。'},
-      partners:[
-        {name:'La Guérite', type:'beach', lat:43.5239, lng:7.0468},
-        {name:'Gotha Club', type:'club', lat:43.5472, lng:7.0313},
-        {name:'Palais des Festivals', type:'venue', lat:43.5507, lng:7.0177}
-      ]
-    },
-    monaco:{
-      lat:43.7384, lng:7.4246, zoom:13, short:'Monaco', shortZh:'摩纳哥', photo:'m-monaco',
-      en:{tag:'Grand Prix', title:'Monaco', text:'Private clubs, the Yacht Club, and F1 Experiences for the Grands Prix on the world calendar.'},
-      fr:{tag:'Grand Prix', title:'Monaco', text:'Clubs privés, le Yacht Club, et F1 Experiences pour les Grands Prix du calendrier mondial.'},
-      zh:{tag:'大奖赛', title:'摩纳哥', text:'私人会所、游艇俱乐部，以及全球F1大奖赛的观赛体验安排。'},
-      partners:[
-        {name:"Jimmy'z", type:'club', lat:43.7470, lng:7.4386},
-        {name:'Nikki Beach Monte-Carlo', type:'beach', lat:43.7399, lng:7.4295},
-        {name:'Yacht Club de Monaco', type:'club', lat:43.7375, lng:7.4279},
-        {name:'F1 Experiences', type:'sport', lat:43.7333, lng:7.4225}
-      ]
-    },
-    alps:{
-      lat:45.4149, lng:6.6353, zoom:12, short:'Alpes', shortZh:'阿尔卑斯', photo:'m-alps',
-      en:{tag:'December to April', title:'The Alps', text:'Courchevel today. Megève and Gstaad will join the list shortly.'},
-      fr:{tag:'Décembre à avril', title:'Les Alpes', text:'Courchevel pour commencer. Megève et Gstaad rejoindront la liste prochainement.'},
-      zh:{tag:'十二月至四月', title:'阿尔卑斯山', text:'目前以库雪维尔为主，梅杰夫与格斯塔德即将加入。'},
-      partners:[
-        {name:'Cheval Blanc Courchevel', type:'hotel', lat:45.4095, lng:6.6336},
-        {name:'Les Airelles Courchevel', type:'hotel', lat:45.4100, lng:6.6341},
-        {name:"L'Apogée Courchevel", type:'hotel', lat:45.4080, lng:6.6329},
-        {name:'Le Strato', type:'hotel', lat:45.4160, lng:6.6365},
-        {name:'Le Cap Horn', type:'restaurant', lat:45.4150, lng:6.6333},
-        {name:'La Mangeoire', type:'restaurant', lat:45.4145, lng:6.6360},
-        {name:'Gstaad', type:'soon', lat:46.4722, lng:7.2887},
-        {name:'Megève', type:'soon', lat:45.8567, lng:6.6179}
-      ]
-    },
-    mauritius:{
-      lat:-20.3484, lng:57.5522, zoom:12, short:'Maurice', shortZh:'毛里求斯', photo:'m-mauritius',
-      en:{tag:'The counter-season', title:'Mauritius', text:'A dozen resorts across the island, open when Europe closes.'},
-      fr:{tag:'La contre-saison', title:'Maurice', text:"Une douzaine de resorts sur l'île, ouverts quand l'Europe se ferme."},
-      zh:{tag:'反季胜地', title:'毛里求斯', text:'岛上十余家度假村，在欧洲进入淡季时依然全年开放。'},
-      partners:[
-        {name:'Heritage Awali', type:'hotel', lat:-20.5085, lng:57.4130},
-        {name:'Heritage Telfair', type:'hotel', lat:-20.5058, lng:57.4105},
-        {name:'LUX* Le Morne', type:'hotel', lat:-20.4571, lng:57.3117},
-        {name:'LUX* Belle Mare', type:'hotel', lat:-20.1998, lng:57.7822},
-        {name:'The Residence Belle Mare', type:'hotel', lat:-20.1977, lng:57.7799},
-        {name:'Hilton Mauritius Resort & Spa', type:'hotel', lat:-20.3084, lng:57.3671},
-        {name:'Veranda Resorts', type:'hotel', lat:-20.2011, lng:57.7829},
-        {name:'Maradiva Villas Resort & Spa', type:'hotel', lat:-20.3150, lng:57.3694},
-        {name:'Constance Prince Maurice', type:'hotel', lat:-20.1493, lng:57.7466},
-        {name:'Constance Belle Mare Plage', type:'hotel', lat:-20.1676, lng:57.7662},
-        {name:'Dinarobin Beachcomber', type:'hotel', lat:-20.4501, lng:57.3150},
-        {name:'Paradis Beachcomber', type:'hotel', lat:-20.4480, lng:57.3140}
-      ]
-    }
-  };
-
-  var order = ['paris','london','sainttropez','cannes','monaco','alps','mauritius'];
-  var current = 'paris';
-
-  var map = L.map(stageWrap, {
-    scrollWheelZoom:false,
-    attributionControl:true,
-    minZoom:3
-  }).setView([30,20], 3);
-  var tiles = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
-    attribution:'Tiles &copy; Esri',
-    maxZoom:16, keepBuffer:3
-  }).addTo(map);
-  /* couche de reference : noms de villes/pays par-dessus le fond de carte */
-  L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Reference/MapServer/tile/{z}/{y}/{x}', {
-    maxZoom:16, keepBuffer:3, pane:'overlayPane'
-  }).addTo(map);
-
-  /* Deplacement de la carte : au lieu d'un vol anime qui traverse des niveaux
-     de zoom dont les tuiles ne sont pas encore chargees (effet de clignotement),
-     on estompe la carte, on saute directement au nouveau cadrage, puis on la
-     reaffiche une fois les tuiles pretes. */
-  function moveMap(apply){
-    stageWrap.classList.add('map-shift');
-    setTimeout(function(){
-      apply();
-      var shown = false;
-      function reveal(){
-        if (shown) return;
-        shown = true;
-        stageWrap.classList.remove('map-shift');
-      }
-      tiles.once('load', reveal);
-      setTimeout(reveal, 1100);   /* filet de securite si 'load' ne se declenche pas */
-    }, 150);
-  }
-
-  /* zoom au trackpad (pincement) ou a la molette seulement avec Ctrl/Cmd
-     enfonce, pour que le defilement normal de la page ne soit jamais
-     capture par la carte ; le pincement a deux doigts sur mobile/tablette
-     reste actif independamment (touchZoom, active par defaut). */
-  stageWrap.addEventListener('wheel', function(e){
-    if (!e.ctrlKey && !e.metaKey) return;
-    e.preventDefault();
-    map.setZoom(map.getZoom() + (e.deltaY < 0 ? 1 : -1), {animate:true});
-  }, {passive:false});
-
-  /* Met en evidence, dans la fiche, le partenaire sur lequel on vient de
-     cliquer, et fait glisser la liste jusqu'a lui. On calcule la position
-     nous-memes plutot que d'utiliser scrollIntoView, qui ferait defiler
-     toute la page et non la seule fiche. */
-  function signalerDansLaListe(p){
-    var lignes = card.querySelectorAll('.partner-item');
-    for (var i = 0; i < lignes.length; i++){
-      var meme = parseFloat(lignes[i].getAttribute('data-lat')) === p.lat &&
-                 parseFloat(lignes[i].getAttribute('data-lng')) === p.lng;
-      lignes[i].classList.toggle('on', meme);
-      if (meme) card.scrollTop = Math.max(0, lignes[i].offsetTop - card.offsetTop - 60);
-    }
-  }
-
-  /* un point par adresse de partenaire, regroupe par destination */
-  var partnerMarkers = {}, bounds = [];
-  order.forEach(function(id){
-    partnerMarkers[id] = [];
-    DEST[id].partners.forEach(function(p){
-      bounds.push([p.lat, p.lng]);
-      var m = L.circleMarker([p.lat, p.lng], {radius:5, weight:1, color:'#0B0B0B', fillColor:GREY, fillOpacity:1});
-      m.addTo(map);
-      m.bindTooltip(p.name, {direction:'top', offset:[0,-4]});
-      /* Cliquer sur un point de la destination DEJA affichee ne doit rien
-         deplacer du tout. Le visiteur a souvent zoome lui-meme, au doigt
-         sur telephone : recadrer sur l'ensemble des partenaires lui ferait
-         perdre sa vue sans raison. On se contente d'afficher le nom et de
-         signaler la ligne correspondante dans la liste.
-         Seul le clic sur un point d'une AUTRE destination change le cadrage. */
-      m.on('click', function(){
-        if (id === current){
-          m.openTooltip();
-          signalerDansLaListe(p);
-        } else {
-          select(id);
-        }
-      });
-      partnerMarkers[id].push(m);
-    });
-  });
-  map.fitBounds(bounds, {padding:[34,34]});
-
-  var overviewBtn = document.getElementById('map-overview');
-  if (overviewBtn) overviewBtn.addEventListener('click', function(){
-    moveMap(function(){ map.fitBounds(bounds, {padding:[34,34], animate:false}); });
-  });
-
-  function lang(){
-    var l = document.documentElement.lang;
-    return (l === 'fr' || l === 'zh') ? l : 'en';
-  }
-  function typeLabel(t){ var o = TYPES[t]; return o ? o[lang()] : t; }
-
-  function paintMarkers(){
-    order.forEach(function(id){
-      var color = id===current ? accent : GREY;
-      var r = id===current ? 6.5 : 5;
-      partnerMarkers[id].forEach(function(m){ m.setStyle({fillColor:color, radius:r}); });
-    });
-  }
-
-  function paintTabs(){
-    if (!tabs) return;
-    tabs.innerHTML = '';
-    order.forEach(function(id){
-      var b = document.createElement('button');
-      b.type = 'button';
-      b.className = 'on'===id ? '' : '';
-      /* le libelle court du bouton reste identique en EN et en FR (choix
-         d'origine du site), mais devient illisible pour un lecteur qui
-         ne connait que le chinois : on lui donne un vrai libelle chinois
-         quand il existe. */
-      b.textContent = (lang()==='zh' && DEST[id].shortZh) ? DEST[id].shortZh : DEST[id].short;
-      if (id === current) b.classList.add('on');
-      b.addEventListener('click', function(){ select(id); });
-      tabs.appendChild(b);
-    });
-  }
-
-  function render(){
-    var d = DEST[current];
-    var t = d[lang()];
-    /* bandeau photo du lieu, en tete de fiche */
-    var html = '';
-    if (d.photo){
-      /* la description suit la langue affichee, comme le reste de la fiche */
-      var PREFIXE_LIEU = {en:'UNSEEN. in ', fr:'UNSEEN. à ', zh:'UNSEEN. 在'};
-      var desc = PREFIXE_LIEU[lang()] + t.title;
-      html += '<div class="mapphoto"><picture>' +
-              '<source type="image/avif" srcset="img/' + d.photo + '.avif">' +
-              '<img src="img/' + d.photo + '.webp" alt="' + desc + '" loading="lazy" decoding="async">' +
-              '</picture></div>';
-    }
-    html += '<div class="maphead"><span class="tag">' + t.tag + '</span><h3>' + t.title + '</h3>' +
-      '<p style="font-size:15px;color:#B4B4B4;margin-top:8px;line-height:1.6">' + t.text + '</p></div>';
-    html += '<div class="partner-list">';
-    d.partners.forEach(function(p){
-      html += '<div class="partner-item" data-lat="' + p.lat + '" data-lng="' + p.lng + '"><span class="pn">' + p.name + '</span><span class="pt">' + typeLabel(p.type) + '</span></div>';
-    });
-    html += '</div>';
-    card.innerHTML = html;
-    card.scrollTop = 0;
-  }
-
-  /* Clic sur un partenaire de la liste.
-
-     Deux cas, et c'est important pour le confort, surtout au doigt :
-
-     - le partenaire est dans le secteur deja affiche (on passe du
-       Meurice au Plaza Athenee, tous deux a Paris) : la carte glisse
-       jusqu'a lui SANS rien recharger et SANS toucher au zoom. Si le
-       visiteur avait zoome lui-meme, son zoom est conserve.
-
-     - le partenaire est loin, ou l'on regarde le monde entier : la il
-       faut charger d'autres tuiles, et l'on reprend le fondu qui evite
-       de voir la carte se reconstruire par morceaux. */
-  var RAYON_PROCHE = 60000;   /* 60 km : l'echelle d'une ville et ses environs */
-
-  card.addEventListener('click', function(e){
-    var item = e.target.closest ? e.target.closest('.partner-item') : null;
-    if (!item) return;
-    var lat = parseFloat(item.getAttribute('data-lat'));
-    var lng = parseFloat(item.getAttribute('data-lng'));
-    if (isNaN(lat) || isNaN(lng)) return;
-
-    var proche = map.getZoom() >= 11 &&
-                 map.distance(map.getCenter(), L.latLng(lat, lng)) < RAYON_PROCHE;
-
-    if (proche){
-      map.panTo([lat, lng], {animate:true, duration:0.7});
-    } else {
-      moveMap(function(){ map.setView([lat, lng], 14, {animate:false}); });
-    }
-  });
-
-  function select(id){
-    current = id;
-    paintMarkers();
-    paintTabs();
-    render();
-    var d = DEST[id];
-    var pts = d.partners.map(function(p){ return [p.lat, p.lng]; });
-    moveMap(function(){ map.fitBounds(pts, {padding:[46,46], maxZoom:13, animate:false}); });
-  }
-
-  paintMarkers();
-  paintTabs();
-  render();
-
-  ['btn-en','btn-fr','btn-zh'].forEach(function(id){
-    var b = document.getElementById(id);
-    if (b) b.addEventListener('click', function(){ render(); paintTabs(); });
-  });
-
-  setTimeout(function(){ map.invalidateSize(); }, 300);
-})();
-</script>
 
 <script>
 /* =============================================================
@@ -1645,5 +1087,48 @@ button.btn{background:transparent;cursor:pointer;font-family:'Montserrat',system
 
 
 <script src="anim.js"></script>
+<script>
+// Services : l'image change au survol (ou au toucher)
+(()=>{const lis=document.querySelectorAll('#nvsvc li'),ims=document.querySelectorAll('#nvimg img');
+const go=li=>{lis.forEach(x=>x.classList.remove('on'));li.classList.add('on');ims.forEach((im,i)=>im.classList.toggle('on',i==li.dataset.i))};
+lis.forEach(li=>{li.addEventListener('mouseenter',()=>go(li));li.addEventListener('click',()=>go(li))})})();
+// Carte du monde : d'où viennent les clients, où on les emmène
+(async()=>{
+
+ const world=await (await fetch('https://cdn.jsdelivr.net/npm/world-atlas@2.0.2/countries-110m.json')).json();
+ const land=topojson.feature(world,world.objects.countries).features.filter(f=>f.properties.name!=="Antarctica");
+ const EU=new Set(["France","Germany","Italy","Spain","United Kingdom","Switzerland","Belgium","Netherlands","Austria","Portugal","Ireland","Denmark","Sweden","Norway","Poland","Czechia","Greece","Croatia","Luxembourg","Slovenia","Hungary","Slovakia","Finland"]);
+const paris=[2.35,48.86];
+ const P={
+  paris:{c:paris,n:["Paris","Paris","巴黎"],t:["The base","Notre base","大本营"],d:["Dinner at the Plaza Athénée, a private appointment on the Faubourg, the front row at Fashion Week.","Un dîner au Plaza Athénée, un rendez-vous privé dans une maison du Faubourg, le premier rang à la Fashion Week.","在雅典娜广场酒店晚餐，在圣奥诺雷街名店私享预约，坐上时装周的头排。"]},
+  london:{c:[-0.1,51.5],n:["London","Londres","伦敦"],t:["An idea","Une idée","灵感"],d:["A late night at Tape, Sunday lunch in the countryside, Wimbledon in July.","Une fin de soirée au Tape, un déjeuner du dimanche à la campagne, Wimbledon en juillet.","在Tape畅玩至深夜，周日去乡间午餐，七月的温布尔登。"],k:"out"},
+  alps:{c:[6.6,45.4],n:["The Alps","Les Alpes","阿尔卑斯"],t:["An idea","Une idée","灵感"],d:["Lunch on the terrace at La Folie Douce, a staffed chalet in Courchevel 1850, a helicopter drop for fresh snow.","Un déjeuner en terrasse à La Folie Douce, un chalet avec personnel à Courchevel 1850, une dépose en hélicoptère sur la neige fraîche.","在La Folie Douce露台午餐，入住库舍维尔1850配备管家的木屋，乘直升机直达新雪坡。"],k:"out"},
+  milan:{c:[9.19,45.46],n:["Milan","Milan","米兰"],t:["An idea","Une idée","灵感"],d:["Fashion Week, a fitting in the Quadrilatero, an evening on Lake Como.","La Fashion Week, un essayage dans le Quadrilatero, une soirée au bord du lac de Côme.","米兰时装周，在四方区私享试衣，傍晚去科莫湖畔。"],k:"out"},
+  riviera:{c:[5.6,43.25],n:["The Riviera","La Riviera","蔚蓝海岸"],t:["An idea","Une idée","灵感"],d:["The Monaco Grand Prix from a terrace, lunch at Club 55, a day on a yacht off Saint-Tropez.","Le Grand Prix de Monaco depuis une terrasse, un déjeuner au Club 55, une journée en yacht au large de Saint-Tropez.","在露台观赏摩纳哥大奖赛，于Club 55午餐，在圣特罗佩外海度过游艇一日。"],k:"out"},
+  ibiza:{c:[1.43,38.9],n:["Ibiza","Ibiza","伊维萨"],t:["An idea","Une idée","灵感"],d:["Dinner on Formentera, a sunset table at Beso Beach, a villa above the cliffs.","Un dîner à Formentera, une table au coucher du soleil au Beso Beach, une villa au-dessus des falaises.","去福门特拉岛晚餐，在Beso Beach看日落，入住悬崖上的别墅。"],k:"out"},
+  mykonos:{c:[25.3,37.4],n:["Mykonos","Mykonos","米科诺斯"],t:["An idea","Une idée","灵感"],d:["A party at Scorpios, a boat to Delos, a villa above the bay.","Une soirée au Scorpios, un bateau jusqu'à Délos, une villa au-dessus de la baie.","在Scorpios狂欢，乘船前往提洛岛，入住俯瞰海湾的别墅。"],k:"out"},
+  marbella:{c:[-4.88,36.51],n:["Marbella","Marbella","马贝拉"],t:["An idea","Une idée","灵感"],d:["A long lunch at Puente Romano, Nikki Beach in the afternoon, a villa above the golf courses.","Un long déjeuner au Puente Romano, Nikki Beach l'après-midi, une villa au-dessus des golfs.","在Puente Romano悠长午餐，午后去Nikki Beach，入住俯瞰高尔夫球场的别墅。"],k:"out"}};
+ const info=document.getElementById('nvinfo');
+ const L=()=>({en:0,fr:1,zh:2}[document.documentElement.lang]||0);
+ const show=k=>{const v=P[k],l=L();info.innerHTML=`<span class="t">${v.t[l]}</span><h3>${v.n[l]}</h3><p>${v.d[l]}</p>`;info.dataset.k=k;d3.selectAll('.arc').classed('hi',function(){return this.dataset.k===k})};
+ function dessine(sel,W,H,ext,keys,lab,size){
+  const svg=d3.select(sel);const proj=d3.geoNaturalEarth1().fitExtent([[8,8],[W-8,H-8]],{type:"MultiPoint",coordinates:ext});
+  const path=d3.geoPath(proj);const pp=proj(paris);
+  svg.append('g').selectAll('path').data(land).join('path').attr('class',d=>'land'+(EU.has(d.properties.name)?' eu':'')).attr('d',path);
+  const g=svg.append('g');
+  keys.filter(k=>k!=='paris').forEach(k=>{const v=P[k],a=proj(v.c);const mx=(a[0]+pp[0])/2,my=(a[1]+pp[1])/2-Math.hypot(a[0]-pp[0],a[1]-pp[1])*.22;
+   g.append('path').attr('class','arc '+v.k).attr('data-k',k).attr('d',`M${a[0]},${a[1]} Q${mx},${my} ${pp[0]},${pp[1]}`)});
+  const pts=svg.append('g').selectAll('g').data(keys).join('g').attr('class',k=>'pt'+(k==='paris'?' base':'')).attr('transform',k=>`translate(${proj(P[k].c)})`);
+  pts.append('circle').attr('r',k=>k==='paris'?6:4).attr('fill',k=>k==='paris'||P[k].k==='out'?'#E9C4B8':'#F5F0EA');
+  pts.append('circle').attr('r',16).attr('fill','transparent');
+  pts.filter(k=>lab[k]!==null).append('text').attr('x',k=>(lab[k]||[8,4])[0]).attr('y',k=>(lab[k]||[8,4])[1]).style('font-size',size).attr('class','nm').text(k=>P[k].n[L()]);
+  pts.on('mouseenter',(e,k)=>show(k)).on('click',(e,k)=>show(k));
+ }
+ const euKeys=Object.keys(P);
+ show('paris');
+ dessine('#europe',560,420,[[-10,58],[28,58],[-10,35],[28,35]],euKeys,{paris:[10,-8],london:[-58,-6],alps:[-14,26],riviera:[10,16],milan:[10,0],ibiza:[10,4],mykonos:[-78,-10],marbella:[-70,16]},'13px');
+ new MutationObserver(()=>{const l=L();d3.selectAll('#europe .nm').text(k=>P[k].n[l]);show(info.dataset.k||'paris')}).observe(document.documentElement,{attributes:true,attributeFilter:['lang']});
+})();
+</script>
 </body>
 </html>

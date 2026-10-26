@@ -15,15 +15,15 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700;800&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700;800&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 <style>
 :root{
   --accent:#7AA3BC;
   --noir:#000000;
   --blanc:#FFFFFF;
-  --bleu-clair:#F4F6FC;
-  --gris-doux:#D9D9D9;
+  --bleu-clair:#F4EAE5;
+  --gris-doux:#E5D7D0;
   --texte-2:#4E4E4E;
   --texte-3:#7A7A7A;
   --max:1240px;
@@ -31,18 +31,18 @@
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{background:var(--bleu-clair);color:var(--noir);font-family:'Montserrat','Noto Sans SC',system-ui,-apple-system,sans-serif;font-weight:400;font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+body{background:var(--bleu-clair);color:var(--noir);font-family:'DM Sans','Noto Sans SC',system-ui,-apple-system,sans-serif;font-weight:400;font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
 h1,h2,h3{font-family:'League Spartan','Noto Sans SC',sans-serif;font-weight:700}
 :lang(zh) h1,:lang(zh) h2,:lang(zh) h3,:lang(zh) .hero-mark{font-weight:900}
 :lang(zh) h1,:lang(zh) h2,:lang(zh) h3,:lang(zh) .lede,:lang(zh) .hero-body p,:lang(zh) .sitem p,:lang(zh) .band p{letter-spacing:0}
 :lang(zh) .lede,:lang(zh) .hero-body p,:lang(zh) .sitem p{line-height:1.9}
 img{display:block;max-width:100%}
 .wrap{max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
-.num{font-family:'Montserrat',sans-serif;font-variant-numeric:tabular-nums}
+.num{font-family:'DM Sans',sans-serif;font-variant-numeric:tabular-nums}
 .rule-accent{height:2px;width:44px;background:var(--accent);border:0}
 picture{display:block;width:100%;height:100%}
 
-.topbar{position:sticky;top:0;z-index:60;background:var(--bleu-clair);border-bottom:1px solid rgba(0,0,0,.09)}
+.topbar{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid rgba(0,0,0,.09)}
 .topbar-in{max-width:var(--max);margin:0 auto;padding:16px var(--pad);display:flex;align-items:center;justify-content:space-between;gap:20px}
 .mark{font-family:'League Spartan',sans-serif;font-weight:800;font-size:21px;letter-spacing:-.01em;line-height:1;text-decoration:none;color:var(--noir)}
 .nav{display:flex;align-items:center;gap:26px}
@@ -74,10 +74,10 @@ section[id],div[id]{scroll-margin-top:88px}
 section{padding:96px 0}
 .sec-white{background:var(--blanc)}
 .sec-pale{background:var(--bleu-clair)}
-.sec-dark{background:var(--noir);color:var(--blanc)}
+.sec-dark{background:#2B2A2E;color:var(--blanc)}
 .head{max-width:720px}
 .eyebrow{display:flex;align-items:baseline;gap:16px;margin-bottom:14px}
-.eyebrow .n{font-family:'Montserrat',sans-serif;font-size:14px;color:var(--accent);font-weight:500}
+.eyebrow .n{font-family:'DM Sans',sans-serif;font-size:14px;color:var(--accent);font-weight:500}
 .eyebrow .t{font-size:13px;letter-spacing:.22em;text-transform:uppercase;font-weight:600}
 h2{font-weight:800;font-size:clamp(30px,4.2vw,46px);line-height:1.05;letter-spacing:-.02em;margin-bottom:20px}
 .lede{font-weight:300;font-size:20px;line-height:1.55;color:var(--texte-2)}
@@ -99,7 +99,7 @@ h2{font-weight:800;font-size:clamp(30px,4.2vw,46px);line-height:1.05;letter-spac
 .sec-dark .list-row{border-top-color:rgba(255,255,255,.14)}
 .list-row:last-child{border-bottom:1px solid rgba(0,0,0,.10)}
 .sec-dark .list-row:last-child{border-bottom-color:rgba(255,255,255,.14)}
-.list-row .k{font-family:'Montserrat',sans-serif;font-weight:600;font-size:13px;color:var(--accent);flex:0 0 28px;padding-top:2px}
+.list-row .k{font-family:'DM Sans',sans-serif;font-weight:600;font-size:13px;color:var(--accent);flex:0 0 28px;padding-top:2px}
 .list-row p{font-size:17px;line-height:1.55}
 
 .band{position:relative;background:var(--noir);overflow:hidden;min-height:clamp(340px,48vh,480px);display:flex;align-items:flex-end}
@@ -120,7 +120,7 @@ h2{font-weight:800;font-size:clamp(30px,4.2vw,46px);line-height:1.05;letter-spac
 .cta-band .head{max-width:620px;margin:0 auto}
 .cta-band .cta-row{justify-content:center}
 
-footer{background:var(--noir);color:var(--blanc);padding:72px 0 46px;border-top:1px solid rgba(255,255,255,.14)}
+footer{background:#1E1D20;color:var(--blanc);padding:72px 0 46px;border-top:1px solid rgba(255,255,255,.14)}
 .foot-mark{font-family:'League Spartan',sans-serif;font-weight:800;font-size:38px;line-height:1}
 .curated{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#8A8A8A;margin-top:10px}
 .foot-sep{height:1px;background:#FFFFFF;opacity:.16;border:0;margin-top:34px}
@@ -143,6 +143,33 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
   footer{padding:52px 0 38px}
   .foot-mark{font-size:32px}
 }
+
+/* Ce que nous organisons, par station (charte V1.4) */
+.cats{display:grid;grid-template-columns:repeat(4,1fr);gap:48px 40px;margin-top:52px}
+.cats.trois{grid-template-columns:repeat(3,1fr)}
+.cat{border-top:1px solid rgba(255,255,255,.2);padding-top:20px}
+.cat .k2{display:block;font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);font-weight:600}
+.cat h3{font-size:20px;margin:8px 0 16px}
+.cat ul{list-style:none;display:flex;flex-direction:column;gap:12px}
+.cat li{position:relative;padding-left:18px;font-size:15px;line-height:1.55;color:#CFC8CA}
+.cat li:before{content:"";position:absolute;left:0;top:.8em;width:8px;height:1px;background:var(--accent)}
+.cat.large{grid-column:1/-1;display:grid;grid-template-columns:1fr 2fr;gap:0 40px;align-items:start}
+.cat.large ul{flex-direction:row;flex-wrap:wrap;gap:12px 40px;padding-top:4px}
+.cat.large li{flex:1 1 220px}
+@media(max-width:900px){.cats,.cats.trois{grid-template-columns:1fr;gap:30px;margin-top:32px}.cat.large{display:block}.cat.large ul{flex-direction:column}}
+/* Menu sur téléphone (charte V1.4) */
+.burger{display:none;width:44px;height:44px;border:0;background:none;cursor:pointer;position:relative;margin-left:6px}
+.burger span{position:absolute;left:11px;right:11px;height:1.5px;background:#000;transition:transform .25s,opacity .25s}
+.burger span:nth-child(1){top:16px}.burger span:nth-child(2){top:22px}.burger span:nth-child(3){top:28px}
+.menu-open .burger span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.menu-open .burger span:nth-child(2){opacity:0}
+.menu-open .burger span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+.mpanel{position:fixed;left:0;right:0;bottom:0;top:64px;background:#fff;z-index:59;padding:26px 22px calc(26px + env(safe-area-inset-bottom));display:flex;flex-direction:column;opacity:0;pointer-events:none;transform:translateY(-8px);transition:opacity .25s,transform .25s}
+.menu-open .mpanel{opacity:1;pointer-events:auto;transform:none}
+.mpanel a{font-family:'League Spartan',sans-serif;font-weight:800;font-size:30px;text-decoration:none;color:#000;padding:12px 0;border-bottom:1px solid #E5D7D0}
+.mpanel .bas{margin-top:auto;display:flex;flex-direction:column;gap:10px}
+.mpanel .bas a{font-family:'DM Sans',sans-serif;font-weight:500;font-size:16px;border:0;padding:0}
+@media(max-width:900px){.burger{display:block}}
 </style>
 </head>
 <body>
@@ -151,9 +178,10 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
   <div class="topbar-in">
     <a class="mark" href="index.html#top">UNSEEN.</a>
     <nav class="nav">
-      <a href="index.html#method" data-en="Method" data-fr="Méthode" data-zh="服务流程">Method</a>
+      <a href="index.html#services" data-en="Services" data-fr="Services" data-zh="服务">Services</a>
       <a href="index.html#destinations" data-en="Destinations" data-fr="Destinations" data-zh="目的地">Destinations</a>
-      <a href="index.html#seasons" data-en="Seasons" data-fr="Saisons" data-zh="季节">Seasons</a>
+      <a href="index.html#now" data-en="Seasons" data-fr="Saisons" data-zh="当季">Seasons</a>
+      <a href="professionals.html" data-en="Professionals" data-fr="Professionnels" data-zh="合作伙伴">Professionals</a>
       <a href="index.html#contact" data-en="Contact" data-fr="Contact" data-zh="联系我们">Contact</a>
     </nav>
     <div class="langsw">
@@ -163,8 +191,18 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
       <span class="sep">/</span>
       <button type="button" id="btn-zh" aria-pressed="false" lang="zh">中文</button>
     </div>
+    <button class="burger" id="burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="mpanel"><span></span><span></span><span></span></button>
   </div>
 </div>
+<nav class="mpanel" id="mpanel" aria-hidden="true">
+  <a href="index.html#services" data-en="Services" data-fr="Services" data-zh="服务">Services</a>
+      <a href="index.html#destinations" data-en="Destinations" data-fr="Destinations" data-zh="目的地">Destinations</a>
+      <a href="index.html#now" data-en="Seasons" data-fr="Saisons" data-zh="当季">Seasons</a>
+      <a href="professionals.html" data-en="Professionals" data-fr="Professionnels" data-zh="合作伙伴">Professionals</a>
+      <a href="index.html#contact" data-en="Contact" data-fr="Contact" data-zh="联系我们">Contact</a>
+  <div class="bas"><a href="https://wa.me/33613850733">WhatsApp</a><a href="mailto:contact@unseenconciergerie.com">contact@unseenconciergerie.com</a></div>
+</nav>
+
 
 <div class="hero">
   <div class="hero-bg" aria-hidden="true">
@@ -251,27 +289,13 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
   <div class="wrap">
     <div class="head">
       <div class="eyebrow"><span class="n">03</span><span class="t" data-en="What we arrange" data-fr="Ce qu'on organise" data-zh="我们为您安排">What we arrange</span></div>
-      <h2 data-en="One contact. Everything the week needs." data-fr="Un seul contact. Tout ce que la semaine demande." data-zh="一位联系人，满足这一周的所有需求。">One contact. Everything the week needs.</h2>
+      <h2 data-en="Each resort, its own way." data-fr="Chaque station, sa façon de vivre." data-zh="每个雪场，都有自己的方式。">Each resort, its own way.</h2>
     </div>
-    <div class="list-sec">
-      <div class="list-row"><span class="k">01</span><p data-en="A chalet with staff, booked before the good ones are gone." data-fr="Un chalet avec personnel, réservé avant que les bons ne partent." data-zh="配备管家的木屋别墅，在好的选择被订满前为您锁定。">A chalet with staff, booked before the good ones are gone.</p></div>
-      <div class="list-row"><span class="k">02</span><p data-en="A table at altitude on the day you want it, not the one left over." data-fr="Une table en altitude le jour voulu, pas celui qui reste." data-zh="您想要的那一天，高山餐厅的那张餐桌，而非剩下的那张。">A table at altitude on the day you want it, not the one left over.</p></div>
-      <div class="list-row"><span class="k">03</span><p data-en="Transfers that don't depend on the weather in Geneva." data-fr="Des transferts qui ne dépendent pas de la météo à Genève." data-zh="不受日内瓦天气影响的接送安排。">Transfers that don't depend on the weather in Geneva.</p></div>
-      <div class="list-row"><span class="k">04</span><p data-en="A piece from a maison in Paris, shipped to the chalet before you arrive." data-fr="Une pièce d'une maison parisienne, livrée au chalet avant votre arrivée." data-zh="来自巴黎品牌之家的单品，在您抵达前送至木屋。">A piece from a maison in Paris, shipped to the chalet before you arrive.</p></div>
-      <div class="list-row"><span class="k">05</span><p data-en="Whatever the week actually needs, handled by one contact." data-fr="Ce que la semaine demande vraiment, géré par un seul contact." data-zh="这一周真正需要的一切，由一位联系人为您处理。">Whatever the week actually needs, handled by one contact.</p></div>
-    </div>
+    <div class="cats trois"><div class="cat"><div><span class="k2" data-en="Savoie" data-fr="Savoie" data-zh="萨瓦省">Savoie</span><h3 data-en="Courchevel" data-fr="Courchevel" data-zh="库舍维尔">Courchevel</h3></div><ul><li><span data-en="A chalet with staff at 1850, booked before the good ones are gone." data-fr="Un chalet avec personnel à 1850, réservé avant que les meilleurs partent." data-zh="库舍维尔1850配备管家的木屋，赶在好房被订走之前。">A chalet with staff at 1850, booked before the good ones are gone.</span></li><li><span data-en="Lunch at La Folie Douce on La Saulire." data-fr="Un déjeuner à La Folie Douce, sur La Saulire." data-zh="在萨利尔山顶的La Folie Douce午餐。">Lunch at La Folie Douce on La Saulire.</span></li><li><span data-en="A landing at the altiport, straight from Geneva." data-fr="Un atterrissage à l&#x27;altiport, directement depuis Genève." data-zh="从日内瓦直飞，降落在高山机场。">A landing at the altiport, straight from Geneva.</span></li></ul></div><div class="cat"><div><span class="k2" data-en="Haute-Savoie" data-fr="Haute-Savoie" data-zh="上萨瓦省">Haute-Savoie</span><h3 data-en="Megève" data-fr="Megève" data-zh="梅杰夫">Megève</h3></div><ul><li><span data-en="A palace hotel in the village, or a family chalet on Mont d&#x27;Arbois." data-fr="Un hôtel de luxe au village, ou un chalet familial sur le Mont d&#x27;Arbois." data-zh="村中的豪华酒店，或阿尔布瓦山上的家庭木屋。">A palace hotel in the village, or a family chalet on Mont d'Arbois.</span></li><li><span data-en="A horse-drawn sleigh through the village." data-fr="Une calèche à travers le village." data-zh="乘马拉雪橇穿过小村。">A horse-drawn sleigh through the village.</span></li><li><span data-en="A long lunch at an altitude restaurant." data-fr="Un long déjeuner dans un restaurant d&#x27;altitude." data-zh="在高山餐厅悠长午餐。">A long lunch at an altitude restaurant.</span></li></ul></div><div class="cat"><div><span class="k2" data-en="Tarentaise" data-fr="Tarentaise" data-zh="塔朗泰斯">Tarentaise</span><h3 data-en="Val d&#x27;Isère" data-fr="Val d&#x27;Isère" data-zh="伊瑟尔河谷">Val d'Isère</h3></div><ul><li><span data-en="The afternoon party at La Folie Douce." data-fr="L&#x27;après-midi festive à La Folie Douce." data-zh="在La Folie Douce的午后派对。">The afternoon party at La Folie Douce.</span></li><li><span data-en="A chalet at the foot of the slopes." data-fr="Un chalet au pied des pistes." data-zh="雪道脚下的木屋。">A chalet at the foot of the slopes.</span></li><li><span data-en="A private instructor from the first morning." data-fr="Un moniteur privé dès le premier matin." data-zh="从第一天早晨起的私人滑雪教练。">A private instructor from the first morning.</span></li></ul></div><div class="cat"><div><span class="k2" data-en="Three Valleys" data-fr="Trois Vallées" data-zh="三峡谷">Three Valleys</span><h3 data-en="Méribel" data-fr="Méribel" data-zh="梅里贝尔">Méribel</h3></div><ul><li><span data-en="A chalet built for entertaining." data-fr="Un chalet pensé pour recevoir." data-zh="为款待宾客而建的木屋。">A chalet built for entertaining.</span></li><li><span data-en="A table at La Folie Douce Méribel." data-fr="Une table à La Folie Douce Méribel." data-zh="La Folie Douce梅里贝尔店的一张餐桌。">A table at La Folie Douce Méribel.</span></li><li><span data-en="Ski across the Three Valleys with a guide." data-fr="Les Trois Vallées à ski, avec un guide." data-zh="由向导带领，滑遍三峡谷。">Ski across the Three Valleys with a guide.</span></li></ul></div><div class="cat"><div><span class="k2" data-en="Highest resort" data-fr="Station la plus haute" data-zh="最高的雪场">Highest resort</span><h3 data-en="Val Thorens" data-fr="Val Thorens" data-zh="瓦尔托朗斯">Val Thorens</h3></div><ul><li><span data-en="A ski-in hotel, the slopes at the door." data-fr="Un hôtel skis aux pieds, les pistes devant la porte." data-zh="滑雪进出的酒店，出门即是雪道。">A ski-in hotel, the slopes at the door.</span></li><li><span data-en="Lunch at La Folie Douce Val Thorens." data-fr="Un déjeuner à La Folie Douce Val Thorens." data-zh="在La Folie Douce瓦尔托朗斯店午餐。">Lunch at La Folie Douce Val Thorens.</span></li><li><span data-en="Snow guaranteed, from the first week to the last." data-fr="La neige assurée, de la première semaine à la dernière." data-zh="从第一周到最后一周，雪况都有保障。">Snow guaranteed, from the first week to the last.</span></li></ul></div><div class="cat"><div><span class="k2" data-en="Switzerland" data-fr="Suisse" data-zh="瑞士">Switzerland</span><h3 data-en="Gstaad" data-fr="Gstaad" data-zh="格施塔德">Gstaad</h3></div><ul><li><span data-en="A palace hotel, discreet and very Swiss." data-fr="Un palace discret, très suisse." data-zh="低调而地道的瑞士殿堂酒店。">A palace hotel, discreet and very Swiss.</span></li><li><span data-en="A helicopter to the Glacier 3000." data-fr="Un hélicoptère jusqu&#x27;au Glacier 3000." data-zh="乘直升机前往3000冰川。">A helicopter to the Glacier 3000.</span></li><li><span data-en="Long dinners by the fire." data-fr="De longs dîners au coin du feu." data-zh="炉火旁悠长的晚餐。">Long dinners by the fire.</span></li></ul></div><div class="cat large"><div><span class="k2" data-en="Everywhere" data-fr="Partout" data-zh="全程">Everywhere</span><h3 data-en="Getting around" data-fr="Déplacements" data-zh="出行">Getting around</h3></div><ul><li><span data-en="A private driver from Geneva, Lyon or Chambéry." data-fr="Un chauffeur privé depuis Genève, Lyon ou Chambéry." data-zh="从日内瓦、里昂或尚贝里出发的私人专车。">A private driver from Geneva, Lyon or Chambéry.</span></li><li><span data-en="Transfers that don&#x27;t depend on the weather." data-fr="Des transferts qui ne dépendent pas de la météo." data-zh="不受天气影响的接送。">Transfers that don't depend on the weather.</span></li><li><span data-en="A helicopter between resorts." data-fr="Un hélicoptère d&#x27;une station à l&#x27;autre." data-zh="雪场之间乘直升机往来。">A helicopter between resorts.</span></li></ul></div></div>
   </div>
 </section>
 
-<div class="band">
-  <picture><source type="image/webp" srcset="img/ski-valdisere.webp"><img src="img/ski-valdisere.jpg" alt="Alpine peaks at dusk" data-alt-en="Alpine peaks at dusk" data-alt-fr="Sommets alpins au crépuscule" data-alt-zh="暮色中的阿尔卑斯山峰"></picture>
-  <div class="veil"></div>
-  <div class="in">
-    <hr class="wl">
-    <p data-en="You ski every year. This season, you arrive and everything is already there." data-fr="Vous skiez chaque année. Cette saison, vous arrivez et tout est déjà en place." data-zh="您每年都滑雪。这一季，您只需抵达，一切早已安排妥当。">You ski every year. This season, you arrive and everything is already there.</p>
-    <div class="sig">CURATED BY UNSEEN.</div>
-  </div>
-</div>
+
 
 <div class="mosaic reveal">
   <figure><picture><source type="image/webp" srcset="img/ski-meribel.webp"><img src="img/ski-meribel.jpg" alt="Méribel chalet interior" data-alt-en="Méribel chalet interior" data-alt-fr="Intérieur d'un chalet à Méribel" data-alt-zh="梅里贝尔木屋别墅内部" loading="lazy"></picture></figure>
@@ -348,5 +372,10 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 })();
 </script>
 
+<script>
+(function(){var b=document.getElementById('burger'),p=document.getElementById('mpanel');if(!b)return;
+b.addEventListener('click',function(){var o=document.body.classList.toggle('menu-open');b.setAttribute('aria-expanded',o);p.setAttribute('aria-hidden',!o);});
+p.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){document.body.classList.remove('menu-open');});});})();
+</script>
 </body>
 </html>

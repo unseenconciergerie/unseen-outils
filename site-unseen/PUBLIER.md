@@ -1,92 +1,66 @@
-# Mettre le site en ligne sur Infomaniak
+# Mettre le site en ligne
 
-Tout ce qu'il faut envoyer, et ce qu'il ne faut surtout pas envoyer.
+Cette fiche explique comment une modification du site arrive sur
+unseenconciergerie.com. Elle remplace l'ancienne fiche « Infomaniak »
+(octobre 2026) : le site n'est plus déposé à la main sur Infomaniak.
 
-## Avant de commencer
+## Comment ça marche, en une phrase
 
-L'espace Infomaniak est limité à **10 Mo** et il est aujourd'hui plein avec
-l'ancien site. **Supprime d'abord l'ancien contenu du dossier `web`**, sinon
-l'envoi échouera à mi-chemin.
+Quand Claude envoie le dossier `site-unseen` sur GitHub (ce qu'on appelle
+un « push »), GitHub met le site à jour tout seul en une à deux minutes.
+Tu n'as rien à faire toi-même, ni FTP ni Web FTP.
 
-Le nouveau site pèse **4,06 Mo**, il restera donc environ 6 Mo libres.
+## Ce que tu dis à Claude
 
-## Ce qu'il faut envoyer
+- **« On publie »** : Claude envoie les changements sur GitHub, puis vérifie
+  que le site en ligne a bien changé.
+- Claude ne publie jamais sans ton « ok ». Tant que tu n'as rien dit, les
+  pages restent seulement sur ton Mac (tu les vois en les ouvrant dans
+  Firefox), et le site en ligne ne bouge pas.
 
-### À la racine du dossier `web` (11 fichiers)
+## Après la mise en ligne, vérifie (ou demande à Claude de vérifier)
 
-```
-index.html          la page principale
-legal.html          les mentions légales
-404.html            la page affichée quand une adresse n'existe pas
-season.css          la couleur de saison
-anim.css            les animations
-anim.js             les animations (partie JavaScript)
-favicon.svg         l'icône de l'onglet
-apple-touch-icon.png  l'icône si le site est ajouté à un écran d'accueil iPhone
-robots.txt          les consignes pour Google
-sitemap.xml         la liste des pages, pour Google
-.htaccess           les réglages du serveur
-```
+1. **Sur ton iPhone**, en 4G plutôt qu'en wifi : ouvre unseenconciergerie.com,
+   le menu à trois traits, et une page de destination.
+2. **Les trois langues** : bouton EN / FR / 中文 en haut à droite.
+3. **Une adresse fausse** (par exemple `unseenconciergerie.com/xyz`) : tu dois
+   voir la page d'erreur UNSEEN.
+4. Si quelque chose cloche, fais une capture et montre-la à Claude. On peut
+   toujours revenir à la version précédente en quelques secondes.
 
-### Dans le sous-dossier `img`
+## Ce qui part en ligne, et ce qui reste sur ton Mac
 
-- **tous les fichiers `.avif`** (33)
-- **tous les fichiers `.webp`** (33)
-- **`hero.jpg`**, et lui seul parmi les JPG
+- **En ligne** : toutes les pages (`.html`), les photos (`img/`), les couleurs
+  de saison (`season.css`), les animations et les icônes.
+- **Jamais en ligne** : le dossier `outils/` (les programmes qui fabriquent les
+  images et les pages) et cette fiche. GitHub les retire automatiquement
+  avant chaque publication.
 
-## Ce qu'il ne faut PAS envoyer
+## Changer la couleur de saison
 
-- **Les 23 autres fichiers `.jpg` du dossier `img`.** Le site ne s'en sert
-  plus. Ils pèsent 4,7 Mo, soit la moitié de ton espace, pour rien.
-- **Le dossier `outils`.** Ce sont les programmes qui fabriquent les images,
-  ils tournent sur ton Mac et n'ont rien à faire en ligne.
+C'est le fichier `season.css`. Demande simplement à Claude, par exemple
+« passe le site en Abricot pour l'été », puis « on publie ».
 
-## Deux pièges à connaître
+## Les pages du site (octobre 2026)
 
-### Le fichier `.htaccess` est invisible dans le Finder
+| Page | Fichier |
+|---|---|
+| Accueil | `index.html` |
+| Professionnels | `professionals.html` |
+| Paris | `paris.html` |
+| Riviera | `riviera.html` |
+| Océan Indien | `ocean-indien.html` |
+| Alpes, saison de ski | `saison-ski-2026-2027.html` |
+| Grand Prix de Formule 1 | `formule-1.html` |
+| Mentions légales | `legal.html` |
+| Page d'erreur | `404.html` |
 
-Son nom commence par un point, le Mac le cache. Pour le faire apparaître :
-**Cmd + Maj + point** dans la fenêtre du Finder. La même combinaison le
-recache ensuite.
+## Pour Claude (détail technique)
 
-C'est le fichier le plus important de la liste. Sans lui, le serveur ne
-reconnaît pas le format AVIF et **aucune photo du site ne s'affiche**.
-
-### `hero.jpg` doit rester
-
-C'est l'image d'aperçu quand quelqu'un partage le lien du site sur WhatsApp,
-LinkedIn ou par message. Ces services ne savent pas lire l'AVIF.
-
-## Après la mise en ligne
-
-Vérifie dans cet ordre :
-
-1. **Les photos s'affichent.** Si tout est gris ou vide, c'est le `.htaccess`
-   qui n'est pas arrivé, ou qui est au mauvais endroit.
-2. **Tape une adresse fausse** (par exemple `unseenconciergerie.com/xyz`) :
-   tu dois voir la page noire UNSEEN., pas celle d'Infomaniak.
-3. **Ouvre `unseenconciergerie.fr`** : tu dois arriver sur l'adresse en `.com`.
-4. **Ouvre le site sur ton téléphone**, en 4G plutôt qu'en wifi.
-
-Si quelque chose cloche, fais une capture et montre-la moi.
-
-## Si les images ne s'affichent pas
-
-C'est presque toujours le `.htaccess`. Dans l'ordre :
-
-1. Vérifie qu'il est bien à la racine du dossier `web`, à côté d'`index.html`
-2. Vérifie que son nom est exactement `.htaccess`, avec le point devant, et
-   sans extension ajoutée du genre `.htaccess.txt`
-3. Si le problème persiste, Infomaniak propose un réglage des types de
-   fichiers dans son interface : dis-le moi, on le fera autrement
-
-## Si le site se met à tourner en boucle
-
-Symptôme : le navigateur affiche « trop de redirections ».
-
-Ouvre `.htaccess`, trouve le bloc **3. L'adresse de référence du site**, et
-mets un `#` devant les quatre lignes qui commencent par `Rewrite`. Renvoie le
-fichier. Le site refonctionne aussitôt, et on cherchera ensuite.
-
-Cela n'affecte jamais tes boîtes mail : le courrier et le site web empruntent
-deux chemins séparés.
+- Publication : workflow `.github/workflows/pages.yml`, déclenché par un push
+  sur `main` qui touche `site-unseen/**`. Domaine : unseenconciergerie.com.
+- Le fichier `.htaccess` ne sert plus (il était pour Infomaniak) ; GitHub Pages
+  sert `404.html` tout seul.
+- Photos : `outils/images_v14.py` fabrique les `.avif` et `.webp` depuis les
+  originaux rangés dans `~/Documents/UNSEEN./`. Une photo ne sert que sur une
+  seule page du site.
