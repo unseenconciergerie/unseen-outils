@@ -198,7 +198,7 @@ h = h.replace("/* partenaires */", '''/* partenaires : bandeau qui défile sans 
 .track{display:flex;align-items:center;gap:80px;width:max-content;animation:defile 36s linear infinite}
 .track img{width:auto;flex:none}
 @keyframes defile{to{transform:translateX(-50%)}}
-@media(max-width:860px){.marquee{padding:28px 0}.track{gap:52px;animation-duration:26s}.track img{transform:scale(.8)}}
+@media(max-width:860px){.marquee{padding:28px 0}.track{gap:52px;animation-duration:13s}.track img{transform:scale(.8)}}
 @media(prefers-reduced-motion:reduce){.track{animation:none;flex-wrap:wrap;justify-content:center;width:auto}}
 /* partenaires */''', 1)
 
