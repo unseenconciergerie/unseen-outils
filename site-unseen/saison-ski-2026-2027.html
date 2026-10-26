@@ -156,7 +156,13 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 .cat.large{grid-column:1/-1;display:grid;grid-template-columns:1fr 2fr;gap:0 40px;align-items:start}
 .cat.large ul{flex-direction:row;flex-wrap:wrap;gap:12px 40px;padding-top:4px}
 .cat.large li{flex:1 1 220px}
-@media(max-width:900px){.cats,.cats.trois{grid-template-columns:1fr;gap:30px;margin-top:32px}.cat.large{display:block}.cat.large ul{flex-direction:column}}
+@media(max-width:900px){.cats,.cats.trois{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;margin:32px calc(var(--pad) * -1) 0;padding:0 var(--pad) 8px;scroll-padding-left:var(--pad);scrollbar-width:none;-webkit-overflow-scrolling:touch}.cats::-webkit-scrollbar{display:none}.cat,.cat.large{flex:0 0 80%;scroll-snap-align:start;display:block;background:rgba(255,255,255,.04);padding:20px 18px 22px;border-top:2px solid var(--accent)}.cat.large ul{flex-direction:column}.cat.large li{flex:none}}
+/* Téléphone : tout est visible tout de suite (l'apparition douce laissait des blocs vides sur iPhone) */
+@media(max-width:900px){.rv,.reveal{opacity:1!important;transform:none!important;transition:none!important}}
+
+
+/* Téléphone : les adresses défilent au doigt, comme sur Paris */
+@media(max-width:900px){.srow{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:16px;margin:32px calc(var(--pad) * -1) 0;padding:0 var(--pad) 8px;scroll-padding-left:var(--pad);scrollbar-width:none;-webkit-overflow-scrolling:touch}.srow::-webkit-scrollbar{display:none}.sitem{flex:0 0 76%;scroll-snap-align:start}}
 /* Menu sur téléphone (charte V1.4) */
 .burger{display:none;width:44px;height:44px;border:0;background:none;cursor:pointer;position:relative;margin-left:6px}
 .burger span{position:absolute;left:11px;right:11px;height:1.5px;background:#000;transition:transform .25s,opacity .25s}

@@ -141,6 +141,10 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
   .foot-mark{font-size:32px}
 }
 
+
+/* Téléphone : les adresses défilent au doigt, comme sur Paris */
+@media(max-width:900px){.srow{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:16px;margin:32px calc(var(--pad) * -1) 0;padding:0 var(--pad) 8px;scroll-padding-left:var(--pad);scrollbar-width:none;-webkit-overflow-scrolling:touch}.srow::-webkit-scrollbar{display:none}.sitem{flex:0 0 76%;scroll-snap-align:start}}
+@media(max-width:900px){.rv,.reveal{opacity:1!important;transform:none!important;transition:none!important}}
 /* Menu sur téléphone (charte V1.4) */
 .burger{display:none;width:44px;height:44px;border:0;background:none;cursor:pointer;position:relative;margin-left:6px}
 .burger span{position:absolute;left:11px;right:11px;height:1.5px;background:#000;transition:transform .25s,opacity .25s}

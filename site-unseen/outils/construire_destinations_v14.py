@@ -55,7 +55,7 @@ CSS_DEST = """
 .cat.large{grid-column:1/-1;display:grid;grid-template-columns:1fr 2fr;gap:0 40px;align-items:start}
 .cat.large ul{flex-direction:row;flex-wrap:wrap;gap:12px 40px;padding-top:4px}
 .cat.large li{flex:1 1 220px}
-@media(max-width:900px){.cats,.cats.trois{grid-template-columns:1fr;gap:30px;margin-top:32px}.cat.large{display:block}.cat.large ul{flex-direction:column}}
+@media(max-width:900px){.cats,.cats.trois{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;margin:32px calc(var(--pad) * -1) 0;padding:0 var(--pad) 8px;scroll-padding-left:var(--pad);scrollbar-width:none;-webkit-overflow-scrolling:touch}.cats::-webkit-scrollbar{display:none}.cat,.cat.large{flex:0 0 80%;scroll-snap-align:start;display:block;background:rgba(255,255,255,.04);padding:20px 18px 22px;border-top:2px solid var(--accent)}.cat.large ul{flex-direction:column}.cat.large li{flex:none}}
 .mosaic{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;background:#000}
 .mosaic figure{margin:0;aspect-ratio:4/5;overflow:hidden}
 .mosaic picture{display:block;height:100%}
@@ -68,7 +68,7 @@ CSS_DEST = """
 .cta .btn-ligne{color:#000}
 .cta .btn-ligne:hover{background:#000;color:#fff}
 @media(max-width:900px){
-  .cards{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:16px;margin:32px calc(var(--pad) * -1) 0;padding:0 var(--pad) 8px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .cards{scroll-padding-left:var(--pad);display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:16px;margin:32px calc(var(--pad) * -1) 0;padding:0 var(--pad) 8px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
   .cards::-webkit-scrollbar{display:none}
   .cardd{flex:0 0 76%;scroll-snap-align:start}
   .mosaic{grid-template-columns:1fr 1fr}

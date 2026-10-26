@@ -46,6 +46,9 @@ css += """
 .hero picture{position:absolute;inset:0}
 .hero h1{font-size:clamp(34px,4.6vw,60px);max-width:760px}
 .hero-in{padding-top:120px}
+.tabs,.dests{scroll-padding-left:var(--pad)}
+/* Téléphone : tout est visible tout de suite (l'apparition douce laissait des blocs vides sur iPhone) */
+@media(max-width:900px){.rv,.reveal{opacity:1!important;transform:none!important;transition:none!important}}
 :lang(zh) h1,:lang(zh) h2,:lang(zh) h3{font-family:'Noto Sans SC',sans-serif;font-weight:700;letter-spacing:0}
 """
 
