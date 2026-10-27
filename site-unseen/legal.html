@@ -67,6 +67,26 @@ footer{background:#1E1D20;color:#8C8C8C;padding:44px 0;font-size:12.5px;line-hei
 footer .foot-mark{font-family:'League Spartan',sans-serif;font-weight:800;font-size:26px;color:var(--blanc);line-height:1;margin-bottom:14px}
 footer a{color:#D2D2D2}
 footer .num{color:#D2D2D2}
+
+/* Menu trois traits sur téléphone (27/10/2026), même montage que les autres pages */
+.topbar{z-index:50}
+.burger{display:none;width:44px;height:44px;margin:-8px -10px -8px 0;border:0;background:none;cursor:pointer;position:relative;z-index:2;touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+.burger span{position:absolute;left:11px;right:11px;height:1.5px;background:var(--noir);transition:transform .25s,opacity .25s;pointer-events:none}
+.burger span:nth-child(1){top:16px}.burger span:nth-child(2){top:22px}.burger span:nth-child(3){top:28px}
+.menu-open .burger span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.menu-open .burger span:nth-child(2){opacity:0}
+.menu-open .burger span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+.panel{display:none}
+@media(max-width:900px){
+  .burger{display:block}
+  .topbar-in{gap:10px}.langsw{margin-left:auto}
+  .panel{display:flex;position:fixed;inset:0;background:var(--blanc);z-index:49;padding:100px 24px calc(30px + env(safe-area-inset-bottom));flex-direction:column;gap:2px;
+    opacity:0;visibility:hidden;transform:translateY(-8px);pointer-events:none;transition:opacity .25s,transform .25s,visibility .25s}
+  .menu-open .panel{opacity:1;visibility:visible;transform:none;pointer-events:auto}
+  .panel a{font-family:'League Spartan',sans-serif;font-weight:800;font-size:32px;text-decoration:none;color:var(--noir);padding:12px 0;border-bottom:1px solid #E5D7D0}
+  .panel .bas{margin-top:auto;display:flex;flex-direction:column;gap:12px}
+  .panel .bas a{font-family:'DM Sans',sans-serif;font-weight:500;font-size:16px;border:0;padding:0}
+}
 </style>
 <link rel="stylesheet" href="season.css">
 <link rel="stylesheet" href="anim.css">
@@ -81,8 +101,13 @@ footer .num{color:#D2D2D2}
       <span>/</span>
       <button type="button" id="btn-fr" aria-pressed="false">FR</button>
     </div>
+    <button class="burger" id="burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="panel"><span></span><span></span><span></span></button>
   </div>
 </div>
+<nav class="panel" id="panel" aria-hidden="true">
+  <a href="index.html#services" data-en="Services" data-fr="Services">Services</a><a href="index.html#destinations" data-en="Destinations" data-fr="Destinations">Destinations</a><a href="index.html#now" data-en="Seasons" data-fr="Saisons">Seasons</a><a href="professionals.html" data-en="Professionals" data-fr="Professionnels">Professionals</a><a href="index.html#contact" data-en="Contact" data-fr="Contact">Contact</a>
+  <div class="bas"><a href="https://wa.me/33613850733">WhatsApp</a><a href="#" data-u="contact" data-d="unseenconciergerie.com">contact&#64;unseenconciergerie.com</a></div>
+</nav>
 
 <header class="page">
   <div class="wrap">
@@ -279,6 +304,15 @@ footer .num{color:#D2D2D2}
 </script>
 
 <script>/* Adresses e-mail reconstituées à l'ouverture (protection contre les robots) */document.querySelectorAll('a[data-u]').forEach(function(a){a.href='mailto:'+a.dataset.u+'\u0040'+a.dataset.d+(a.dataset.q||'');});</script>
+<script>
+/* Menu trois traits : même comportement que les autres pages */
+(function(){
+  var b=document.getElementById('burger'),pn=document.getElementById('panel');if(!b||!pn)return;
+  b.onclick=function(){var o=document.body.classList.toggle('menu-open');b.setAttribute('aria-expanded',o);pn.setAttribute('aria-hidden',!o);};
+  pn.querySelectorAll('a').forEach(function(a){a.onclick=function(){document.body.classList.remove('menu-open');};});
+  b.addEventListener('touchend',function(e){e.preventDefault();b.click();},{passive:false});
+})();
+</script>
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "e276d22355ad4ef6a0ed2be285d84a83"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>
