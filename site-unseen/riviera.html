@@ -361,5 +361,6 @@ document.querySelectorAll('.rv').forEach(function(el){io.observe(el);});
 b.addEventListener('touchend',function(e){e.preventDefault();b.click();},{passive:false});})();
 </script>
 <script>/* Adresses e-mail reconstituées à l'ouverture (protection contre les robots) */document.querySelectorAll('a[data-u]').forEach(function(a){a.href='mailto:'+a.dataset.u+'\u0040'+a.dataset.d+(a.dataset.q||'');});</script>
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "e276d22355ad4ef6a0ed2be285d84a83"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>
