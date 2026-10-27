@@ -34,6 +34,8 @@ PHOTOS = {
     "v2-now-ski": (PEX / "pexels-andreasebnerfotografie-12404364.jpg", 900),
     "v2-now-gp": (PEX / "pexels-ermal-a-murati-1676092345-37460936.jpg", 900),
     # Professionals
+    # « Qui nous sommes » (27/10) : photo choisie pour les PDF partenaires, jamais utilisée sur le site
+    "pro-qui": (Path(__file__).resolve().parents[2] / "assistant-prospection" / "sources_offre_partenaire" / "images" / "deck" / "v6_entree_palace.jpg", 1100),
     "pro-hero": (PEX / "pexels-katie-cerami-110690626-20562287.jpg", 2000),
     "pro-bar": (PEX / "pexels-benhur-emmanuel-83498627-11828428.jpg", 1100),
     "pro-agencies": (PEX / "pexels-eray-altay-2187659-3834352.jpg", 1200),
