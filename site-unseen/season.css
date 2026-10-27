@@ -28,4 +28,18 @@
 
 :root{
   --accent:#7AA3BC;   /* SAISON ACTIVE : Glacier, montagne et saison de ski */
+  /* Version FONCÉE de l'accent, pour le TEXTE posé sur fond clair (blanc ou sable rosé) :
+     la couleur de saison seule y est trop pâle pour être lue (contraste 2,3 pour 1, il faut 4,5).
+     À changer EN MÊME TEMPS que --accent :
+       Glacier #446E87 · Lilas #7059AA · Rose tapis rouge #AB4951 · Rouge circuit #A3161A
+       Abricot #9A582C · Prune velours #6B2D4F · Sable #796748 */
+  --accent-texte:#446E87;
 }
+
+/* Contraste (27/10/2026) : petits numéros, étiquettes et étapes en couleur de saison.
+   Sur fond clair, version foncée ; sur fond sombre (sections .sombre / .sec-dark, haut de page,
+   pied de page), la couleur de saison d'origine, qui s'y lit très bien. */
+:root :is(.eyebrow .n,.steps li:before,.svc .n,.cat .k2,.sitem .tag,.card .tag,.dest .tag,.rows li b,.cardd .tag,.list-row .k,h2 .k,header.page .eyebrow,.nn span,.enq-head .tag,.enq-done h3,.ci .lbl,.tl-k,.liste i,
+.langsw button[aria-pressed="true"],.lang button[aria-pressed="true"]){color:var(--accent-texte)}
+/* « :root » devant : la règle passe avant les couleurs que certaines pages redéfinissent après ce fichier */
+:root :is(.sombre,.sec-dark,.hero,footer,.navpanel,.top-dark) :is(.eyebrow .n,.steps li:before,.svc .n,.cat .k2,.sitem .tag,.card .tag,.dest .tag,.rows li b,.cardd .tag,.list-row .k,h2 .k,header.page .eyebrow,.nn span,.enq-head .tag,.enq-done h3,.ci .lbl,.tl-k,.liste i){color:var(--accent)}

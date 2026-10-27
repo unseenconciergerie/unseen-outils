@@ -274,7 +274,7 @@ footer .mark{color:var(--blanc);font-size:34px}
 </header>
 <nav class="panel" id="panel" aria-hidden="true">
   <a href="index.html#services" data-en="Services" data-fr="Services" data-zh="服务">Services</a><a href="index.html#destinations" data-en="Destinations" data-fr="Destinations" data-zh="目的地">Destinations</a><a href="index.html#now" data-en="Seasons" data-fr="Saisons" data-zh="当季">Seasons</a><a href="professionals.html" data-en="Professionals" data-fr="Professionnels" data-zh="专业合作">Professionals</a><a href="#contact" data-en="Contact" data-fr="Contact" data-zh="联系我们">Contact</a>
-  <div class="bas"><a href="https://wa.me/33613850733">WhatsApp</a><a href="mailto:contact@unseenconciergerie.com">contact@unseenconciergerie.com</a><div class="langs"><button type="button" data-l="en" aria-pressed="true">EN</button><span>/</span><button type="button" data-l="fr" aria-pressed="false">FR</button><span>/</span><button type="button" data-l="zh" aria-pressed="false" lang="zh">中文</button></div></div>
+  <div class="bas"><a href="https://wa.me/33613850733">WhatsApp</a><a href="#" data-u="contact" data-d="unseenconciergerie.com">contact&#64;unseenconciergerie.com</a><div class="langs"><button type="button" data-l="en" aria-pressed="true">EN</button><span>/</span><button type="button" data-l="fr" aria-pressed="false">FR</button><span>/</span><button type="button" data-l="zh" aria-pressed="false" lang="zh">中文</button></div></div>
 </nav>
 
 <div class="hero">
@@ -360,5 +360,6 @@ document.querySelectorAll('.rv').forEach(function(el){io.observe(el);});
 (function(){var b=document.getElementById('burger');if(!b)return;
 b.addEventListener('touchend',function(e){e.preventDefault();b.click();},{passive:false});})();
 </script>
+<script>/* Adresses e-mail reconstituées à l'ouverture (protection contre les robots) */document.querySelectorAll('a[data-u]').forEach(function(a){a.href='mailto:'+a.dataset.u+'\u0040'+a.dataset.d+(a.dataset.q||'');});</script>
 </body>
 </html>

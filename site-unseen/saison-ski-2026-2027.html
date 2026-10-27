@@ -187,6 +187,14 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 /* Grille de 3 photos sur téléphone : la première sur toute la largeur, pas de case vide */
 @media(max-width:700px){.mosaic figure:first-child:nth-last-child(3){grid-column:1/-1;aspect-ratio:16/10}}
 </style>
+<style>
+/* Contraste (27/10/2026) : cette page garde toujours le Glacier (elle ne charge pas season.css) ;
+   le texte en Glacier sur fond clair passe dans sa version foncée, lisible. */
+:root{--accent-texte:#446E87}
+:root :is(.eyebrow .n,.steps li:before,.svc .n,.cat .k2,.sitem .tag,.card .tag,.dest .tag,.rows li b,.cardd .tag,.list-row .k,h2 .k,header.page .eyebrow,.nn span,.enq-head .tag,.enq-done h3,.ci .lbl,.tl-k,.liste i,
+.langsw button[aria-pressed="true"],.lang button[aria-pressed="true"]){color:var(--accent-texte)}
+:root :is(.sombre,.sec-dark,.hero,footer,.navpanel,.top-dark) :is(.eyebrow .n,.steps li:before,.svc .n,.cat .k2,.sitem .tag,.card .tag,.dest .tag,.rows li b,.cardd .tag,.list-row .k,h2 .k,header.page .eyebrow,.nn span,.enq-head .tag,.enq-done h3,.ci .lbl,.tl-k,.liste i){color:var(--accent)}
+</style>
 </head>
 <body>
 
@@ -216,7 +224,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
       <a href="index.html#now" data-en="Seasons" data-fr="Saisons" data-zh="当季">Seasons</a>
       <a href="professionals.html" data-en="Professionals" data-fr="Professionnels" data-zh="专业合作">Professionals</a>
       <a href="index.html#contact" data-en="Contact" data-fr="Contact" data-zh="联系我们">Contact</a>
-  <div class="bas"><a href="https://wa.me/33613850733">WhatsApp</a><a href="mailto:contact@unseenconciergerie.com">contact@unseenconciergerie.com</a></div>
+  <div class="bas"><a href="https://wa.me/33613850733">WhatsApp</a><a href="#" data-u="contact" data-d="unseenconciergerie.com">contact&#64;unseenconciergerie.com</a></div>
 </nav>
 
 
@@ -345,7 +353,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
       <div style="margin-top:16px">
         <a href="legal.html" data-en="Legal notice, terms and privacy" data-fr="Mentions légales, conditions et confidentialité" data-zh="法律声明、条款与隐私政策">Legal notice, terms and privacy</a>
         &nbsp;&nbsp;
-        <a href="mailto:privacy@unseenconciergerie.com">privacy@unseenconciergerie.com</a>
+        <a href="#" data-u="privacy" data-d="unseenconciergerie.com">privacy&#64;unseenconciergerie.com</a>
       </div>
       <div style="margin-top:16px;color:#666">&copy; <span class="num">2026</span> UNSEEN. <span data-en="All rights reserved." data-fr="Tous droits réservés." data-zh="版权所有。">All rights reserved.</span></div>
     </div>
@@ -397,5 +405,6 @@ p.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(
 (function(){var b=document.getElementById('burger');if(!b)return;
 b.addEventListener('touchend',function(e){e.preventDefault();b.click();},{passive:false});})();
 </script>
+<script>/* Adresses e-mail reconstituées à l'ouverture (protection contre les robots) */document.querySelectorAll('a[data-u]').forEach(function(a){a.href='mailto:'+a.dataset.u+'\u0040'+a.dataset.d+(a.dataset.q||'');});</script>
 </body>
 </html>

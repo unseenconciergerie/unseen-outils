@@ -34,7 +34,7 @@
   "description":"Conciergerie privée de luxe à Paris. Palaces, gastronomie étoilée, événements exclusifs, transport privé, personal shopping. Paris, Europe, océan Indien.",
   "url":"https://unseenconciergerie.com",
   "telephone":"+33649668833",
-  "email":"contact@unseenconciergerie.com",
+  "email":"contact\u0040unseenconciergerie.com",
   "address":{
     "@type":"PostalAddress",
     "postalCode":"77100",
@@ -547,7 +547,7 @@ svg .pt.base text{fill:#E9C4B8;font-size:13px;font-weight:600}
     </nav>
   <div class="pfoot">
     <a href="https://wa.me/33613850733">WhatsApp</a>
-    <a href="mailto:contact@unseenconciergerie.com">contact@unseenconciergerie.com</a>
+    <a href="#" data-u="contact" data-d="unseenconciergerie.com">contact&#64;unseenconciergerie.com</a>
   </div>
 </div>
 
@@ -698,7 +698,7 @@ svg .pt.base text{fill:#E9C4B8;font-size:13px;font-weight:600}
       </div>
       <div class="ci">
         <span class="lbl" data-en="Email" data-fr="E-mail" data-zh="邮箱">Email</span>
-        <a href="mailto:contact@unseenconciergerie.com">contact@unseenconciergerie.com</a>
+        <a href="#" data-u="contact" data-d="unseenconciergerie.com">contact&#64;unseenconciergerie.com</a>
       </div>
       <div class="ci">
         <span class="lbl">Instagram</span>
@@ -831,7 +831,7 @@ svg .pt.base text{fill:#E9C4B8;font-size:13px;font-weight:600}
       <div style="margin-top:16px">
         <a href="legal.html" data-en="Legal notice, terms and privacy" data-fr="Mentions légales, conditions et confidentialité" data-zh="法律声明、条款与隐私政策">Legal notice, terms and privacy</a>
         &nbsp;&nbsp;
-        <a href="mailto:privacy@unseenconciergerie.com">privacy@unseenconciergerie.com</a>
+        <a href="#" data-u="privacy" data-d="unseenconciergerie.com">privacy&#64;unseenconciergerie.com</a>
       </div>
       <div style="margin-top:16px;color:#666">&copy; <span class="num">2026</span> UNSEEN. <span data-en="All rights reserved." data-fr="Tous droits réservés." data-zh="版权所有。">All rights reserved.</span></div>
     </div>
@@ -909,7 +909,7 @@ svg .pt.base text{fill:#E9C4B8;font-size:13px;font-weight:600}
    visiteur n'a rien d'autre a faire apres avoir clique.
 
    Service : Web3Forms, plan gratuit, 250 envois par mois.
-   Compte rattache a contact@unseenconciergerie.com.
+   Compte rattache a contact\u0040unseenconciergerie.com.
    Tableau de bord : app.web3forms.com
 
    Si le service ne repond pas dans les 12 secondes, le
@@ -923,7 +923,7 @@ svg .pt.base text{fill:#E9C4B8;font-size:13px;font-weight:600}
 
   var ACCESS_KEY = 'b9512ba6-7862-4d98-a59e-c5498be14c49';   /* cle Web3Forms — publique par conception */
 
-  var EMAIL = 'contact@unseenconciergerie.com';
+  var EMAIL = 'contact\u0040unseenconciergerie.com';
   var WA    = '33613850733';
 
   var form = document.getElementById('enq');
@@ -1126,5 +1126,6 @@ lis.forEach(li=>{li.addEventListener('mouseenter',()=>go(li));li.addEventListene
  new MutationObserver(()=>show(info.dataset.k||'paris')).observe(document.documentElement,{attributes:true,attributeFilter:['lang']});
 })();
 </script>
+<script>/* Adresses e-mail reconstituées à l'ouverture (protection contre les robots) */document.querySelectorAll('a[data-u]').forEach(function(a){a.href='mailto:'+a.dataset.u+'\u0040'+a.dataset.d+(a.dataset.q||'');});</script>
 </body>
 </html>
