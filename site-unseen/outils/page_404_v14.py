@@ -41,7 +41,7 @@ def page(base):
 <meta name="description" content="This page does not exist. Return to UNSEEN., private luxury concierge in Paris.">
 <!-- Cette page ne doit pas apparaître dans Google -->
 <meta name="robots" content="noindex, follow">
-<link rel="icon" href="{base}favicon.svg" type="image/svg+xml">
+<link rel="icon" href="{base}favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="{base}apple-touch-icon.png">
 <link rel="stylesheet" href="{base}fonts.css">
 <style>
