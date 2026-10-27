@@ -4,145 +4,128 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>UNSEEN. — Page not found</title>
-<!-- Cette page ne doit pas apparaitre dans Google -->
+<meta name="description" content="This page does not exist. Return to UNSEEN., private luxury concierge in Paris.">
+<!-- Cette page ne doit pas apparaître dans Google -->
 <meta name="robots" content="noindex, follow">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="stylesheet" href="/fonts.css">
 <style>
-:root{
-  --noir:#2B2A2E;
-  --blanc:#FFFFFF;
-  --accent:#7AA3BC;
-  --pad:26px;
-}
+/* Charte V1.4 : sable rosé, anthracite, une seule couleur d'accent (season.css) */
+:root{--sable:#F4EAE5;--anthra:#2B2A2E;--blanc:#FFF;--trait:#E5D7D0;--texte-2:#5C5556;--texte-3:#8A8083;
+  --accent:#7AA3BC;--sur-accent:#000;--max:1240px;--pad:40px}
 *{box-sizing:border-box;margin:0;padding:0}
 html{-webkit-text-size-adjust:100%}
-body{
-  font-family:'DM Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
-  background:var(--noir);
-  color:var(--blanc);
-  min-height:100vh;
-  min-height:100svh;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  padding:var(--pad);
-  position:relative;
-  overflow-x:hidden;
-}
-
-/* la photo d'ouverture du site, très assombrie */
-.bg{position:absolute;inset:0;overflow:hidden}
-.bg img{width:100%;height:100%;object-fit:cover;opacity:.22}
-.bg::after{
-  content:"";position:absolute;inset:0;
-  background:linear-gradient(90deg,rgba(0,0,0,.9) 0%,rgba(0,0,0,.6) 100%);
-}
-/* le même grain que sur le reste du site */
-.bg::before{
-  content:"";position:absolute;inset:0;z-index:2;pointer-events:none;opacity:.055;
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.86' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E");
-}
-
-.in{position:relative;z-index:3;max-width:620px;width:100%}
-
-.mark{
-  font-family:'League Spartan',sans-serif;
-  font-weight:800;
-  font-size:clamp(46px,9vw,84px);
-  line-height:.9;
-  letter-spacing:-.02em;
-}
-.code{
-  margin-top:18px;
-  font-size:13px;
-  letter-spacing:.26em;
-  text-transform:uppercase;
-  font-weight:500;
-  color:#9A9A9A;
-}
-h1{
-  font-family:'League Spartan',sans-serif;
-  font-weight:800;
-  font-size:clamp(26px,4.4vw,40px);
-  line-height:1.08;
-  letter-spacing:-.02em;
-  margin-top:34px;
-}
-p{
-  margin-top:20px;
-  font-weight:300;
-  font-size:18px;
-  line-height:1.6;
-  color:#D5D5D5;
-  max-width:480px;
-}
-.wl{height:1px;width:78px;background:var(--accent);border:0;margin-top:34px}
-
+body{font-family:'DM Sans',system-ui,-apple-system,sans-serif;background:var(--sable);color:var(--anthra);min-height:100vh;min-height:100svh;display:flex;flex-direction:column;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.top{background:rgba(255,255,255,.96);border-bottom:1px solid rgba(0,0,0,.07)}
+.top-in{max-width:var(--max);margin:0 auto;padding:16px var(--pad);display:flex;align-items:center;justify-content:space-between}
+.mark{font-family:'League Spartan',sans-serif;font-weight:800;font-size:22px;text-decoration:none;letter-spacing:-.02em}
+.lang{display:flex;gap:8px;align-items:center;font-size:12.5px;font-weight:600}
+.lang span{color:var(--trait)}
+.lang button{background:none;border:0;font:inherit;color:var(--texte-3);cursor:pointer;padding:8px 2px}
+.lang button[aria-pressed="true"]{color:var(--anthra)}
+main{flex:1;max-width:var(--max);margin:0 auto;padding:56px var(--pad) 48px;width:100%;display:grid;grid-template-columns:1.1fr 1fr;gap:72px;align-items:center}
+.grand{font-family:'League Spartan',sans-serif;font-weight:800;font-size:clamp(120px,19vw,260px);line-height:.8;letter-spacing:-.04em;color:transparent;-webkit-text-stroke:2px var(--anthra)}
+.eyebrow{display:flex;gap:14px;align-items:baseline;margin-top:34px}
+.eyebrow .n{color:var(--accent);font-size:14px;font-weight:600}
+.eyebrow .t{font-size:12.5px;letter-spacing:.22em;text-transform:uppercase;font-weight:600}
+h1{font-family:'League Spartan',sans-serif;font-weight:800;font-size:clamp(30px,4vw,46px);line-height:1.05;letter-spacing:-.02em;margin-top:14px}
+p.lede{margin-top:18px;font-weight:300;font-size:19px;line-height:1.6;color:var(--texte-2);max-width:520px}
 .row{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
-.btn{
-  display:inline-block;
-  padding:15px 28px;
-  border:1px solid rgba(255,255,255,.34);
-  color:var(--blanc);
-  text-decoration:none;
-  font-size:13px;
-  letter-spacing:.14em;
-  text-transform:uppercase;
-  font-weight:600;
-  transition:background .3s ease,color .3s ease,border-color .3s ease;
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 28px;font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;text-decoration:none;border:1px solid var(--anthra);transition:background .2s,color .2s}
+.btn:hover{background:var(--anthra);color:var(--blanc)}
+.btn-accent{background:var(--accent);border-color:var(--accent);color:var(--sur-accent)}
+.btn-accent:hover{background:var(--anthra);border-color:var(--anthra);color:var(--blanc)}
+.liens .t{display:block;font-size:12.5px;letter-spacing:.22em;text-transform:uppercase;font-weight:600;margin-bottom:12px}
+.liste{display:flex;flex-direction:column}
+.liste a{display:grid;grid-template-columns:130px 1fr auto;align-items:baseline;gap:12px;padding:16px 0;border-top:1px solid var(--trait);text-decoration:none}
+.liste a:last-child{border-bottom:1px solid var(--trait)}
+.liste .k{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--texte-3)}
+.liste b{font-family:'League Spartan',sans-serif;font-weight:800;font-size:22px;letter-spacing:-.01em}
+.liste i{font-style:normal;color:var(--accent);transition:transform .2s}
+.liste a:hover i{transform:translateX(4px)}
+footer{background:var(--anthra);color:#A39C9E;font-size:13px;line-height:1.9}
+footer .in{max-width:var(--max);margin:0 auto;padding:26px var(--pad) calc(26px + env(safe-area-inset-bottom));display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+footer b{color:var(--blanc);font-family:'League Spartan',sans-serif;font-weight:800}
+:lang(zh) h1,:lang(zh) .liste b{font-family:'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;font-weight:700;letter-spacing:0}
+/* téléphone : aucun défilement, tout tient sur un écran ; les liens en grille de deux colonnes */
+@media(max-width:900px){
+  :root{--pad:22px}
+  .top-in{padding:10px var(--pad)}
+  main{grid-template-columns:minmax(0,1fr);gap:26px;padding:26px var(--pad) 22px;align-content:start}
+  main>*{min-width:0}
+  .grand{font-size:84px;-webkit-text-stroke-width:1.5px}
+  .eyebrow{margin-top:18px}
+  h1{font-size:27px;margin-top:8px}
+  p.lede{font-size:15.5px;margin-top:10px}
+  .row{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:20px}
+  .btn{min-height:48px;padding:0 10px;font-size:11px;letter-spacing:.1em;text-align:center}
+  .liens .t{margin-bottom:8px}
+  .liste{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+  .liste a,.liste a:last-child{display:block;background:var(--blanc);border:0;border-top:2px solid var(--accent);padding:10px 12px}
+  .liste .k,.liste i{display:none}
+  .liste b{font-size:17px}
+  footer .in{padding:14px var(--pad) calc(14px + env(safe-area-inset-bottom));font-size:12px}
 }
-.btn:hover,.btn:focus-visible{background:var(--blanc);color:var(--noir)}
-.btn-accent{background:var(--accent);border-color:var(--accent)}
-.btn-accent:hover,.btn-accent:focus-visible{background:var(--blanc);border-color:var(--blanc);color:var(--noir)}
-
-@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+/* petits téléphones (iPhone SE…) : encore plus serré pour rester sur un seul écran */
+@media(max-width:900px) and (max-height:720px){
+  main{gap:16px;padding-top:14px;padding-bottom:14px}
+  .grand{font-size:58px}
+  .eyebrow{margin-top:10px}
+  h1{font-size:23px}
+  p.lede{font-size:14.5px;line-height:1.5}
+  .row{margin-top:14px}.btn{min-height:44px}
+  .liste a,.liste a:last-child{padding:8px 10px}
+  .liste b{font-size:15px}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
-<link rel="stylesheet" href="season.css">
+<link rel="stylesheet" href="/season.css">
 </head>
 <body>
 
-<div class="bg" aria-hidden="true">
-  <picture>
-    <source type="image/avif" srcset="img/hero.avif">
-    <img src="img/hero.webp" alt="">
-  </picture>
-</div>
-
-<div class="in">
-  <div class="mark">UNSEEN.</div>
-  <div class="code" data-en="Error 404" data-fr="Erreur 404" data-zh="错误 404">Error 404</div>
-
-  <h1 data-en="This page stayed unseen." data-fr="Cette page est restée invisible." data-zh="这一页，未曾现身。">This page stayed unseen.</h1>
-  <p data-en="The address you followed does not lead anywhere. It may have moved, or never existed at all." data-fr="Ce lien ne mène nulle part. La page a peut-être été déplacée, ou n&#x27;a jamais existé." data-zh="您访问的链接无法打开。页面可能已经移动，或者从未存在。">The address you followed does not lead anywhere. It may have moved, or never existed at all.</p>
-
-  <hr class="wl">
-
-  <div class="row">
-    <a class="btn btn-accent" href="/" data-en="Back to the site" data-fr="Retour au site" data-zh="返回网站">Back to the site</a>
-    <a class="btn" href="https://wa.me/33613850733" data-en="Write to us" data-fr="Nous écrire" data-zh="联系我们">Write to us</a>
+<header class="top">
+  <div class="top-in">
+    <a class="mark" href="/">UNSEEN.</a>
+    <div class="lang"><button type="button" data-l="en" aria-pressed="true">EN</button><span>/</span><button type="button" data-l="fr" aria-pressed="false">FR</button><span>/</span><button type="button" data-l="zh" aria-pressed="false" lang="zh">中文</button></div>
   </div>
-</div>
+</header>
+
+<main>
+  <div>
+    <div class="grand" aria-hidden="true">404</div>
+    <div class="eyebrow"><span class="n">404</span><span class="t" data-en="Page not found" data-fr="Page introuvable" data-zh="页面不存在">Page not found</span></div>
+    <h1 data-en="This page stayed unseen." data-fr="Cette page est restée invisible." data-zh="这一页，未曾现身。">This page stayed unseen.</h1>
+    <p class="lede" data-en="The address you followed does not lead anywhere. It may have moved, or never existed at all." data-fr="Ce lien ne mène nulle part. La page a peut-être été déplacée, ou n&#x27;a jamais existé." data-zh="您访问的链接无法打开。页面可能已经移动，或者从未存在。">The address you followed does not lead anywhere. It may have moved, or never existed at all.</p>
+    <div class="row">
+      <a class="btn btn-accent" href="/"><span data-en="Back to the site" data-fr="Retour au site" data-zh="返回网站">Back to the site</span></a>
+      <a class="btn" href="https://wa.me/33613850733"><span data-en="WhatsApp" data-fr="WhatsApp" data-zh="WhatsApp">WhatsApp</span></a>
+    </div>
+  </div>
+  <nav class="liens" aria-label="Pages">
+    <span class="t" data-en="Perhaps you were looking for" data-fr="Vous cherchiez peut-être" data-zh="您也许在找">Perhaps you were looking for</span>
+    <div class="liste"><a href="/paris.html"><span class="k"><span data-en="The base" data-fr="Notre base" data-zh="大本营">The base</span></span><b data-en="Paris" data-fr="Paris" data-zh="巴黎">Paris</b><i aria-hidden="true">&rarr;</i></a><a href="/riviera.html"><span class="k"><span data-en="Summer" data-fr="L&#x27;été" data-zh="夏季">Summer</span></span><b data-en="The Riviera" data-fr="La Riviera" data-zh="蔚蓝海岸">The Riviera</b><i aria-hidden="true">&rarr;</i></a><a href="/saison-ski-2026-2027.html"><span class="k"><span data-en="Winter" data-fr="L&#x27;hiver" data-zh="冬季">Winter</span></span><b data-en="The Alps" data-fr="Les Alpes" data-zh="阿尔卑斯">The Alps</b><i aria-hidden="true">&rarr;</i></a><a href="/ocean-indien.html"><span class="k"><span data-en="Counter-season" data-fr="Contre-saison" data-zh="反季之选">Counter-season</span></span><b data-en="Indian Ocean" data-fr="Océan Indien" data-zh="印度洋">Indian Ocean</b><i aria-hidden="true">&rarr;</i></a><a href="/formule-1.html"><span class="k"><span data-en="Grand Prix" data-fr="Grand Prix" data-zh="大奖赛">Grand Prix</span></span><b data-en="Formula 1" data-fr="Formule 1" data-zh="一级方程式赛车">Formula 1</b><i aria-hidden="true">&rarr;</i></a><a href="/professionals.html"><span class="k"><span data-en="Partners" data-fr="Partenaires" data-zh="合作伙伴">Partners</span></span><b data-en="Professionals" data-fr="Professionnels" data-zh="专业合作">Professionals</b><i aria-hidden="true">&rarr;</i></a></div>
+  </nav>
+</main>
+
+<footer><div class="in"><span><b>UNSEEN.</b> <span data-en="Private luxury concierge, Paris." data-fr="Conciergerie privée de luxe, Paris." data-zh="巴黎私人奢华礼宾服务。">Private luxury concierge, Paris.</span></span><a href="/legal.html"><span data-en="Legal notice" data-fr="Mentions légales" data-zh="法律声明">Legal notice</span></a></div></footer>
 
 <script>
-/* Même bascule de langue que sur le reste du site : on reprend le
-   choix déjà enregistré par le visiteur, sinon la langue du navigateur. */
+/* Même mémoire de langue que le reste du site (localStorage « unseen-lang ») */
 (function(){
-  var choix = null;
-  try { choix = localStorage.getItem('unseen-lang'); } catch(e){}
-  var nav = (navigator.language || '').toLowerCase();
-  var l = (choix === 'fr' || choix === 'zh') ? choix
-        : (!choix && nav.indexOf('zh') === 0) ? 'zh'
-        : (!choix && nav.indexOf('fr') === 0) ? 'fr' : null;
-  if (!l) return;
-  document.documentElement.lang = l;
-  var noeuds = document.querySelectorAll('[data-' + l + ']');
-  for (var i = 0; i < noeuds.length; i++){
-    noeuds[i].textContent = noeuds[i].getAttribute('data-' + l);
+  var TITRES={en:'UNSEEN. — Page not found',fr:'UNSEEN. — Page introuvable',zh:'UNSEEN. — 页面不存在'};
+  function setLang(l){
+    document.querySelectorAll('[data-en]').forEach(function(n){var v=n.getAttribute('data-'+l);if(v!==null)n.textContent=v;});
+    document.documentElement.lang=l;document.title=TITRES[l];
+    document.querySelectorAll('button[data-l]').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.l===l?'true':'false');});
+    try{localStorage.setItem('unseen-lang',l);}catch(e){}
   }
+  document.querySelectorAll('button[data-l]').forEach(function(b){b.addEventListener('click',function(){setLang(b.dataset.l);});});
+  var s=null;try{s=localStorage.getItem('unseen-lang');}catch(e){}
+  var nav=(navigator.language||'').toLowerCase();
+  if(s==='fr'||s==='zh')setLang(s);else if(!s&&nav.indexOf('zh')===0)setLang('zh');else if(!s&&nav.indexOf('fr')===0)setLang('fr');
 })();
 </script>
-
 </body>
 </html>
