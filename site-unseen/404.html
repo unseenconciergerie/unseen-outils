@@ -112,16 +112,16 @@ p{
 
 <div class="in">
   <div class="mark">UNSEEN.</div>
-  <div class="code" data-en="Error 404" data-fr="Erreur 404">Error 404</div>
+  <div class="code" data-en="Error 404" data-fr="Erreur 404" data-zh="错误 404">Error 404</div>
 
-  <h1 data-en="This page stayed unseen." data-fr="Cette page est restée invisible.">This page stayed unseen.</h1>
-  <p data-en="The address you followed does not lead anywhere. It may have moved, or never existed at all." data-fr="Ce lien ne mène nulle part. La page a peut-être été déplacée, ou n&#x27;a jamais existé.">The address you followed does not lead anywhere. It may have moved, or never existed at all.</p>
+  <h1 data-en="This page stayed unseen." data-fr="Cette page est restée invisible." data-zh="这一页，未曾现身。">This page stayed unseen.</h1>
+  <p data-en="The address you followed does not lead anywhere. It may have moved, or never existed at all." data-fr="Ce lien ne mène nulle part. La page a peut-être été déplacée, ou n&#x27;a jamais existé." data-zh="您访问的链接无法打开。页面可能已经移动，或者从未存在。">The address you followed does not lead anywhere. It may have moved, or never existed at all.</p>
 
   <hr class="wl">
 
   <div class="row">
-    <a class="btn btn-accent" href="/" data-en="Back to the site" data-fr="Retour au site">Back to the site</a>
-    <a class="btn" href="https://wa.me/33613850733" data-en="Write to us" data-fr="Nous écrire">Write to us</a>
+    <a class="btn btn-accent" href="/" data-en="Back to the site" data-fr="Retour au site" data-zh="返回网站">Back to the site</a>
+    <a class="btn" href="https://wa.me/33613850733" data-en="Write to us" data-fr="Nous écrire" data-zh="联系我们">Write to us</a>
   </div>
 </div>
 
@@ -131,13 +131,15 @@ p{
 (function(){
   var choix = null;
   try { choix = localStorage.getItem('unseen-lang'); } catch(e){}
-  var fr = choix === 'fr' ||
-           (!choix && (navigator.language || '').toLowerCase().indexOf('fr') === 0);
-  if (!fr) return;
-  document.documentElement.lang = 'fr';
-  var noeuds = document.querySelectorAll('[data-fr]');
+  var nav = (navigator.language || '').toLowerCase();
+  var l = (choix === 'fr' || choix === 'zh') ? choix
+        : (!choix && nav.indexOf('zh') === 0) ? 'zh'
+        : (!choix && nav.indexOf('fr') === 0) ? 'fr' : null;
+  if (!l) return;
+  document.documentElement.lang = l;
+  var noeuds = document.querySelectorAll('[data-' + l + ']');
   for (var i = 0; i < noeuds.length; i++){
-    noeuds[i].textContent = noeuds[i].getAttribute('data-fr');
+    noeuds[i].textContent = noeuds[i].getAttribute('data-' + l);
   }
 })();
 </script>
