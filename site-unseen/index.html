@@ -490,7 +490,8 @@ svg .pt.base text{fill:#E9C4B8;font-size:13px;font-weight:600}
 .track img{width:auto;flex:none}
 @keyframes defile{from{transform:translate3d(0,0,0)}to{transform:translate3d(-50%,0,0)}}
 @media(max-width:860px){.marquee{padding:28px 0}.track{gap:52px;animation-duration:17s}.track img{transform:scale(.8)}}
-@media(prefers-reduced-motion:reduce){.track{animation:none;flex-wrap:wrap;justify-content:center;width:auto}}
+/* « Réduire les animations » : pas de défilement, une seule série de logos (les copies de la boucle sont masquées), côte à côte et centrés */
+@media(prefers-reduced-motion:reduce){.marquee{-webkit-mask-image:none;mask-image:none}.track{animation:none;flex-wrap:wrap;justify-content:center;width:auto;gap:28px 40px;padding:0 20px}.track img[aria-hidden="true"]{display:none}.track img{max-width:42%;object-fit:contain}}
 /* partenaires */
 .nv-logos{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:36px;margin-top:44px;padding:40px 0;border-top:1px solid var(--gris-doux);border-bottom:1px solid var(--gris-doux)}
 .nv-logos img{height:40px;width:auto}
