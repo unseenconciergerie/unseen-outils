@@ -1938,7 +1938,76 @@
   "https://www.parisselectbook.com/2026/10/30/zendaya-et-gigi-hadid-lont-adoptee-avant-les-defiles-la-french-braid-redevient-la-coiffure-la-plus-parisienne-de-lautomne": "2026-10-30",
   "https://www.instagram.com/p/DfIPoGfiFUR": "2026-10-30",
   "https://latribunedelhotellerie.com/marriott-coca-cola-noel-2026-resorts-americains": "2026-10-30",
-  "http://defimedia.info/cnt-dr-dev-rajan-daliah-nomme-directeur-general": "2026-10-30"
+  "http://defimedia.info/cnt-dr-dev-rajan-daliah-nomme-directeur-general": "2026-10-30",
+  "https://www.live-mercato.com/article/202191-ligue-1-hakimi-triple-buteur-paris-etrille-le-havre-en-ouverture-la-9eme-journee": "2026-10-31",
+  "http://defimedia.info/mauritius-duty-free-paradise-george-malcolm-oliver-louise-nomme-president-du-conseil": "2026-10-31",
+  "https://wwd.com/pop-culture/celebrity-news/rachel-zegler-bra-top-mark-gong-john-hardy-a-few-good-men-1239394442": "2026-10-31",
+  "https://thehospitalitytribune.com/lorenz-maurer-general-manager-the-alpinist-andermatt-3": "2026-10-31",
+  "https://latribunedelhotellerie.com/brescia-lhm-design-hotels-marriott-savills-fasoli": "2026-10-31",
+  "https://www.youtube.com/shorts/IH4TRE744wI": "2026-10-31",
+  "https://www.youtube.com/watch?v=J-ZktUnVSuA": "2026-10-31",
+  "https://www.facebook.com/100085942572362/posts/le-passage-de-c%C3%A9line-dion-%C3%A0-la-plenitude-arena-na-pas-seulement-enchant%C3%A9-des-cen/1093542220187187": "2026-10-31"
  },
- "en_attente": []
+ "en_attente": [
+  {
+   "titre": "Rachel Zegler Diversifies Suiting in a Mark Gong Bra Top Ensemble & John Hardy Jewelry at ‘A Few Good Men’ Opening in New York",
+   "lien": "https://wwd.com/pop-culture/celebrity-news/rachel-zegler-bra-top-mark-gong-john-hardy-a-few-good-men-1239394442",
+   "source": "WWD",
+   "date": "2026-10-31T01:48:08+00:00",
+   "categorie": "Ouverture",
+   "priorite": "🟠",
+   "zone": "New York",
+   "action": "Demander un contact commercial ou une visite des lieux"
+  },
+  {
+   "titre": "Lorenz Maurer Named GM of The Alpinist in Andermatt",
+   "lien": "https://thehospitalitytribune.com/lorenz-maurer-general-manager-the-alpinist-andermatt-3",
+   "source": "Alerte Google - Nominations internationales",
+   "date": "2026-10-30T15:03:07+00:00",
+   "categorie": "Nomination",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "Brescia : LHM exploitera un hôtel 5 étoiles Design Hotels",
+   "lien": "https://latribunedelhotellerie.com/brescia-lhm-design-hotels-marriott-savills-fasoli",
+   "source": "Alerte Google - Ouvertures",
+   "date": "2026-10-30T18:53:16+00:00",
+   "categorie": "Ouverture",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Demander un contact commercial ou une visite des lieux"
+  },
+  {
+   "titre": "Céline Dion at the Plenitude Arena: How she boosted local businesses",
+   "lien": "https://www.youtube.com/shorts/IH4TRE744wI",
+   "source": "Alerte Google - Plenitude Arena",
+   "date": "2026-10-30T21:13:54+00:00",
+   "categorie": "Événement",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "The Secret Behind Céline Dion's Extraordinary Triumph After Her Plenitude Arena Performances",
+   "lien": "https://www.youtube.com/watch?v=J-ZktUnVSuA",
+   "source": "Alerte Google - Plenitude Arena",
+   "date": "2026-10-30T21:26:05+00:00",
+   "categorie": "Événement",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "Comment les concerts de Céline Dion ont boosté l'économie locale à la Plenitude Arena",
+   "lien": "https://www.facebook.com/100085942572362/posts/le-passage-de-c%C3%A9line-dion-%C3%A0-la-plenitude-arena-na-pas-seulement-enchant%C3%A9-des-cen/1093542220187187",
+   "source": "Alerte Google - Plenitude Arena",
+   "date": "2026-10-31T00:40:13+00:00",
+   "categorie": "Événement",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  }
+ ]
 }
