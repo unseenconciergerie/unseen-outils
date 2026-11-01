@@ -1981,7 +1981,14 @@
   "https://www.goal.com/fr/news/pierre-sage-sur-la-sellette-l-expulsion-precoce-de-jean-philippe-mateta-offre-a-tottenham-une-victoire-2-0-face-a-crystal-palace/blta42946c9ab1e8b0a": "2026-11-01",
   "https://tribuna.com/fr/blogs/jeanphilippe-mateta-voit-rouge-apres-un-tacle-dangereux-qui": "2026-11-01",
   "https://www.ttnworldwide.com/ArticleTTN/488672/chedi-hospitality-names-new-gm": "2026-11-01",
-  "https://www.parisselectbook.com/2026/11/01/elles-glissent-leur-ordinateur-dans-ce-longchamp-pliage-xtra-a-550e-le-maxi-sac-en-cuir-graine-qui-enterre-les-mini-formats": "2026-11-01"
+  "https://www.parisselectbook.com/2026/11/01/elles-glissent-leur-ordinateur-dans-ce-longchamp-pliage-xtra-a-550e-le-maxi-sac-en-cuir-graine-qui-enterre-les-mini-formats": "2026-11-01",
+  "https://parisauthority.com/fr/articles/blink-182-paris-2027": "2026-11-01",
+  "https://www.goal.com/fr/news/roberto-de-zerbi-salue-l-incroyable-sandro-tonali-et-le-debutant-luca-williams-barnett-apres-la-victoire-de-tottenham-face-a-crystal-palace-reduit-a-dix/blt9218d6d75ebe1c8e": "2026-11-01",
+  "https://foot-africa.com/actualites/tottenham-mohammed-kudus-homme-du-match-face-a-crystal-palace-1405877": "2026-11-01",
+  "https://www.nextplz.fr/people/596332-patrick-bruel-six-departs-en-quelques-mois-dans-son-hotel-lisle-de-leos-un-membre-de-la-direction-ecarte": "2026-11-01",
+  "https://www.gov.uk/government/publications/high-potential-individual-visa-global-universities-list/high-potential-individual-visa-global-universities-list-2026": "2026-11-01",
+  "https://www.closermag.fr/people/patrick-bruel-sixieme-depart-choc-au-sein-de-son-hotel-de-lisle-sur-la-sorgue-3666950": "2026-11-01",
+  "https://businessupturn.com/business/bharat-coking-coal-announces-changes-in-senior-management": "2026-11-01"
  },
  "en_attente": [
   {
@@ -2173,6 +2180,76 @@
    "priorite": "⚪",
    "zone": "",
    "action": "Identifier un contact chez cette agence, proposer un partenariat commission/co-package"
+  },
+  {
+   "titre": "Blink-182 à Paris 2027 : Plenitude Arena, hôtel et retour",
+   "lien": "https://parisauthority.com/fr/articles/blink-182-paris-2027",
+   "source": "Alerte Google - Plenitude Arena",
+   "date": "2026-11-01T10:49:22+00:00",
+   "categorie": "Événement",
+   "priorite": "🟠",
+   "zone": "Paris",
+   "action": "Vérifier la date dans le calendrier et préparer les demandes d'accès"
+  },
+  {
+   "titre": "Roberto De Zerbi salue Sandro Tonali, « incroyable », et Luca Williams-Barnett, qui faisait ...",
+   "lien": "https://www.goal.com/fr/news/roberto-de-zerbi-salue-l-incroyable-sandro-tonali-et-le-debutant-luca-williams-barnett-apres-la-victoire-de-tottenham-face-a-crystal-palace-reduit-a-dix/blt9218d6d75ebe1c8e",
+   "source": "Alerte Google - Ouvertures",
+   "date": "2026-11-01T09:59:41+00:00",
+   "categorie": "Ouverture",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Demander un contact commercial ou une visite des lieux"
+  },
+  {
+   "titre": "Tottenham : Mohammed Kudus, homme du match face à Crystal Palace",
+   "lien": "https://foot-africa.com/actualites/tottenham-mohammed-kudus-homme-du-match-face-a-crystal-palace-1405877",
+   "source": "Alerte Google - Ouvertures",
+   "date": "2026-11-01T10:34:52+00:00",
+   "categorie": "Ouverture",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Demander un contact commercial ou une visite des lieux"
+  },
+  {
+   "titre": "Patrick Bruel : six départs en quelques mois dans son hôtel L'Isle-de-Leos, un membre de la ...",
+   "lien": "https://www.nextplz.fr/people/596332-patrick-bruel-six-departs-en-quelques-mois-dans-son-hotel-lisle-de-leos-un-membre-de-la-direction-ecarte",
+   "source": "Alerte Google - Nominations hotellerie FR",
+   "date": "2026-11-01T12:16:19+00:00",
+   "categorie": "Nomination",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "High Potential Individual visa: global universities list 2026",
+   "lien": "https://www.gov.uk/government/publications/high-potential-individual-visa-global-universities-list/high-potential-individual-visa-global-universities-list-2026",
+   "source": "Alerte Google - Vols et visas Chine-Golfe vers France (a creer)",
+   "date": "2026-11-01T16:35:56+00:00",
+   "categorie": "Tour-opérateur",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Identifier un contact chez cette agence, proposer un partenariat commission/co-package"
+  },
+  {
+   "titre": "Patrick Bruel : sixième départ choc au sein de son hôtel de l'Isle-sur-la-Sorgue",
+   "lien": "https://www.closermag.fr/people/patrick-bruel-sixieme-depart-choc-au-sein-de-son-hotel-de-lisle-sur-la-sorgue-3666950",
+   "source": "Alerte Google - Nominations hotellerie FR",
+   "date": "2026-11-01T16:54:56+00:00",
+   "categorie": "Nomination",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
+  },
+  {
+   "titre": "Bharat Coking Coal announces changes in senior management",
+   "lien": "https://businessupturn.com/business/bharat-coking-coal-announces-changes-in-senior-management",
+   "source": "Alerte Google - Nominations internationales",
+   "date": "2026-11-01T17:28:56+00:00",
+   "categorie": "Nomination",
+   "priorite": "⚪",
+   "zone": "",
+   "action": "Message de félicitations sur LinkedIn cette semaine (envoi manuel)"
   }
  ]
 }
