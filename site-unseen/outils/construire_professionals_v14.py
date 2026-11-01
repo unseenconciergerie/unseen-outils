@@ -267,7 +267,7 @@ page = f'''<!DOCTYPE html>
 <footer>
   <div class="wrap">
     <div class="mark">UNSEEN.</div>
-    <div style="margin-top:20px">{t("Private luxury concierge. Sole trader registered in France.", "Conciergerie privée de luxe. Entreprise individuelle immatriculée en France.", "私人尊享礼宾服务。法国注册个人企业。")} 8 rue du Docteur Gravery, 77100 Meaux. SIRET 999 356 587 00017.
+    <div style="margin-top:20px">{t("Private luxury concierge. Sole trader registered in France.", "Conciergerie privée de luxe. Entreprise individuelle immatriculée en France.", "私人尊享礼宾服务。法国注册个人企业。")} 8 rue du Docteur Graverry, 77100 Meaux. SIRET 999 356 587 00017.
       <br><a href="legal.html">{t("Legal notice, terms and privacy", "Mentions légales, conditions et confidentialité", "法律声明、条款与隐私")}</a></div>
   </div>
 </footer>
