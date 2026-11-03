@@ -77,7 +77,7 @@
   --bleu-clair:#F4EAE5;
   --gris-doux:#E5D7D0;
   --texte-2:#5C5556;
-  --texte-3:#8A8083;
+  --texte-3:#6E6366;
   --max:1240px;
   --pad:40px;
 }
@@ -243,7 +243,7 @@ h2{font-weight:800;font-size:clamp(30px,4.2vw,46px);line-height:1.05;letter-spac
 .partner-item{display:flex;align-items:center;gap:12px;padding:13px 0;border-bottom:1px solid rgba(255,255,255,.10);cursor:pointer}
 .partner-item .pn{font-size:15.5px;color:var(--blanc);line-height:1.35;transition:color .15s;flex:1 1 auto}
 .partner-item:hover .pn{color:var(--accent)}
-.partner-item .pt{font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:#8A8A8A;white-space:nowrap;flex:0 0 auto}
+.partner-item .pt{font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:#A0A0A0;white-space:nowrap;flex:0 0 auto}
 
 /* ---------- methode : frise horizontale ---------- */
 .timeline{list-style:none;margin:58px 0 0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:0;position:relative}
@@ -278,9 +278,9 @@ h2{font-weight:800;font-size:clamp(30px,4.2vw,46px);line-height:1.05;letter-spac
 /* ---------- pied de page ---------- */
 footer{background:var(--noir);color:var(--blanc);padding:72px 0 46px;border-top:1px solid rgba(255,255,255,.14)}
 .foot-mark{font-family:'League Spartan',sans-serif;font-weight:800;font-size:38px;line-height:1}
-.curated{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#8A8A8A;margin-top:10px}
+.curated{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#A0A0A0;margin-top:10px}
 .foot-sep{height:1px;background:#FFFFFF;opacity:.16;border:0;margin-top:34px}
-.foot-legal{margin-top:34px;font-size:13.5px;line-height:2;color:#8A8A8A}
+.foot-legal{margin-top:34px;font-size:13.5px;line-height:2;color:#A0A0A0}
 .foot-legal a{color:#D6D6D6}
 .foot-legal a:hover,.foot-legal a:focus-visible{color:var(--accent)}
 .foot-legal .num,.foot-legal strong{color:#D6D6D6;font-weight:600}
@@ -360,7 +360,7 @@ form.enq{margin-top:40px;max-width:840px}
 @media(max-width:700px){.frow{grid-template-columns:1fr;gap:0}}
 .fld{margin-bottom:26px}
 .fld label{display:block;font-size:12px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:#D6D6D6;margin-bottom:10px}
-.fld label em{font-style:normal;color:#767676;font-weight:500;letter-spacing:.1em}
+.fld label em{font-style:normal;color:#A0A0A0;font-weight:500;letter-spacing:.1em}
 .fld input,.fld select,.fld textarea{
   width:100%;background:transparent;border:0;border-bottom:1px solid rgba(255,255,255,.26);
   color:var(--blanc);font-family:'DM Sans',system-ui,sans-serif;font-size:16.5px;
@@ -375,7 +375,7 @@ form.enq{margin-top:40px;max-width:840px}
 .fld select option,.fld select optgroup{background:#0B0B0B;color:var(--blanc)}
 .fld textarea{min-height:112px;resize:vertical;line-height:1.6}
 .fld input:focus,.fld select:focus,.fld textarea:focus{border-bottom-color:var(--accent)}
-.fld input::placeholder,.fld textarea::placeholder{color:#6A6A6A}
+.fld input::placeholder,.fld textarea::placeholder{color:#9A9A9A}
 .fld.bad input,.fld.bad select,.fld.bad textarea{border-bottom-color:#E0705F}
 .fld .msg{display:none;margin-top:8px;font-size:13px;color:#E0705F;letter-spacing:.01em}
 .fld.bad .msg{display:block}
@@ -388,10 +388,10 @@ form.enq{margin-top:40px;max-width:840px}
 .agree-msg.on{display:block}
 .enq-actions{display:flex;flex-wrap:wrap;gap:22px;align-items:center;margin-top:26px}
 button.btn{background:transparent;cursor:pointer;font-family:'DM Sans',system-ui,sans-serif}
-.enq-alt{font-size:14.5px;color:#8A8A8A}
+.enq-alt{font-size:14.5px;color:#A0A0A0}
 .enq-alt a{color:#D6D6D6;text-decoration:none;border-bottom:1px solid var(--accent);padding-bottom:2px;cursor:pointer}
 .enq-alt a:hover{color:var(--accent)}
-.enq-note{margin-top:30px;font-size:13.5px;line-height:1.8;color:#787878;max-width:640px}
+.enq-note{margin-top:30px;font-size:13.5px;line-height:1.8;color:#A0A0A0;max-width:640px}
 .enq-done{display:none;margin-top:40px;border:1px solid rgba(255,255,255,.2);padding:40px 36px;max-width:640px}
 .enq-done h3{font-weight:800;font-size:26px;color:var(--accent);margin-bottom:12px;letter-spacing:-.015em}
 .enq-done p{font-size:16.5px;color:#B4B4B4;line-height:1.65}
@@ -834,7 +834,7 @@ svg .pt.base text{fill:#E9C4B8;font-size:13px;font-weight:600}
         &nbsp;&nbsp;
         <a href="#" data-u="privacy" data-d="unseenconciergerie.com">privacy&#64;unseenconciergerie.com</a>
       </div>
-      <div style="margin-top:16px;color:#666">&copy; <span class="num">2026</span> UNSEEN. <span data-en="All rights reserved." data-fr="Tous droits réservés." data-zh="版权所有。">All rights reserved.</span></div>
+      <div style="margin-top:16px;color:#A0A0A0">&copy; <span class="num">2026</span> UNSEEN. <span data-en="All rights reserved." data-fr="Tous droits réservés." data-zh="版权所有。">All rights reserved.</span></div>
     </div>
   </div>
 </footer>

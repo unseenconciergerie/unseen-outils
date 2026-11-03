@@ -43,6 +43,7 @@
     /* Le nom est découpé en autant de petites boîtes. Pour un
        lecteur d'écran ce découpage n'existe pas : il lit
        l'étiquette posée ici et ignore les lettres une à une. */
+    mark.setAttribute('role', 'img');      /* sans rôle, une étiquette est interdite sur un simple bloc (PageSpeed) */
     mark.setAttribute('aria-label', nom);
 
     for (var i = 0; i < nom.length; i++){
