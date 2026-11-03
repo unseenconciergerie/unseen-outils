@@ -194,6 +194,23 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 :root :is(.eyebrow .n,.steps li:before,.svc .n,.cat .k2,.sitem .tag,.card .tag,.dest .tag,.rows li b,.cardd .tag,.list-row .k,h2 .k,header.page .eyebrow,.nn span,.enq-head .tag,.enq-done h3,.ci .lbl,.tl-k,.liste i,
 .langsw button[aria-pressed="true"],.lang button[aria-pressed="true"]){color:var(--accent-texte)}
 :root :is(.sombre,.sec-dark,.hero,footer,.navpanel,.top-dark) :is(.eyebrow .n,.steps li:before,.svc .n,.cat .k2,.sitem .tag,.card .tag,.dest .tag,.rows li b,.cardd .tag,.list-row .k,h2 .k,header.page .eyebrow,.nn span,.enq-head .tag,.enq-done h3,.ci .lbl,.tl-k,.liste i){color:var(--accent)}
+
+/* bouton WhatsApp fixe sur téléphone (comme sur Paris, Riviera, Océan Indien, Professionnels) */
+.wa{display:none}
+@media(max-width:900px){
+  .wa{display:flex;position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom));z-index:40;width:50px;height:50px;border-radius:50%;background:var(--accent);color:var(--sur-accent);align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(0,0,0,.22);text-decoration:none;transition:opacity .25s}
+  .wa svg{width:24px;height:24px}
+  .wa.wa-cache{opacity:0;pointer-events:none}
+}
+
+.mpanel .pro-q{margin-top:30px;font-size:14px;color:#6E6E6E}
+.mpanel a.pro{font-family:'DM Sans',sans-serif;font-weight:600;font-size:17px;border-bottom:0;padding:6px 0 0}
+.mpanel a.pro:after{content:" \2192"}
+
+/* menu ordinateur : « Professionnels » à droite, juste avant les langues, séparé des liens clients */
+.langsw a.pro,.lang a.pro{font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;color:#000;font-weight:500;opacity:.7;margin-right:12px;padding-right:20px;border-right:1px solid rgba(0,0,0,.22);white-space:nowrap}
+.langsw a.pro:hover,.lang a.pro:hover,.langsw a.pro.on,.lang a.pro.on{opacity:1}
+@media(max-width:900px){.langsw a.pro,.lang a.pro{display:none}}
 </style>
 </head>
 <body>
@@ -205,10 +222,11 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
       <a href="index.html#services" data-en="Services" data-fr="Services" data-zh="服务">Services</a>
       <a href="index.html#destinations" data-en="Destinations" data-fr="Destinations" data-zh="目的地">Destinations</a>
       <a href="index.html#now" data-en="Seasons" data-fr="Saisons" data-zh="当季">Seasons</a>
-      <a href="professionals.html" data-en="Professionals" data-fr="Professionnels" data-zh="专业合作">Professionals</a>
+      
       <a href="index.html#contact" data-en="Contact" data-fr="Contact" data-zh="联系我们">Contact</a>
     </nav>
     <div class="langsw">
+      <a href="professionals.html" class="pro" data-en="Professionals" data-fr="Professionnels" data-zh="专业合作">Professionals</a>
       <button type="button" id="btn-en" aria-pressed="true">EN</button>
       <span class="sep">/</span>
       <button type="button" id="btn-fr" aria-pressed="false">FR</button>
@@ -222,8 +240,10 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
   <a href="index.html#services" data-en="Services" data-fr="Services" data-zh="服务">Services</a>
       <a href="index.html#destinations" data-en="Destinations" data-fr="Destinations" data-zh="目的地">Destinations</a>
       <a href="index.html#now" data-en="Seasons" data-fr="Saisons" data-zh="当季">Seasons</a>
-      <a href="professionals.html" data-en="Professionals" data-fr="Professionnels" data-zh="专业合作">Professionals</a>
+      
       <a href="index.html#contact" data-en="Contact" data-fr="Contact" data-zh="联系我们">Contact</a>
+      <span class="pro-q" data-en="Travel professional?" data-fr="Vous êtes professionnel du voyage ?" data-zh="您是旅游业专业人士？">Travel professional?</span>
+      <a href="professionals.html" class="pro" data-en="Professionals" data-fr="Professionnels" data-zh="专业合作">Professionals</a>
   <div class="bas"><a href="https://wa.me/33613850733">WhatsApp</a><a href="#" data-u="contact" data-d="unseenconciergerie.com">contact&#64;unseenconciergerie.com</a></div>
 </nav>
 
@@ -359,6 +379,8 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
     </div>
   </div>
 </footer>
+<a class="wa" href="https://wa.me/33613850733" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.4c.1.1 1.6 2.5 4 3.5 1.5.6 2.1.7 2.8.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg></a>
+
 
 <script>
 (function(){

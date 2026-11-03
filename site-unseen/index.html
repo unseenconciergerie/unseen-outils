@@ -400,6 +400,30 @@ button.btn{background:transparent;cursor:pointer;font-family:'DM Sans',system-ui
   .enq-actions{gap:16px}
   .enq-actions .btn{width:100%}
 }
+
+/* formulaire compact : le nom du champ est dans la case, il monte en petit quand on écrit */
+form.enq .fld{position:relative;margin-bottom:14px}
+form.enq .fld label{position:absolute;left:0;top:19px;margin:0;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;pointer-events:none;font-size:16px;letter-spacing:0;text-transform:none;font-weight:400;color:#A8A8A8;transition:top .15s,font-size .15s,color .15s}
+form.enq .fld label em{color:#8E8E8E;letter-spacing:0;font-weight:400}
+form.enq .fld input,form.enq .fld textarea{padding:25px 0 8px}
+form.enq .fld textarea{min-height:92px;line-height:1.5}
+form.enq .fld:focus-within label,form.enq .fld.has label{top:4px;font-size:11.5px;letter-spacing:.06em;color:var(--accent)}
+form.enq .fld.sel label{position:static;display:block;font-size:11.5px;letter-spacing:.06em;color:#A8A8A8;margin:0 0 -4px;pointer-events:auto}
+form.enq .fld.sel select{padding:10px 30px 8px 0}
+form.enq .fld .msg{margin-top:4px}
+form.enq .frow{gap:0 26px}
+.more{margin:2px 0 14px}
+.more summary{list-style:none;cursor:pointer;font-size:14.5px;color:#D6D6D6;padding:8px 0;display:inline-block;border-bottom:1px solid var(--accent)}
+.more summary::-webkit-details-marker{display:none}
+.more summary:before{content:"+\00a0\00a0";color:var(--accent);font-weight:600}
+.more[open] summary:before{content:"\2212\00a0\00a0"}
+.more summary em{font-style:normal;color:#8E8E8E}
+.more[open] summary{margin-bottom:10px}
+.agree{margin:6px 0 6px}
+.agree span{font-size:13.5px;line-height:1.55}
+.enq-note{margin-top:20px;font-size:12.5px;line-height:1.7}
+.enq-head p{font-size:16px;line-height:1.55}
+@media(max-width:560px){.enq-head{margin-top:40px;padding-top:30px}.enq-head h3{margin-bottom:8px}form.enq{margin-top:26px}.enq-actions{margin-top:18px}}
 </style>
 
 <link rel="stylesheet" href="anim.css">
@@ -511,6 +535,23 @@ svg .pt.base text{fill:#E9C4B8;font-size:13px;font-weight:600}
   .nv-logos{justify-content:center;gap:28px 40px}
   .nv-logos img{height:32px}
 }
+
+/* bouton WhatsApp fixe sur téléphone (comme sur Paris, Riviera, Océan Indien, Professionnels) */
+.wa{display:none}
+@media(max-width:900px){
+  .wa{display:flex;position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom));z-index:40;width:50px;height:50px;border-radius:50%;background:var(--accent);color:var(--sur-accent);align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(0,0,0,.22);text-decoration:none;transition:opacity .25s}
+  .wa svg{width:24px;height:24px}
+  .wa.wa-cache{opacity:0;pointer-events:none}
+}
+
+.navpanel nav .pro-q{margin-top:30px;font-size:13px;color:#6E6E6E}
+.navpanel nav a.pro{font-size:17px;font-weight:600;letter-spacing:0;border-bottom:0;padding:6px 0 0}
+.navpanel nav a.pro:after{content:" \2192"}
+
+/* menu ordinateur : « Professionnels » à droite, juste avant les langues, séparé des liens clients */
+.langsw a.pro,.lang a.pro{font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;color:#000;font-weight:500;opacity:.7;margin-right:12px;padding-right:20px;border-right:1px solid rgba(0,0,0,.22);white-space:nowrap}
+.langsw a.pro:hover,.lang a.pro:hover,.langsw a.pro.on,.lang a.pro.on{opacity:1}
+@media(max-width:900px){.langsw a.pro,.lang a.pro{display:none}}
 </style>
 </head>
 <body>
@@ -522,10 +563,11 @@ svg .pt.base text{fill:#E9C4B8;font-size:13px;font-weight:600}
       <a href="#services" data-en="Services" data-fr="Services" data-zh="服务">Services</a>
       <a href="#destinations" data-en="Destinations" data-fr="Destinations" data-zh="目的地">Destinations</a>
       <a href="#now" data-en="Seasons" data-fr="Saisons" data-zh="当季">Seasons</a>
-      <a href="professionals.html" data-en="Professionals" data-fr="Professionnels" data-zh="专业合作">Professionals</a>
+      
       <a href="#contact" data-en="Contact" data-fr="Contact" data-zh="联系我们">Contact</a>
     </nav>
     <div class="langsw">
+      <a href="professionals.html" class="pro" data-en="Professionals" data-fr="Professionnels" data-zh="专业合作">Professionals</a>
       <button type="button" id="btn-en" aria-pressed="true">EN</button>
       <span class="sep">/</span>
       <button type="button" id="btn-fr" aria-pressed="false">FR</button>
@@ -543,8 +585,10 @@ svg .pt.base text{fill:#E9C4B8;font-size:13px;font-weight:600}
       <a href="#services" data-en="Services" data-fr="Services" data-zh="服务">Services</a>
       <a href="#destinations" data-en="Destinations" data-fr="Destinations" data-zh="目的地">Destinations</a>
       <a href="#now" data-en="Seasons" data-fr="Saisons" data-zh="当季">Seasons</a>
-      <a href="professionals.html" data-en="Professionals" data-fr="Professionnels" data-zh="专业合作">Professionals</a>
+      
       <a href="#contact" data-en="Contact" data-fr="Contact" data-zh="联系我们">Contact</a>
+      <span class="pro-q" data-en="Travel professional?" data-fr="Vous êtes professionnel du voyage ?" data-zh="您是旅游业专业人士？">Travel professional?</span>
+      <a href="professionals.html" class="pro" data-en="Professionals" data-fr="Professionnels" data-zh="专业合作">Professionals</a>
     </nav>
   <div class="pfoot">
     <a href="https://wa.me/33613850733">WhatsApp</a>
@@ -714,37 +758,34 @@ svg .pt.base text{fill:#E9C4B8;font-size:13px;font-weight:600}
     <div class="enq-head reveal">
       <span class="tag" data-en="Or write to us" data-fr="Ou écrivez-nous" data-zh="或直接给我们留言">Or write to us</span>
       <h3 data-en="Tell us what you are looking for." data-fr="Dites-nous ce que vous cherchez." data-zh="告诉我们，您在寻找什么。">Tell us what you are looking for.</h3>
-      <p data-en="Every request is handled personally. Leave a few details and we come back to you within 24 hours with what is possible, what it involves and what it costs." data-fr="Chaque demande est traitée personnellement. Laissez-nous quelques informations : sous 24 heures, nous vous disons ce qui est possible, comment, et à quel prix." data-zh="每一项需求都由专人亲自处理。留下几点信息，我们将在24小时内回复您可行方案、具体安排及相关费用。">Every request is handled personally.</p>
+      <p data-en="Every request is handled personally. We reply within 24 hours with what is possible and what it costs." data-fr="Chaque demande est traitée personnellement. Réponse sous 24 heures : ce qui est possible, et à quel prix." data-zh="每一项需求都由专人亲自处理。我们将在24小时内回复可行方案及相关费用。">Every request is handled personally.</p>
     </div>
 
     <form class="enq" id="enq" novalidate>
 
       <div class="frow">
-        <div class="fld" id="f-first">
-          <label for="q-first" data-en="First name" data-fr="Prénom" data-zh="名">First name</label>
-          <input type="text" id="q-first" autocomplete="given-name">
-          <div class="msg" data-en="Please enter your first name." data-fr="Merci d'indiquer votre prénom." data-zh="请填写您的名。">Please enter your first name.</div>
+        <div class="fld" id="f-name">
+          <label for="q-name" data-en="Full name" data-fr="Nom complet" data-zh="姓名">Full name</label>
+          <input type="text" id="q-name" autocomplete="name">
+          <div class="msg" data-en="Please enter your name." data-fr="Merci d'indiquer votre nom." data-zh="请填写您的姓名。">Please enter your name.</div>
         </div>
-        <div class="fld" id="f-last">
-          <label for="q-last" data-en="Last name" data-fr="Nom" data-zh="姓">Last name</label>
-          <input type="text" id="q-last" autocomplete="family-name">
-          <div class="msg" data-en="Please enter your last name." data-fr="Merci d'indiquer votre nom." data-zh="请填写您的姓。">Please enter your last name.</div>
-        </div>
-      </div>
-
-      <div class="frow">
         <div class="fld" id="f-email">
           <label for="q-email" data-en="Email" data-fr="E-mail" data-zh="邮箱">Email</label>
           <input type="email" id="q-email" autocomplete="email">
           <div class="msg" data-en="Please enter a valid email address." data-fr="Merci d'indiquer une adresse e-mail valide." data-zh="请填写有效的邮箱地址。">Please enter a valid email address.</div>
         </div>
-        <div class="fld" id="f-phone">
-          <label for="q-phone"><span data-en="Phone or WhatsApp" data-fr="Téléphone ou WhatsApp" data-zh="电话或WhatsApp">Phone or WhatsApp</span> <em data-en="— optional" data-fr="— facultatif" data-zh="— 选填">— optional</em></label>
-          <input type="tel" id="q-phone" autocomplete="tel">
-        </div>
       </div>
 
-      <div class="fld" id="f-interest">
+      <div class="fld" id="f-message">
+        <label for="q-message" data-en="What would you like arranged?" data-fr="Que souhaitez-vous organiser ?" data-zh="您希望我们为您安排什么？">What would you like arranged?</label>
+        <textarea id="q-message"></textarea>
+        <div class="msg" data-en="Please tell us a little about your request." data-fr="Merci de préciser votre demande." data-zh="请简要说明您的需求。">Please tell us a little about your request.</div>
+      </div>
+
+      <details class="more" id="more">
+        <summary><span data-en="Add details" data-fr="Ajouter des précisions" data-zh="补充更多信息">Add details</span> <em data-en="— optional" data-fr="— facultatif" data-zh="— 选填">— optional</em></summary>
+        <div class="frow">
+      <div class="fld sel" id="f-interest">
         <label for="q-interest" data-en="What are you interested in" data-fr="Ce qui vous intéresse" data-zh="您感兴趣的服务">What are you interested in</label>
         <select id="q-interest">
           <option value="" data-en="Select a category" data-fr="Choisir une catégorie" data-zh="请选择类别">Select a category</option>
@@ -771,36 +812,19 @@ svg .pt.base text{fill:#E9C4B8;font-size:13px;font-weight:600}
             <option value="Something else" data-en="Something else" data-fr="Autre demande" data-zh="其他需求">Something else</option>
           </optgroup>
         </select>
-        <div class="msg" data-en="Please choose a category." data-fr="Merci de choisir une catégorie." data-zh="请选择一个类别。">Please choose a category.</div>
       </div>
-
-      <div class="frow">
-        <div class="fld" id="f-city">
-          <label for="q-city"><span data-en="Where you are based" data-fr="Où vous résidez" data-zh="所在城市">Where you are based</span> <em data-en="— optional" data-fr="— facultatif" data-zh="— 选填">— optional</em></label>
-          <input type="text" id="q-city" data-ph-en="City, country" data-ph-fr="Ville, pays" data-ph-zh="城市、国家" placeholder="City, country">
+      <div class="fld" id="f-dates">
+        <label for="q-dates"><span data-en="Approximate dates" data-fr="Dates approximatives" data-zh="大致日期">Approximate dates</span> <em data-en="— e.g. late October" data-fr="— ex. fin octobre" data-zh="— 例如：十月下旬">— e.g. late October</em></label>
+        <input type="text" id="q-dates">
+      </div>
         </div>
-        <div class="fld" id="f-dates">
-          <label for="q-dates"><span data-en="Approximate dates" data-fr="Dates approximatives" data-zh="大致日期">Approximate dates</span> <em data-en="— optional" data-fr="— facultatif" data-zh="— 选填">— optional</em></label>
-          <input type="text" id="q-dates" data-ph-en="e.g. late October" data-ph-fr="ex. fin octobre" data-ph-zh="例如：十月下旬" placeholder="e.g. late October">
-        </div>
-      </div>
-
-      <div class="fld" id="f-message">
-        <label for="q-message" data-en="Your request" data-fr="Votre demande" data-zh="您的需求">Your request</label>
-        <textarea id="q-message" data-ph-en="What would you like arranged?" data-ph-fr="Que souhaitez-vous organiser ?" data-ph-zh="您希望我们为您安排什么？" placeholder="What would you like arranged?"></textarea>
-        <div class="msg" data-en="Please tell us a little about your request." data-fr="Merci de préciser votre demande." data-zh="请简要说明您的需求。">Please tell us a little about your request.</div>
-      </div>
-
-      <div class="fld" id="f-source">
-        <label for="q-source"><span data-en="How you heard about us" data-fr="Comment vous nous avez connus" data-zh="您是如何得知我们的">How you heard about us</span> <em data-en="— optional" data-fr="— facultatif" data-zh="— 选填">— optional</em></label>
-        <input type="text" id="q-source" data-ph-en="Referral, Instagram, a partner…" data-ph-fr="Recommandation, Instagram, un partenaire…" data-ph-zh="朋友推荐、Instagram、合作伙伴……" placeholder="Referral, Instagram, a partner…">
-      </div>
+      </details>
 
       <input type="checkbox" name="botcheck" id="botcheck" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true" aria-label="Leave empty">
 
       <div class="agree">
         <input type="checkbox" id="q-agree" aria-labelledby="q-agree-txt">
-        <span id="q-agree-txt" data-en='I agree that UNSEEN. may use these details to respond to my request, as set out in the <a href="legal.html">privacy policy</a>. My data is never sold or shared for marketing.' data-fr='J&apos;accepte qu&apos;UNSEEN. utilise ces informations pour répondre à ma demande, dans les conditions prévues par la <a href="legal.html">politique de confidentialité</a>. Mes données ne sont jamais vendues ni transmises à des fins commerciales.' data-zh='本人同意UNSEEN.按照<a href="legal.html">隐私政策</a>使用以上信息以回复本人的需求，本人的信息绝不会被出售或用于市场营销。'>I agree that UNSEEN. may use these details to respond to my request, as set out in the <a href="legal.html">privacy policy</a>. My data is never sold or shared for marketing.</span>
+        <span id="q-agree-txt" data-en='I agree that UNSEEN. may use these details to reply to me, as set out in the <a href="legal.html">privacy policy</a>.' data-fr='J&apos;accepte qu&apos;UNSEEN. utilise ces informations pour me répondre, selon la <a href="legal.html">politique de confidentialité</a>.' data-zh='本人同意UNSEEN.按照<a href="legal.html">隐私政策</a>使用以上信息回复本人。'>I agree that UNSEEN. may use these details to reply to me, as set out in the <a href="legal.html">privacy policy</a>.</span>
       </div>
       <div class="agree-msg" id="agree-msg" data-en="Please tick the box so we may reply to you." data-fr="Merci de cocher la case pour que nous puissions vous répondre." data-zh="请勾选此项，以便我们回复您。">Please tick the box so we may reply to you.</div>
 
@@ -809,7 +833,7 @@ svg .pt.base text{fill:#E9C4B8;font-size:13px;font-weight:600}
         <span class="enq-alt" data-en='Prefer WhatsApp? <a id="enq-wa" href="#">Send it there instead</a>' data-fr='Vous préférez WhatsApp ? <a id="enq-wa" href="#">Envoyer par ce canal</a>' data-zh='更习惯用WhatsApp？<a id="enq-wa" href="#">点击这里发送</a>'>Prefer WhatsApp? <a id="enq-wa" href="#">Send it there instead</a></span>
       </div>
 
-      <p class="enq-note" data-en="Answered within 24 hours. Rates and availability quoted before confirmation are indicative, subject to supplier confirmation, and are not binding until confirmed in writing." data-fr="Réponse sous 24 heures. Les tarifs et disponibilités communiqués avant confirmation sont indicatifs, sous réserve de confirmation du prestataire, et n'engagent qu'après confirmation écrite." data-zh="我们将在24小时内回复。确认前提供的价格与可订情况仅供参考，须经供应商最终确认，在书面确认前不构成任何承诺。">Answered within 24 hours.</p>
+      <p class="enq-note" data-en="Rates and availability quoted before confirmation are indicative, subject to supplier confirmation, and are not binding until confirmed in writing." data-fr="Les tarifs et disponibilités communiqués avant confirmation sont indicatifs, sous réserve de confirmation du prestataire, et n'engagent qu'après confirmation écrite." data-zh="确认前提供的价格与可订情况仅供参考，须经供应商最终确认，在书面确认前不构成任何承诺。">Answered within 24 hours.</p>
     </form>
 
     <div class="enq-done" id="enq-done">
@@ -838,6 +862,8 @@ svg .pt.base text{fill:#E9C4B8;font-size:13px;font-weight:600}
     </div>
   </div>
 </footer>
+<a class="wa" href="https://wa.me/33613850733" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.4c.1.1 1.6 2.5 4 3.5 1.5.6 2.1.7 2.8.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg></a>
+
 
 <script>
 (function(){
@@ -949,10 +975,8 @@ svg .pt.base text{fill:#E9C4B8;font-size:13px;font-weight:600}
     var good = true;
     var mailOk = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(txt('q-email'));
     var checks = [
-      ['f-first',    !txt('q-first')],
-      ['f-last',     !txt('q-last')],
+      ['f-name',     !txt('q-name')],
       ['f-email',    !mailOk],
-      ['f-interest', !txt('q-interest')],
       ['f-message',  txt('q-message').length < 5]
     ];
     for (var i=0;i<checks.length;i++){
@@ -970,21 +994,18 @@ svg .pt.base text{fill:#E9C4B8;font-size:13px;font-weight:600}
   }
 
   function subject(){
-    return 'Nouvelle demande — ' + txt('q-first') + ' ' + txt('q-last') + ' — ' + txt('q-interest');
+    return 'Nouvelle demande — ' + txt('q-name') + (txt('q-interest') ? ' — ' + txt('q-interest') : '');
   }
 
   function plain(){
     var L = [];
-    L.push('Nom : ' + txt('q-first') + ' ' + txt('q-last'));
+    L.push('Nom : ' + txt('q-name'));
     L.push('E-mail : ' + txt('q-email'));
-    if (txt('q-phone'))  L.push('Téléphone / WhatsApp : ' + txt('q-phone'));
-    L.push('Demande : ' + txt('q-interest'));
-    if (txt('q-city'))   L.push('Réside à : ' + txt('q-city'));
+    if (txt('q-interest')) L.push('Demande : ' + txt('q-interest'));
     if (txt('q-dates'))  L.push('Dates : ' + txt('q-dates'));
     L.push('');
     L.push('Message :');
     L.push(txt('q-message'));
-    if (txt('q-source')){ L.push(''); L.push('Nous a connus par : ' + txt('q-source')); }
     return L.join('\n');
   }
 
@@ -1016,14 +1037,11 @@ svg .pt.base text{fill:#E9C4B8;font-size:13px;font-weight:600}
       from_name: 'UNSEEN. — formulaire du site',
       replyto: txt('q-email'),
       botcheck: document.getElementById('botcheck').checked,
-      'Nom': txt('q-first') + ' ' + txt('q-last'),
+      'Nom': txt('q-name'),
       'E-mail': txt('q-email'),
-      'Téléphone / WhatsApp': txt('q-phone') || '—',
-      'Demande': txt('q-interest'),
-      'Réside à': txt('q-city') || '—',
+      'Demande': txt('q-interest') || '—',
       'Dates': txt('q-dates') || '—',
-      'Message': txt('q-message'),
-      'Nous a connus par': txt('q-source') || '—'
+      'Message': txt('q-message')
     };
     var timeout = setTimeout(function(){ busy(false); fallback(); }, 12000);
 
@@ -1045,6 +1063,19 @@ svg .pt.base text{fill:#E9C4B8;font-size:13px;font-weight:600}
       fallback();
     });
   }
+
+  /* étiquettes qui montent quand le champ est rempli (remplissage automatique du navigateur compris) */
+  function sync(){
+    var champs = form.querySelectorAll('.fld');
+    for (var i=0;i<champs.length;i++){
+      var c = champs[i].querySelector('input,textarea');
+      if (c) champs[i].classList.toggle('has', !!c.value);
+    }
+  }
+  form.addEventListener('input', sync);
+  form.addEventListener('change', sync);
+  form.addEventListener('focusout', sync);
+  sync(); setTimeout(sync, 400); setTimeout(sync, 1500);
 
   form.addEventListener('submit', function(e){
     e.preventDefault();
@@ -1101,6 +1132,20 @@ svg .pt.base text{fill:#E9C4B8;font-size:13px;font-weight:600}
 </script>
 
 
+<script>
+/* ---------- bulle WhatsApp : cachée sur l'ouverture et sur le bloc Contact (ils ont déjà leur bouton) ---------- */
+(function(){
+  var wa = document.querySelector('.wa');
+  if (!wa || !('IntersectionObserver' in window)) return;
+  var vus = {};
+  function maj(){ wa.classList.toggle('wa-cache', !!(vus.top || vus.contact)); }
+  ['top','contact'].forEach(function(id){
+    var el = document.getElementById(id);
+    if (!el) return;
+    new IntersectionObserver(function(e){ vus[id] = e[0].isIntersecting; maj(); }).observe(el);
+  });
+})();
+</script>
 <script src="anim.js"></script>
 <script>
 // Services : l'image change au survol (ou au toucher)

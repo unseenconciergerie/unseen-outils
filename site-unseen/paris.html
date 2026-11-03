@@ -186,8 +186,8 @@ footer .mark{color:var(--blanc);font-size:34px}
   .contact{grid-template-columns:1fr;gap:40px}
   form{grid-template-columns:1fr}
   form .btn{width:100%;justify-self:stretch}
-  .wa{display:flex;position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom));z-index:40;width:56px;height:56px;border-radius:50%;background:var(--accent);color:var(--sur-accent);align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(0,0,0,.25);text-decoration:none}
-  .wa svg{width:26px;height:26px}
+  .wa{display:flex;position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom));z-index:40;width:50px;height:50px;border-radius:50%;background:var(--accent);color:var(--sur-accent);align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(0,0,0,.22);text-decoration:none}
+  .wa svg{width:24px;height:24px}
 }
 
 .lang{align-items:center;line-height:1}
@@ -259,6 +259,15 @@ footer .mark{color:var(--blanc);font-size:34px}
 .menu-open .panel{visibility:visible}
 /* Langues visibles dans la barre sur téléphone, comme sur l'accueil */
 @media(max-width:900px){.top .lang{display:flex;margin-left:auto}}
+
+.panel .pro-q{margin-top:30px;font-size:14px;color:#6E6E6E}
+.panel a.pro{font-family:'DM Sans',sans-serif;font-weight:600;font-size:17px;border-bottom:0;padding:6px 0 0}
+.panel a.pro:after{content:" \2192"}
+
+/* menu ordinateur : « Professionnels » à droite, juste avant les langues, séparé des liens clients */
+.langsw a.pro,.lang a.pro{font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;color:#000;font-weight:500;opacity:.7;margin-right:12px;padding-right:20px;border-right:1px solid rgba(0,0,0,.22);white-space:nowrap}
+.langsw a.pro:hover,.lang a.pro:hover,.langsw a.pro.on,.lang a.pro.on{opacity:1}
+@media(max-width:900px){.langsw a.pro,.lang a.pro{display:none}}
 </style>
 <link rel="stylesheet" href="season.css">
 </head>
@@ -267,13 +276,16 @@ footer .mark{color:var(--blanc);font-size:34px}
 <header class="top">
   <div class="top-in">
     <a class="mark" href="index.html">UNSEEN.</a>
-    <nav class="nav"><a href="index.html#services" data-en="Services" data-fr="Services" data-zh="服务">Services</a><a href="index.html#destinations" data-en="Destinations" data-fr="Destinations" data-zh="目的地">Destinations</a><a href="index.html#now" data-en="Seasons" data-fr="Saisons" data-zh="当季">Seasons</a><a href="professionals.html" data-en="Professionals" data-fr="Professionnels" data-zh="专业合作">Professionals</a><a href="#contact" data-en="Contact" data-fr="Contact" data-zh="联系我们">Contact</a></nav>
-    <div class="lang"><button type="button" data-l="en" aria-pressed="true">EN</button><span>/</span><button type="button" data-l="fr" aria-pressed="false">FR</button><span>/</span><button type="button" data-l="zh" aria-pressed="false" lang="zh">中文</button></div>
+    <nav class="nav"><a href="index.html#services" data-en="Services" data-fr="Services" data-zh="服务">Services</a><a href="index.html#destinations" data-en="Destinations" data-fr="Destinations" data-zh="目的地">Destinations</a><a href="index.html#now" data-en="Seasons" data-fr="Saisons" data-zh="当季">Seasons</a><a href="#contact" data-en="Contact" data-fr="Contact" data-zh="联系我们">Contact</a></nav>
+    <div class="lang">
+      <a href="professionals.html" class="pro" data-en="Professionals" data-fr="Professionnels" data-zh="专业合作">Professionals</a><button type="button" data-l="en" aria-pressed="true">EN</button><span>/</span><button type="button" data-l="fr" aria-pressed="false">FR</button><span>/</span><button type="button" data-l="zh" aria-pressed="false" lang="zh">中文</button></div>
     <button class="burger" id="burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="panel"><span></span><span></span><span></span></button>
   </div>
 </header>
 <nav class="panel" id="panel" aria-hidden="true">
-  <a href="index.html#services" data-en="Services" data-fr="Services" data-zh="服务">Services</a><a href="index.html#destinations" data-en="Destinations" data-fr="Destinations" data-zh="目的地">Destinations</a><a href="index.html#now" data-en="Seasons" data-fr="Saisons" data-zh="当季">Seasons</a><a href="professionals.html" data-en="Professionals" data-fr="Professionnels" data-zh="专业合作">Professionals</a><a href="#contact" data-en="Contact" data-fr="Contact" data-zh="联系我们">Contact</a>
+  <a href="index.html#services" data-en="Services" data-fr="Services" data-zh="服务">Services</a><a href="index.html#destinations" data-en="Destinations" data-fr="Destinations" data-zh="目的地">Destinations</a><a href="index.html#now" data-en="Seasons" data-fr="Saisons" data-zh="当季">Seasons</a><a href="#contact" data-en="Contact" data-fr="Contact" data-zh="联系我们">Contact</a>
+      <span class="pro-q" data-en="Travel professional?" data-fr="Vous êtes professionnel du voyage ?" data-zh="您是旅游业专业人士？">Travel professional?</span>
+      <a href="professionals.html" class="pro" data-en="Professionals" data-fr="Professionnels" data-zh="专业合作">Professionals</a>
   <div class="bas"><a href="https://wa.me/33613850733">WhatsApp</a><a href="#" data-u="contact" data-d="unseenconciergerie.com">contact&#64;unseenconciergerie.com</a><div class="langs"><button type="button" data-l="en" aria-pressed="true">EN</button><span>/</span><button type="button" data-l="fr" aria-pressed="false">FR</button><span>/</span><button type="button" data-l="zh" aria-pressed="false" lang="zh">中文</button></div></div>
 </nav>
 
